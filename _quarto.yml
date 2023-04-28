@@ -1,0 +1,36 @@
+project:
+  type: website
+  render:
+    - "!slides/"
+
+website:
+  title: "Introduction to R"
+
+  favicon: "/files/img/hex-testudo.png"
+
+  navbar:
+    pinned: true
+    background: "#C31832"
+    right:
+      - href: index.qmd
+        text: Home
+      - href: schedule.qmd
+        text: Schedule
+      - href: content/01-content.qmd
+        text: Content
+
+  sidebar:
+    - title: "Content"
+      style: "docked"
+      contents:
+        - content/01-content.qmd
+
+format:
+  html:
+    theme: litera
+    css: html/custom.css
+    toc: true
+    highlight-style: monokai
+
+editor: visual
+

@@ -1,0 +1,224 @@
+---
+title: "Introduction and Set Up"
+format: 
+  revealjs:
+    slide-number: true
+    chalkboard: 
+      buttons: false
+    preview-links: auto
+---
+
+## Welcome
+
+## Introductions
+
+-   Third year in the GVPT PhD program
+
+-   Australian
+
+-   Bachelor of Economics, Arts (Hon I) from the University of Sydney
+
+-   Helped to develop the Lowy Institute's [Asia Power Index](https://power.lowyinstitute.org/)
+
+-   Analyst with the Australian Department of Defence
+
+-   Worked on the Institute for Economics and Peace's [Global Peace Index](https://www.visionofhumanity.org/maps/#/) and [Global Terrorism Index](https://www.visionofhumanity.org/maps/global-terrorism-index/#/)
+
+-   Favourite Smithsonian: the zoo!
+
+## Learning objectives for today
+
+1.    Introduction to R and friends
+
+2.    Getting your computers set up
+
+3.    Plotting your data using R and `ggplot2`
+
+## Computational social scientists
+
+## Set up
+
+-   Homebrew (MacOS or Linux only)
+
+-   R and RStudio
+
+-   Git and GitHub
+
+## Homebrew: The Missing Package Manager for macOS and Linux
+
+![](img/homebrew.png){fig-align="center"}
+
+1.    Go to https://brew.sh/
+
+2.    Follow instructions on the homepage
+
+## R and RStudio
+
+:::: {.columns}
+
+::: {.column width="50%"}
+### R
+R is a free and open-source programming language and software environment for statistical computing and graphics.
+:::
+
+::: {.column width="50%"}
+### RStudio
+RStudio is an integrated development environment (IDE) for the R programming language.
+:::
+
+::::
+
+## A Tour of RStudio
+
+![Source: [R4DS](https://r4ds.had.co.nz/introduction.html#rstudio)](img/rstudio-console.png){fig-align="center"}
+
+## Git and GitHub
+
+:::: {.columns}
+
+::: {.column width="50%"}
+### Git
+Git is a version control system used for tracking changes in software development projects.
+:::
+
+::: {.column width="50%"}
+### GitHub
+GitHub is a web-based platform for version control and collaborative software development using Git.
+:::
+
+::::
+
+## BREAK
+
+## The Research Process
+
+![Source: [R4DS](https://r4ds.had.co.nz/explore-intro.html)](img/r4ds_process.png){fig-align="center"}
+
+## R basics
+
+R code: 
+
+```{r}
+#| echo: true
+
+1 + 2
+```
+
+Functions: 
+
+```{r}
+#| echo: true
+
+sum(1, 2)
+```
+
+## R packages
+
+Packages are collections of R functions, data, and compiled code in a well-defined format
+
+```{r}
+#| echo: true
+#| eval: false
+
+# Install the relevant package(s)
+install.packages("tidyverse")
+
+# Load the package in current session
+library(tidyverse)
+```
+
+## Data visualisation
+
+From [R4DS - Data Visualization](https://r4ds.had.co.nz/data-visualisation.html):
+
+> Do cars with big engines use more fuel than cars with small engines?
+
+::: {.notes}
+
+Let’s use our first graph to answer a question: Do cars with big engines use more fuel than cars with small engines? You probably already have an answer, but try to make your answer precise. What does the relationship between engine size and fuel efficiency look like? Is it positive? Negative? Linear? Nonlinear?
+
+:::
+
+
+## Skipping to the end
+
+```{r}
+
+```
+
+
+## Load relevant packages and data
+
+```{r}
+#| echo: true
+#| eval: false
+
+# Load the relevant functions
+library(tidyverse)
+
+# Load the data
+mpg
+```
+
+```{r}
+#| eval: true
+
+ggplot2::mpg |> 
+  head() |> 
+  dplyr::select(1:5) |> 
+  knitr::kable()
+```
+
+::: {.notes}
+You only need to install a package once, but you need to reload it every time you start a new session.
+
+A data frame is a rectangular collection of variables (in the columns) and observations (in the rows). mpg contains observations collected by the US Environmental Protection Agency on 38 models of car.
+:::
+
+## Learning more about the data
+
+To get help on any function or dataset use: `?function`
+
+```{r}
+?mpg
+```
+
+::: {.notes}
+Among the variables in `mpg` are:
+
+1.    `displ`, a car’s engine size, in litres.
+
+2.    `hwy`, a car’s fuel efficiency on the highway, in miles per gallon (mpg). A car with a low fuel efficiency consumes more fuel than a car with a high fuel efficiency when they travel the same distance.
+:::
+
+## Plot your data
+
+```{r}
+#| echo: true
+
+library(ggplot2)
+
+ggplot(data = mpg) + 
+  geom_point(mapping = aes(x = displ, y = hwy))
+```
+
+::: {.notes}
+The plot shows a negative relationship between engine size (`displ`) and fuel efficiency (`hwy`). In other words, cars with big engines use more fuel. Does this confirm or refute your hypothesis about fuel efficiency and engine size?
+
+With `ggplot2`, you begin a plot with the function `ggplot()`. `ggplot()` creates a coordinate system that you can add layers to. The first argument of `ggplot()` is the dataset to use in the graph. So `ggplot(data = mpg)` creates an empty graph, but it’s not very interesting so I’m not going to show it here.
+
+You complete your graph by adding one or more layers to `ggplot()`. The function `geom_point()` adds a layer of points to your plot, which creates a scatterplot. `ggplot2` comes with many geom functions that each add a different type of layer to a plot. You’ll learn a whole bunch of them throughout this chapter.
+
+Each geom function in `ggplot2` takes a mapping argument. This defines how variables in your dataset are mapped to visual properties. The mapping argument is always paired with `aes()`, and the `x` and `y` arguments of `aes()` specify which variables to map to the `x` and `y` axes. `ggplot2` looks for the mapped variables in the data argument, in this case, `mpg`.
+:::
+
+## A general plotting template
+
+```{r}
+#| echo: true
+#| eval: false
+
+ggplot(data = <DATA>) + 
+  <GEOM_FUNCTION>(mapping = aes(<MAPPINGS>))
+```
+

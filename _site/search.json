@@ -1,0 +1,212 @@
+[
+  {
+    "objectID": "content/01-content.html#slides",
+    "href": "content/01-content.html#slides",
+    "title": "Introduction and Set Up",
+    "section": "Slides",
+    "text": "Slides"
+  },
+  {
+    "objectID": "content/01-content.html#in-class",
+    "href": "content/01-content.html#in-class",
+    "title": "Introduction and Set Up",
+    "section": "In-class",
+    "text": "In-class"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Introduction to R",
+    "section": "",
+    "text": "Introduction to R for Political Scientists\n        \n        \n            Learn to use data science tools to support your research\n        \n        \n            Summer 2023Department of Government and PoliticsUniversity of Maryland, College Park\n        \n    \n    \n      \n        \n        \n        \n      \n    \n\n\n\n\n\nInstructor\n\n   Harriet Goers\n   Chincoteague Building\n   hgoers@umd.edu\n   harrietgoers\n\n\n\nCourse details\n\n   January 9–May 2, 2023\n   7:15–9:45 PM\n   Tydings Building\n   Slack\n\n\n\nContacting me\nE-mail and Slack are the best ways to get in contact with me. I will try to respond to all course-related e-mails and Slack messages within 24 hours."
+  },
+  {
+    "objectID": "slides/01-class.html#welcome",
+    "href": "slides/01-class.html#welcome",
+    "title": "Introduction and Set Up",
+    "section": "Welcome",
+    "text": "Welcome"
+  },
+  {
+    "objectID": "slides/01-class.html#introductions",
+    "href": "slides/01-class.html#introductions",
+    "title": "Introduction and Set Up",
+    "section": "Introductions",
+    "text": "Introductions\n\nThird year in the GVPT PhD program\nAustralian\nBachelor of Economics, Arts (Hon I) from the University of Sydney\nHelped to develop the Lowy Institute’s Asia Power Index\nAnalyst with the Australian Department of Defence\nWorked on the Institute for Economics and Peace’s Global Peace Index and Global Terrorism Index\nFavourite Smithsonian: the zoo!"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "schedule.html",
+    "href": "schedule.html",
+    "title": "Schedule",
+    "section": "",
+    "text": "DATE \n    TITLE \n    CONTENT \n    EXAMPLE \n    ASSIGNMENT \n  \n \n\n  \n    DAY 1 \n    Introduction and set up"
+  },
+  {
+    "objectID": "slides/01-class.html#computational-social-scientists",
+    "href": "slides/01-class.html#computational-social-scientists",
+    "title": "Introduction and Set Up",
+    "section": "Computational social scientists",
+    "text": "Computational social scientists"
+  },
+  {
+    "objectID": "slides/01-class.html#r-and-rstudio",
+    "href": "slides/01-class.html#r-and-rstudio",
+    "title": "Introduction and Set Up",
+    "section": "R and RStudio",
+    "text": "R and RStudio\n\n\nR\nR is a free and open-source programming language and software environment for statistical computing and graphics.\n\nRStudio\nRStudio is an integrated development environment (IDE) for the R programming language."
+  },
+  {
+    "objectID": "slides/01-class.html#git-and-github",
+    "href": "slides/01-class.html#git-and-github",
+    "title": "Introduction and Set Up",
+    "section": "Git and GitHub",
+    "text": "Git and GitHub\n\n\nGit\nGit is a version control system used for tracking changes in software development projects.\n\nGitHub\nGitHub is a web-based platform for version control and collaborative software development using Git."
+  },
+  {
+    "objectID": "slides/01-class.html#set-up",
+    "href": "slides/01-class.html#set-up",
+    "title": "Introduction and Set Up",
+    "section": "Set up",
+    "text": "Set up\n\nHomebrew (MacOS or Linux only)\nR and RStudio\nGit and GitHub"
+  },
+  {
+    "objectID": "slides/01-class.html#housekeeping",
+    "href": "slides/01-class.html#housekeeping",
+    "title": "Introduction and Set Up",
+    "section": "Housekeeping",
+    "text": "Housekeeping"
+  },
+  {
+    "objectID": "slides/01-class.html#learning-objectives-for-today",
+    "href": "slides/01-class.html#learning-objectives-for-today",
+    "title": "Introduction and Set Up",
+    "section": "Learning objectives for today",
+    "text": "Learning objectives for today\n\nIntroduction to R and friends\nGetting your computers set up\nPlotting your data using R and ggplot2"
+  },
+  {
+    "objectID": "slides/01-class.html#homebrew",
+    "href": "slides/01-class.html#homebrew",
+    "title": "Introduction and Set Up",
+    "section": "Homebrew",
+    "text": "Homebrew\n\nThe Missing Package Manager for macOS and Linux\n\nGo to https://brew.sh/\nFollow instructions on the homepage"
+  },
+  {
+    "objectID": "content/01-content.html",
+    "href": "content/01-content.html",
+    "title": "Introduction and Set Up",
+    "section": "",
+    "text": "Garrick Aden-Buie’s macOS set up blogpost\n Matti Vuorre’s macOS set up blogpost\n\n\n\n Installation and Connect Git, GitHub, RStudio sections in Jennifer Bryan’s Happy Git and GitHub for the useR\n\n\n\n Install or upgrade R and RStudio chapter in Jennifer Bryan’s Happy Git and GitHub for the useR"
+  },
+  {
+    "objectID": "slides/01-class.html#homebrew-the-missing-package-manager-for-macos-and-linux",
+    "href": "slides/01-class.html#homebrew-the-missing-package-manager-for-macos-and-linux",
+    "title": "Introduction and Set Up",
+    "section": "Homebrew: The Missing Package Manager for macOS and Linux",
+    "text": "Homebrew: The Missing Package Manager for macOS and Linux\n\n\nGo to https://brew.sh/\nFollow instructions on the homepage"
+  },
+  {
+    "objectID": "slides/01-class.html#r-and-rstudio-1",
+    "href": "slides/01-class.html#r-and-rstudio-1",
+    "title": "Introduction and Set Up",
+    "section": "R and RStudio",
+    "text": "R and RStudio"
+  },
+  {
+    "objectID": "slides/01-class.html#git-and-github-1",
+    "href": "slides/01-class.html#git-and-github-1",
+    "title": "Introduction and Set Up",
+    "section": "Git and GitHub",
+    "text": "Git and GitHub"
+  },
+  {
+    "objectID": "slides/01-class.html#break",
+    "href": "slides/01-class.html#break",
+    "title": "Introduction and Set Up",
+    "section": "BREAK",
+    "text": "BREAK"
+  },
+  {
+    "objectID": "slides/01-class.html#the-political-science-research-process",
+    "href": "slides/01-class.html#the-political-science-research-process",
+    "title": "Introduction and Set Up",
+    "section": "The Political Science Research Process",
+    "text": "The Political Science Research Process\n\nSource: R4DS"
+  },
+  {
+    "objectID": "slides/01-class.html#data-visualisation",
+    "href": "slides/01-class.html#data-visualisation",
+    "title": "Introduction and Set Up",
+    "section": "Data visualisation",
+    "text": "Data visualisation\nFrom R4DS - Data Visualization:\n\nDo cars with big engines use more fuel than cars with small engines?\n\n\nLet’s use our first graph to answer a question: Do cars with big engines use more fuel than cars with small engines? You probably already have an answer, but try to make your answer precise. What does the relationship between engine size and fuel efficiency look like? Is it positive? Negative? Linear? Nonlinear?"
+  },
+  {
+    "objectID": "slides/01-class.html#the-research-process",
+    "href": "slides/01-class.html#the-research-process",
+    "title": "Introduction and Set Up",
+    "section": "The Research Process",
+    "text": "The Research Process\n\nSource: R4DS"
+  },
+  {
+    "objectID": "slides/01-class.html#a-tour-of-rstudio",
+    "href": "slides/01-class.html#a-tour-of-rstudio",
+    "title": "Introduction and Set Up",
+    "section": "A Tour of RStudio",
+    "text": "A Tour of RStudio\n\nSource: R4DS"
+  },
+  {
+    "objectID": "slides/01-class.html#r-basics",
+    "href": "slides/01-class.html#r-basics",
+    "title": "Introduction and Set Up",
+    "section": "R basics",
+    "text": "R basics\nR code:\n\n1 + 2\n\n[1] 3\n\n\nFunctions:\n\nsum(1, 2)\n\n[1] 3"
+  },
+  {
+    "objectID": "slides/01-class.html#r-packages",
+    "href": "slides/01-class.html#r-packages",
+    "title": "Introduction and Set Up",
+    "section": "R packages",
+    "text": "R packages\nPackages are collections of R functions, data, and compiled code in a well-defined format\n\n# Install the relevant package(s)\ninstall.packages(\"tidyverse\")\n\n# Load the package in current session\nlibrary(tidyverse)"
+  },
+  {
+    "objectID": "slides/01-class.html#load-relevant-packages-and-data",
+    "href": "slides/01-class.html#load-relevant-packages-and-data",
+    "title": "Introduction and Set Up",
+    "section": "Load relevant packages and data",
+    "text": "Load relevant packages and data\n\n# Load the relevant functions\nlibrary(tidyverse)\n\n# Load the data\nmpg\n\n\n\n\n\n\nmanufacturer\nmodel\ndispl\nyear\ncyl\n\n\n\n\naudi\na4\n1.8\n1999\n4\n\n\naudi\na4\n1.8\n1999\n4\n\n\naudi\na4\n2.0\n2008\n4\n\n\naudi\na4\n2.0\n2008\n4\n\n\naudi\na4\n2.8\n1999\n6\n\n\naudi\na4\n2.8\n1999\n6\n\n\n\n\n\n\nYou only need to install a package once, but you need to reload it every time you start a new session.\nA data frame is a rectangular collection of variables (in the columns) and observations (in the rows). mpg contains observations collected by the US Environmental Protection Agency on 38 models of car."
+  },
+  {
+    "objectID": "slides/01-class.html#skipping-to-the-end",
+    "href": "slides/01-class.html#skipping-to-the-end",
+    "title": "Introduction and Set Up",
+    "section": "Skipping to the end",
+    "text": "Skipping to the end"
+  },
+  {
+    "objectID": "slides/01-class.html#learning-more-about-the-data",
+    "href": "slides/01-class.html#learning-more-about-the-data",
+    "title": "Introduction and Set Up",
+    "section": "Learning more about the data",
+    "text": "Learning more about the data\nTo get help on any function or dataset use: ?function\n\n\n\n\nAmong the variables in mpg are:\n\ndispl, a car’s engine size, in litres.\nhwy, a car’s fuel efficiency on the highway, in miles per gallon (mpg). A car with a low fuel efficiency consumes more fuel than a car with a high fuel efficiency when they travel the same distance."
+  },
+  {
+    "objectID": "slides/01-class.html#plot-your-data",
+    "href": "slides/01-class.html#plot-your-data",
+    "title": "Introduction and Set Up",
+    "section": "Plot your data",
+    "text": "Plot your data\n\nlibrary(ggplot2)\n\nggplot(data = mpg) + \n  geom_point(mapping = aes(x = displ, y = hwy))\n\n\n\nThe plot shows a negative relationship between engine size (displ) and fuel efficiency (hwy). In other words, cars with big engines use more fuel. Does this confirm or refute your hypothesis about fuel efficiency and engine size?\nWith ggplot2, you begin a plot with the function ggplot(). ggplot() creates a coordinate system that you can add layers to. The first argument of ggplot() is the dataset to use in the graph. So ggplot(data = mpg) creates an empty graph, but it’s not very interesting so I’m not going to show it here.\nYou complete your graph by adding one or more layers to ggplot(). The function geom_point() adds a layer of points to your plot, which creates a scatterplot. ggplot2 comes with many geom functions that each add a different type of layer to a plot. You’ll learn a whole bunch of them throughout this chapter.\nEach geom function in ggplot2 takes a mapping argument. This defines how variables in your dataset are mapped to visual properties. The mapping argument is always paired with aes(), and the x and y arguments of aes() specify which variables to map to the x and y axes. ggplot2 looks for the mapped variables in the data argument, in this case, mpg."
+  },
+  {
+    "objectID": "slides/01-class.html#a-general-plotting-template",
+    "href": "slides/01-class.html#a-general-plotting-template",
+    "title": "Introduction and Set Up",
+    "section": "A general plotting template",
+    "text": "A general plotting template\n\nggplot(data = <DATA>) + \n  <GEOM_FUNCTION>(mapping = aes(<MAPPINGS>))"
+  }
+]
