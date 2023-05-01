@@ -1,0 +1,12 @@
+---
+title: "Data Visualisation"
+author: "Harriet Goers"
+---
+
+## Readings
+
+{{< fa book >}} Kieran Healy's [*Data Visualization: A Practical Guide*](https://socviz.co/)
+
+## Slides
+
+## In-class

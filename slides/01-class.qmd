@@ -1,11 +1,12 @@
 ---
 title: "GVPT Maths Boot Camp"
-subtitle: "Summer 2023"
+subtitle: "Introductions and Set Up"
 format: 
   revealjs:
     slide-number: true
     preview-links: auto
     theme: solarized
+    embed-resources: true
 ---
 
 ## Welcome
@@ -28,13 +29,11 @@ format:
 
 2.  Getting your computers set up
 
-3.  Plotting your data using R and `ggplot2`
-
 ## Computational social scientists
 
 ## Set up
 
--   Homebrew (MacOS or Linux only)
+-   Homebrew (macOS or Linux only)
 
 -   R and RStudio
 
@@ -64,9 +63,13 @@ RStudio is an integrated development environment (IDE) for the R programming lan
 :::
 :::
 
+::: aside
+Instructions on how to download R and RStudio are provided in the [Introduction chapter of R4DS](https://r4ds.had.co.nz/introduction.html#prerequisites).
+:::
+
 ## A Tour of RStudio
 
-![Source: [R4DS](https://r4ds.had.co.nz/introduction.html#rstudio)](img/rstudio-console.png){fig-align="center"}
+![Source: [R4DS](https://r4ds.had.co.nz/workflow-scripts.html#workflow-scripts)](img/rstudio-console.png){fig-align="center"}
 
 ## Git and GitHub
 
@@ -84,403 +87,14 @@ GitHub is a web-based platform for version control and collaborative software de
 :::
 :::
 
-## BREAK
-
-## The Research Process
-
-![Source: [R4DS](https://r4ds.had.co.nz/explore-intro.html)](img/r4ds_process.png){fig-align="center"}
-
-## R basics
-
-R code:
-
-```{r}
-#| echo: true
-
-1 + 2
-```
-
-Functions:
-
-```{r}
-#| echo: true
-
-sum(1, 2)
-```
-
-## R packages
-
-Packages are collections of R functions, data, and compiled code in a well-defined format
-
-```{r}
-#| echo: true
-#| eval: false
-
-# Install the relevant package(s)
-install.packages("tidyverse")
-
-# Load the package in current session
-library(tidyverse)
-```
-
-## Data visualisation
-
-From [R4DS - Data Visualization](https://r4ds.had.co.nz/data-visualisation.html):
-
-> Do cars with big engines use more fuel than cars with small engines?
-
-::: notes
-Let's use our first graph to answer a question: Do cars with big engines use more fuel than cars with small engines? You probably already have an answer, but try to make your answer precise. What does the relationship between engine size and fuel efficiency look like? Is it positive? Negative? Linear? Nonlinear?
-:::
-
-## Skipping to the end
-
-```{r}
-library(ggplot2)
-
-ggplot(data = mpg) + 
-  geom_point(mapping = aes(x = displ, y = hwy, color = class)) + 
-  theme(
-    legend.position = "bottom",
-    panel.grid = element_blank(),
-    panel.background = element_blank(),
-    plot.title.position = "plot",
-    plot.title = element_text(face = "bold")
-  ) + 
-  labs(
-    title = "Relationship between engine displacement and highway miles per gallon by class",
-    x = "Engine displacement (L)",
-    y = "Highway miles per gallon",
-    color = "Class"
-  )
-```
-
-## Load relevant packages and data
-
-```{r}
-#| echo: true
-#| eval: false
-
-# Load the relevant functions
-library(tidyverse)
-
-# Load the data
-mpg
-```
-
-```{r}
-#| eval: true
-
-ggplot2::mpg |> 
-  head() |> 
-  dplyr::select(1:5) |> 
-  knitr::kable()
-```
-
-::: notes
-You only need to install a package once, but you need to reload it every time you start a new session.
-
-A data frame is a rectangular collection of variables (in the columns) and observations (in the rows). mpg contains observations collected by the US Environmental Protection Agency on 38 models of car.
-:::
-
-## Learning more about the data
-
-To get help on any function or dataset use: `?function`
-
-```{r}
-?mpg
-```
-
-::: notes
-Among the variables in `mpg` are:
-
-1.  `displ`, a car's engine size, in litres.
-
-2.  `hwy`, a car's fuel efficiency on the highway, in miles per gallon (mpg). A car with a low fuel efficiency consumes more fuel than a car with a high fuel efficiency when they travel the same distance.
-:::
-
-## Plot your data
-
-```{r}
-#| echo: true
-
-library(ggplot2)
-
-ggplot(data = mpg) + 
-  geom_point(mapping = aes(x = displ, y = hwy))
-```
-
-::: notes
-The plot shows a negative relationship between engine size (`displ`) and fuel efficiency (`hwy`). In other words, cars with big engines use more fuel. Does this confirm or refute your hypothesis about fuel efficiency and engine size?
-
-With `ggplot2`, you begin a plot with the function `ggplot()`. `ggplot()` creates a coordinate system that you can add layers to. The first argument of `ggplot()` is the dataset to use in the graph. So `ggplot(data = mpg)` creates an empty graph, but it's not very interesting so I'm not going to show it here.
-
-You complete your graph by adding one or more layers to `ggplot()`. The function `geom_point()` adds a layer of points to your plot, which creates a scatterplot. `ggplot2` comes with many geom functions that each add a different type of layer to a plot. You'll learn a whole bunch of them throughout this chapter.
-
-Each geom function in `ggplot2` takes a mapping argument. This defines how variables in your dataset are mapped to visual properties. The mapping argument is always paired with `aes()`, and the `x` and `y` arguments of `aes()` specify which variables to map to the `x` and `y` axes. `ggplot2` looks for the mapped variables in the data argument, in this case, `mpg`.
-:::
-
-## EXERCISES
-
-What do you see when you run the following?
-
-```{r}
-#| echo: true
-#| eval: false
-
-ggplot(data = mpg)
-```
-
-How many rows are in `mpg`? How many columns?
-
-```{r}
-#| echo: true
-#| eval: false
-
-nrow(mpg)
-ncol(mpg)
-```
-
-What does the `drv` variable describe?
-
-```{r}
-#| echo: true
-#| eval: false
-
-?mpg
-```
-
-Make a scatterplot of `hwy` vs `cyl`.
-
-What happens if you make a scatterplot of `class` vs `drv`? Why is the plot not useful?
-
-## Let's look at groups in the data
-
-```{r}
-#| echo: true
-
-ggplot(data = mpg) + 
-  geom_point(mapping = aes(x = displ, y = hwy, color = class))
-```
-
-## Let's look at groups in the data
-
-```{r}
-#| echo: true
-
-ggplot(data = mpg) + 
-  geom_point(mapping = aes(x = displ, y = hwy, size = class))
-```
-
-## Let's look at groups in the data
-
-```{r}
-#| echo: true
-
-ggplot(data = mpg) + 
-  geom_point(mapping = aes(x = displ, y = hwy, shape = class))
-```
-
-## Let's make this prettier
-
-```{r}
-#| echo: true
-
-ggplot(data = mpg) + 
-  geom_point(mapping = aes(x = displ, y = hwy), color = "blue")
-```
-
-## Let's add useful headings
-
-```{r}
-#| echo: true
-#| eval: false
-
-ggplot(data = mpg) + 
-  geom_point(mapping = aes(x = displ, y = hwy), color = "blue") + 
-  labs(
-    title = "Relationship between engine displacement and highway miles per gallon",
-    x = "Engine displacement (L)",
-    y = "Highway miles per gallon"
-  )
-```
-
-## Let's add useful headings
-
-```{r}
-ggplot(data = mpg) + 
-  geom_point(mapping = aes(x = displ, y = hwy), color = "blue") + 
-  labs(
-    title = "Relationship between engine displacement and highway miles per gallon",
-    x = "Engine displacement (L)",
-    y = "Highway miles per gallon"
-  )
-```
-
-## Let's clean this up
-
-```{r}
-#| echo: true
-#| eval: false
-
-ggplot(data = mpg) + 
-  geom_point(mapping = aes(x = displ, y = hwy), color = "blue") + 
-  theme_minimal() + 
-  labs(
-    title = "Relationship between engine displacement and highway miles per gallon",
-    x = "Engine displacement (L)",
-    y = "Highway miles per gallon"
-  )
-```
-
 ::: aside
-All pre-set `ggplot` themes can be found in the [`ggplot` documentation](https://ggplot2.tidyverse.org/reference/ggtheme.html).
+Instructions on how to download Git and set up GitHub are provided in the [Installation chapter of Happy Git with R](https://happygitwithr.com/install-intro.html).
 :::
-
-## Let's clean this up
-
-```{r}
-ggplot(data = mpg) + 
-  geom_point(mapping = aes(x = displ, y = hwy), color = "blue") + 
-  theme_minimal() + 
-  labs(
-    title = "Relationship between engine displacement and highway miles per gallon",
-    x = "Engine displacement (L)",
-    y = "Highway miles per gallon"
-  )
-```
-
-## Creating your own theme
-
-```{r}
-#| echo: true
-#| eval: false
-
-ggplot(data = mpg) + 
-  geom_point(mapping = aes(x = displ, y = hwy, color = class)) + 
-  theme(
-    legend.position = "bottom",
-    panel.grid = element_blank(),
-    panel.background = element_blank(),
-    plot.title.position = "plot",
-    plot.title = element_text(face = "bold")
-  ) + 
-  labs(
-    title = "Relationship between engine displacement and highway miles per gallon by class",
-    x = "Engine displacement (L)",
-    y = "Highway miles per gallon",
-    color = "Class"
-  )
-```
-
-::: aside
-All theme elements that you can control can be found in the [`ggplot` documentation](https://ggplot2.tidyverse.org/reference/theme.html#arguments). There are a lot!
-:::
-
-## Creating your own theme
-
-```{r}
-ggplot(data = mpg) + 
-  geom_point(mapping = aes(x = displ, y = hwy, color = class)) + 
-  theme(
-    legend.position = "bottom",
-    panel.grid = element_blank(),
-    panel.background = element_blank(),
-    plot.title.position = "plot",
-    plot.title = element_text(face = "bold")
-  ) + 
-  labs(
-    title = "Relationship between engine displacement and highway miles per gallon by class",
-    x = "Engine displacement (L)",
-    y = "Highway miles per gallon",
-    color = "Class"
-  )
-```
-
-## EXERCISES
-
-What's gone wrong with this code? Why are the points not blue?
-
-```{r}
-#| echo: true
-
-ggplot(data = mpg) + 
-  geom_point(mapping = aes(x = displ, y = hwy, color = "blue"))
-```
-
-## EXERCISES
-
-Which variables in `mpg` are categorical? Which variables are continuous?
-
-<br>
-
-Map a continuous variable to `color`, `size`, and `shape.` How do these aesthetics behave differently for categorical vs. continuous variables?
-
-<br>
-
-What happens if you map the same variable to multiple aesthetics?
-
-## EXERCISES
-
-What does the `stroke` aesthetic do? What shapes does it work with?
-
-<br>
-
-What happens if you map an aesthetic to something other than a variable name, like `aes(colour = displ < 5)`? Note, you'll also need to specify `x` and `y`.
-
-## Looking at group-specific trends
-
-```{r}
-#| echo: true
-
-ggplot(data = mpg) + 
-  geom_point(mapping = aes(x = displ, y = hwy)) + 
-  facet_wrap(~ class, nrow = 2)
-```
-
-## Looking at group-specific trends
-
-```{r}
-#| echo: true
-
-ggplot(data = mpg) + 
-  geom_point(mapping = aes(x = displ, y = hwy)) + 
-  facet_grid(drv ~ cyl)
-```
-
-## Summarising relationships in the data
-
-```{r}
-#| echo: true
-
-ggplot(data = mpg, mapping = aes(x = displ, y = hwy)) + 
-  geom_point() + 
-  geom_smooth(method = "lm", se = F)
-```
-
-::: notes
-Because both `geom_point()` and `geom_smooth()` take the arguement `mapping = aes(x = displ, y = hwy)`, we can feed it to them both through `ggplot()`. We are previewing a feature heavily used in the tidyverse: the pipe.
-:::
-
-## Group-specific relationships
-
-```{r}
-#| echo: true
-
-ggplot(data = mpg, mapping = aes(x = displ, y = hwy, color = drv)) + 
-  geom_point() + 
-  geom_smooth(method = "lm", se = F) + 
-  theme_minimal()
-```
 
 ## Summary
 
-Today you:
+This morning you:
+
+1.  Learnt about new data science tools to help you conduct replicable and reproducable political science research
 
 1.  Set up your data science tools
-
-2.  Plotted complex data in an engaging way
-
-3.  Discovered interesting relationships in the data
-
-4.  Connected these relationships or trends to your expectations (or hypotheses about the data)

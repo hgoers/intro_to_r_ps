@@ -13,8 +13,9 @@ library(fontawesome)
 
 ```{r, include = FALSE}
 schedule <- tibble(
-  DATE = c("DAY 1"),
-  TITLE = c("Introduction and set up"),
+  DATE = c("DAY 1", "DAY 1"),
+  SESSION = c("Morning", "Afternoon"),
+  TITLE = c("Introduction and set up", "Data Visualisation"),
   CONTENT = c("index.html"),
   EXAMPLE = c(""),
   ASSIGNMENT = c("")
@@ -34,12 +35,13 @@ schedule <- tibble(
 
 ```{r schedule, echo = FALSE, results = "asis"}
 schedule |>
-  kbl(escape = FALSE, align = "llccc") |>
+  kbl(escape = FALSE, align = "lllccc") |>
   kable_styling(bootstrap_options = c("hover", "responsive"),
                 fixed_thead = T) |> 
   column_spec(1, width = "10%", extra_css = "padding-right: 20px;") |> 
-  column_spec(2, width = "60%") |> 
-  column_spec(3, width = "10%") |> 
+  column_spec(2, width = "10%") |> 
+  column_spec(3, width = "60%") |> 
   column_spec(4, width = "10%") |> 
-  column_spec(5, width = "10%")
+  column_spec(5, width = "10%") |> 
+  column_spec(6, width = "10%")
 ```
