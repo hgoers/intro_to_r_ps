@@ -368,7 +368,7 @@
     "href": "slides/02-class.html#learning-more-about-the-data",
     "title": "GVPT Maths Boot Camp",
     "section": "Learning more about the data",
-    "text": "Learning more about the data\nTo get help on any function or dataset use: ?function\n\n\n\n\nAmong the variables in mpg are:\n\ndispl, a car’s engine size, in litres.\nhwy, a car’s fuel efficiency on the highway, in miles per gallon (mpg). A car with a low fuel efficiency consumes more fuel than a car with a high fuel efficiency when they travel the same distance."
+    "text": "Learning more about the data\nTo get help on any function or dataset use: ?function\n\nFor example, to learn more about this package type ?mpg into your console.\n\nAmong the variables in mpg are:\n\ndispl, a car’s engine size, in litres.\nhwy, a car’s fuel efficiency on the highway, in miles per gallon (mpg). A car with a low fuel efficiency consumes more fuel than a car with a high fuel efficiency when they travel the same distance."
   },
   {
     "objectID": "slides/02-class.html#plot-your-data",
@@ -515,7 +515,7 @@
     "href": "content/02-content.html",
     "title": "Data Visualisation",
     "section": "",
-    "text": "Kieran Healy’s Data Visualization: A Practical Guide"
+    "text": "Data Visualisation chapter in Hadley Wickham’s R4DS\n\n\n\n Kieran Healy’s Data Visualization: A Practical Guide"
   },
   {
     "objectID": "slides/03-class.html#learning-objectives",
@@ -712,5 +712,26 @@
     "title": "GVPT Maths Boot Camp",
     "section": "Summary",
     "text": "Summary\nThis morning you have:\n\nLearnt R basic syntax\nLearnt how to transform your data"
+  },
+  {
+    "objectID": "content/03-content.html#slides",
+    "href": "content/03-content.html#slides",
+    "title": "Data Transformation",
+    "section": "Slides",
+    "text": "Slides"
+  },
+  {
+    "objectID": "content/03-content.html#in-class",
+    "href": "content/03-content.html#in-class",
+    "title": "Data Transformation",
+    "section": "In-class",
+    "text": "In-class"
+  },
+  {
+    "objectID": "content/03-content.html",
+    "href": "content/03-content.html",
+    "title": "Data Transformation",
+    "section": "",
+    "text": "Workflow Basics chapter in Hadley Wickham’s R4DS\n Data Transformation chapter in Hadley Wickham’s R4DS"
   }
 ]

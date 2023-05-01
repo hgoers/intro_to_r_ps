@@ -5,6 +5,12 @@ author: "Harriet Goers"
 
 ## Readings
 
+### For this session
+
+{{< fa book >}} [Data Visualisation chapter](https://r4ds.had.co.nz/data-visualisation.html) in Hadley Wickham's *R4DS*
+
+### Additional readings
+
 {{< fa book >}} Kieran Healy's [*Data Visualization: A Practical Guide*](https://socviz.co/)
 
 ## Slides

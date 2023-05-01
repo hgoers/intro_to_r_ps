@@ -6,9 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2023-01-12">
 
-<title>Introduction to R - Introduction and Set Up</title>
+<title>Introduction to R - Data Transformation</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -101,7 +100,7 @@ ul.task-list li input[type="checkbox"] {
     </nav>
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title">Introduction and Set Up</h1>
+      <h1 class="quarto-secondary-nav-title">Data Transformation</h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -116,7 +115,7 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../content/01-content.html" class="sidebar-item-text sidebar-link active">Introduction and Set Up</a>
+  <a href="../content/01-content.html" class="sidebar-item-text sidebar-link">Introduction and Set Up</a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -126,7 +125,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../content/03-content.html" class="sidebar-item-text sidebar-link">Data Transformation</a>
+  <a href="../content/03-content.html" class="sidebar-item-text sidebar-link active">Data Transformation</a>
   </div>
 </li>
     </ul>
@@ -140,9 +139,7 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#readings" id="toc-readings" class="nav-link active" data-scroll-target="#readings">Readings</a>
   <ul class="collapse">
-  <li><a href="#setting-up-your-computer-sorry-for-the-macos-bias" id="toc-setting-up-your-computer-sorry-for-the-macos-bias" class="nav-link" data-scroll-target="#setting-up-your-computer-sorry-for-the-macos-bias">Setting up your computer (sorry for the macOS bias!)</a></li>
-  <li><a href="#setting-up-git-and-github" id="toc-setting-up-git-and-github" class="nav-link" data-scroll-target="#setting-up-git-and-github">Setting up Git and GitHub</a></li>
-  <li><a href="#setting-up-r-and-rstudio" id="toc-setting-up-r-and-rstudio" class="nav-link" data-scroll-target="#setting-up-r-and-rstudio">Setting up R and RStudio</a></li>
+  <li><a href="#for-this-session" id="toc-for-this-session" class="nav-link" data-scroll-target="#for-this-session">For this session</a></li>
   </ul></li>
   <li><a href="#slides" id="toc-slides" class="nav-link" data-scroll-target="#slides">Slides</a></li>
   <li><a href="#in-class" id="toc-in-class" class="nav-link" data-scroll-target="#in-class">In-class</a></li>
@@ -154,7 +151,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block">Introduction and Set Up</h1>
+<h1 class="title d-none d-lg-block">Data Transformation</h1>
 </div>
 
 
@@ -162,12 +159,6 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-title-meta">
 
     
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">January 12, 2023</p>
-    </div>
-  </div>
   
     
   </div>
@@ -177,18 +168,10 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="readings" class="level2">
 <h2 class="anchored" data-anchor-id="readings">Readings</h2>
-<section id="setting-up-your-computer-sorry-for-the-macos-bias" class="level3">
-<h3 class="anchored" data-anchor-id="setting-up-your-computer-sorry-for-the-macos-bias">Setting up your computer (sorry for the macOS bias!)</h3>
-<p><i class="fa-solid fa-arrow-up-right-from-square" aria-label="arrow-up-right-from-square"></i> Garrick Aden-Buie’s <a href="https://www.garrickadenbuie.com/blog/setting-up-a-new-macbook-pro/">macOS set up blogpost</a></p>
-<p><i class="fa-solid fa-arrow-up-right-from-square" aria-label="arrow-up-right-from-square"></i> Matti Vuorre’s <a href="https://vuorre.netlify.app/posts/computer-setup-dotfiles/">macOS set up blogpost</a></p>
-</section>
-<section id="setting-up-git-and-github" class="level3">
-<h3 class="anchored" data-anchor-id="setting-up-git-and-github">Setting up Git and GitHub</h3>
-<p><i class="fa-solid fa-book" aria-label="book"></i> <strong>Installation</strong> and <strong>Connect Git, GitHub, RStudio</strong> sections in Jennifer Bryan’s <a href="https://happygitwithr.com/index.html"><em>Happy Git and GitHub for the useR</em></a></p>
-</section>
-<section id="setting-up-r-and-rstudio" class="level3">
-<h3 class="anchored" data-anchor-id="setting-up-r-and-rstudio">Setting up R and RStudio</h3>
-<p><i class="fa-solid fa-book" aria-label="book"></i> <strong>Install or upgrade R and RStudio</strong> chapter in Jennifer Bryan’s <a href="https://happygitwithr.com/install-r-rstudio.html"><em>Happy Git and GitHub for the useR</em></a></p>
+<section id="for-this-session" class="level3">
+<h3 class="anchored" data-anchor-id="for-this-session">For this session</h3>
+<p><i class="fa-solid fa-book" aria-label="book"></i> <a href="https://r4ds.had.co.nz/workflow-basics.html">Workflow Basics chapter</a> in Hadley Wickham’s <em>R4DS</em></p>
+<p><i class="fa-solid fa-book" aria-label="book"></i> <a href="https://r4ds.had.co.nz/transform.html">Data Transformation chapter</a> in Hadley Wickham’s <em>R4DS</em></p>
 </section>
 </section>
 <section id="slides" class="level2">

@@ -1,8 +1,14 @@
 ---
-title: "Introduction to R"
+title: "Data Transformation"
 ---
 
 ## Readings
+
+### For this session
+
+{{< fa book >}} [Workflow Basics chapter](https://r4ds.had.co.nz/workflow-basics.html) in Hadley Wickham's *R4DS*
+
+{{< fa book >}} [Data Transformation chapter](https://r4ds.had.co.nz/transform.html) in Hadley Wickham's *R4DS*
 
 ## Slides
 
