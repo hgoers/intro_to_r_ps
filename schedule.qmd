@@ -13,9 +13,9 @@ library(fontawesome)
 
 ```{r, include = FALSE}
 schedule <- tibble(
-  DATE = c("DAY 1", "DAY 1"),
-  SESSION = c("Morning", "Afternoon"),
-  TITLE = c("Introduction and set up", "Data Visualisation"),
+  DATE = c("DAY 1", "DAY 1", "DAY 2"),
+  SESSION = c("Morning", "Afternoon", "Morning"),
+  TITLE = c("Introduction and set up", "Data Visualisation", "Data Transformation"),
   CONTENT = c("index.html"),
   EXAMPLE = c(""),
   ASSIGNMENT = c("")
