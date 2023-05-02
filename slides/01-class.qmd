@@ -97,4 +97,4 @@ This morning you:
 
 1.  Learnt about new data science tools to help you conduct replicable and reproducable political science research
 
-1.  Set up your data science tools
+2.  Set up your data science tools

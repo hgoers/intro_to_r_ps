@@ -1,0 +1,252 @@
+---
+title: "GVPT Maths Boot Camp"
+subtitle: "Exploratory Data Analysis"
+format: 
+  revealjs:
+    slide-number: true
+    preview-links: auto
+    theme: solarized
+    embed-resources: true
+---
+
+## Learning objectives
+
+1.    Learn how to generate questions about your data
+
+2.    Learn how to discern interesting relations in your data
+
+3.    Use your new data science tools to better understand your data
+
+## Two basic questions to guide your EDA
+
+1.    What type of variation occurs within my variables?
+
+<br>
+
+2.    What type of covariation occurs between my variables?
+
+## Examining `gapminder`
+
+```{r}
+#| echo: true
+
+library(gapminder)
+library(dplyr)
+
+head(gapminder)
+```
+
+## Variation: Factors
+
+How many countries are there in our data set? 
+
+```{r}
+#| echo: true
+
+gapminder |> 
+  distinct(country) |> 
+  nrow()
+```
+
+How many continents? 
+
+```{r}
+#| echo: true
+
+gapminder |> 
+  distinct(continent) |> 
+  nrow()
+```
+
+*EXERCISE: How many countries in each continent?*
+
+## Variation: Numeric
+
+What is the earliest and latest year we cover?
+
+```{r}
+#| echo: true
+
+summarise(gapminder, min(year), max(year))
+```
+
+What about our other numeric variables? 
+
+```{r}
+#| echo: true
+
+summarise(gapminder, across(lifeExp:gdpPercap, ~ quantile(.x)))
+```
+
+## The Five Number Summary
+
+The *five number summary* is a useful way to summarise numeric data. Consists of the: 
+
+-   Minimum
+
+-   25th percentile,
+
+-   50th percentile (mean or average),
+
+-   75th percentile
+
+-   Maximum
+
+## Visualising the Five Number Summary
+
+```{r}
+#| echo: true
+#| fig-align: center
+
+library(ggplot2)
+
+ggplot(gapminder, aes(y = lifeExp)) + 
+  geom_boxplot() + 
+  theme_minimal()
+```
+
+## Visualising the IQR for groups
+
+```{r}
+#| echo: true
+#| fig-align: center
+
+library(ggplot2)
+
+ggplot(gapminder, aes(x = continent, y = lifeExp)) + 
+  geom_boxplot() + 
+  theme_minimal()
+```
+
+## Visualising the distribution of numeric variables
+
+```{r}
+#| echo: true
+#| fig-align: center
+
+ggplot(gapminder, aes(x = lifeExp)) + 
+  geom_histogram() + 
+  theme_minimal()
+```
+
+## Visualising the distribution of numeric variables
+
+```{r}
+#| echo: true
+#| fig-align: center
+
+ggplot(gapminder, aes(x = lifeExp)) + 
+  geom_density() + 
+  theme_minimal()
+```
+
+## Visualising the distribution of numeric variables
+
+```{r}
+#| echo: true
+#| fig-align: center
+
+ggplot(gapminder, aes(x = lifeExp, fill = continent)) + 
+  geom_density(alpha = 0.5) + 
+  theme_minimal()
+```
+
+## Visualising counts
+
+```{r}
+#| echo: true
+#| fig-align: center
+
+gapminder |>
+  distinct(continent, country) |> 
+  count(continent) |> 
+  ggplot(aes(x = n, y = reorder(continent, n))) + 
+  geom_col() + 
+  theme_minimal()
+```
+
+## Identifying unusual values
+
+```{r}
+#| echo: true
+#| fig-align: center
+
+ggplot(gapminder, aes(x = gdpPercap)) + 
+  geom_histogram() + 
+  theme_minimal()
+```
+
+## Identifying unusual values
+
+```{r}
+#| echo: true
+#| fig-align: center
+#| fig-height: 3
+
+ggplot(gapminder, aes(x = gdpPercap)) + 
+  geom_boxplot() + 
+  theme_minimal()
+```
+
+::: aside
+
+The tails (or whiskers) are equal to 1.5 times the IQR (75th percentile - 25th percentile). All values larger or smaller than these tails are often considered to be outliers. However, *be very careful when dealing with outliers*. We will discuss this more during the semester.
+
+:::
+
+## Identifying relationships in your data
+
+Does one variable tend to move in the same direction as another? 
+
+```{r}
+#| echo: true
+#| fig-align: center
+
+ggplot(gapminder, aes(x = log(gdpPercap), y = lifeExp)) + 
+  geom_point() + 
+  theme_minimal()
+```
+
+## A preview of linear regression
+
+```{r}
+ggplot(gapminder, aes(x = log(gdpPercap), y = lifeExp)) + 
+  geom_point(alpha = 0.5) + 
+  geom_smooth(method = "lm") + 
+  theme_minimal()
+```
+
+## There has to be an easier way!
+
+A quick look with `glimpse()`: 
+
+```{r}
+#| eval: false
+#| echo: true
+
+glimpse(gapminder)
+```
+
+A quick summary with [`skim()`](https://github.com/ropensci/skimr):
+
+```{r}
+#| eval: false
+#| echo: true
+
+install.packages("skimr")
+
+skimr::skim(gapminder)
+```
+
+::: aside
+You can access functions and data sets from packages without loading the package using `package::function`. For example, `gapminder::gapminder`. 
+:::
+
+
+## Summary
+
+Today you: 
+
+1.    Learnt how to explore and visualise interesting relations in your data
+
+2.    Used your new data science tools to better understand your data

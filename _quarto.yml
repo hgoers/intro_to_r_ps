@@ -2,7 +2,7 @@ project:
   type: website
 
 website:
-  title: "Introduction to R"
+  title: "GVPT Maths Boot Camp"
 
   favicon: "/files/img/hex-testudo.png"
 
@@ -24,6 +24,7 @@ website:
         - content/01-content.qmd
         - content/02-content.qmd
         - content/03-content.qmd
+        - content/04-content.qmd
 
 format:
   html:

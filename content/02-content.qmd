@@ -15,4 +15,8 @@ author: "Harriet Goers"
 
 ## Slides
 
+```{=html}
+<iframe class="slide-deck" src="../_site/slides/02-class.html" width = "100%" height = 600px></iframe>
+```
+
 ## In-class

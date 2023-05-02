@@ -23,7 +23,7 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Introduction to R",
+    "title": "GVPT Maths Boot Camp",
     "section": "",
     "text": "Introduction to R for Political Scientists\n        \n        \n            Learn to use data science tools to support your research\n        \n        \n            Summer 2023Department of Government and PoliticsUniversity of Maryland, College Park\n        \n    \n    \n      \n        \n        \n        \n      \n    \n\n\n\n\n\nInstructor\n\n   Harriet Goers\n   Chincoteague Building\n   hgoers@umd.edu\n   harrietgoers\n\n\n\nCourse details\n\n   January 9–May 2, 2023\n   7:15–9:45 PM\n   Tydings Building\n   Slack\n\n\n\nContacting me\nE-mail and Slack are the best ways to get in contact with me. I will try to respond to all course-related e-mails and Slack messages within 24 hours."
   },
@@ -298,7 +298,7 @@
     "href": "schedule.html",
     "title": "Schedule",
     "section": "",
-    "text": "DATE \n    SESSION \n    TITLE \n    CONTENT \n    EXAMPLE \n    ASSIGNMENT \n  \n \n\n  \n    DAY 1 \n    Morning \n    Introduction and set up \n     \n     \n     \n  \n  \n    DAY 1 \n    Afternoon \n    Data Visualisation \n     \n     \n     \n  \n  \n    DAY 2 \n    Morning \n    Data Transformation"
+    "text": "DATE \n    SESSION \n    TITLE \n    CONTENT \n    ASSIGNMENT \n  \n \n\n  \n    DAY 1 \n    Morning \n    Introduction and Set Up \n     \n     \n  \n  \n    DAY 1 \n    Afternoon \n    Data Visualisation \n     \n     \n  \n  \n    DAY 2 \n    Morning \n    Data Transformation \n     \n     \n  \n  \n    DAY 2 \n    Afternoon \n    Exploratory Data Analysis"
   },
   {
     "objectID": "content/02-content.html#slides",
@@ -733,5 +733,180 @@
     "title": "Data Transformation",
     "section": "",
     "text": "Workflow Basics chapter in Hadley Wickham’s R4DS\n Data Transformation chapter in Hadley Wickham’s R4DS"
+  },
+  {
+    "objectID": "content/04-content.html#slides",
+    "href": "content/04-content.html#slides",
+    "title": "Exploratory Data Analysis",
+    "section": "Slides",
+    "text": "Slides"
+  },
+  {
+    "objectID": "content/04-content.html#in-class",
+    "href": "content/04-content.html#in-class",
+    "title": "Exploratory Data Analysis",
+    "section": "In-class",
+    "text": "In-class"
+  },
+  {
+    "objectID": "slides/04-class.html#learning-objectives",
+    "href": "slides/04-class.html#learning-objectives",
+    "title": "GVPT Maths Boot Camp",
+    "section": "Learning objectives",
+    "text": "Learning objectives\n\nLearn how to generate questions about your data\nLearn how to discern interesting relations in your data\nUse your new data science tools to better understand your data"
+  },
+  {
+    "objectID": "slides/04-class.html#two-basic-questions-to-guide-your-eda",
+    "href": "slides/04-class.html#two-basic-questions-to-guide-your-eda",
+    "title": "GVPT Maths Boot Camp",
+    "section": "Two basic questions to guide your EDA",
+    "text": "Two basic questions to guide your EDA\n\nWhat type of variation occurs within my variables?\n\n\n\nWhat type of covariation occurs between my variables?"
+  },
+  {
+    "objectID": "slides/04-class.html#examining-gapminder",
+    "href": "slides/04-class.html#examining-gapminder",
+    "title": "GVPT Maths Boot Camp",
+    "section": "Examining gapminder",
+    "text": "Examining gapminder\n\nlibrary(gapminder)\nlibrary(dplyr)\n\nhead(gapminder)\n\n# A tibble: 6 × 6\n  country     continent  year lifeExp      pop gdpPercap\n  <fct>       <fct>     <int>   <dbl>    <int>     <dbl>\n1 Afghanistan Asia       1952    28.8  8425333      779.\n2 Afghanistan Asia       1957    30.3  9240934      821.\n3 Afghanistan Asia       1962    32.0 10267083      853.\n4 Afghanistan Asia       1967    34.0 11537966      836.\n5 Afghanistan Asia       1972    36.1 13079460      740.\n6 Afghanistan Asia       1977    38.4 14880372      786."
+  },
+  {
+    "objectID": "slides/04-class.html#variation",
+    "href": "slides/04-class.html#variation",
+    "title": "GVPT Maths Boot Camp",
+    "section": "Variation",
+    "text": "Variation\nHow many countries are there in our data set?\n\ngapminder |> \n  distinct(country) |> \n  nrow()\n\n[1] 142\n\n\nHow many continents?\n\ngapminder |> \n  distinct(continent) |> \n  nrow()\n\n[1] 5\n\n\nHow many years do we cover?\n\ngapminder |> \n  distinct(year) |> \n  nrow()\n\n[1] 12\n\n\nEXERCISE: How many countries in each continent?"
+  },
+  {
+    "objectID": "slides/04-class.html#variation-factors",
+    "href": "slides/04-class.html#variation-factors",
+    "title": "GVPT Maths Boot Camp",
+    "section": "Variation: Factors",
+    "text": "Variation: Factors\nHow many countries are there in our data set?\n\ngapminder |> \n  distinct(country) |> \n  nrow()\n\n[1] 142\n\n\nHow many continents?\n\ngapminder |> \n  distinct(continent) |> \n  nrow()\n\n[1] 5\n\n\nEXERCISE: How many countries in each continent?"
+  },
+  {
+    "objectID": "slides/04-class.html#variation-numeric",
+    "href": "slides/04-class.html#variation-numeric",
+    "title": "GVPT Maths Boot Camp",
+    "section": "Variation: Numeric",
+    "text": "Variation: Numeric\nWhat is the earliest and latest year we cover?\n\nsummarise(gapminder, min(year), max(year))\n\n# A tibble: 1 × 2\n  `min(year)` `max(year)`\n        <int>       <int>\n1        1952        2007\n\n\nWhat about our other numeric variables?\n\nsummarise(gapminder, across(lifeExp:gdpPercap, ~ quantile(.x)))\n\n# A tibble: 5 × 3\n  lifeExp         pop gdpPercap\n    <dbl>       <dbl>     <dbl>\n1    23.6      60011       241.\n2    48.2    2793664      1202.\n3    60.7    7023596.     3532.\n4    70.8   19585222.     9325.\n5    82.6 1318683096    113523."
+  },
+  {
+    "objectID": "slides/04-class.html#interquartile-range",
+    "href": "slides/04-class.html#interquartile-range",
+    "title": "GVPT Maths Boot Camp",
+    "section": "Interquartile Range",
+    "text": "Interquartile Range\nIQR is a useful way to summarise numeric data. Consists of the:\n\nMinimum,\n25th percentile,\n50th percentile (mean or average),\n75th percentile,\nMaximum."
+  },
+  {
+    "objectID": "slides/04-class.html#visualising-the-iqr",
+    "href": "slides/04-class.html#visualising-the-iqr",
+    "title": "GVPT Maths Boot Camp",
+    "section": "Visualising the IQR",
+    "text": "Visualising the IQR\n\nlibrary(ggplot2)\n\nggplot(gapminder, aes(y = lifeExp)) + \n  geom_boxplot() + \n  theme_minimal()"
+  },
+  {
+    "objectID": "slides/04-class.html#visualising-the-distribution-of-numeric-variables",
+    "href": "slides/04-class.html#visualising-the-distribution-of-numeric-variables",
+    "title": "GVPT Maths Boot Camp",
+    "section": "Visualising the distribution of numeric variables",
+    "text": "Visualising the distribution of numeric variables\n\nggplot(gapminder, aes(x = lifeExp)) + \n  geom_histogram() + \n  theme_minimal()"
+  },
+  {
+    "objectID": "slides/04-class.html#visualising-the-distribution-of-numeric-variables-1",
+    "href": "slides/04-class.html#visualising-the-distribution-of-numeric-variables-1",
+    "title": "GVPT Maths Boot Camp",
+    "section": "Visualising the distribution of numeric variables",
+    "text": "Visualising the distribution of numeric variables\n\nggplot(gapminder, aes(x = lifeExp)) + \n  geom_density() + \n  theme_minimal()"
+  },
+  {
+    "objectID": "slides/04-class.html#visualising-counts",
+    "href": "slides/04-class.html#visualising-counts",
+    "title": "GVPT Maths Boot Camp",
+    "section": "Visualising counts",
+    "text": "Visualising counts\n\ngapminder |>\n  distinct(continent, country) |> \n  count(continent) |> \n  ggplot(aes(x = n, y = reorder(continent, n))) + \n  geom_col() + \n  theme_minimal()"
+  },
+  {
+    "objectID": "slides/04-class.html#visualising-the-distribution-of-numeric-variables-2",
+    "href": "slides/04-class.html#visualising-the-distribution-of-numeric-variables-2",
+    "title": "GVPT Maths Boot Camp",
+    "section": "Visualising the distribution of numeric variables",
+    "text": "Visualising the distribution of numeric variables\n\nggplot(gapminder, aes(x = lifeExp, fill = continent)) + \n  geom_density(alpha = 0.5) + \n  theme_minimal()"
+  },
+  {
+    "objectID": "slides/04-class.html#interquartile-range-and-five-number-summary",
+    "href": "slides/04-class.html#interquartile-range-and-five-number-summary",
+    "title": "GVPT Maths Boot Camp",
+    "section": "Interquartile Range and Five Number Summary",
+    "text": "Interquartile Range and Five Number Summary\nIQR is a useful way to summarise numeric data. Consists of the:\n\n25th percentile,\n50th percentile (mean or average),\n75th percentile\n\nThe five number summary also includes the:\n\nMinimum\nMaximum"
+  },
+  {
+    "objectID": "slides/04-class.html#identifying-unusual-values",
+    "href": "slides/04-class.html#identifying-unusual-values",
+    "title": "GVPT Maths Boot Camp",
+    "section": "Identifying unusual values",
+    "text": "Identifying unusual values\n\nggplot(gapminder, aes(x = gdpPercap)) + \n  geom_histogram() + \n  theme_minimal()"
+  },
+  {
+    "objectID": "slides/04-class.html#identifying-unusual-values-1",
+    "href": "slides/04-class.html#identifying-unusual-values-1",
+    "title": "GVPT Maths Boot Camp",
+    "section": "Identifying unusual values",
+    "text": "Identifying unusual values\n\nggplot(gapminder, aes(x = gdpPercap)) + \n  geom_boxplot() + \n  theme_minimal()\n\n\n\n\n\n\n\n\n\n\nThe tails (or whiskers) are equal to 1.5 times the IQR (75th percentile - 25th percentile). All values larger or smaller than these tails are often considered to be outliers. However, be very careful when dealing with outliers. We will discuss this more during the semester."
+  },
+  {
+    "objectID": "slides/04-class.html#identifying-relationships-in-your-data",
+    "href": "slides/04-class.html#identifying-relationships-in-your-data",
+    "title": "GVPT Maths Boot Camp",
+    "section": "Identifying relationships in your data",
+    "text": "Identifying relationships in your data\nDoes one variable tend to move in the same direction as another?\n\nggplot(gapminder, aes(x = log(gdpPercap), y = lifeExp)) + \n  geom_point() + \n  theme_minimal()"
+  },
+  {
+    "objectID": "slides/04-class.html#the-five-number-summary",
+    "href": "slides/04-class.html#the-five-number-summary",
+    "title": "GVPT Maths Boot Camp",
+    "section": "The Five Number Summary",
+    "text": "The Five Number Summary\nThe five number summary is a useful way to summarise numeric data. Consists of the:\n\nMinimum\n25th percentile,\n50th percentile (mean or average),\n75th percentile\nMaximum"
+  },
+  {
+    "objectID": "slides/04-class.html#visualising-the-five-number-summary",
+    "href": "slides/04-class.html#visualising-the-five-number-summary",
+    "title": "GVPT Maths Boot Camp",
+    "section": "Visualising the Five Number Summary",
+    "text": "Visualising the Five Number Summary\n\nlibrary(ggplot2)\n\nggplot(gapminder, aes(y = lifeExp)) + \n  geom_boxplot() + \n  theme_minimal()"
+  },
+  {
+    "objectID": "slides/04-class.html#visualising-the-iqr-for-groups",
+    "href": "slides/04-class.html#visualising-the-iqr-for-groups",
+    "title": "GVPT Maths Boot Camp",
+    "section": "Visualising the IQR for groups",
+    "text": "Visualising the IQR for groups\n\nlibrary(ggplot2)\n\nggplot(gapminder, aes(x = continent, y = lifeExp)) + \n  geom_boxplot() + \n  theme_minimal()"
+  },
+  {
+    "objectID": "slides/04-class.html#a-preview-of-linear-regression",
+    "href": "slides/04-class.html#a-preview-of-linear-regression",
+    "title": "GVPT Maths Boot Camp",
+    "section": "A preview of linear regression",
+    "text": "A preview of linear regression"
+  },
+  {
+    "objectID": "slides/04-class.html#there-has-to-be-an-easier-way",
+    "href": "slides/04-class.html#there-has-to-be-an-easier-way",
+    "title": "GVPT Maths Boot Camp",
+    "section": "There has to be an easier way!",
+    "text": "There has to be an easier way!\nA quick look with glimpse():\n\nglimpse(gapminder)\n\nA quick summary with skim():\n\ninstall.packages(\"skimr\")\n\nskimr::skim(gapminder)\n\n\n\nYou can access functions and data sets from packages without loading the package using package::function. For example, gapminder::gapminder."
+  },
+  {
+    "objectID": "slides/04-class.html#summary",
+    "href": "slides/04-class.html#summary",
+    "title": "GVPT Maths Boot Camp",
+    "section": "Summary",
+    "text": "Summary\nToday you:\n\nLearnt how to explore and visualise interesting relations in your data\nUsed your new data science tools to better understand your data"
+  },
+  {
+    "objectID": "content/04-content.html",
+    "href": "content/04-content.html",
+    "title": "Exploratory Data Analysis",
+    "section": "",
+    "text": "Exploratory Data Analysis chapter in Hadley Wickham’s R4DS"
   }
 ]

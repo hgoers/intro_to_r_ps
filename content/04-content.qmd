@@ -1,0 +1,17 @@
+---
+title: "Exploratory Data Analysis"
+---
+
+## Readings
+
+### For this session
+
+{{< fa book >}} [Exploratory Data Analysis chapter](https://r4ds.had.co.nz/exploratory-data-analysis.html) in Hadley Wickham's *R4DS*
+
+## Slides
+
+```{=html}
+<iframe class="slide-deck" src="../_site/slides/04-class.html" width = "100%" height = 600px></iframe>
+```
+
+## In-class
