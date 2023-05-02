@@ -52,6 +52,38 @@ install.packages("tidyverse")
 library(tidyverse)
 ```
 
+## Your first GitHub repository
+
+*Version control and collaboration*
+
+1.  Create a repository in GitHub for this course
+2.  Link your new repository to a new RStudio project
+3.  Set relevant folders to help organise your work
+4.  Create a script for today
+5.  Push it all up to your GitHub repo
+
+::: aside
+For later reference, head to Jenny Bryan's [*New project, GitHub first chapter*](https://happygitwithr.com/new-github-first.html) in Happy Git with R. 
+:::
+
+## RStudio Projects
+
+*For your sanity's sake, for your co-author's sanity's sake*
+
+<br>
+
+Keeps everything:
+
+-   Organised
+
+-   Reproducible
+
+-   Sustainable
+
+::: aside
+For later reference, head to Hadley Wickham's [*Workflow: projects* chapter](https://r4ds.had.co.nz/workflow-projects.html#workflow-projects) in R4DS.
+:::
+
 ## Data visualisation
 
 From [R4DS - Data Visualization](https://r4ds.had.co.nz/data-visualisation.html):

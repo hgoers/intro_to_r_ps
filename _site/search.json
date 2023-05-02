@@ -908,5 +908,19 @@
     "title": "Exploratory Data Analysis",
     "section": "",
     "text": "Exploratory Data Analysis chapter in Hadley Wickham’s R4DS"
+  },
+  {
+    "objectID": "slides/02-class.html#your-first-github-repository",
+    "href": "slides/02-class.html#your-first-github-repository",
+    "title": "GVPT Maths Boot Camp",
+    "section": "Your first GitHub repository",
+    "text": "Your first GitHub repository\nVersion control and collaboration\n\nCreate a repository in GitHub for this course\nLink your new repository to a new RStudio project\nSet relevant folders to help organise your work\nCreate a script for today\nPush it all up to your GitHub repo\n\n\n\nFor later reference, head to Jenny Bryan’s New project, GitHub first chapter in Happy Git with R."
+  },
+  {
+    "objectID": "slides/02-class.html#rstudio-projects",
+    "href": "slides/02-class.html#rstudio-projects",
+    "title": "GVPT Maths Boot Camp",
+    "section": "RStudio Projects",
+    "text": "RStudio Projects\nFor your sanity’s sake, for your co-author’s sanity’s sake\n\nKeeps everything:\n\nOrganised\nReproducible\nSustainable\n\n\n\nFor later reference, head to Hadley Wickham’s Workflow: projects chapter in R4DS."
   }
 ]
