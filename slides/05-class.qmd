@@ -1,0 +1,322 @@
+---
+title: "GVPT Maths Boot Camp"
+subtitle: "Data Wrangling"
+format: 
+  revealjs:
+    slide-number: true
+    preview-links: auto
+    theme: solarized
+    embed-resources: true
+---
+
+## Learning objectives
+
+1.    Import your data
+
+2.    Clean your data
+
+3.    Explore relational data
+
+## Data wrangling
+
+![Source: [R4DS](https://r4ds.had.co.nz/wrangle-intro.html)](img/data-science-wrangle.png){fig-align="center"}
+
+## World Bank GDP data
+
+*https://data.worldbank.org/indicator/NY.GDP.MKTP.CD*
+
+-   Official source of global and historical GDP data
+
+-   A very common control variable for IR and CP analysis
+
+-   Very frustratingly messy!
+
+## Download global GDP data
+
+![Source: [World Bank](https://data.worldbank.org/indicator/NY.GDP.MKTP.CD)](img/wb-gdp.png){fig-align="center"}
+
+::: aside
+Later, we will discuss how to access this and other data programmatically. 
+:::
+
+## Working with external data
+
+Introducing `here::here()`
+
+```{r}
+#| eval: false
+#| echo: true
+
+install.packages("here")
+```
+
+Points to where you are on *your* computer. Updates for everyone on any computer!
+
+```{r}
+#| echo: true
+
+here::here()
+```
+
+::: aside
+Package documentation: https://here.r-lib.org/
+:::
+
+## Reading in your csv
+
+```{r}
+#| echo: true
+#| message: false
+#| warning: false
+
+library(tidyverse)
+
+gdp_raw <- read_csv(here::here("slides", "data-raw", "wb_gdp.csv"))
+
+head(gdp_raw)
+```
+
+<br>
+
+## EXERCISES
+
+1.    Read the `?read_csv` help file. What arguments does this function take? 
+
+2.    Head to the [`readr` package documentation](https://readr.tidyverse.org/) and find what other file types you can read in. 
+
+## Skipping non-relevant rows
+
+![Source: [World Bank](https://data.worldbank.org/indicator/NY.GDP.MKTP.CD)](img/wb-snap.png){fig-align="center"}
+
+## Skipping non-relevant rows
+
+```{r}
+#| echo: true
+#| message: false
+#| warning: false
+
+gdp_raw <- read_csv(here::here("slides", "data-raw", "wb_gdp.csv"), skip = 4, col_select = 1:66)
+
+head(gdp_raw)
+```
+
+## Take a look at your data
+
+Taking a look at this data set:
+
+```{r}
+#| eval: false
+#| echo: true
+
+skimr::skim(gdp_raw)
+```
+
+<br>
+
+What types of data do we have? Are they the right type of data?
+
+<br>
+
+Are we missing data points? 
+
+## Tidy Data Structures
+
+![Source: [R4DS](https://r4ds.had.co.nz/tidy-data.html#tidy-data-1)](img/tidy-1.png){fig-align="center"}
+
+## Tidying World Bank data
+
+What do you want to do with your data? 
+
+-   I want to analyse country, regional, and global trends in GDP over time
+
+What I need: 
+
+-   Annual data on each country's GDP
+
+-   The region to which each country belongs
+
+## Tidying World Bank data
+
+To do: 
+
+-   Move the yearly data from columns to rows
+
+-   Clean up these column names so that they are easier to use in R
+
+-   Add regional data
+
+## Pivoting your data
+
+```{r}
+#| echo: true
+
+gdp_df <- pivot_longer(
+  data = gdp_raw, 
+  cols = `1960`:`2021`,
+  names_to = "year",
+  values_to = "gdp"
+)
+```
+
+<br>
+
+:::: {.columns}
+
+::: {.column width="50%"}
+```{r}
+#| echo: true
+
+colnames(gdp_raw)
+```
+:::
+
+::: {.column width="50%"}
+```{r}
+#| echo: true
+
+colnames(gdp_df)
+```
+:::
+
+::::
+
+## Clean column names
+
+Column names should not:
+
+-   Have spaces
+
+-   Start with numbers
+
+Introducing [`janitor`](https://www.rdocumentation.org/packages/janitor/versions/2.2.0):
+
+```{r}
+#| eval: false
+#| echo: true
+
+# Install the `janitor` package
+
+install.packages("janitor")
+```
+
+
+```{r}
+#| echo: true
+
+gdp_df <- janitor::clean_names(gdp_df)
+
+colnames(gdp_df)
+```
+
+## Add region data
+
+Introducing the `countrycode` package - the indispensable workhorse of country data: 
+
+```{r}
+#| eval: false
+#| echo: true
+
+# Install the `countrycode` package
+
+install.packages("countrycode")
+```
+
+<br>
+
+```{r}
+#| echo: true
+
+library(countrycode)
+
+# Add each country's World Bank region to the data set
+
+gdp_df <- gdp_df |> 
+  mutate(region = countrycode(country_name, "country.name", "region", custom_match = c("Turkiye" = "Europe & Central Asia"))) |> 
+  # Remove observations that are regions, eg. "East Asia & Pacific" or "World"
+  drop_na(region) |> 
+  relocate(region, .after = "country_code")
+```
+
+## Add region data
+
+```{r}
+#| echo: true
+
+gdp_df |> 
+  distinct(country_name, region) |> 
+  head(10)
+```
+
+## Make sure all data are the right type
+
+```{r}
+#| echo: true
+
+glimpse(gdp_df)
+```
+
+## Make sure all data are the right type
+
+```{r}
+#| echo: true
+
+gdp_df <- transmute(
+  gdp_df,
+  country_name, 
+  region, 
+  year = as.integer(year),
+  gdp
+)
+
+glimpse(gdp_df)
+```
+
+## How do countries compare over time? 
+
+```{r}
+#| echo: true
+
+ggplot(gdp_df, aes(
+  x = year, y = gdp, colour = region, group = country_name
+)) + 
+  geom_line() + 
+  theme_minimal()
+```
+
+## How do regions compare over time? 
+
+By default, R will carry forward `NA`s. This is good! 
+
+```{r}
+#| echo: true
+
+gdp_df |> 
+  group_by(region, year) |> 
+  summarise(avg_gdp = mean(gdp)) |> 
+  ggplot(aes(x = year, y = avg_gdp, colour = region)) + 
+  geom_line() + 
+  theme_minimal()
+```
+
+## Dealing with missing data
+
+```{r}
+gdp_df |> 
+  group_by(region, year) |> 
+  summarise(avg_gdp = mean(gdp, na.rm = T)) |> 
+  ggplot(aes(x = year, y = avg_gdp, colour = region)) + 
+  geom_line() + 
+  theme_minimal()
+```
+
+::: aside
+You usually won't want to drop all `NA`s without interrogating why they are there. We will discuss how to handle missing data during the semester.
+:::
+
+## Summary
+
+Today you:
+
+-   Learnt how to read in external data
+
+-   Learnt how to clean common data problems using R

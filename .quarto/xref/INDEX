@@ -13,5 +13,29 @@
   },
   "slides/01-class.qmd": {
     "01-class.html": "64723f02"
+  },
+  "content/02-content.qmd": {
+    "02-content.html": "ed06453e"
+  },
+  "slides/02-class.qmd": {
+    "02-class.html": "ff825356"
+  },
+  "slides/03-class.qmd": {
+    "03-class.html": "09b44203"
+  },
+  "content/03-content.qmd": {
+    "03-content.html": "6df748a6"
+  },
+  "content/04-content.qmd": {
+    "04-content.html": "15893577"
+  },
+  "slides/04-class.qmd": {
+    "04-class.html": "110b42b7"
+  },
+  "content/05-content.qmd": {
+    "05-content.html": "37d42f86"
+  },
+  "slides/05-class.qmd": {
+    "05-class.html": "2ae7ea6e"
   }
 }

@@ -11,19 +11,19 @@ format:
 
 ## Learning objectives
 
-1.    Learn how to generate questions about your data
+1.  Learn how to generate questions about your data
 
-2.    Learn how to discern interesting relations in your data
+2.  Learn how to discern interesting relations in your data
 
-3.    Use your new data science tools to better understand your data
+3.  Use your new data science tools to better understand your data
 
 ## Two basic questions to guide your EDA
 
-1.    What type of variation occurs within my variables?
+1.  What type of variation occurs within my variables?
 
 <br>
 
-2.    What type of covariation occurs between my variables?
+2.  What type of covariation occurs between my variables?
 
 ## Examining `gapminder`
 
@@ -38,7 +38,7 @@ head(gapminder)
 
 ## Variation: Factors
 
-How many countries are there in our data set? 
+How many countries are there in our data set?
 
 ```{r}
 #| echo: true
@@ -48,7 +48,7 @@ gapminder |>
   nrow()
 ```
 
-How many continents? 
+How many continents?
 
 ```{r}
 #| echo: true
@@ -70,7 +70,7 @@ What is the earliest and latest year we cover?
 summarise(gapminder, min(year), max(year))
 ```
 
-What about our other numeric variables? 
+What about our other numeric variables?
 
 ```{r}
 #| echo: true
@@ -80,7 +80,7 @@ summarise(gapminder, across(lifeExp:gdpPercap, ~ quantile(.x)))
 
 ## The Five Number Summary
 
-The *five number summary* is a useful way to summarise numeric data. Consists of the: 
+The *five number summary* is a useful way to summarise numeric data. Consists of the:
 
 -   Minimum
 
@@ -189,14 +189,12 @@ ggplot(gapminder, aes(x = gdpPercap)) +
 ```
 
 ::: aside
-
 The tails (or whiskers) are equal to 1.5 times the IQR (75th percentile - 25th percentile). All values larger or smaller than these tails are often considered to be outliers. However, *be very careful when dealing with outliers*. We will discuss this more during the semester.
-
 :::
 
 ## Identifying relationships in your data
 
-Does one variable tend to move in the same direction as another? 
+Does one variable tend to move in the same direction as another?
 
 ```{r}
 #| echo: true
@@ -218,7 +216,7 @@ ggplot(gapminder, aes(x = log(gdpPercap), y = lifeExp)) +
 
 ## There has to be an easier way!
 
-A quick look with `glimpse()`: 
+A quick look with `glimpse()`:
 
 ```{r}
 #| eval: false
@@ -239,14 +237,13 @@ skimr::skim(gapminder)
 ```
 
 ::: aside
-You can access functions and data sets from packages without loading the package using `package::function`. For example, `gapminder::gapminder`. 
+You can access functions and data sets from packages without loading the package using `package::function`. For example, `gapminder::gapminder`.
 :::
-
 
 ## Summary
 
-Today you: 
+Today you:
 
-1.    Learnt how to explore and visualise interesting relations in your data
+1.  Learnt how to explore and visualise interesting relations in your data
 
-2.    Used your new data science tools to better understand your data
+2.  Used your new data science tools to better understand your data

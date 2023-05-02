@@ -63,7 +63,7 @@ library(tidyverse)
 5.  Push it all up to your GitHub repo
 
 ::: aside
-For later reference, head to Jenny Bryan's [*New project, GitHub first chapter*](https://happygitwithr.com/new-github-first.html) in Happy Git with R. 
+For later reference, head to Jenny Bryan's [*New project, GitHub first chapter*](https://happygitwithr.com/new-github-first.html) in Happy Git with R.
 :::
 
 ## RStudio Projects

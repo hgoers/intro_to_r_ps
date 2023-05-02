@@ -922,5 +922,215 @@
     "title": "GVPT Maths Boot Camp",
     "section": "RStudio Projects",
     "text": "RStudio Projects\nFor your sanity’s sake, for your co-author’s sanity’s sake\n\nKeeps everything:\n\nOrganised\nReproducible\nSustainable\n\n\n\nFor later reference, head to Hadley Wickham’s Workflow: projects chapter in R4DS."
+  },
+  {
+    "objectID": "content/05-content.html#slides",
+    "href": "content/05-content.html#slides",
+    "title": "Data Wrangling",
+    "section": "Slides",
+    "text": "Slides"
+  },
+  {
+    "objectID": "content/05-content.html#in-class",
+    "href": "content/05-content.html#in-class",
+    "title": "Data Wrangling",
+    "section": "In-class",
+    "text": "In-class"
+  },
+  {
+    "objectID": "content/05-content.html",
+    "href": "content/05-content.html",
+    "title": "Data Wrangling",
+    "section": "",
+    "text": "Wrangle section in Hadley Wickham’s R4DS"
+  },
+  {
+    "objectID": "slides/05-class.html#learning-objectives",
+    "href": "slides/05-class.html#learning-objectives",
+    "title": "GVPT Maths Boot Camp",
+    "section": "Learning objectives",
+    "text": "Learning objectives\n\nImport your data\nClean your data\nExplore relational data"
+  },
+  {
+    "objectID": "slides/05-class.html#data-wrangling",
+    "href": "slides/05-class.html#data-wrangling",
+    "title": "GVPT Maths Boot Camp",
+    "section": "Data wrangling",
+    "text": "Data wrangling\n\nSource: R4DS"
+  },
+  {
+    "objectID": "slides/05-class.html#ucpdprio-armed-conflict-data",
+    "href": "slides/05-class.html#ucpdprio-armed-conflict-data",
+    "title": "GVPT Maths Boot Camp",
+    "section": "UCPD/PRIO Armed Conflict Data",
+    "text": "UCPD/PRIO Armed Conflict Data\nhttps://ucdp.uu.se/downloads/\n\nLeading source of global conflict data\nWidely used in conflict research\nVery, frustratingly messy!"
+  },
+  {
+    "objectID": "slides/05-class.html#download-the-yearly-conflict-data-set",
+    "href": "slides/05-class.html#download-the-yearly-conflict-data-set",
+    "title": "GVPT Maths Boot Camp",
+    "section": "Download the yearly conflict data set",
+    "text": "Download the yearly conflict data set\n\nSource: UCDP/PRIO"
+  },
+  {
+    "objectID": "slides/05-class.html#working-with-external-data",
+    "href": "slides/05-class.html#working-with-external-data",
+    "title": "GVPT Maths Boot Camp",
+    "section": "Working with external data",
+    "text": "Working with external data\nIntroducing here::here()\n\ninstall.packages(\"here\")\n\nPoints to where you are on your computer. Updates for everyone on any computer!\n\nhere::here()\n\n[1] \"/Users/harrietgoers/Documents/intro_to_r_ps\"\n\n\n\n\nPackage documentation: https://here.r-lib.org/"
+  },
+  {
+    "objectID": "slides/05-class.html#reading-in-your-csv",
+    "href": "slides/05-class.html#reading-in-your-csv",
+    "title": "GVPT Maths Boot Camp",
+    "section": "Reading in your csv",
+    "text": "Reading in your csv\n\nlibrary(tidyverse)\n\ngdp_raw <- read_csv(here::here(\"slides\", \"data-raw\", \"wb_gdp.csv\"))\n\nhead(gdp_raw)\n\n# A tibble: 6 × 3\n  `Data Source`               `World Development Indicators` ...3               \n  <chr>                       <chr>                          <chr>              \n1 Last Updated Date           2023-03-01                      <NA>              \n2 Country Name                Country Code                   \"Indicator Name,In…\n3 Aruba                       ABW                            \"GDP (current US$)…\n4 Africa Eastern and Southern AFE                            \"GDP (current US$)…\n5 Afghanistan                 AFG                            \"GDP (current US$)…\n6 Africa Western and Central  AFW                            \"GDP (current US$)…"
+  },
+  {
+    "objectID": "slides/05-class.html#reading-in-most-rectangular-data",
+    "href": "slides/05-class.html#reading-in-most-rectangular-data",
+    "title": "GVPT Maths Boot Camp",
+    "section": "Reading in most rectangular data",
+    "text": "Reading in most rectangular data\n\n# Install the `rio` package\n\ninstall.packages(\"rio\")\n\n\n\nlibrary(rio)\n\ngdp_raw <- import(here::here(\"slides\", \"data-raw\", \"wb_gdp.csv\"), skip = 4)\n\ndim(gdp_raw)\n\n[1] 267  67\n\n\n\n\nPackage documentation can be found here."
+  },
+  {
+    "objectID": "slides/05-class.html#exercise",
+    "href": "slides/05-class.html#exercise",
+    "title": "GVPT Maths Boot Camp",
+    "section": "EXERCISE",
+    "text": "EXERCISE\n\nRead the ?read_csv help file. What arguments does this function take?\nHead to the readr package documentation and find what other file types you can read in."
+  },
+  {
+    "objectID": "slides/05-class.html#exercises",
+    "href": "slides/05-class.html#exercises",
+    "title": "GVPT Maths Boot Camp",
+    "section": "EXERCISES",
+    "text": "EXERCISES\n\nRead the ?read_csv help file. What arguments does this function take?\nHead to the readr package documentation and find what other file types you can read in."
+  },
+  {
+    "objectID": "slides/05-class.html#take-a-look-at-your-data",
+    "href": "slides/05-class.html#take-a-look-at-your-data",
+    "title": "GVPT Maths Boot Camp",
+    "section": "Take a look at your data",
+    "text": "Take a look at your data\nTaking a look at this data set:\n\nskimr::skim(gdp_raw)\n\n\nWhat types of data do we have? Are they the right type of data?\n\nAre we missing data points?"
+  },
+  {
+    "objectID": "slides/05-class.html#tidy-data-structures",
+    "href": "slides/05-class.html#tidy-data-structures",
+    "title": "GVPT Maths Boot Camp",
+    "section": "Tidy Data Structures",
+    "text": "Tidy Data Structures\n\nSource: R4DS"
+  },
+  {
+    "objectID": "slides/05-class.html#world-bank-gdp-data",
+    "href": "slides/05-class.html#world-bank-gdp-data",
+    "title": "GVPT Maths Boot Camp",
+    "section": "World Bank GDP data",
+    "text": "World Bank GDP data\nhttps://data.worldbank.org/indicator/NY.GDP.MKTP.CD\n\nOfficial source of global and historical GDP data\nA very common control variable for IR and CP analysis\nVery frustratingly messy!"
+  },
+  {
+    "objectID": "slides/05-class.html#download-global-gdp-data",
+    "href": "slides/05-class.html#download-global-gdp-data",
+    "title": "GVPT Maths Boot Camp",
+    "section": "Download global GDP data",
+    "text": "Download global GDP data\n\n\n\nSource: World Bank\n\n\n\n\nLater, we will discuss how to access this and other data programmatically."
+  },
+  {
+    "objectID": "slides/05-class.html#skipping-non-relevant-rows",
+    "href": "slides/05-class.html#skipping-non-relevant-rows",
+    "title": "GVPT Maths Boot Camp",
+    "section": "Skipping non-relevant rows",
+    "text": "Skipping non-relevant rows\n\nSource: World Bank"
+  },
+  {
+    "objectID": "slides/05-class.html#skipping-non-relevant-rows-1",
+    "href": "slides/05-class.html#skipping-non-relevant-rows-1",
+    "title": "GVPT Maths Boot Camp",
+    "section": "Skipping non-relevant rows",
+    "text": "Skipping non-relevant rows\n\ngdp_raw <- read_csv(here::here(\"slides\", \"data-raw\", \"wb_gdp.csv\"), skip = 4, col_select = 1:66)\n\nhead(gdp_raw)\n\n# A tibble: 6 × 66\n  Country…¹ Count…² Indic…³ Indic…⁴   `1960`   `1961`   `1962`   `1963`   `1964`\n  <chr>     <chr>   <chr>   <chr>      <dbl>    <dbl>    <dbl>    <dbl>    <dbl>\n1 Aruba     ABW     GDP (c… NY.GDP… NA       NA       NA       NA       NA      \n2 Africa E… AFE     GDP (c… NY.GDP…  2.13e10  2.18e10  2.37e10  2.82e10  2.61e10\n3 Afghanis… AFG     GDP (c… NY.GDP…  5.38e 8  5.49e 8  5.47e 8  7.51e 8  8.00e 8\n4 Africa W… AFW     GDP (c… NY.GDP…  1.04e10  1.11e10  1.19e10  1.27e10  1.38e10\n5 Angola    AGO     GDP (c… NY.GDP… NA       NA       NA       NA       NA      \n6 Albania   ALB     GDP (c… NY.GDP… NA       NA       NA       NA       NA      \n# … with 57 more variables: `1965` <dbl>, `1966` <dbl>, `1967` <dbl>,\n#   `1968` <dbl>, `1969` <dbl>, `1970` <dbl>, `1971` <dbl>, `1972` <dbl>,\n#   `1973` <dbl>, `1974` <dbl>, `1975` <dbl>, `1976` <dbl>, `1977` <dbl>,\n#   `1978` <dbl>, `1979` <dbl>, `1980` <dbl>, `1981` <dbl>, `1982` <dbl>,\n#   `1983` <dbl>, `1984` <dbl>, `1985` <dbl>, `1986` <dbl>, `1987` <dbl>,\n#   `1988` <dbl>, `1989` <dbl>, `1990` <dbl>, `1991` <dbl>, `1992` <dbl>,\n#   `1993` <dbl>, `1994` <dbl>, `1995` <dbl>, `1996` <dbl>, `1997` <dbl>, …"
+  },
+  {
+    "objectID": "slides/05-class.html#tidying-world-bank-data",
+    "href": "slides/05-class.html#tidying-world-bank-data",
+    "title": "GVPT Maths Boot Camp",
+    "section": "Tidying World Bank data",
+    "text": "Tidying World Bank data\nWhat do you want to do with your data?\n\nI want to analyse country, regional, and global trends in GDP over time\n\nWhat I need:\n\nAnnual data on each country’s GDP\nThe region to which each country belongs"
+  },
+  {
+    "objectID": "slides/05-class.html#pivoting-your-data",
+    "href": "slides/05-class.html#pivoting-your-data",
+    "title": "GVPT Maths Boot Camp",
+    "section": "Pivoting your data",
+    "text": "Pivoting your data\n\ngdp_df <- pivot_longer(\n  data = gdp_raw, \n  cols = `1960`:`2021`,\n  names_to = \"year\",\n  values_to = \"gdp\"\n)\n\n\n\n\n\ncolnames(gdp_raw)\n\n [1] \"Country Name\"   \"Country Code\"   \"Indicator Name\" \"Indicator Code\"\n [5] \"1960\"           \"1961\"           \"1962\"           \"1963\"          \n [9] \"1964\"           \"1965\"           \"1966\"           \"1967\"          \n[13] \"1968\"           \"1969\"           \"1970\"           \"1971\"          \n[17] \"1972\"           \"1973\"           \"1974\"           \"1975\"          \n[21] \"1976\"           \"1977\"           \"1978\"           \"1979\"          \n[25] \"1980\"           \"1981\"           \"1982\"           \"1983\"          \n[29] \"1984\"           \"1985\"           \"1986\"           \"1987\"          \n[33] \"1988\"           \"1989\"           \"1990\"           \"1991\"          \n[37] \"1992\"           \"1993\"           \"1994\"           \"1995\"          \n[41] \"1996\"           \"1997\"           \"1998\"           \"1999\"          \n[45] \"2000\"           \"2001\"           \"2002\"           \"2003\"          \n[49] \"2004\"           \"2005\"           \"2006\"           \"2007\"          \n[53] \"2008\"           \"2009\"           \"2010\"           \"2011\"          \n[57] \"2012\"           \"2013\"           \"2014\"           \"2015\"          \n[61] \"2016\"           \"2017\"           \"2018\"           \"2019\"          \n[65] \"2020\"           \"2021\"          \n\n\n\n\ncolnames(gdp_df)\n\n[1] \"Country Name\"   \"Country Code\"   \"Indicator Name\" \"Indicator Code\"\n[5] \"year\"           \"gdp\""
+  },
+  {
+    "objectID": "slides/05-class.html#tidying-world-bank-data-1",
+    "href": "slides/05-class.html#tidying-world-bank-data-1",
+    "title": "GVPT Maths Boot Camp",
+    "section": "Tidying World Bank data",
+    "text": "Tidying World Bank data\nTo do:\n\nMove the yearly data from columns to rows\nClean up these column names so that they are easier to use in R\nAdd regional data"
+  },
+  {
+    "objectID": "slides/05-class.html#clean-column-names",
+    "href": "slides/05-class.html#clean-column-names",
+    "title": "GVPT Maths Boot Camp",
+    "section": "Clean column names",
+    "text": "Clean column names\nColumn names should not:\n\nHave spaces\nStart with numbers\n\nIntroducing janitor:\n\n# Install the `janitor` package\n\ninstall.packages(\"janitor\")\n\n\ngdp_df <- janitor::clean_names(gdp_df)\n\ncolnames(gdp_df)\n\n[1] \"country_name\"   \"country_code\"   \"indicator_name\" \"indicator_code\"\n[5] \"year\"           \"gdp\""
+  },
+  {
+    "objectID": "slides/05-class.html#add-region-data",
+    "href": "slides/05-class.html#add-region-data",
+    "title": "GVPT Maths Boot Camp",
+    "section": "Add region data",
+    "text": "Add region data\nIntroducing the countrycode package - the indispensable workhorse of country data:\n\n# Install the `countrycode` package\n\ninstall.packages(\"countrycode\")\n\n\n\nlibrary(countrycode)\n\n# Add each country's World Bank region to the data set\n\ngdp_df <- gdp_df |> \n  mutate(region = countrycode(country_name, \"country.name\", \"region\", custom_match = c(\"Turkiye\" = \"Europe & Central Asia\"))) |> \n  # Remove observations that are regions, eg. \"East Asia & Pacific\" or \"World\"\n  drop_na(region) |> \n  relocate(region, .after = \"country_code\")"
+  },
+  {
+    "objectID": "slides/05-class.html#add-region-data-1",
+    "href": "slides/05-class.html#add-region-data-1",
+    "title": "GVPT Maths Boot Camp",
+    "section": "Add region data",
+    "text": "Add region data\n\ngdp_df |> \n  distinct(country_name, region) |> \n  head(10)\n\n# A tibble: 10 × 2\n   country_name         region                    \n   <chr>                <chr>                     \n 1 Aruba                Latin America & Caribbean \n 2 Afghanistan          South Asia                \n 3 Angola               Sub-Saharan Africa        \n 4 Albania              Europe & Central Asia     \n 5 Andorra              Europe & Central Asia     \n 6 United Arab Emirates Middle East & North Africa\n 7 Argentina            Latin America & Caribbean \n 8 Armenia              Europe & Central Asia     \n 9 American Samoa       East Asia & Pacific       \n10 Antigua and Barbuda  Latin America & Caribbean"
+  },
+  {
+    "objectID": "slides/05-class.html#make-sure-all-data-are-the-right-type",
+    "href": "slides/05-class.html#make-sure-all-data-are-the-right-type",
+    "title": "GVPT Maths Boot Camp",
+    "section": "Make sure all data are the right type",
+    "text": "Make sure all data are the right type\n\nglimpse(gdp_df)\n\nRows: 13,454\nColumns: 7\n$ country_name   <chr> \"Aruba\", \"Aruba\", \"Aruba\", \"Aruba\", \"Aruba\", \"Aruba\", \"…\n$ country_code   <chr> \"ABW\", \"ABW\", \"ABW\", \"ABW\", \"ABW\", \"ABW\", \"ABW\", \"ABW\",…\n$ region         <chr> \"Latin America & Caribbean\", \"Latin America & Caribbean…\n$ indicator_name <chr> \"GDP (current US$)\", \"GDP (current US$)\", \"GDP (current…\n$ indicator_code <chr> \"NY.GDP.MKTP.CD\", \"NY.GDP.MKTP.CD\", \"NY.GDP.MKTP.CD\", \"…\n$ year           <chr> \"1960\", \"1961\", \"1962\", \"1963\", \"1964\", \"1965\", \"1966\",…\n$ gdp            <dbl> NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA,…"
+  },
+  {
+    "objectID": "slides/05-class.html#make-sure-all-data-are-the-right-type-1",
+    "href": "slides/05-class.html#make-sure-all-data-are-the-right-type-1",
+    "title": "GVPT Maths Boot Camp",
+    "section": "Make sure all data are the right type",
+    "text": "Make sure all data are the right type\n\ngdp_df <- transmute(\n  gdp_df,\n  country_name, \n  region, \n  year = as.integer(year),\n  gdp\n)\n\nglimpse(gdp_df)\n\nRows: 13,454\nColumns: 4\n$ country_name <chr> \"Aruba\", \"Aruba\", \"Aruba\", \"Aruba\", \"Aruba\", \"Aruba\", \"Ar…\n$ region       <chr> \"Latin America & Caribbean\", \"Latin America & Caribbean\",…\n$ year         <int> 1960, 1961, 1962, 1963, 1964, 1965, 1966, 1967, 1968, 196…\n$ gdp          <dbl> NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, N…"
+  },
+  {
+    "objectID": "slides/05-class.html#how-do-countries-compare-over-time",
+    "href": "slides/05-class.html#how-do-countries-compare-over-time",
+    "title": "GVPT Maths Boot Camp",
+    "section": "How do countries compare over time?",
+    "text": "How do countries compare over time?\n\nggplot(gdp_df, aes(\n  x = year, y = gdp, colour = region, group = country_name\n)) + \n  geom_line() + \n  theme_minimal()"
+  },
+  {
+    "objectID": "slides/05-class.html#how-do-regions-compare-over-time",
+    "href": "slides/05-class.html#how-do-regions-compare-over-time",
+    "title": "GVPT Maths Boot Camp",
+    "section": "How do regions compare over time?",
+    "text": "How do regions compare over time?\nBy default, R will carry forward NAs. This is good!\n\ngdp_df |> \n  group_by(region, year) |> \n  summarise(avg_gdp = mean(gdp)) |> \n  ggplot(aes(x = year, y = avg_gdp, colour = region)) + \n  geom_line() + \n  theme_minimal()"
+  },
+  {
+    "objectID": "slides/05-class.html#dealing-with-missing-data",
+    "href": "slides/05-class.html#dealing-with-missing-data",
+    "title": "GVPT Maths Boot Camp",
+    "section": "Dealing with missing data",
+    "text": "Dealing with missing data\n\n\n\n\n\n\n\nYou usually won’t want to drop all NAs without interrogating why they are there. We will discuss how to handle missing data during the semester."
+  },
+  {
+    "objectID": "slides/05-class.html#summary",
+    "href": "slides/05-class.html#summary",
+    "title": "GVPT Maths Boot Camp",
+    "section": "Summary",
+    "text": "Summary\nToday you:\n\nLearnt how to read in external data\nLearnt how to clean common data problems using R"
   }
 ]
