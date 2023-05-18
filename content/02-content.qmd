@@ -13,10 +13,11 @@ author: "Harriet Goers"
 
 {{< fa book >}} Kieran Healy's [*Data Visualization: A Practical Guide*](https://socviz.co/)
 
+{{< fa book >}} Claus O. Wilke's [Fundamentals of Data Visualization](https://clauswilke.com/dataviz/)
+
 ## Slides
 
 ```{=html}
 <iframe class="slide-deck" src="../_site/slides/02-class.html" width = "100%" height = 600px></iframe>
 ```
-
 ## In-class
