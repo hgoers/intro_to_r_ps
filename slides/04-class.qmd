@@ -1,25 +1,23 @@
 ---
 title: "GVPT Maths Camp"
-subtitle: "Exploratory Data Analysis"
+subtitle: "Data Wrangling and Github"
 format: 
   revealjs:
     slide-number: true
     preview-links: auto
     theme: solarized
     embed-resources: true
-execute: 
-  echo: true
 ---
 
 ## Learning objectives
 
-1.  Learn how to answer basic questions about your data
+1.  Import your data
 
-2.  Learn how to identify interesting relationships in your data
+2.  Clean your data
 
-3.  Use your new data science tools to better understand your data
+3.  Explore relational data
 
-4.  Upload your scripts to Github
+4.  Start to manage your scripts with Github
 
 ## A familiar problem
 
@@ -39,33 +37,27 @@ execute:
 
 ## Git and Github
 
-:::: {.columns}
-
+::: columns
 ::: {.column width="50%"}
-
-### <img src="https://git-scm.com/images/logos/downloads/Git-Logo-2Color.png" height="50px">
+### <img src="https://git-scm.com/images/logos/downloads/Git-Logo-2Color.png" height="50px"/>
 
 Open source **version control software.**
 
 <br>
 
 Think *R*.
-
 :::
 
 ::: {.column width="50%"}
-
-### <img src="https://raw.githubusercontent.com/annakrystalli/rrresearch/master/docs/assets/github_logo.jpg" height="50px">
+### <img src="https://raw.githubusercontent.com/annakrystalli/rrresearch/master/docs/assets/github_logo.jpg" height="50px"/>
 
 A [**website**](https://github.com/) that allows you to **store your Git repositories online** and makes it easy to collaborate with others.
 
 <br>
 
 Think *RStudio*.
-
 :::
-
-::::
+:::
 
 ## Why should I use Git and Github? `r emo::ji("thinking_face")`
 
@@ -77,27 +69,27 @@ Think *RStudio*.
 
 ## The basics
 
-Four verbs you need to know to use Git for version control: 
+Four verbs you need to know to use Git for version control:
 
-1.    `add`
+1.  `add`
 
-2.    `commit`
+2.  `commit`
 
-3.    `push`
+3.  `push`
 
-4.    `pull`
+4.  `pull`
 
 ## Using Git in RStudio
 
 Three different options:
 
-1.    RStudio GUI
+1.  RStudio GUI
 
-2.    Shell/terminal
+2.  Shell/terminal
 
-3.    Github desktop[^2]
+3.  Github desktop[^1]
 
-[^2]: We won't talk about this option, but it's great!
+[^1]: We won't talk about this option, but it's great!
 
 ## Repositories
 
@@ -135,9 +127,9 @@ Three different options:
 
 ## Sync your online repository with RStudio: existing R project
 
--   We already have R projects that we started yesterday. 
+-   We already have R projects that we started yesterday.
 
--   We can sync the existing R project with our new repository. 
+-   We can sync the existing R project with our new repository.
 
 ::: aside
 For future reference, head over to the [Existing project, GitHub first chapter](https://happygitwithr.com/existing-github-first.html#existing-github-first) of Happy Git with R.
@@ -145,7 +137,7 @@ For future reference, head over to the [Existing project, GitHub first chapter](
 
 ## Sync your online repository with RStudio: existing R project
 
-The `usethis` R package is a brilliant helper package. 
+The `usethis` R package is a brilliant helper package.
 
 ```{r}
 #| eval: false
@@ -165,13 +157,12 @@ usethis::create_from_github(
 ```
 
 ::: aside
-You can use functions directly (without loading the package in your session) using the following general rule: `package::function()`. This is useful when you only want to use one function from a package. 
+You can use functions directly (without loading the package in your session) using the following general rule: `package::function()`. This is useful when you only want to use one function from a package.
 :::
 
 ## RStudio GUI: Workflow
 
-::: {.panel-tabset}
-
+::: panel-tabset
 ## `pull`
 
 `pull` any changes made and stored in your Github repository before making your changes
@@ -195,13 +186,11 @@ You can use functions directly (without loading the package in your session) usi
 `push` those committed changes up to Github
 
 ![](img/gui_push.png){fig-align="center"}
-
 :::
 
 ## Shell/terminal: Workflow
 
-::: {.panel-tabset}
-
+::: panel-tabset
 ## `pull`
 
 `pull` any changes made and stored in your Github repository before making your changes
@@ -225,7 +214,6 @@ You can use functions directly (without loading the package in your session) usi
 `push` those committed changes up to Github
 
 ![](img/shell_push.png){fig-align="center"}
-
 :::
 
 ## Working with others
@@ -236,223 +224,350 @@ Github is like Google Docs for your code.
 
 ## EXERCISE {background-color="#B56576"}
 
-1.    Create a new Github repository for this camp. 
+1.  Create a new Github repository for this camp.
 
-2.    Sync your existing R project to this new repository.
+2.  Sync your existing R project to this new repository.
 
-3.    `add` your scripts from yesterday and today. 
+3.  `add` your scripts from yesterday and today.
 
-4.    Write a helpful `commit` message for your future self. 
+4.  Write a helpful `commit` message for your future self.
 
-5.    `push` your work up to Github. 
+5.  `push` your work up to Github.
 
-6.    Add me as a collaborator: `@hgoers`.
+6.  Add me as a collaborator: `@hgoers`.
 
-## Two basic questions to guide your EDA
+## Data wrangling
 
-**Exploratory data analysis** is a critical step in your quantitative research process. 
+![Source: [R4DS](https://r4ds.had.co.nz/wrangle-intro.html)](img/data-science-wrangle.png){fig-align="center"}
 
-1.  What type of variation occurs within my variables?
+## World Bank GDP data
 
-2.  What type of covariation occurs between my variables?
+*https://data.worldbank.org/indicator/NY.GDP.MKTP.CD*
 
-::: aside
-We will talk in detail about EDA during GVPT622. 
-:::
+-   Official source of global and historical GDP data
 
-## Examining `gapminder`
+-   A very common control variable for IR and CP analysis
+
+-   Very frustratingly messy!
+
+## Download global GDP data
+
+![Source: [World Bank](https://data.worldbank.org/indicator/NY.GDP.MKTP.CD)](img/wb-gdp.png){fig-align="center"}
+
+## Working with external data
+
+Introducing `here::here()`
 
 ```{r}
+#| eval: false
+#| echo: true
+
+install.packages("here")
+```
+
+<br>
+
+Points to where you are on *your* computer. Updates for everyone on any computer!
+
+```{r}
+#| echo: true
+
+here::here()
+```
+
+<br>
+
+EXERCISE: See where you are!
+
+::: aside
+Package documentation: https://here.r-lib.org/
+:::
+
+## Reading in your csv
+
+-   I like to store raw data in a folder called `data-raw` within my project.
+
+-   I then store any clean data that is ready for analysis in a `data` folder within my project.
+
+> You will start to see this structure throughout my scripts. You should come up with something that works for you. It should be intuitive. This will help future you and any other people who want to explore your work navigate your projects.
+
+## Reading in your csv
+
+```{r}
+#| echo: true
+#| message: false
+#| warning: false
+
 library(tidyverse)
-library(gapminder)
 
-head(gapminder)
+gdp_raw <- read_csv(here::here("slides", "data-raw", "wb_gdp.csv"))
+
+head(gdp_raw)
 ```
 
-## Variation
+<br>
 
-What is the earliest and latest year we cover?
+## EXERCISES
+
+1.  Read the `?read_csv` help file. What arguments does this function take?
+
+2.  Head to the [`readr` package documentation](https://readr.tidyverse.org/) and find what other file types you can read in.
+
+## Skipping non-relevant rows
+
+![Source: [World Bank](https://data.worldbank.org/indicator/NY.GDP.MKTP.CD)](img/wb-snap.png){fig-align="center"}
+
+## Skipping non-relevant rows
 
 ```{r}
 #| echo: true
+#| message: false
+#| warning: false
 
-summarise(gapminder, min(year), max(year))
+gdp_raw <- read_csv(
+  here::here("slides", "data-raw", "wb_gdp.csv"), skip = 4, col_select = 1:66
+)
+
+head(gdp_raw)
 ```
 
-What about our other numeric variables?
+## EXERCISES
 
-```{r}
-#| echo: true
-
-summarise(gapminder, across(lifeExp:gdpPercap, ~ quantile(.x)))
-```
-
-## The Five Number Summary
-
-The *five number summary* is a useful way to summarise numeric data. Consists of the:
-
--   Minimum,
-
--   25th percentile,
-
--   50th percentile (mean or average),
-
--   75th percentile,
-
--   Maximum
-
-## Visualising the Five Number Summary
-
-```{r}
-#| echo: true
-#| fig-align: center
-
-library(ggplot2)
-
-ggplot(gapminder, aes(y = lifeExp)) + 
-  geom_boxplot() + 
-  theme_minimal()
-```
-
-## Visualising the IQR for groups
-
-```{r}
-#| echo: true
-#| fig-align: center
-
-library(ggplot2)
-
-ggplot(gapminder, aes(x = continent, y = lifeExp)) + 
-  geom_boxplot() + 
-  theme_minimal()
-```
-
-## Visualising the distribution of numeric variables
-
-```{r}
-#| echo: true
-#| fig-align: center
-
-ggplot(gapminder, aes(x = lifeExp)) + 
-  geom_histogram() + 
-  theme_minimal()
-```
-
-## Visualising the distribution of numeric variables
-
-```{r}
-#| echo: true
-#| fig-align: center
-
-ggplot(gapminder, aes(x = lifeExp)) + 
-  geom_density() + 
-  theme_minimal()
-```
-
-## Visualising the distribution of numeric variables
-
-```{r}
-#| echo: true
-#| fig-align: center
-
-ggplot(gapminder, aes(x = lifeExp, fill = continent)) + 
-  geom_density(alpha = 0.5) + 
-  theme_minimal()
-```
-
-## Visualising counts
-
-```{r}
-#| echo: true
-#| fig-align: center
-
-gapminder |>
-  distinct(continent, country) |> 
-  count(continent) |> 
-  ggplot(aes(x = n, y = reorder(continent, n))) + 
-  geom_col() + 
-  theme_minimal()
-```
-
-## Identifying unusual values
-
-```{r}
-#| echo: true
-#| fig-align: center
-
-ggplot(gapminder, aes(x = gdpPercap)) + 
-  geom_histogram() + 
-  theme_minimal()
-```
-
-## Identifying unusual values
-
-```{r}
-#| echo: true
-#| fig-align: center
-#| fig-height: 3
-
-ggplot(gapminder, aes(x = gdpPercap)) + 
-  geom_boxplot() + 
-  theme_minimal()
-```
-
-::: aside
-The tails (or whiskers) are equal to 1.5 times the IQR (75th percentile - 25th percentile). All values larger or smaller than these tails are often considered to be outliers. However, *be very careful when dealing with outliers*. We will discuss this more during the semester.
-:::
-
-## Identifying relationships in your data
-
-Does one variable tend to move in the same direction as another?
-
-```{r}
-#| echo: true
-#| fig-align: center
-
-ggplot(gapminder, aes(x = log(gdpPercap), y = lifeExp)) + 
-  geom_point() + 
-  theme_minimal()
-```
-
-## A preview of linear regression
-
-```{r}
-ggplot(gapminder, aes(x = log(gdpPercap), y = lifeExp)) + 
-  geom_point(alpha = 0.5) + 
-  geom_smooth(method = "lm") + 
-  theme_minimal()
-```
-
-## There has to be an easier way!
-
-A quick look with `glimpse()`:
+Taking a look at this data set:
 
 ```{r}
 #| eval: false
 #| echo: true
 
-glimpse(gapminder)
+skimr::skim(gdp_raw)
 ```
 
-A quick summary with [`skim()`](https://github.com/ropensci/skimr):
+<br>
+
+What types of data do we have? Are they the right type of data?
+
+<br>
+
+Are we missing data points?
+
+## Tidy Data Structures
+
+![Source: [R4DS](https://r4ds.had.co.nz/tidy-data.html#tidy-data-1)](img/tidy-1.png){fig-align="center"}
+
+## Tidying World Bank data
+
+What do you want to do with your data?
+
+-   I want to analyse country, regional, and global trends in GDP over time
+
+What I need:
+
+-   Annual data on each country's GDP
+
+-   The region to which each country belongs
+
+## Tidying World Bank data
+
+To do:
+
+-   Move the yearly data from columns to rows
+
+-   Clean up these column names so that they are easier to use in R
+
+-   Add regional data
+
+## Pivoting your data
+
+```{r}
+#| echo: true
+
+gdp_df <- pivot_longer(
+  data = gdp_raw, 
+  cols = `1960`:`2021`,
+  names_to = "year",
+  values_to = "gdp"
+)
+```
+
+<br>
+
+::: columns
+::: {.column width="50%"}
+```{r}
+#| echo: true
+
+colnames(gdp_raw)
+```
+:::
+
+::: {.column width="50%"}
+```{r}
+#| echo: true
+
+colnames(gdp_df)
+```
+:::
+:::
+
+## Clean column names
+
+Column names should not:
+
+-   Have spaces
+
+-   Start with numbers
+
+Introducing [`janitor`](https://www.rdocumentation.org/packages/janitor/versions/2.2.0):
 
 ```{r}
 #| eval: false
 #| echo: true
 
-install.packages("skimr")
+# Install the `janitor` package
 
-skimr::skim(gapminder)
+install.packages("janitor")
+```
+
+<BR>
+
+```{r}
+#| echo: true
+
+gdp_df <- janitor::clean_names(gdp_df)
+
+colnames(gdp_df)
+```
+
+## Add region data
+
+Introducing the `countrycode` package - the indispensable workhorse of country data:
+
+```{r}
+#| eval: false
+#| echo: true
+
+# Install the `countrycode` package
+
+install.packages("countrycode")
+```
+
+## Add region data
+
+```{r}
+#| echo: true
+
+library(countrycode)
+
+# Add each country's World Bank region to the data set
+
+gdp_df <- gdp_df |> 
+  mutate(
+    region = countrycode(country_name, 
+                         "country.name", 
+                         "region", 
+                         custom_match = c("Turkiye" = "Europe & Central Asia"))
+  ) |> 
+  # Remove observations that are regions
+  drop_na(region) |> 
+  relocate(region, .after = "country_code")
+```
+
+## Add region data
+
+```{r}
+#| echo: true
+
+gdp_df |> 
+  distinct(country_name, region) |> 
+  head(10)
+```
+
+## Make sure all data are the right type
+
+```{r}
+#| echo: true
+
+glimpse(gdp_df)
+```
+
+## Make sure all data are the right type
+
+```{r}
+#| echo: true
+
+gdp_df <- transmute(
+  gdp_df,
+  country_name, 
+  region, 
+  year = as.integer(year),
+  gdp
+)
+
+glimpse(gdp_df)
+```
+
+## How do countries compare over time?
+
+```{r}
+#| echo: true
+#| fig-align: center
+
+ggplot(gdp_df, aes(
+  x = year, y = gdp, colour = region, group = country_name
+)) + 
+  geom_line() + 
+  theme_minimal()
+```
+
+## How do regions compare over time?
+
+By default, R will carry forward `NA`s. This is good!
+
+```{r}
+#| echo: true
+#| fig-align: center
+
+gdp_df |> 
+  group_by(region, year) |> 
+  summarise(avg_gdp = mean(gdp)) |> 
+  ggplot(aes(x = year, y = avg_gdp, colour = region)) + 
+  geom_line() + 
+  theme_minimal()
+```
+
+## Dealing with missing data
+
+```{r}
+#| echo: true
+#| eval: false
+
+gdp_df |> 
+  group_by(region, year) |> 
+  summarise(avg_gdp = mean(gdp, na.rm = T)) |> 
+  ggplot(aes(x = year, y = avg_gdp, colour = region)) + 
+  geom_line() + 
+  theme_minimal()
 ```
 
 ::: aside
-You can access functions and data sets from packages without loading the package using `package::function`. For example, `gapminder::gapminder`.
+You usually won't want to drop all `NA`s without interrogating why they are there. We will discuss how to handle missing data during the semester.
 :::
+
+## Dealing with missing data
+
+```{r}
+gdp_df |> 
+  group_by(region, year) |> 
+  summarise(avg_gdp = mean(gdp, na.rm = T)) |> 
+  ggplot(aes(x = year, y = avg_gdp, colour = region)) + 
+  geom_line() + 
+  theme_minimal()
+```
 
 ## Summary
 
 Today you:
 
-1.  Learnt how to explore and visualise interesting relations in your data
+-   Learnt how to read in external data
 
-2.  Used your new data science tools to better understand your data
+-   Learnt how to clean up common problems using R

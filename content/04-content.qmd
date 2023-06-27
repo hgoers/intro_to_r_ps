@@ -1,12 +1,12 @@
 ---
-title: "Exploratory Data Analysis"
+title: "Data Wrangling"
 ---
 
 ## Readings
 
 ### For this session
 
-{{< fa book >}} [Exploratory Data Analysis chapter](https://r4ds.had.co.nz/exploratory-data-analysis.html) in Hadley Wickham's *R4DS*
+{{< fa book >}} [Wrangle section](https://r4ds.had.co.nz/wrangle-intro.html) in Hadley Wickham's *R4DS*
 
 ## Slides
 

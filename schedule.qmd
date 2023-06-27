@@ -13,8 +13,8 @@ library(fontawesome)
 
 ```{r, include = FALSE}
 schedule <- tibble(
-  DATE = c("Monday", "Tuesday", "Wednesday", "Thursday", "Friday"),
-  TITLE = c("Introduction and Set Up", "Data Visualisation", "Data Transformation", "Exploratory Data Analysis", "Data Wrangling"),
+  DATE = c("Monday", "Tuesday", "Wednesday", "Thursday"),
+  TITLE = c("Introduction and Set Up", "Data Visualisation", "Data Transformation", "Data Wrangling"),
   CONTENT = c("index.html"),
   ASSIGNMENT = c("")
 ) |> 

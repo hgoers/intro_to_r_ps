@@ -44,14 +44,14 @@
   {
     "objectID": "content/04-content.html",
     "href": "content/04-content.html",
-    "title": "Exploratory Data Analysis",
+    "title": "Data Wrangling",
     "section": "",
-    "text": "Exploratory Data Analysis chapter in Hadley Wickham’s R4DS"
+    "text": "Wrangle section in Hadley Wickham’s R4DS"
   },
   {
     "objectID": "content/04-content.html#slides",
     "href": "content/04-content.html#slides",
-    "title": "Exploratory Data Analysis",
+    "title": "Data Wrangling",
     "section": "Slides",
     "text": "Slides"
   },
@@ -179,7 +179,7 @@
     "href": "slides/01-class.html#summary",
     "title": "GVPT Maths Camp",
     "section": "Summary",
-    "text": "Summary\nThis morning you:\n\nLearnt about new data science tools to help you conduct replicable and reproducable political science research\nSet up your data science tools"
+    "text": "Summary\nThis session you:\n\nLearnt about new data science tools to help you conduct replicable and reproducable political science research\nSet up your data science tools"
   },
   {
     "objectID": "slides/03-class.html#learning-objectives",
@@ -767,14 +767,14 @@
     "href": "slides/02-class.html#summary",
     "title": "GVPT Maths Camp",
     "section": "Summary",
-    "text": "Summary\nToday you:\n\nSet up your data science tools\nPlotted complex data in an engaging way\nDiscovered interesting relationships in the data\nConnected these relationships or trends to your expectations (or hypotheses about the data)\nCreated and used your first ever Github repository."
+    "text": "Summary\nThis session you:\n\nSet up your data science tools\nPlotted complex data in an engaging way\nDiscovered interesting relationships in the data\nConnected these relationships or trends to your expectations (or hypotheses about the data)"
   },
   {
     "objectID": "slides/04-class.html#learning-objectives",
     "href": "slides/04-class.html#learning-objectives",
     "title": "GVPT Maths Camp",
     "section": "Learning objectives",
-    "text": "Learning objectives\n\nLearn how to answer basic questions about your data\nLearn how to identify interesting relationships in your data\nUse your new data science tools to better understand your data\nUpload your scripts to Github"
+    "text": "Learning objectives\n\nImport your data\nClean your data\nExplore relational data\nStart to manage your scripts with Github"
   },
   {
     "objectID": "slides/04-class.html#two-basic-questions-to-guide-your-eda",
@@ -893,14 +893,14 @@
     "href": "slides/04-class.html#summary",
     "title": "GVPT Maths Camp",
     "section": "Summary",
-    "text": "Summary\nToday you:\n\nLearnt how to explore and visualise interesting relations in your data\nUsed your new data science tools to better understand your data"
+    "text": "Summary\nToday you:\n\nLearnt how to read in external data\nLearnt how to clean up common problems using R"
   },
   {
     "objectID": "schedule.html",
     "href": "schedule.html",
     "title": "Schedule",
     "section": "",
-    "text": "DATE \n    TITLE \n    CONTENT \n    ASSIGNMENT \n  \n \n\n  \n    Monday \n    Introduction and Set Up \n     \n     \n  \n  \n    Tuesday \n    Data Visualisation \n     \n     \n  \n  \n    Wednesday \n    Data Transformation \n     \n     \n  \n  \n    Thursday \n    Exploratory Data Analysis \n     \n     \n  \n  \n    Friday \n    Data Wrangling"
+    "text": "DATE \n    TITLE \n    CONTENT \n    ASSIGNMENT \n  \n \n\n  \n    Monday \n    Introduction and Set Up \n     \n     \n  \n  \n    Tuesday \n    Data Visualisation \n     \n     \n  \n  \n    Wednesday \n    Data Transformation \n     \n     \n  \n  \n    Thursday \n    Data Wrangling"
   },
   {
     "objectID": "slides/02-class.html#exercise",
@@ -935,7 +935,7 @@
     "href": "slides/02-class.html#exercise-2",
     "title": "GVPT Maths Camp",
     "section": "EXERCISE",
-    "text": "EXERCISE\nFollow along as we:\n\nCreate a repository in GitHub for this course\nLink your new repository to a new RStudio project\n\n\n\nFor later reference, head to Jenny Bryan’s New project, GitHub first chapter in Happy Git with R."
+    "text": "EXERCISE\n\nLearn more about this data set by typing ?mpg into your console.\n\n\nTo get help on any function or data set use: ?function"
   },
   {
     "objectID": "slides/02-class.html#how-did-we-do-this",
@@ -949,21 +949,21 @@
     "href": "slides/02-class.html#exercise-3",
     "title": "GVPT Maths Camp",
     "section": "EXERCISE",
-    "text": "EXERCISE\n\nLearn more about this data set by typing ?mpg into your console.\n\n\nTo get help on any function or data set use: ?function"
+    "text": "EXERCISE\nWhat do you see when you run the following?\n\nggplot(data = mpg)\n\nHow many rows are in mpg? How many columns?\n\nnrow(mpg)\nncol(mpg)\n\nWhat does the drv variable describe?\n\n?mpg"
   },
   {
     "objectID": "slides/02-class.html#exercise-4",
     "href": "slides/02-class.html#exercise-4",
     "title": "GVPT Maths Camp",
     "section": "EXERCISE",
-    "text": "EXERCISE\nWhat do you see when you run the following?\n\nggplot(data = mpg)\n\nHow many rows are in mpg? How many columns?\n\nnrow(mpg)\nncol(mpg)\n\nWhat does the drv variable describe?\n\n?mpg"
+    "text": "EXERCISE\nMake a scatterplot of hwy vs cyl.\n\nggplot(data = mpg) + \n  geom_point(mapping = aes(x = hwy, y = cyl))\n\nWhat happens if you make a scatterplot of class vs drv? Why is the plot not useful?\n\nggplot(data = mpg) + \n  geom_point(mapping = aes(x = class, y = drv))"
   },
   {
     "objectID": "slides/02-class.html#exercise-5",
     "href": "slides/02-class.html#exercise-5",
     "title": "GVPT Maths Camp",
     "section": "EXERCISE",
-    "text": "EXERCISE\nMake a scatterplot of hwy vs cyl.\n\nggplot(data = mpg) + \n  geom_point(mapping = aes(x = hwy, y = cyl))\n\nWhat happens if you make a scatterplot of class vs drv? Why is the plot not useful?\n\nggplot(data = mpg) + \n  geom_point(mapping = aes(x = class, y = drv))"
+    "text": "EXERCISE\nWhat’s gone wrong with this code? Why are the points not blue?\n\nggplot(data = mpg) + \n  geom_point(mapping = aes(x = displ, y = hwy, color = \"blue\"))"
   },
   {
     "objectID": "slides/02-class.html#lets-look-at-groups-in-the-data-3",
@@ -998,14 +998,14 @@
     "href": "slides/02-class.html#exercise-6",
     "title": "GVPT Maths Camp",
     "section": "EXERCISE",
-    "text": "EXERCISE\nWhat’s gone wrong with this code? Why are the points not blue?\n\nggplot(data = mpg) + \n  geom_point(mapping = aes(x = displ, y = hwy, color = \"blue\"))"
+    "text": "EXERCISE\nWhich variables in mpg are categorical? Which variables are continuous?\n\nMap a continuous variable to color, size, and shape. How do these aesthetics behave differently for categorical vs. continuous variables?\n\nWhat happens if you map the same variable to multiple aesthetics?"
   },
   {
     "objectID": "slides/02-class.html#exercise-7",
     "href": "slides/02-class.html#exercise-7",
     "title": "GVPT Maths Camp",
     "section": "EXERCISE",
-    "text": "EXERCISE\nWhich variables in mpg are categorical? Which variables are continuous?\n\nMap a continuous variable to color, size, and shape. How do these aesthetics behave differently for categorical vs. continuous variables?\n\nWhat happens if you map the same variable to multiple aesthetics?"
+    "text": "EXERCISE\n\nCreate a scatterplot of hwy vs displ and a categorical variable in the mpg data set.\nCustomize your plot using the theme() argument."
   },
   {
     "objectID": "slides/02-class.html#changing-the-look-of-your-plots",
@@ -1019,14 +1019,14 @@
     "href": "slides/02-class.html#exercise-8",
     "title": "GVPT Maths Camp",
     "section": "EXERCISE",
-    "text": "EXERCISE\n\nCreate a scatterplot of hwy vs displ and a categorical variable in the mpg data set.\nCustomize your plot using the theme() argument."
+    "text": "EXERCISE\n\nWhat happens if you facet on a continuous variable?\nWhat do the empty cells in previous plot with facet_grid(drv ~ cyl) mean? How do they relate to this plot?"
   },
   {
     "objectID": "slides/02-class.html#exercise-9",
     "href": "slides/02-class.html#exercise-9",
     "title": "GVPT Maths Camp",
     "section": "EXERCISE",
-    "text": "EXERCISE\n\nWhat happens if you facet on a continuous variable?\nWhat do the empty cells in previous plot with facet_grid(drv ~ cyl) mean? How do they relate to this plot?"
+    "text": "EXERCISE\n\nCreate the following plots. What does . do?\n\n\nggplot(data = mpg) + \n  geom_point(mapping = aes(x = displ, y = hwy)) +\n  facet_grid(drv ~ .)\n\nggplot(data = mpg) + \n  geom_point(mapping = aes(x = displ, y = hwy)) +\n  facet_grid(. ~ cyl)"
   },
   {
     "objectID": "slides/02-class.html#exercise-10",
@@ -1397,7 +1397,7 @@
     "href": "slides/04-class.html#sync-your-online-repository-with-rstudio-existing-r-project-1",
     "title": "GVPT Maths Camp",
     "section": "Sync your online repository with RStudio: existing R project",
-    "text": "Sync your online repository with RStudio: existing R project\nThe usethis R package is a brilliant helper package.\n\ninstall.packages(\"usethis\")\n\n\n\nusethis::create_from_github(\n  \"https://github.com/YOU/YOUR_REPO.git\",\n  destdir = \"~/path/to/where/you/want/the/local/repo/\"\n)\n\n\n\nYou can use functions directly (without loading the package in your session) using the following general rule: package::function(). This is useful when you only want to use one function from a package."
+    "text": "Sync your online repository with RStudio: existing R project\nThe usethis R package is a brilliant helper package.\n\n\n\n\n\n\n\n\n\nYou can use functions directly (without loading the package in your session) using the following general rule: package::function(). This is useful when you only want to use one function from a package."
   },
   {
     "objectID": "slides/04-class.html#starting-a-new-project-create-a-repository-2",
@@ -1552,5 +1552,173 @@
     "title": "GVPT Maths Camp",
     "section": "Variation",
     "text": "Variation\nWhat is the earliest and latest year we cover?\n\nsummarise(gapminder, min(year), max(year))\n\n# A tibble: 1 × 2\n  `min(year)` `max(year)`\n        <int>       <int>\n1        1952        2007\n\n\nWhat about our other numeric variables?\n\nsummarise(gapminder, across(lifeExp:gdpPercap, ~ quantile(.x)))\n\n# A tibble: 5 × 3\n  lifeExp         pop gdpPercap\n    <dbl>       <dbl>     <dbl>\n1    23.6      60011       241.\n2    48.2    2793664      1202.\n3    60.7    7023596.     3532.\n4    70.8   19585222.     9325.\n5    82.6 1318683096    113523."
+  },
+  {
+    "objectID": "slides/04-class.html#data-wrangling",
+    "href": "slides/04-class.html#data-wrangling",
+    "title": "GVPT Maths Camp",
+    "section": "Data wrangling",
+    "text": "Data wrangling\n\nSource: R4DS"
+  },
+  {
+    "objectID": "slides/04-class.html#world-bank-gdp-data",
+    "href": "slides/04-class.html#world-bank-gdp-data",
+    "title": "GVPT Maths Camp",
+    "section": "World Bank GDP data",
+    "text": "World Bank GDP data\nhttps://data.worldbank.org/indicator/NY.GDP.MKTP.CD\n\nOfficial source of global and historical GDP data\nA very common control variable for IR and CP analysis\nVery frustratingly messy!"
+  },
+  {
+    "objectID": "slides/04-class.html#download-global-gdp-data",
+    "href": "slides/04-class.html#download-global-gdp-data",
+    "title": "GVPT Maths Camp",
+    "section": "Download global GDP data",
+    "text": "Download global GDP data\n\nSource: World Bank"
+  },
+  {
+    "objectID": "slides/04-class.html#working-with-external-data",
+    "href": "slides/04-class.html#working-with-external-data",
+    "title": "GVPT Maths Camp",
+    "section": "Working with external data",
+    "text": "Working with external data\nIntroducing here::here()\n\ninstall.packages(\"here\")\n\n\nPoints to where you are on your computer. Updates for everyone on any computer!\n\nhere::here()\n\n[1] \"/Users/harrietgoers/Documents/intro_to_r_ps\"\n\n\n\nEXERCISE: See where you are!\n\n\nPackage documentation: https://here.r-lib.org/"
+  },
+  {
+    "objectID": "slides/04-class.html#reading-in-your-csv",
+    "href": "slides/04-class.html#reading-in-your-csv",
+    "title": "GVPT Maths Camp",
+    "section": "Reading in your csv",
+    "text": "Reading in your csv\n\nI like to store raw data in a folder called data-raw within my project.\nI then store any clean data that is ready for analysis in a data folder within my project.\n\n\nYou will start to see this structure throughout my scripts. You should come up with something that works for you. It should be intuitive. This will help future you and any other people who want to explore your work navigate your projects."
+  },
+  {
+    "objectID": "slides/04-class.html#reading-in-your-csv-1",
+    "href": "slides/04-class.html#reading-in-your-csv-1",
+    "title": "GVPT Maths Camp",
+    "section": "Reading in your csv",
+    "text": "Reading in your csv\n\nlibrary(tidyverse)\n\ngdp_raw <- read_csv(here::here(\"slides\", \"data-raw\", \"wb_gdp.csv\"))\n\nhead(gdp_raw)\n\n# A tibble: 6 × 3\n  `Data Source`               `World Development Indicators` ...3               \n  <chr>                       <chr>                          <chr>              \n1 Last Updated Date           2023-03-01                      <NA>              \n2 Country Name                Country Code                   \"Indicator Name,In…\n3 Aruba                       ABW                            \"GDP (current US$)…\n4 Africa Eastern and Southern AFE                            \"GDP (current US$)…\n5 Afghanistan                 AFG                            \"GDP (current US$)…\n6 Africa Western and Central  AFW                            \"GDP (current US$)…"
+  },
+  {
+    "objectID": "slides/04-class.html#exercises",
+    "href": "slides/04-class.html#exercises",
+    "title": "GVPT Maths Camp",
+    "section": "EXERCISES",
+    "text": "EXERCISES\n\nRead the ?read_csv help file. What arguments does this function take?\nHead to the readr package documentation and find what other file types you can read in."
+  },
+  {
+    "objectID": "slides/04-class.html#skipping-non-relevant-rows",
+    "href": "slides/04-class.html#skipping-non-relevant-rows",
+    "title": "GVPT Maths Camp",
+    "section": "Skipping non-relevant rows",
+    "text": "Skipping non-relevant rows\n\nSource: World Bank"
+  },
+  {
+    "objectID": "slides/04-class.html#skipping-non-relevant-rows-1",
+    "href": "slides/04-class.html#skipping-non-relevant-rows-1",
+    "title": "GVPT Maths Camp",
+    "section": "Skipping non-relevant rows",
+    "text": "Skipping non-relevant rows\n\ngdp_raw <- read_csv(\n  here::here(\"slides\", \"data-raw\", \"wb_gdp.csv\"), skip = 4, col_select = 1:66\n)\n\nhead(gdp_raw)\n\n# A tibble: 6 × 66\n  `Country Name`       `Country Code` `Indicator Name` `Indicator Code`   `1960`\n  <chr>                <chr>          <chr>            <chr>               <dbl>\n1 Aruba                ABW            GDP (current US… NY.GDP.MKTP.CD   NA      \n2 Africa Eastern and … AFE            GDP (current US… NY.GDP.MKTP.CD    2.13e10\n3 Afghanistan          AFG            GDP (current US… NY.GDP.MKTP.CD    5.38e 8\n4 Africa Western and … AFW            GDP (current US… NY.GDP.MKTP.CD    1.04e10\n5 Angola               AGO            GDP (current US… NY.GDP.MKTP.CD   NA      \n6 Albania              ALB            GDP (current US… NY.GDP.MKTP.CD   NA      \n# ℹ 61 more variables: `1961` <dbl>, `1962` <dbl>, `1963` <dbl>, `1964` <dbl>,\n#   `1965` <dbl>, `1966` <dbl>, `1967` <dbl>, `1968` <dbl>, `1969` <dbl>,\n#   `1970` <dbl>, `1971` <dbl>, `1972` <dbl>, `1973` <dbl>, `1974` <dbl>,\n#   `1975` <dbl>, `1976` <dbl>, `1977` <dbl>, `1978` <dbl>, `1979` <dbl>,\n#   `1980` <dbl>, `1981` <dbl>, `1982` <dbl>, `1983` <dbl>, `1984` <dbl>,\n#   `1985` <dbl>, `1986` <dbl>, `1987` <dbl>, `1988` <dbl>, `1989` <dbl>,\n#   `1990` <dbl>, `1991` <dbl>, `1992` <dbl>, `1993` <dbl>, `1994` <dbl>, …"
+  },
+  {
+    "objectID": "slides/04-class.html#exercises-1",
+    "href": "slides/04-class.html#exercises-1",
+    "title": "GVPT Maths Camp",
+    "section": "EXERCISES",
+    "text": "EXERCISES\nTaking a look at this data set:\n\nskimr::skim(gdp_raw)\n\n\nWhat types of data do we have? Are they the right type of data?\n\nAre we missing data points?"
+  },
+  {
+    "objectID": "slides/04-class.html#tidy-data-structures",
+    "href": "slides/04-class.html#tidy-data-structures",
+    "title": "GVPT Maths Camp",
+    "section": "Tidy Data Structures",
+    "text": "Tidy Data Structures\n\nSource: R4DS"
+  },
+  {
+    "objectID": "slides/04-class.html#tidying-world-bank-data",
+    "href": "slides/04-class.html#tidying-world-bank-data",
+    "title": "GVPT Maths Camp",
+    "section": "Tidying World Bank data",
+    "text": "Tidying World Bank data\nWhat do you want to do with your data?\n\nI want to analyse country, regional, and global trends in GDP over time\n\nWhat I need:\n\nAnnual data on each country’s GDP\nThe region to which each country belongs"
+  },
+  {
+    "objectID": "slides/04-class.html#tidying-world-bank-data-1",
+    "href": "slides/04-class.html#tidying-world-bank-data-1",
+    "title": "GVPT Maths Camp",
+    "section": "Tidying World Bank data",
+    "text": "Tidying World Bank data\nTo do:\n\nMove the yearly data from columns to rows\nClean up these column names so that they are easier to use in R\nAdd regional data"
+  },
+  {
+    "objectID": "slides/04-class.html#pivoting-your-data",
+    "href": "slides/04-class.html#pivoting-your-data",
+    "title": "GVPT Maths Camp",
+    "section": "Pivoting your data",
+    "text": "Pivoting your data\n\ngdp_df <- pivot_longer(\n  data = gdp_raw, \n  cols = `1960`:`2021`,\n  names_to = \"year\",\n  values_to = \"gdp\"\n)\n\n\n\n\n\ncolnames(gdp_raw)\n\n [1] \"Country Name\"   \"Country Code\"   \"Indicator Name\" \"Indicator Code\"\n [5] \"1960\"           \"1961\"           \"1962\"           \"1963\"          \n [9] \"1964\"           \"1965\"           \"1966\"           \"1967\"          \n[13] \"1968\"           \"1969\"           \"1970\"           \"1971\"          \n[17] \"1972\"           \"1973\"           \"1974\"           \"1975\"          \n[21] \"1976\"           \"1977\"           \"1978\"           \"1979\"          \n[25] \"1980\"           \"1981\"           \"1982\"           \"1983\"          \n[29] \"1984\"           \"1985\"           \"1986\"           \"1987\"          \n[33] \"1988\"           \"1989\"           \"1990\"           \"1991\"          \n[37] \"1992\"           \"1993\"           \"1994\"           \"1995\"          \n[41] \"1996\"           \"1997\"           \"1998\"           \"1999\"          \n[45] \"2000\"           \"2001\"           \"2002\"           \"2003\"          \n[49] \"2004\"           \"2005\"           \"2006\"           \"2007\"          \n[53] \"2008\"           \"2009\"           \"2010\"           \"2011\"          \n[57] \"2012\"           \"2013\"           \"2014\"           \"2015\"          \n[61] \"2016\"           \"2017\"           \"2018\"           \"2019\"          \n[65] \"2020\"           \"2021\"          \n\n\n\n\ncolnames(gdp_df)\n\n[1] \"Country Name\"   \"Country Code\"   \"Indicator Name\" \"Indicator Code\"\n[5] \"year\"           \"gdp\""
+  },
+  {
+    "objectID": "slides/04-class.html#clean-column-names",
+    "href": "slides/04-class.html#clean-column-names",
+    "title": "GVPT Maths Camp",
+    "section": "Clean column names",
+    "text": "Clean column names\nColumn names should not:\n\nHave spaces\nStart with numbers\n\nIntroducing janitor:\n\n# Install the `janitor` package\n\ninstall.packages(\"janitor\")\n\n\n\ngdp_df <- janitor::clean_names(gdp_df)\n\ncolnames(gdp_df)\n\n[1] \"country_name\"   \"country_code\"   \"indicator_name\" \"indicator_code\"\n[5] \"year\"           \"gdp\""
+  },
+  {
+    "objectID": "slides/04-class.html#add-region-data",
+    "href": "slides/04-class.html#add-region-data",
+    "title": "GVPT Maths Camp",
+    "section": "Add region data",
+    "text": "Add region data\nIntroducing the countrycode package - the indispensable workhorse of country data:\n\n# Install the `countrycode` package\n\ninstall.packages(\"countrycode\")"
+  },
+  {
+    "objectID": "slides/04-class.html#add-region-data-1",
+    "href": "slides/04-class.html#add-region-data-1",
+    "title": "GVPT Maths Camp",
+    "section": "Add region data",
+    "text": "Add region data\n\nlibrary(countrycode)\n\n# Add each country's World Bank region to the data set\n\ngdp_df <- gdp_df |> \n  mutate(\n    region = countrycode(country_name, \n                         \"country.name\", \n                         \"region\", \n                         custom_match = c(\"Turkiye\" = \"Europe & Central Asia\"))\n  ) |> \n  # Remove observations that are regions\n  drop_na(region) |> \n  relocate(region, .after = \"country_code\")"
+  },
+  {
+    "objectID": "slides/04-class.html#add-region-data-2",
+    "href": "slides/04-class.html#add-region-data-2",
+    "title": "GVPT Maths Camp",
+    "section": "Add region data",
+    "text": "Add region data\n\ngdp_df |> \n  distinct(country_name, region) |> \n  head(10)\n\n# A tibble: 10 × 2\n   country_name         region                    \n   <chr>                <chr>                     \n 1 Aruba                Latin America & Caribbean \n 2 Afghanistan          South Asia                \n 3 Angola               Sub-Saharan Africa        \n 4 Albania              Europe & Central Asia     \n 5 Andorra              Europe & Central Asia     \n 6 United Arab Emirates Middle East & North Africa\n 7 Argentina            Latin America & Caribbean \n 8 Armenia              Europe & Central Asia     \n 9 American Samoa       East Asia & Pacific       \n10 Antigua and Barbuda  Latin America & Caribbean"
+  },
+  {
+    "objectID": "slides/04-class.html#make-sure-all-data-are-the-right-type",
+    "href": "slides/04-class.html#make-sure-all-data-are-the-right-type",
+    "title": "GVPT Maths Camp",
+    "section": "Make sure all data are the right type",
+    "text": "Make sure all data are the right type\n\nglimpse(gdp_df)\n\nRows: 13,454\nColumns: 7\n$ country_name   <chr> \"Aruba\", \"Aruba\", \"Aruba\", \"Aruba\", \"Aruba\", \"Aruba\", \"…\n$ country_code   <chr> \"ABW\", \"ABW\", \"ABW\", \"ABW\", \"ABW\", \"ABW\", \"ABW\", \"ABW\",…\n$ region         <chr> \"Latin America & Caribbean\", \"Latin America & Caribbean…\n$ indicator_name <chr> \"GDP (current US$)\", \"GDP (current US$)\", \"GDP (current…\n$ indicator_code <chr> \"NY.GDP.MKTP.CD\", \"NY.GDP.MKTP.CD\", \"NY.GDP.MKTP.CD\", \"…\n$ year           <chr> \"1960\", \"1961\", \"1962\", \"1963\", \"1964\", \"1965\", \"1966\",…\n$ gdp            <dbl> NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA,…"
+  },
+  {
+    "objectID": "slides/04-class.html#make-sure-all-data-are-the-right-type-1",
+    "href": "slides/04-class.html#make-sure-all-data-are-the-right-type-1",
+    "title": "GVPT Maths Camp",
+    "section": "Make sure all data are the right type",
+    "text": "Make sure all data are the right type\n\ngdp_df <- transmute(\n  gdp_df,\n  country_name, \n  region, \n  year = as.integer(year),\n  gdp\n)\n\nglimpse(gdp_df)\n\nRows: 13,454\nColumns: 4\n$ country_name <chr> \"Aruba\", \"Aruba\", \"Aruba\", \"Aruba\", \"Aruba\", \"Aruba\", \"Ar…\n$ region       <chr> \"Latin America & Caribbean\", \"Latin America & Caribbean\",…\n$ year         <int> 1960, 1961, 1962, 1963, 1964, 1965, 1966, 1967, 1968, 196…\n$ gdp          <dbl> NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, N…"
+  },
+  {
+    "objectID": "slides/04-class.html#how-do-countries-compare-over-time",
+    "href": "slides/04-class.html#how-do-countries-compare-over-time",
+    "title": "GVPT Maths Camp",
+    "section": "How do countries compare over time?",
+    "text": "How do countries compare over time?\n\nggplot(gdp_df, aes(\n  x = year, y = gdp, colour = region, group = country_name\n)) + \n  geom_line() + \n  theme_minimal()"
+  },
+  {
+    "objectID": "slides/04-class.html#how-do-regions-compare-over-time",
+    "href": "slides/04-class.html#how-do-regions-compare-over-time",
+    "title": "GVPT Maths Camp",
+    "section": "How do regions compare over time?",
+    "text": "How do regions compare over time?\nBy default, R will carry forward NAs. This is good!\n\ngdp_df |> \n  group_by(region, year) |> \n  summarise(avg_gdp = mean(gdp)) |> \n  ggplot(aes(x = year, y = avg_gdp, colour = region)) + \n  geom_line() + \n  theme_minimal()"
+  },
+  {
+    "objectID": "slides/04-class.html#dealing-with-missing-data",
+    "href": "slides/04-class.html#dealing-with-missing-data",
+    "title": "GVPT Maths Camp",
+    "section": "Dealing with missing data",
+    "text": "Dealing with missing data\n\ngdp_df |> \n  group_by(region, year) |> \n  summarise(avg_gdp = mean(gdp, na.rm = T)) |> \n  ggplot(aes(x = year, y = avg_gdp, colour = region)) + \n  geom_line() + \n  theme_minimal()\n\n\n\nYou usually won’t want to drop all NAs without interrogating why they are there. We will discuss how to handle missing data during the semester."
+  },
+  {
+    "objectID": "slides/04-class.html#dealing-with-missing-data-1",
+    "href": "slides/04-class.html#dealing-with-missing-data-1",
+    "title": "GVPT Maths Camp",
+    "section": "Dealing with missing data",
+    "text": "Dealing with missing data"
   }
 ]

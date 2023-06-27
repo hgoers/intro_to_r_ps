@@ -25,7 +25,6 @@ website:
         - content/02-content.qmd
         - content/03-content.qmd
         - content/04-content.qmd
-        - content/05-content.qmd
 
 format:
   html:
