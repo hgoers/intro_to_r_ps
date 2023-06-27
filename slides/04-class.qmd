@@ -1,5 +1,5 @@
 ---
-title: "GVPT Maths Boot Camp"
+title: "GVPT Maths Camp"
 subtitle: "Exploratory Data Analysis"
 format: 
   revealjs:
@@ -11,9 +11,9 @@ format:
 
 ## Learning objectives
 
-1.  Learn how to generate questions about your data
+1.  Learn how to answer basic questions about your data
 
-2.  Learn how to discern interesting relations in your data
+2.  Learn how to identify interesting relationships in your data
 
 3.  Use your new data science tools to better understand your data
 
@@ -82,13 +82,13 @@ summarise(gapminder, across(lifeExp:gdpPercap, ~ quantile(.x)))
 
 The *five number summary* is a useful way to summarise numeric data. Consists of the:
 
--   Minimum
+-   Minimum,
 
 -   25th percentile,
 
 -   50th percentile (mean or average),
 
--   75th percentile
+-   75th percentile,
 
 -   Maximum
 

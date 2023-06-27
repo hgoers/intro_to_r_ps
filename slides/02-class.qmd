@@ -1,5 +1,5 @@
 ---
-title: "GVPT Maths Boot Camp"
+title: "GVPT Maths Camp"
 subtitle: "Data Visualisation"
 format: 
   revealjs:
@@ -7,13 +7,18 @@ format:
     preview-links: auto
     theme: solarized
     embed-resources: true
+execute: 
+  echo: true
+  fig-align: center
 ---
 
 ## Learning objectives for today
 
-1.  Create your first plot in R
+1.  Introduction to R
 
-2.  Test your hypotheses using informative data visualisations
+2.  Create your first plot in R
+
+3.  Test your hypotheses using informative data visualizations
 
 ## The Research Process
 
@@ -37,9 +42,42 @@ Functions:
 sum(1, 2)
 ```
 
+## EXERCISE {background-color="#B56576"}
+
+1.  Open up RStudio.
+2.  Using the console, find the summation of `45`, `978`, and `121`.
+3.  What is `67` divided by `6`?
+4.  What is the square root of `894`?
+
+## CHECK YOUR ANSWERS {background-color="#B56576"}
+
+Using the consol, find the summation of `45`, `978`, and `121`.
+
+```{r}
+sum(45, 978, 121)
+```
+
+*Or:*
+
+```{r}
+45 + 978 + 121
+```
+
+What is `67` divided by `6`?
+
+```{r}
+67 / 6
+```
+
+What is the square root of `894`?
+
+```{r}
+sqrt(894)
+```
+
 ## R packages
 
-Packages are collections of R functions, data, and compiled code in a well-defined format
+Packages are collections of R functions, data, and compiled code in a well-defined format.
 
 ```{r}
 #| echo: true
@@ -48,7 +86,30 @@ Packages are collections of R functions, data, and compiled code in a well-defin
 # Install the relevant package(s)
 install.packages("tidyverse")
 
-# Load the package in current session
+# Load the packages in current session
+library(tidyverse)
+```
+
+::: aside
+`tidyverse` is a collection of many different packages housed within this universe. The individual packages are listed when you load the `tidyverse` package. 
+:::
+
+## EXERCISE {background-color="#B56576"}
+
+1.  Open up RStudio.
+2.  Using the consol, install the `tidyverse` packages.
+
+```{r}
+#| eval: false
+
+install.packages("tidyverse")
+```
+
+3. Load these packages in your current session
+
+```{r}
+#| eval: false
+
 library(tidyverse)
 ```
 
@@ -56,11 +117,18 @@ library(tidyverse)
 
 *Version control and collaboration*
 
+-   We will use Github to share and manage our scripts. 
+
+-   Your GVPT622 homework assignments will be submitted via Github. 
+
+-   A great tool for collaboration and dissemination of research.  
+
+## EXERCISE {background-color="#B56576"}
+
+Follow along as we: 
+
 1.  Create a repository in GitHub for this course
 2.  Link your new repository to a new RStudio project
-3.  Set relevant folders to help organise your work
-4.  Create a script for today
-5.  Push it all up to your GitHub repo
 
 ::: aside
 For later reference, head to Jenny Bryan's [*New project, GitHub first chapter*](https://happygitwithr.com/new-github-first.html) in Happy Git with R.
@@ -97,6 +165,8 @@ Let's use our first graph to answer a question: Do cars with big engines use mor
 ## Skipping to the end
 
 ```{r}
+#| echo: false
+
 library(ggplot2)
 
 ggplot(data = mpg) + 
@@ -116,13 +186,40 @@ ggplot(data = mpg) +
   )
 ```
 
+## How did we do this? 
+
+```{r}
+#| eval: false
+
+library(ggplot2)
+
+ggplot(data = mpg) + 
+  geom_point(mapping = aes(x = displ, y = hwy, color = class)) + 
+  theme(
+    legend.position = "bottom",
+    panel.grid = element_blank(),
+    panel.background = element_blank(),
+    plot.title.position = "plot",
+    plot.title = element_text(face = "bold")
+  ) + 
+  labs(
+    title = "Relationship between engine displacement and highway miles per gallon by class",
+    x = "Engine displacement (L)",
+    y = "Highway miles per gallon",
+    color = "Class"
+  )
+```
+
+::: aside
+We will step through this now. By the end of this session, you will be able to make your own colourful data visualisations using R. 
+:::
+
 ## Load relevant packages and data
 
 ```{r}
-#| echo: true
 #| eval: false
 
-# Load the relevant functions
+# Load the relevant packages
 library(tidyverse)
 
 # Load the data
@@ -131,6 +228,7 @@ mpg
 
 ```{r}
 #| eval: true
+#| echo: false
 
 ggplot2::mpg |> 
   head() |> 
@@ -144,20 +242,14 @@ You only need to install a package once, but you need to reload it every time yo
 A data frame is a rectangular collection of variables (in the columns) and observations (in the rows). mpg contains observations collected by the US Environmental Protection Agency on 38 models of car.
 :::
 
-## Learning more about the data
-
-To get help on any function or dataset use: `?function`
+## EXERCISE {background-color="#B56576"}
 
 <br>
 
-For example, to learn more about this package type `?mpg` into your console.
+Learn more about this data set by typing `?mpg` into your console.
 
-::: notes
-Among the variables in `mpg` are:
-
-1.  `displ`, a car's engine size, in litres.
-
-2.  `hwy`, a car's fuel efficiency on the highway, in miles per gallon (mpg). A car with a low fuel efficiency consumes more fuel than a car with a high fuel efficiency when they travel the same distance.
+::: aside
+To get help on any function or data set use: `?function`
 :::
 
 ## Plot your data
@@ -181,7 +273,7 @@ You complete your graph by adding one or more layers to `ggplot()`. The function
 Each geom function in `ggplot2` takes a mapping argument. This defines how variables in your dataset are mapped to visual properties. The mapping argument is always paired with `aes()`, and the `x` and `y` arguments of `aes()` specify which variables to map to the `x` and `y` axes. `ggplot2` looks for the mapped variables in the data argument, in this case, `mpg`.
 :::
 
-## EXERCISES
+## EXERCISE {background-color="#B56576"}
 
 What do you see when you run the following?
 
@@ -211,14 +303,40 @@ What does the `drv` variable describe?
 ?mpg
 ```
 
+## EXERCISE {background-color="#B56576"}
+
 Make a scatterplot of `hwy` vs `cyl`.
 
+```{r}
+#| eval: false
+
+ggplot(data = mpg) + 
+  geom_point(mapping = aes(x = hwy, y = cyl))
+```
+
 What happens if you make a scatterplot of `class` vs `drv`? Why is the plot not useful?
+
+```{r}
+#| eval: false
+
+ggplot(data = mpg) + 
+  geom_point(mapping = aes(x = class, y = drv))
+```
+
+## Let's look at groups in the data
+
+-   We are not restricted to looking at only two interesting elements of our data. 
+
+-   You can use visual elements or aesthetics (`aes`) to communicate many dimensions in your data. 
+
+-   Let's look at a categorical variable: the class of car (SUV, 2 seater, pick up truck, etc.).
+
+-   *Look for meaningfully defined groups.*
 
 ## Let's look at groups in the data
 
 ```{r}
-#| echo: true
+#| code-line-numbers: "2"
 
 ggplot(data = mpg) + 
   geom_point(mapping = aes(x = displ, y = hwy, color = class))
@@ -227,7 +345,7 @@ ggplot(data = mpg) +
 ## Let's look at groups in the data
 
 ```{r}
-#| echo: true
+#| code-line-numbers: "2"
 
 ggplot(data = mpg) + 
   geom_point(mapping = aes(x = displ, y = hwy, size = class))
@@ -236,41 +354,60 @@ ggplot(data = mpg) +
 ## Let's look at groups in the data
 
 ```{r}
-#| echo: true
+#| code-line-numbers: "2"
 
 ggplot(data = mpg) + 
   geom_point(mapping = aes(x = displ, y = hwy, shape = class))
 ```
 
-## Let's make this prettier
+## Flexible visualization
+
+You can use visual elements to communicate your findings in engaging ways. 
 
 ```{r}
-#| echo: true
+#| code-line-numbers: "2"
 
 ggplot(data = mpg) + 
-  geom_point(mapping = aes(x = displ, y = hwy), color = "blue")
+  geom_point(mapping = aes(x = displ, y = hwy, color = class == "2seater"))
 ```
+
+## Changing the look of your plots
+
+```{r}
+#| code-line-numbers: "2"
+
+ggplot(data = mpg) + 
+  geom_point(mapping = aes(x = displ, y = hwy), color = "red")
+```
+
+## EXERCISE {background-color="#B56576"}
+
+What's gone wrong with this code? Why are the points not blue?
+
+```{r}
+ggplot(data = mpg) + 
+  geom_point(mapping = aes(x = displ, y = hwy, color = "blue"))
+```
+
+## EXERCISE {background-color="#B56576"}
+
+Which variables in `mpg` are categorical? Which variables are continuous?
+
+<br>
+
+Map a continuous variable to `color`, `size`, and `shape.` How do these aesthetics behave differently for categorical vs. continuous variables?
+
+<br>
+
+What happens if you map the same variable to multiple aesthetics?
 
 ## Let's add useful headings
 
 ```{r}
-#| echo: true
-#| eval: false
+#| code-line-numbers: "3-7"
 
 ggplot(data = mpg) + 
-  geom_point(mapping = aes(x = displ, y = hwy), color = "blue") + 
-  labs(
-    title = "Relationship between engine displacement and highway miles per gallon",
-    x = "Engine displacement (L)",
-    y = "Highway miles per gallon"
-  )
-```
-
-## Let's add useful headings
-
-```{r}
-ggplot(data = mpg) + 
-  geom_point(mapping = aes(x = displ, y = hwy), color = "blue") + 
+  geom_point(mapping = aes(x = displ, y = hwy), color = "red") + 
   labs(
     title = "Relationship between engine displacement and highway miles per gallon",
     x = "Engine displacement (L)",
@@ -280,9 +417,11 @@ ggplot(data = mpg) +
 
 ## Let's clean this up
 
+Less is more when it comes to data visualization. 
+
 ```{r}
-#| echo: true
 #| eval: false
+#| code-line-numbers: "3"
 
 ggplot(data = mpg) + 
   geom_point(mapping = aes(x = displ, y = hwy), color = "blue") + 
@@ -301,6 +440,8 @@ All pre-set `ggplot` themes can be found in the [`ggplot` documentation](https:/
 ## Let's clean this up
 
 ```{r}
+#| echo: false
+
 ggplot(data = mpg) + 
   geom_point(mapping = aes(x = displ, y = hwy), color = "blue") + 
   theme_minimal() + 
@@ -314,8 +455,8 @@ ggplot(data = mpg) +
 ## Creating your own theme
 
 ```{r}
-#| echo: true
 #| eval: false
+#| code-line-numbers: "3-9"
 
 ggplot(data = mpg) + 
   geom_point(mapping = aes(x = displ, y = hwy, color = class)) + 
@@ -341,6 +482,8 @@ All theme elements that you can control can be found in the [`ggplot` documentat
 ## Creating your own theme
 
 ```{r}
+#| echo: false
+
 ggplot(data = mpg) + 
   geom_point(mapping = aes(x = displ, y = hwy, color = class)) + 
   theme(
@@ -358,41 +501,16 @@ ggplot(data = mpg) +
   )
 ```
 
-## EXERCISES
+## EXERCISE {background-color="#B56576"}
 
-What's gone wrong with this code? Why are the points not blue?
+1.    Create a scatterplot of `hwy` vs `displ` and a categorical variable in the `mpg` data set. 
 
-```{r}
-#| echo: true
-
-ggplot(data = mpg) + 
-  geom_point(mapping = aes(x = displ, y = hwy, color = "blue"))
-```
-
-## EXERCISES
-
-Which variables in `mpg` are categorical? Which variables are continuous?
-
-<br>
-
-Map a continuous variable to `color`, `size`, and `shape.` How do these aesthetics behave differently for categorical vs. continuous variables?
-
-<br>
-
-What happens if you map the same variable to multiple aesthetics?
-
-## EXERCISES
-
-What does the `stroke` aesthetic do? What shapes does it work with?
-
-<br>
-
-What happens if you map an aesthetic to something other than a variable name, like `aes(colour = displ < 5)`? Note, you'll also need to specify `x` and `y`.
+2.    Customize your plot using the `theme()` argument. 
 
 ## Looking at group-specific trends
 
 ```{r}
-#| echo: true
+#| code-line-numbers: "3"
 
 ggplot(data = mpg) + 
   geom_point(mapping = aes(x = displ, y = hwy)) + 
@@ -402,14 +520,43 @@ ggplot(data = mpg) +
 ## Looking at group-specific trends
 
 ```{r}
-#| echo: true
+#| code-line-numbers: "3"
 
 ggplot(data = mpg) + 
   geom_point(mapping = aes(x = displ, y = hwy)) + 
   facet_grid(drv ~ cyl)
 ```
 
-## Summarising relationships in the data
+## EXERCISE {background-color="#B56576"}
+
+1.    What happens if you facet on a continuous variable?
+
+2.    What do the empty cells in previous plot with facet_grid(drv ~ cyl) mean? How do they relate to this plot?
+
+```{r}
+#| echo: false
+
+ggplot(data = mpg) + 
+  geom_point(mapping = aes(x = drv, y = cyl))
+```
+
+## EXERCISE {background-color="#B56576"}
+
+3.    Create the following plots. What does `.` do?
+
+```{r}
+#| eval: false
+
+ggplot(data = mpg) + 
+  geom_point(mapping = aes(x = displ, y = hwy)) +
+  facet_grid(drv ~ .)
+
+ggplot(data = mpg) + 
+  geom_point(mapping = aes(x = displ, y = hwy)) +
+  facet_grid(. ~ cyl)
+```
+
+## Summarising relationships in your data
 
 ```{r}
 #| echo: true
@@ -426,13 +573,53 @@ Because both `geom_point()` and `geom_smooth()` take the arguement `mapping = ae
 ## Group-specific relationships
 
 ```{r}
-#| echo: true
-
 ggplot(data = mpg, mapping = aes(x = displ, y = hwy, color = drv)) + 
   geom_point() + 
   geom_smooth(method = "lm", se = F) + 
   theme_minimal()
 ```
+
+## Saving our work with Git and Github
+
+Let's wrap up! We need to:
+
+1.    Save our work locally, 
+
+2.    Get our files ready to save to Github, 
+
+3.    Add a helpful message for our future selves letting us know what we did,
+
+4.    Save our work to Github. 
+
+## EXERCISE {background-color="#B56576"}
+
+To wrap up, let's push our work to Github: 
+
+1.  Save your new script. 
+
+2.  Head over to the Git tab in the same area as our Environment tab. 
+
+3.  Stage your new file. 
+
+4.  Hit the commit button. 
+
+::: aside
+We will go over this in much more detail tomorrow. 
+:::
+
+## EXERCISE {background-color="#B56576"}
+
+5.  Add a useful message in the message area. 
+
+6.  Hit the commit button. 
+
+7.  Push your work to Github. 
+
+8.  Head over to your class repository on Github. You should see your file. 
+
+::: aside
+We will go over this in much more detail tomorrow. 
+:::
 
 ## Summary
 
@@ -445,3 +632,5 @@ Today you:
 3.  Discovered interesting relationships in the data
 
 4.  Connected these relationships or trends to your expectations (or hypotheses about the data)
+
+5.  Created and used your first ever Github repository. 

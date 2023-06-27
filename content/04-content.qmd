@@ -13,4 +13,3 @@ title: "Exploratory Data Analysis"
 ```{=html}
 <iframe class="slide-deck" src="../_site/slides/04-class.html" width = "100%" height = 600px></iframe>
 ```
-## In-class

@@ -10,4 +10,6 @@ title: "Data Wrangling"
 
 ## Slides
 
-## In-class
+```{=html}
+<iframe class="slide-deck" src="../_site/slides/05-class.html" width = "100%" height = 600px></iframe>
+```

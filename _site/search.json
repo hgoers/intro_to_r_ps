@@ -1,927 +1,10 @@
 [
   {
-    "objectID": "content/01-content.html",
-    "href": "content/01-content.html",
-    "title": "Introduction and Set Up",
+    "objectID": "content/05-content.html",
+    "href": "content/05-content.html",
+    "title": "Data Wrangling",
     "section": "",
-    "text": "Garrick Aden-Buie’s macOS set up blogpost\n Matti Vuorre’s macOS set up blogpost\n\n\n\n Installation and Connect Git, GitHub, RStudio sections in Jennifer Bryan’s Happy Git and GitHub for the useR\n\n\n\n Install or upgrade R and RStudio chapter in Jennifer Bryan’s Happy Git and GitHub for the useR"
-  },
-  {
-    "objectID": "content/01-content.html#slides",
-    "href": "content/01-content.html#slides",
-    "title": "Introduction and Set Up",
-    "section": "Slides",
-    "text": "Slides"
-  },
-  {
-    "objectID": "content/01-content.html#in-class",
-    "href": "content/01-content.html#in-class",
-    "title": "Introduction and Set Up",
-    "section": "In-class",
-    "text": "In-class"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "GVPT Maths Camp",
-    "section": "",
-    "text": "Introduction to R for Political Scientists\n        \n        \n            Learn to use data science tools to support your research\n        \n        \n            Summer 2023Department of Government and PoliticsUniversity of Maryland, College Park\n        \n    \n    \n      \n        \n        \n        \n      \n    \n\n\n\n\n\nInstructor\n\n   Harriet Goers\n   Chincoteague Building\n   hgoers@umd.edu\n   harrietgoers\n\n\n\nCourse details\n\n   January 9–May 2, 2023\n   7:15–9:45 PM\n   Tydings Building\n   Slack\n\n\n\nContacting me\nE-mail and Slack are the best ways to get in contact with me. I will try to respond to all course-related e-mails and Slack messages within 24 hours."
-  },
-  {
-    "objectID": "slides/01-class.html#welcome",
-    "href": "slides/01-class.html#welcome",
-    "title": "GVPT Maths Boot Camp",
-    "section": "Welcome",
-    "text": "Welcome"
-  },
-  {
-    "objectID": "slides/01-class.html#introductions",
-    "href": "slides/01-class.html#introductions",
-    "title": "GVPT Maths Boot Camp",
-    "section": "Introductions",
-    "text": "Introductions\n\nThird year in the GVPT PhD program\nHelped to develop the Lowy Institute’s Asia Power Index\nAnalyst with the Australian Department of Defence\nWorked on the Institute for Economics and Peace’s Global Peace Index and Global Terrorism Index\nFavourite Smithsonian: the zoo!"
-  },
-  {
-    "objectID": "slides/01-class.html#learning-objectives-for-today",
-    "href": "slides/01-class.html#learning-objectives-for-today",
-    "title": "GVPT Maths Boot Camp",
-    "section": "Learning objectives for today",
-    "text": "Learning objectives for today\n\nIntroduction to R and friends\nGetting your computers set up"
-  },
-  {
-    "objectID": "slides/01-class.html#computational-social-scientists",
-    "href": "slides/01-class.html#computational-social-scientists",
-    "title": "GVPT Maths Boot Camp",
-    "section": "Computational social scientists",
-    "text": "Computational social scientists"
-  },
-  {
-    "objectID": "slides/01-class.html#set-up",
-    "href": "slides/01-class.html#set-up",
-    "title": "GVPT Maths Boot Camp",
-    "section": "Set up",
-    "text": "Set up\n\nHomebrew (macOS or Linux only)\nR and RStudio\nGit and GitHub"
-  },
-  {
-    "objectID": "slides/01-class.html#homebrew-the-missing-package-manager-for-macos-and-linux",
-    "href": "slides/01-class.html#homebrew-the-missing-package-manager-for-macos-and-linux",
-    "title": "GVPT Maths Boot Camp",
-    "section": "Homebrew: The Missing Package Manager for macOS and Linux",
-    "text": "Homebrew: The Missing Package Manager for macOS and Linux\n\n\nGo to https://brew.sh/\nFollow instructions on the homepage"
-  },
-  {
-    "objectID": "slides/01-class.html#r-and-rstudio",
-    "href": "slides/01-class.html#r-and-rstudio",
-    "title": "GVPT Maths Boot Camp",
-    "section": "R and RStudio",
-    "text": "R and RStudio\n\n\nR\nR is a free and open-source programming language and software environment for statistical computing and graphics.\n\nRStudio\nRStudio is an integrated development environment (IDE) for the R programming language.\n\n\n\n\nInstructions on how to download R and RStudio are provided in the Introduction chapter of R4DS."
-  },
-  {
-    "objectID": "slides/01-class.html#a-tour-of-rstudio",
-    "href": "slides/01-class.html#a-tour-of-rstudio",
-    "title": "GVPT Maths Boot Camp",
-    "section": "A Tour of RStudio",
-    "text": "A Tour of RStudio\n\nSource: R4DS"
-  },
-  {
-    "objectID": "slides/01-class.html#git-and-github",
-    "href": "slides/01-class.html#git-and-github",
-    "title": "GVPT Maths Boot Camp",
-    "section": "Git and GitHub",
-    "text": "Git and GitHub\n\n\nGit\nGit is a version control system used for tracking changes in software development projects.\n\nGitHub\nGitHub is a web-based platform for version control and collaborative software development using Git.\n\n\n\n\nInstructions on how to download Git and set up GitHub are provided in the Installation chapter of Happy Git with R."
-  },
-  {
-    "objectID": "slides/01-class.html#break",
-    "href": "slides/01-class.html#break",
-    "title": "GVPT Maths Boot Camp",
-    "section": "BREAK",
-    "text": "BREAK"
-  },
-  {
-    "objectID": "slides/01-class.html#the-research-process",
-    "href": "slides/01-class.html#the-research-process",
-    "title": "GVPT Maths Boot Camp",
-    "section": "The Research Process",
-    "text": "The Research Process\n\nSource: R4DS"
-  },
-  {
-    "objectID": "slides/01-class.html#r-basics",
-    "href": "slides/01-class.html#r-basics",
-    "title": "GVPT Maths Boot Camp",
-    "section": "R basics",
-    "text": "R basics\nR code:\n\n1 + 2\n\n[1] 3\n\n\nFunctions:\n\nsum(1, 2)\n\n[1] 3"
-  },
-  {
-    "objectID": "slides/01-class.html#r-packages",
-    "href": "slides/01-class.html#r-packages",
-    "title": "GVPT Maths Boot Camp",
-    "section": "R packages",
-    "text": "R packages\nPackages are collections of R functions, data, and compiled code in a well-defined format\n\n# Install the relevant package(s)\ninstall.packages(\"tidyverse\")\n\n# Load the package in current session\nlibrary(tidyverse)"
-  },
-  {
-    "objectID": "slides/01-class.html#data-visualisation",
-    "href": "slides/01-class.html#data-visualisation",
-    "title": "GVPT Maths Boot Camp",
-    "section": "Data visualisation",
-    "text": "Data visualisation\nFrom R4DS - Data Visualization:\n\nDo cars with big engines use more fuel than cars with small engines?\n\n\nLet’s use our first graph to answer a question: Do cars with big engines use more fuel than cars with small engines? You probably already have an answer, but try to make your answer precise. What does the relationship between engine size and fuel efficiency look like? Is it positive? Negative? Linear? Nonlinear?"
-  },
-  {
-    "objectID": "slides/01-class.html#skipping-to-the-end",
-    "href": "slides/01-class.html#skipping-to-the-end",
-    "title": "GVPT Maths Boot Camp",
-    "section": "Skipping to the end",
-    "text": "Skipping to the end"
-  },
-  {
-    "objectID": "slides/01-class.html#load-relevant-packages-and-data",
-    "href": "slides/01-class.html#load-relevant-packages-and-data",
-    "title": "GVPT Maths Boot Camp",
-    "section": "Load relevant packages and data",
-    "text": "Load relevant packages and data\n\n# Load the relevant functions\nlibrary(tidyverse)\n\n# Load the data\nmpg\n\n\n\n\n\n\nmanufacturer\nmodel\ndispl\nyear\ncyl\n\n\n\n\naudi\na4\n1.8\n1999\n4\n\n\naudi\na4\n1.8\n1999\n4\n\n\naudi\na4\n2.0\n2008\n4\n\n\naudi\na4\n2.0\n2008\n4\n\n\naudi\na4\n2.8\n1999\n6\n\n\naudi\na4\n2.8\n1999\n6\n\n\n\n\n\n\nYou only need to install a package once, but you need to reload it every time you start a new session.\nA data frame is a rectangular collection of variables (in the columns) and observations (in the rows). mpg contains observations collected by the US Environmental Protection Agency on 38 models of car."
-  },
-  {
-    "objectID": "slides/01-class.html#learning-more-about-the-data",
-    "href": "slides/01-class.html#learning-more-about-the-data",
-    "title": "GVPT Maths Boot Camp",
-    "section": "Learning more about the data",
-    "text": "Learning more about the data\nTo get help on any function or dataset use: ?function\n\n\n\n\nAmong the variables in mpg are:\n\ndispl, a car’s engine size, in litres.\nhwy, a car’s fuel efficiency on the highway, in miles per gallon (mpg). A car with a low fuel efficiency consumes more fuel than a car with a high fuel efficiency when they travel the same distance."
-  },
-  {
-    "objectID": "slides/01-class.html#plot-your-data",
-    "href": "slides/01-class.html#plot-your-data",
-    "title": "GVPT Maths Boot Camp",
-    "section": "Plot your data",
-    "text": "Plot your data\n\nlibrary(ggplot2)\n\nggplot(data = mpg) + \n  geom_point(mapping = aes(x = displ, y = hwy))\n\n\n\nThe plot shows a negative relationship between engine size (displ) and fuel efficiency (hwy). In other words, cars with big engines use more fuel. Does this confirm or refute your hypothesis about fuel efficiency and engine size?\nWith ggplot2, you begin a plot with the function ggplot(). ggplot() creates a coordinate system that you can add layers to. The first argument of ggplot() is the dataset to use in the graph. So ggplot(data = mpg) creates an empty graph, but it’s not very interesting so I’m not going to show it here.\nYou complete your graph by adding one or more layers to ggplot(). The function geom_point() adds a layer of points to your plot, which creates a scatterplot. ggplot2 comes with many geom functions that each add a different type of layer to a plot. You’ll learn a whole bunch of them throughout this chapter.\nEach geom function in ggplot2 takes a mapping argument. This defines how variables in your dataset are mapped to visual properties. The mapping argument is always paired with aes(), and the x and y arguments of aes() specify which variables to map to the x and y axes. ggplot2 looks for the mapped variables in the data argument, in this case, mpg."
-  },
-  {
-    "objectID": "slides/01-class.html#exercises",
-    "href": "slides/01-class.html#exercises",
-    "title": "GVPT Maths Boot Camp",
-    "section": "EXERCISES",
-    "text": "EXERCISES\nWhat do you see when you run the following?\n\nggplot(data = mpg)\n\nHow many rows are in mpg? How many columns?\n\nnrow(mpg)\nncol(mpg)\n\nWhat does the drv variable describe?\n\n?mpg\n\nMake a scatterplot of hwy vs cyl.\nWhat happens if you make a scatterplot of class vs drv? Why is the plot not useful?"
-  },
-  {
-    "objectID": "slides/01-class.html#lets-look-at-groups-in-the-data",
-    "href": "slides/01-class.html#lets-look-at-groups-in-the-data",
-    "title": "GVPT Maths Boot Camp",
-    "section": "Let’s look at groups in the data",
-    "text": "Let’s look at groups in the data\n\nggplot(data = mpg) + \n  geom_point(mapping = aes(x = displ, y = hwy, color = class))"
-  },
-  {
-    "objectID": "slides/01-class.html#lets-look-at-groups-in-the-data-1",
-    "href": "slides/01-class.html#lets-look-at-groups-in-the-data-1",
-    "title": "GVPT Maths Boot Camp",
-    "section": "Let’s look at groups in the data",
-    "text": "Let’s look at groups in the data\n\nggplot(data = mpg) + \n  geom_point(mapping = aes(x = displ, y = hwy, size = class))"
-  },
-  {
-    "objectID": "slides/01-class.html#lets-look-at-groups-in-the-data-2",
-    "href": "slides/01-class.html#lets-look-at-groups-in-the-data-2",
-    "title": "GVPT Maths Boot Camp",
-    "section": "Let’s look at groups in the data",
-    "text": "Let’s look at groups in the data\n\nggplot(data = mpg) + \n  geom_point(mapping = aes(x = displ, y = hwy, shape = class))"
-  },
-  {
-    "objectID": "slides/01-class.html#lets-make-this-prettier",
-    "href": "slides/01-class.html#lets-make-this-prettier",
-    "title": "GVPT Maths Boot Camp",
-    "section": "Let’s make this prettier",
-    "text": "Let’s make this prettier\n\nggplot(data = mpg) + \n  geom_point(mapping = aes(x = displ, y = hwy), color = \"blue\")"
-  },
-  {
-    "objectID": "slides/01-class.html#lets-add-useful-headings",
-    "href": "slides/01-class.html#lets-add-useful-headings",
-    "title": "GVPT Maths Boot Camp",
-    "section": "Let’s add useful headings",
-    "text": "Let’s add useful headings\n\nggplot(data = mpg) + \n  geom_point(mapping = aes(x = displ, y = hwy), color = \"blue\") + \n  labs(\n    title = \"Relationship between engine displacement and highway miles per gallon\",\n    x = \"Engine displacement (L)\",\n    y = \"Highway miles per gallon\"\n  )"
-  },
-  {
-    "objectID": "slides/01-class.html#lets-add-useful-headings-1",
-    "href": "slides/01-class.html#lets-add-useful-headings-1",
-    "title": "GVPT Maths Boot Camp",
-    "section": "Let’s add useful headings",
-    "text": "Let’s add useful headings"
-  },
-  {
-    "objectID": "slides/01-class.html#lets-clean-this-up",
-    "href": "slides/01-class.html#lets-clean-this-up",
-    "title": "GVPT Maths Boot Camp",
-    "section": "Let’s clean this up",
-    "text": "Let’s clean this up\n\nggplot(data = mpg) + \n  geom_point(mapping = aes(x = displ, y = hwy), color = \"blue\") + \n  theme_minimal() + \n  labs(\n    title = \"Relationship between engine displacement and highway miles per gallon\",\n    x = \"Engine displacement (L)\",\n    y = \"Highway miles per gallon\"\n  )\n\n\n\nAll pre-set ggplot themes can be found in the ggplot documentation."
-  },
-  {
-    "objectID": "slides/01-class.html#lets-clean-this-up-1",
-    "href": "slides/01-class.html#lets-clean-this-up-1",
-    "title": "GVPT Maths Boot Camp",
-    "section": "Let’s clean this up",
-    "text": "Let’s clean this up"
-  },
-  {
-    "objectID": "slides/01-class.html#creating-your-own-theme",
-    "href": "slides/01-class.html#creating-your-own-theme",
-    "title": "GVPT Maths Boot Camp",
-    "section": "Creating your own theme",
-    "text": "Creating your own theme\n\nggplot(data = mpg) + \n  geom_point(mapping = aes(x = displ, y = hwy, color = class)) + \n  theme(\n    legend.position = \"bottom\",\n    panel.grid = element_blank(),\n    panel.background = element_blank(),\n    plot.title.position = \"plot\",\n    plot.title = element_text(face = \"bold\")\n  ) + \n  labs(\n    title = \"Relationship between engine displacement and highway miles per gallon by class\",\n    x = \"Engine displacement (L)\",\n    y = \"Highway miles per gallon\",\n    color = \"Class\"\n  )\n\n\n\nAll theme elements that you can control can be found in the ggplot documentation. There are a lot!"
-  },
-  {
-    "objectID": "slides/01-class.html#creating-your-own-theme-1",
-    "href": "slides/01-class.html#creating-your-own-theme-1",
-    "title": "GVPT Maths Boot Camp",
-    "section": "Creating your own theme",
-    "text": "Creating your own theme"
-  },
-  {
-    "objectID": "slides/01-class.html#exercises-1",
-    "href": "slides/01-class.html#exercises-1",
-    "title": "GVPT Maths Boot Camp",
-    "section": "EXERCISES",
-    "text": "EXERCISES\nWhat’s gone wrong with this code? Why are the points not blue?\n\nggplot(data = mpg) + \n  geom_point(mapping = aes(x = displ, y = hwy, color = \"blue\"))"
-  },
-  {
-    "objectID": "slides/01-class.html#exercises-2",
-    "href": "slides/01-class.html#exercises-2",
-    "title": "GVPT Maths Boot Camp",
-    "section": "EXERCISES",
-    "text": "EXERCISES\nWhich variables in mpg are categorical? Which variables are continuous?\n\nMap a continuous variable to color, size, and shape. How do these aesthetics behave differently for categorical vs. continuous variables?\n\nWhat happens if you map the same variable to multiple aesthetics?"
-  },
-  {
-    "objectID": "slides/01-class.html#exercises-3",
-    "href": "slides/01-class.html#exercises-3",
-    "title": "GVPT Maths Boot Camp",
-    "section": "EXERCISES",
-    "text": "EXERCISES\nWhat does the stroke aesthetic do? What shapes does it work with?\n\nWhat happens if you map an aesthetic to something other than a variable name, like aes(colour = displ < 5)? Note, you’ll also need to specify x and y."
-  },
-  {
-    "objectID": "slides/01-class.html#looking-at-group-specific-trends",
-    "href": "slides/01-class.html#looking-at-group-specific-trends",
-    "title": "GVPT Maths Boot Camp",
-    "section": "Looking at group-specific trends",
-    "text": "Looking at group-specific trends\n\nggplot(data = mpg) + \n  geom_point(mapping = aes(x = displ, y = hwy)) + \n  facet_wrap(~ class, nrow = 2)"
-  },
-  {
-    "objectID": "slides/01-class.html#looking-at-group-specific-trends-1",
-    "href": "slides/01-class.html#looking-at-group-specific-trends-1",
-    "title": "GVPT Maths Boot Camp",
-    "section": "Looking at group-specific trends",
-    "text": "Looking at group-specific trends\n\nggplot(data = mpg) + \n  geom_point(mapping = aes(x = displ, y = hwy)) + \n  facet_grid(drv ~ cyl)"
-  },
-  {
-    "objectID": "slides/01-class.html#summarising-relationships-in-the-data",
-    "href": "slides/01-class.html#summarising-relationships-in-the-data",
-    "title": "GVPT Maths Boot Camp",
-    "section": "Summarising relationships in the data",
-    "text": "Summarising relationships in the data\n\nggplot(data = mpg, mapping = aes(x = displ, y = hwy)) + \n  geom_point() + \n  geom_smooth(method = \"lm\", se = F)\n\n\n\nBecause both geom_point() and geom_smooth() take the arguement mapping = aes(x = displ, y = hwy), we can feed it to them both through ggplot(). We are previewing a feature heavily used in the tidyverse: the pipe."
-  },
-  {
-    "objectID": "slides/01-class.html#group-specific-relationships",
-    "href": "slides/01-class.html#group-specific-relationships",
-    "title": "GVPT Maths Boot Camp",
-    "section": "Group-specific relationships",
-    "text": "Group-specific relationships\n\nggplot(data = mpg, mapping = aes(x = displ, y = hwy, color = drv)) + \n  geom_point() + \n  geom_smooth(method = \"lm\", se = F) + \n  theme_minimal()"
-  },
-  {
-    "objectID": "slides/01-class.html#summary",
-    "href": "slides/01-class.html#summary",
-    "title": "GVPT Maths Boot Camp",
-    "section": "Summary",
-    "text": "Summary\nThis morning you:\n\nLearnt about new data science tools to help you conduct replicable and reproducable political science research\nSet up your data science tools"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site\n\n1 + 1\n\n[1] 2"
-  },
-  {
-    "objectID": "schedule.html",
-    "href": "schedule.html",
-    "title": "Schedule",
-    "section": "",
-    "text": "DATE \n    SESSION \n    TITLE \n    CONTENT \n    ASSIGNMENT \n  \n \n\n  \n    DAY 1 \n    Morning \n    Introduction and Set Up \n     \n     \n  \n  \n    DAY 1 \n    Afternoon \n    Data Visualisation \n     \n     \n  \n  \n    DAY 2 \n    Morning \n    Data Transformation \n     \n     \n  \n  \n    DAY 2 \n    Afternoon \n    Exploratory Data Analysis"
-  },
-  {
-    "objectID": "content/02-content.html#slides",
-    "href": "content/02-content.html#slides",
-    "title": "Data Visualisation",
-    "section": "Slides",
-    "text": "Slides"
-  },
-  {
-    "objectID": "content/02-content.html#in-class",
-    "href": "content/02-content.html#in-class",
-    "title": "Data Visualisation",
-    "section": "In-class",
-    "text": "In-class"
-  },
-  {
-    "objectID": "slides/02-class.html#learning-objectives-for-today",
-    "href": "slides/02-class.html#learning-objectives-for-today",
-    "title": "GVPT Maths Boot Camp",
-    "section": "Learning objectives for today",
-    "text": "Learning objectives for today\n\nCreate your first plot in R\nTest your hypotheses using informative data visualisations"
-  },
-  {
-    "objectID": "slides/02-class.html#the-research-process",
-    "href": "slides/02-class.html#the-research-process",
-    "title": "GVPT Maths Boot Camp",
-    "section": "The Research Process",
-    "text": "The Research Process\n\nSource: R4DS"
-  },
-  {
-    "objectID": "slides/02-class.html#r-basics",
-    "href": "slides/02-class.html#r-basics",
-    "title": "GVPT Maths Boot Camp",
-    "section": "R basics",
-    "text": "R basics\nR code:\n\n1 + 2\n\n[1] 3\n\n\nFunctions:\n\nsum(1, 2)\n\n[1] 3"
-  },
-  {
-    "objectID": "slides/02-class.html#r-packages",
-    "href": "slides/02-class.html#r-packages",
-    "title": "GVPT Maths Boot Camp",
-    "section": "R packages",
-    "text": "R packages\nPackages are collections of R functions, data, and compiled code in a well-defined format\n\n# Install the relevant package(s)\ninstall.packages(\"tidyverse\")\n\n# Load the package in current session\nlibrary(tidyverse)"
-  },
-  {
-    "objectID": "slides/02-class.html#data-visualisation",
-    "href": "slides/02-class.html#data-visualisation",
-    "title": "GVPT Maths Boot Camp",
-    "section": "Data visualisation",
-    "text": "Data visualisation\nFrom R4DS - Data Visualization:\n\nDo cars with big engines use more fuel than cars with small engines?\n\n\nLet’s use our first graph to answer a question: Do cars with big engines use more fuel than cars with small engines? You probably already have an answer, but try to make your answer precise. What does the relationship between engine size and fuel efficiency look like? Is it positive? Negative? Linear? Nonlinear?"
-  },
-  {
-    "objectID": "slides/02-class.html#skipping-to-the-end",
-    "href": "slides/02-class.html#skipping-to-the-end",
-    "title": "GVPT Maths Boot Camp",
-    "section": "Skipping to the end",
-    "text": "Skipping to the end"
-  },
-  {
-    "objectID": "slides/02-class.html#load-relevant-packages-and-data",
-    "href": "slides/02-class.html#load-relevant-packages-and-data",
-    "title": "GVPT Maths Boot Camp",
-    "section": "Load relevant packages and data",
-    "text": "Load relevant packages and data\n\n# Load the relevant functions\nlibrary(tidyverse)\n\n# Load the data\nmpg\n\n\n\n\n\n\nmanufacturer\nmodel\ndispl\nyear\ncyl\n\n\n\n\naudi\na4\n1.8\n1999\n4\n\n\naudi\na4\n1.8\n1999\n4\n\n\naudi\na4\n2.0\n2008\n4\n\n\naudi\na4\n2.0\n2008\n4\n\n\naudi\na4\n2.8\n1999\n6\n\n\naudi\na4\n2.8\n1999\n6\n\n\n\n\n\n\nYou only need to install a package once, but you need to reload it every time you start a new session.\nA data frame is a rectangular collection of variables (in the columns) and observations (in the rows). mpg contains observations collected by the US Environmental Protection Agency on 38 models of car."
-  },
-  {
-    "objectID": "slides/02-class.html#learning-more-about-the-data",
-    "href": "slides/02-class.html#learning-more-about-the-data",
-    "title": "GVPT Maths Boot Camp",
-    "section": "Learning more about the data",
-    "text": "Learning more about the data\nTo get help on any function or dataset use: ?function\n\nFor example, to learn more about this package type ?mpg into your console.\n\nAmong the variables in mpg are:\n\ndispl, a car’s engine size, in litres.\nhwy, a car’s fuel efficiency on the highway, in miles per gallon (mpg). A car with a low fuel efficiency consumes more fuel than a car with a high fuel efficiency when they travel the same distance."
-  },
-  {
-    "objectID": "slides/02-class.html#plot-your-data",
-    "href": "slides/02-class.html#plot-your-data",
-    "title": "GVPT Maths Boot Camp",
-    "section": "Plot your data",
-    "text": "Plot your data\n\nlibrary(ggplot2)\n\nggplot(data = mpg) + \n  geom_point(mapping = aes(x = displ, y = hwy))\n\n\n\nThe plot shows a negative relationship between engine size (displ) and fuel efficiency (hwy). In other words, cars with big engines use more fuel. Does this confirm or refute your hypothesis about fuel efficiency and engine size?\nWith ggplot2, you begin a plot with the function ggplot(). ggplot() creates a coordinate system that you can add layers to. The first argument of ggplot() is the dataset to use in the graph. So ggplot(data = mpg) creates an empty graph, but it’s not very interesting so I’m not going to show it here.\nYou complete your graph by adding one or more layers to ggplot(). The function geom_point() adds a layer of points to your plot, which creates a scatterplot. ggplot2 comes with many geom functions that each add a different type of layer to a plot. You’ll learn a whole bunch of them throughout this chapter.\nEach geom function in ggplot2 takes a mapping argument. This defines how variables in your dataset are mapped to visual properties. The mapping argument is always paired with aes(), and the x and y arguments of aes() specify which variables to map to the x and y axes. ggplot2 looks for the mapped variables in the data argument, in this case, mpg."
-  },
-  {
-    "objectID": "slides/02-class.html#exercises",
-    "href": "slides/02-class.html#exercises",
-    "title": "GVPT Maths Boot Camp",
-    "section": "EXERCISES",
-    "text": "EXERCISES\nWhat do you see when you run the following?\n\nggplot(data = mpg)\n\nHow many rows are in mpg? How many columns?\n\nnrow(mpg)\nncol(mpg)\n\nWhat does the drv variable describe?\n\n?mpg\n\nMake a scatterplot of hwy vs cyl.\nWhat happens if you make a scatterplot of class vs drv? Why is the plot not useful?"
-  },
-  {
-    "objectID": "slides/02-class.html#lets-look-at-groups-in-the-data",
-    "href": "slides/02-class.html#lets-look-at-groups-in-the-data",
-    "title": "GVPT Maths Boot Camp",
-    "section": "Let’s look at groups in the data",
-    "text": "Let’s look at groups in the data\n\nggplot(data = mpg) + \n  geom_point(mapping = aes(x = displ, y = hwy, color = class))"
-  },
-  {
-    "objectID": "slides/02-class.html#lets-look-at-groups-in-the-data-1",
-    "href": "slides/02-class.html#lets-look-at-groups-in-the-data-1",
-    "title": "GVPT Maths Boot Camp",
-    "section": "Let’s look at groups in the data",
-    "text": "Let’s look at groups in the data\n\nggplot(data = mpg) + \n  geom_point(mapping = aes(x = displ, y = hwy, size = class))"
-  },
-  {
-    "objectID": "slides/02-class.html#lets-look-at-groups-in-the-data-2",
-    "href": "slides/02-class.html#lets-look-at-groups-in-the-data-2",
-    "title": "GVPT Maths Boot Camp",
-    "section": "Let’s look at groups in the data",
-    "text": "Let’s look at groups in the data\n\nggplot(data = mpg) + \n  geom_point(mapping = aes(x = displ, y = hwy, shape = class))"
-  },
-  {
-    "objectID": "slides/02-class.html#lets-make-this-prettier",
-    "href": "slides/02-class.html#lets-make-this-prettier",
-    "title": "GVPT Maths Boot Camp",
-    "section": "Let’s make this prettier",
-    "text": "Let’s make this prettier\n\nggplot(data = mpg) + \n  geom_point(mapping = aes(x = displ, y = hwy), color = \"blue\")"
-  },
-  {
-    "objectID": "slides/02-class.html#lets-add-useful-headings",
-    "href": "slides/02-class.html#lets-add-useful-headings",
-    "title": "GVPT Maths Boot Camp",
-    "section": "Let’s add useful headings",
-    "text": "Let’s add useful headings\n\nggplot(data = mpg) + \n  geom_point(mapping = aes(x = displ, y = hwy), color = \"blue\") + \n  labs(\n    title = \"Relationship between engine displacement and highway miles per gallon\",\n    x = \"Engine displacement (L)\",\n    y = \"Highway miles per gallon\"\n  )"
-  },
-  {
-    "objectID": "slides/02-class.html#lets-add-useful-headings-1",
-    "href": "slides/02-class.html#lets-add-useful-headings-1",
-    "title": "GVPT Maths Boot Camp",
-    "section": "Let’s add useful headings",
-    "text": "Let’s add useful headings"
-  },
-  {
-    "objectID": "slides/02-class.html#lets-clean-this-up",
-    "href": "slides/02-class.html#lets-clean-this-up",
-    "title": "GVPT Maths Boot Camp",
-    "section": "Let’s clean this up",
-    "text": "Let’s clean this up\n\nggplot(data = mpg) + \n  geom_point(mapping = aes(x = displ, y = hwy), color = \"blue\") + \n  theme_minimal() + \n  labs(\n    title = \"Relationship between engine displacement and highway miles per gallon\",\n    x = \"Engine displacement (L)\",\n    y = \"Highway miles per gallon\"\n  )\n\n\n\nAll pre-set ggplot themes can be found in the ggplot documentation."
-  },
-  {
-    "objectID": "slides/02-class.html#lets-clean-this-up-1",
-    "href": "slides/02-class.html#lets-clean-this-up-1",
-    "title": "GVPT Maths Boot Camp",
-    "section": "Let’s clean this up",
-    "text": "Let’s clean this up"
-  },
-  {
-    "objectID": "slides/02-class.html#creating-your-own-theme",
-    "href": "slides/02-class.html#creating-your-own-theme",
-    "title": "GVPT Maths Boot Camp",
-    "section": "Creating your own theme",
-    "text": "Creating your own theme\n\nggplot(data = mpg) + \n  geom_point(mapping = aes(x = displ, y = hwy, color = class)) + \n  theme(\n    legend.position = \"bottom\",\n    panel.grid = element_blank(),\n    panel.background = element_blank(),\n    plot.title.position = \"plot\",\n    plot.title = element_text(face = \"bold\")\n  ) + \n  labs(\n    title = \"Relationship between engine displacement and highway miles per gallon by class\",\n    x = \"Engine displacement (L)\",\n    y = \"Highway miles per gallon\",\n    color = \"Class\"\n  )\n\n\n\nAll theme elements that you can control can be found in the ggplot documentation. There are a lot!"
-  },
-  {
-    "objectID": "slides/02-class.html#creating-your-own-theme-1",
-    "href": "slides/02-class.html#creating-your-own-theme-1",
-    "title": "GVPT Maths Boot Camp",
-    "section": "Creating your own theme",
-    "text": "Creating your own theme"
-  },
-  {
-    "objectID": "slides/02-class.html#exercises-1",
-    "href": "slides/02-class.html#exercises-1",
-    "title": "GVPT Maths Boot Camp",
-    "section": "EXERCISES",
-    "text": "EXERCISES\nWhat’s gone wrong with this code? Why are the points not blue?\n\nggplot(data = mpg) + \n  geom_point(mapping = aes(x = displ, y = hwy, color = \"blue\"))"
-  },
-  {
-    "objectID": "slides/02-class.html#exercises-2",
-    "href": "slides/02-class.html#exercises-2",
-    "title": "GVPT Maths Boot Camp",
-    "section": "EXERCISES",
-    "text": "EXERCISES\nWhich variables in mpg are categorical? Which variables are continuous?\n\nMap a continuous variable to color, size, and shape. How do these aesthetics behave differently for categorical vs. continuous variables?\n\nWhat happens if you map the same variable to multiple aesthetics?"
-  },
-  {
-    "objectID": "slides/02-class.html#exercises-3",
-    "href": "slides/02-class.html#exercises-3",
-    "title": "GVPT Maths Boot Camp",
-    "section": "EXERCISES",
-    "text": "EXERCISES\nWhat does the stroke aesthetic do? What shapes does it work with?\n\nWhat happens if you map an aesthetic to something other than a variable name, like aes(colour = displ < 5)? Note, you’ll also need to specify x and y."
-  },
-  {
-    "objectID": "slides/02-class.html#looking-at-group-specific-trends",
-    "href": "slides/02-class.html#looking-at-group-specific-trends",
-    "title": "GVPT Maths Boot Camp",
-    "section": "Looking at group-specific trends",
-    "text": "Looking at group-specific trends\n\nggplot(data = mpg) + \n  geom_point(mapping = aes(x = displ, y = hwy)) + \n  facet_wrap(~ class, nrow = 2)"
-  },
-  {
-    "objectID": "slides/02-class.html#looking-at-group-specific-trends-1",
-    "href": "slides/02-class.html#looking-at-group-specific-trends-1",
-    "title": "GVPT Maths Boot Camp",
-    "section": "Looking at group-specific trends",
-    "text": "Looking at group-specific trends\n\nggplot(data = mpg) + \n  geom_point(mapping = aes(x = displ, y = hwy)) + \n  facet_grid(drv ~ cyl)"
-  },
-  {
-    "objectID": "slides/02-class.html#summarising-relationships-in-the-data",
-    "href": "slides/02-class.html#summarising-relationships-in-the-data",
-    "title": "GVPT Maths Boot Camp",
-    "section": "Summarising relationships in the data",
-    "text": "Summarising relationships in the data\n\nggplot(data = mpg, mapping = aes(x = displ, y = hwy)) + \n  geom_point() + \n  geom_smooth(method = \"lm\", se = F)\n\n\n\nBecause both geom_point() and geom_smooth() take the arguement mapping = aes(x = displ, y = hwy), we can feed it to them both through ggplot(). We are previewing a feature heavily used in the tidyverse: the pipe."
-  },
-  {
-    "objectID": "slides/02-class.html#group-specific-relationships",
-    "href": "slides/02-class.html#group-specific-relationships",
-    "title": "GVPT Maths Boot Camp",
-    "section": "Group-specific relationships",
-    "text": "Group-specific relationships\n\nggplot(data = mpg, mapping = aes(x = displ, y = hwy, color = drv)) + \n  geom_point() + \n  geom_smooth(method = \"lm\", se = F) + \n  theme_minimal()"
-  },
-  {
-    "objectID": "slides/02-class.html#summary",
-    "href": "slides/02-class.html#summary",
-    "title": "GVPT Maths Boot Camp",
-    "section": "Summary",
-    "text": "Summary\nToday you:\n\nSet up your data science tools\nPlotted complex data in an engaging way\nDiscovered interesting relationships in the data\nConnected these relationships or trends to your expectations (or hypotheses about the data)"
-  },
-  {
-    "objectID": "content/02-content.html",
-    "href": "content/02-content.html",
-    "title": "Data Visualisation",
-    "section": "",
-    "text": "Data Visualisation chapter in Hadley Wickham’s R4DS\n\n\n\n Kieran Healy’s Data Visualization: A Practical Guide"
-  },
-  {
-    "objectID": "slides/03-class.html#learning-objectives",
-    "href": "slides/03-class.html#learning-objectives",
-    "title": "GVPT Maths Boot Camp",
-    "section": "Learning objectives",
-    "text": "Learning objectives\n\nLearn basic operations using R\nBe introduced to dplyr\nClean up and transform your data"
-  },
-  {
-    "objectID": "slides/03-class.html#r-as-a-calculator",
-    "href": "slides/03-class.html#r-as-a-calculator",
-    "title": "GVPT Maths Boot Camp",
-    "section": "R as a calculator",
-    "text": "R as a calculator\n\n\n1 / 200 * 30\n\n[1] 0.15\n\n\n\n\n(59 + 73 + 2) / 3\n\n[1] 44.66667\n\n\n\n\nsin(pi / 2)\n\n[1] 1"
-  },
-  {
-    "objectID": "slides/03-class.html#r-objects",
-    "href": "slides/03-class.html#r-objects",
-    "title": "GVPT Maths Boot Camp",
-    "section": "R objects",
-    "text": "R objects\nCreate new objects with <-\n\nx <- 3 * 4\n\nx\n\n[1] 12\n\n\n\n\nx <- 3 * 10\n\nx\n\n[1] 30"
-  },
-  {
-    "objectID": "slides/03-class.html#r-functions",
-    "href": "slides/03-class.html#r-functions",
-    "title": "GVPT Maths Boot Camp",
-    "section": "R functions",
-    "text": "R functions\nMany functions come with R straight out of the box:\n\nseq(1, 10)\n\n [1]  1  2  3  4  5  6  7  8  9 10\n\n\n\nYou can create objects using functions:\n\nx <- seq(1, 10)\n\nx\n\n [1]  1  2  3  4  5  6  7  8  9 10"
-  },
-  {
-    "objectID": "slides/03-class.html#introduction-to-data-transformation",
-    "href": "slides/03-class.html#introduction-to-data-transformation",
-    "title": "GVPT Maths Boot Camp",
-    "section": "Introduction to data transformation",
-    "text": "Introduction to data transformation\n\nTO DO: Add video link"
-  },
-  {
-    "objectID": "slides/03-class.html#accessing-gapminder-data",
-    "href": "slides/03-class.html#accessing-gapminder-data",
-    "title": "GVPT Maths Boot Camp",
-    "section": "Accessing gapminder data",
-    "text": "Accessing gapminder data\nFirst, you need to install the gapminder package:\n\ninstall.packages(\"gapminder\")\n\nThen access the gapminder data set:\n\nlibrary(gapminder)\n\nhead(gapminder)\n\n# A tibble: 6 × 6\n  country     continent  year lifeExp      pop gdpPercap\n  <fct>       <fct>     <int>   <dbl>    <int>     <dbl>\n1 Afghanistan Asia       1952    28.8  8425333      779.\n2 Afghanistan Asia       1957    30.3  9240934      821.\n3 Afghanistan Asia       1962    32.0 10267083      853.\n4 Afghanistan Asia       1967    34.0 11537966      836.\n5 Afghanistan Asia       1972    36.1 13079460      740.\n6 Afghanistan Asia       1977    38.4 14880372      786."
-  },
-  {
-    "objectID": "slides/03-class.html#data-types",
-    "href": "slides/03-class.html#data-types",
-    "title": "GVPT Maths Boot Camp",
-    "section": "Data types",
-    "text": "Data types\nIn gapminder:\n\nfctr stands for factors, which R uses to represent categorical variables with fixed possible values.\nint stands for integer.\ndbl stands for doubles (or real numbers)."
-  },
-  {
-    "objectID": "slides/03-class.html#data-types-1",
-    "href": "slides/03-class.html#data-types-1",
-    "title": "GVPT Maths Boot Camp",
-    "section": "Data types",
-    "text": "Data types\nOther types:\n\nchr stands for character vectors, or strings.\ndttm stands for date-times (a date + a time).\nlgl stands for logical, vectors that contain only TRUE or FALSE.1\n\nTRUE can be shortened to T and FALSE can be shortened to F."
-  },
-  {
-    "objectID": "slides/03-class.html#introducing-dplyr",
-    "href": "slides/03-class.html#introducing-dplyr",
-    "title": "GVPT Maths Boot Camp",
-    "section": "Introducing dplyr",
-    "text": "Introducing dplyr\nHelp you with most of your data transformation needs.\nFive basic functions:\n\nfilter()\narrange()\nselect()\nmutate()\nsummarise()"
-  },
-  {
-    "objectID": "slides/03-class.html#filter-rows-with-filter",
-    "href": "slides/03-class.html#filter-rows-with-filter",
-    "title": "GVPT Maths Boot Camp",
-    "section": "Filter rows with filter()",
-    "text": "Filter rows with filter()\n\nlibrary(dplyr)\n\nfilter(gapminder, country == \"Australia\", year > 2000)\n\n# A tibble: 2 × 6\n  country   continent  year lifeExp      pop gdpPercap\n  <fct>     <fct>     <int>   <dbl>    <int>     <dbl>\n1 Australia Oceania    2002    80.4 19546792    30688.\n2 Australia Oceania    2007    81.2 20434176    34435."
-  },
-  {
-    "objectID": "slides/03-class.html#filter-rows-with-filter-1",
-    "href": "slides/03-class.html#filter-rows-with-filter-1",
-    "title": "GVPT Maths Boot Camp",
-    "section": "Filter rows with filter()",
-    "text": "Filter rows with filter()\n\nlibrary(dplyr)\n\nfilter(gapminder, continent %in% c(\"Asia\", \"Oceania\"))\n\n# A tibble: 420 × 6\n   country     continent  year lifeExp      pop gdpPercap\n   <fct>       <fct>     <int>   <dbl>    <int>     <dbl>\n 1 Afghanistan Asia       1952    28.8  8425333      779.\n 2 Afghanistan Asia       1957    30.3  9240934      821.\n 3 Afghanistan Asia       1962    32.0 10267083      853.\n 4 Afghanistan Asia       1967    34.0 11537966      836.\n 5 Afghanistan Asia       1972    36.1 13079460      740.\n 6 Afghanistan Asia       1977    38.4 14880372      786.\n 7 Afghanistan Asia       1982    39.9 12881816      978.\n 8 Afghanistan Asia       1987    40.8 13867957      852.\n 9 Afghanistan Asia       1992    41.7 16317921      649.\n10 Afghanistan Asia       1997    41.8 22227415      635.\n# … with 410 more rows"
-  },
-  {
-    "objectID": "slides/03-class.html#filter-rows-with-filter-2",
-    "href": "slides/03-class.html#filter-rows-with-filter-2",
-    "title": "GVPT Maths Boot Camp",
-    "section": "Filter rows with filter()",
-    "text": "Filter rows with filter()\n\nlibrary(dplyr)\n\nfilter(gapminder, pop > 500000 & pop < 1000000)\n\n# A tibble: 88 × 6\n   country  continent  year lifeExp    pop gdpPercap\n   <fct>    <fct>     <int>   <dbl>  <int>     <dbl>\n 1 Bahrain  Asia       1992    72.6 529491    19036.\n 2 Bahrain  Asia       1997    73.9 598561    20292.\n 3 Bahrain  Asia       2002    74.8 656397    23404.\n 4 Bahrain  Asia       2007    75.6 708573    29796.\n 5 Botswana Africa     1962    51.5 512764      984.\n 6 Botswana Africa     1967    53.3 553541     1215.\n 7 Botswana Africa     1972    56.0 619351     2264.\n 8 Botswana Africa     1977    59.3 781472     3215.\n 9 Botswana Africa     1982    61.5 970347     4551.\n10 Comoros  Africa     1997    60.7 527982     1174.\n# … with 78 more rows"
-  },
-  {
-    "objectID": "slides/03-class.html#filter-rows-with-filter-3",
-    "href": "slides/03-class.html#filter-rows-with-filter-3",
-    "title": "GVPT Maths Boot Camp",
-    "section": "Filter rows with filter()",
-    "text": "Filter rows with filter()\n\nlibrary(dplyr)\n\nfilter(gapminder, pop > 500000 | pop < 1000000)\n\n# A tibble: 1,704 × 6\n   country     continent  year lifeExp      pop gdpPercap\n   <fct>       <fct>     <int>   <dbl>    <int>     <dbl>\n 1 Afghanistan Asia       1952    28.8  8425333      779.\n 2 Afghanistan Asia       1957    30.3  9240934      821.\n 3 Afghanistan Asia       1962    32.0 10267083      853.\n 4 Afghanistan Asia       1967    34.0 11537966      836.\n 5 Afghanistan Asia       1972    36.1 13079460      740.\n 6 Afghanistan Asia       1977    38.4 14880372      786.\n 7 Afghanistan Asia       1982    39.9 12881816      978.\n 8 Afghanistan Asia       1987    40.8 13867957      852.\n 9 Afghanistan Asia       1992    41.7 16317921      649.\n10 Afghanistan Asia       1997    41.8 22227415      635.\n# … with 1,694 more rows"
-  },
-  {
-    "objectID": "slides/03-class.html#arrange-rows-with-arrange",
-    "href": "slides/03-class.html#arrange-rows-with-arrange",
-    "title": "GVPT Maths Boot Camp",
-    "section": "Arrange rows with arrange()",
-    "text": "Arrange rows with arrange()\n\nlibrary(dplyr)\n\narrange(gapminder, country, year)\n\n# A tibble: 1,704 × 6\n   country     continent  year lifeExp      pop gdpPercap\n   <fct>       <fct>     <int>   <dbl>    <int>     <dbl>\n 1 Afghanistan Asia       1952    28.8  8425333      779.\n 2 Afghanistan Asia       1957    30.3  9240934      821.\n 3 Afghanistan Asia       1962    32.0 10267083      853.\n 4 Afghanistan Asia       1967    34.0 11537966      836.\n 5 Afghanistan Asia       1972    36.1 13079460      740.\n 6 Afghanistan Asia       1977    38.4 14880372      786.\n 7 Afghanistan Asia       1982    39.9 12881816      978.\n 8 Afghanistan Asia       1987    40.8 13867957      852.\n 9 Afghanistan Asia       1992    41.7 16317921      649.\n10 Afghanistan Asia       1997    41.8 22227415      635.\n# … with 1,694 more rows"
-  },
-  {
-    "objectID": "slides/03-class.html#arrange-rows-with-arrange-1",
-    "href": "slides/03-class.html#arrange-rows-with-arrange-1",
-    "title": "GVPT Maths Boot Camp",
-    "section": "Arrange rows with arrange()",
-    "text": "Arrange rows with arrange()\n\nlibrary(dplyr)\n\narrange(gapminder, country, desc(year))\n\n# A tibble: 1,704 × 6\n   country     continent  year lifeExp      pop gdpPercap\n   <fct>       <fct>     <int>   <dbl>    <int>     <dbl>\n 1 Afghanistan Asia       2007    43.8 31889923      975.\n 2 Afghanistan Asia       2002    42.1 25268405      727.\n 3 Afghanistan Asia       1997    41.8 22227415      635.\n 4 Afghanistan Asia       1992    41.7 16317921      649.\n 5 Afghanistan Asia       1987    40.8 13867957      852.\n 6 Afghanistan Asia       1982    39.9 12881816      978.\n 7 Afghanistan Asia       1977    38.4 14880372      786.\n 8 Afghanistan Asia       1972    36.1 13079460      740.\n 9 Afghanistan Asia       1967    34.0 11537966      836.\n10 Afghanistan Asia       1962    32.0 10267083      853.\n# … with 1,694 more rows"
-  },
-  {
-    "objectID": "slides/03-class.html#select-columns-with-select",
-    "href": "slides/03-class.html#select-columns-with-select",
-    "title": "GVPT Maths Boot Camp",
-    "section": "Select columns with select()",
-    "text": "Select columns with select()\n\nlibrary(dplyr)\n\nselect(gapminder, country, year, pop)\n\n# A tibble: 1,704 × 3\n   country      year      pop\n   <fct>       <int>    <int>\n 1 Afghanistan  1952  8425333\n 2 Afghanistan  1957  9240934\n 3 Afghanistan  1962 10267083\n 4 Afghanistan  1967 11537966\n 5 Afghanistan  1972 13079460\n 6 Afghanistan  1977 14880372\n 7 Afghanistan  1982 12881816\n 8 Afghanistan  1987 13867957\n 9 Afghanistan  1992 16317921\n10 Afghanistan  1997 22227415\n# … with 1,694 more rows"
-  },
-  {
-    "objectID": "slides/03-class.html#select-columns-with-select-1",
-    "href": "slides/03-class.html#select-columns-with-select-1",
-    "title": "GVPT Maths Boot Camp",
-    "section": "Select columns with select()",
-    "text": "Select columns with select()\n\nlibrary(dplyr)\n\nselect(gapminder, country:pop)\n\n# A tibble: 1,704 × 5\n   country     continent  year lifeExp      pop\n   <fct>       <fct>     <int>   <dbl>    <int>\n 1 Afghanistan Asia       1952    28.8  8425333\n 2 Afghanistan Asia       1957    30.3  9240934\n 3 Afghanistan Asia       1962    32.0 10267083\n 4 Afghanistan Asia       1967    34.0 11537966\n 5 Afghanistan Asia       1972    36.1 13079460\n 6 Afghanistan Asia       1977    38.4 14880372\n 7 Afghanistan Asia       1982    39.9 12881816\n 8 Afghanistan Asia       1987    40.8 13867957\n 9 Afghanistan Asia       1992    41.7 16317921\n10 Afghanistan Asia       1997    41.8 22227415\n# … with 1,694 more rows"
-  },
-  {
-    "objectID": "slides/03-class.html#select-columns-with-select-2",
-    "href": "slides/03-class.html#select-columns-with-select-2",
-    "title": "GVPT Maths Boot Camp",
-    "section": "Select columns with select()",
-    "text": "Select columns with select()\n\nlibrary(dplyr)\n\nselect(gapminder, -(lifeExp:pop))\n\n# A tibble: 1,704 × 4\n   country     continent  year gdpPercap\n   <fct>       <fct>     <int>     <dbl>\n 1 Afghanistan Asia       1952      779.\n 2 Afghanistan Asia       1957      821.\n 3 Afghanistan Asia       1962      853.\n 4 Afghanistan Asia       1967      836.\n 5 Afghanistan Asia       1972      740.\n 6 Afghanistan Asia       1977      786.\n 7 Afghanistan Asia       1982      978.\n 8 Afghanistan Asia       1987      852.\n 9 Afghanistan Asia       1992      649.\n10 Afghanistan Asia       1997      635.\n# … with 1,694 more rows"
-  },
-  {
-    "objectID": "slides/03-class.html#add-new-variables-with-mutate",
-    "href": "slides/03-class.html#add-new-variables-with-mutate",
-    "title": "GVPT Maths Boot Camp",
-    "section": "Add new variables with mutate()",
-    "text": "Add new variables with mutate()\n\nlibrary(dplyr)\n\nmutate(gapminder, gdp = gdpPercap * pop)\n\n# A tibble: 1,704 × 7\n   country     continent  year lifeExp      pop gdpPercap          gdp\n   <fct>       <fct>     <int>   <dbl>    <int>     <dbl>        <dbl>\n 1 Afghanistan Asia       1952    28.8  8425333      779.  6567086330.\n 2 Afghanistan Asia       1957    30.3  9240934      821.  7585448670.\n 3 Afghanistan Asia       1962    32.0 10267083      853.  8758855797.\n 4 Afghanistan Asia       1967    34.0 11537966      836.  9648014150.\n 5 Afghanistan Asia       1972    36.1 13079460      740.  9678553274.\n 6 Afghanistan Asia       1977    38.4 14880372      786. 11697659231.\n 7 Afghanistan Asia       1982    39.9 12881816      978. 12598563401.\n 8 Afghanistan Asia       1987    40.8 13867957      852. 11820990309.\n 9 Afghanistan Asia       1992    41.7 16317921      649. 10595901589.\n10 Afghanistan Asia       1997    41.8 22227415      635. 14121995875.\n# … with 1,694 more rows"
-  },
-  {
-    "objectID": "slides/03-class.html#select-transform-and-add-new-variables-with-transmute",
-    "href": "slides/03-class.html#select-transform-and-add-new-variables-with-transmute",
-    "title": "GVPT Maths Boot Camp",
-    "section": "Select, transform, and add new variables with transmute()",
-    "text": "Select, transform, and add new variables with transmute()\n\nlibrary(dplyr)\n\ntransmute(gapminder, country, year, gdp = gdpPercap * pop)\n\n# A tibble: 1,704 × 3\n   country      year          gdp\n   <fct>       <int>        <dbl>\n 1 Afghanistan  1952  6567086330.\n 2 Afghanistan  1957  7585448670.\n 3 Afghanistan  1962  8758855797.\n 4 Afghanistan  1967  9648014150.\n 5 Afghanistan  1972  9678553274.\n 6 Afghanistan  1977 11697659231.\n 7 Afghanistan  1982 12598563401.\n 8 Afghanistan  1987 11820990309.\n 9 Afghanistan  1992 10595901589.\n10 Afghanistan  1997 14121995875.\n# … with 1,694 more rows"
-  },
-  {
-    "objectID": "slides/03-class.html#create-summaries-with-summarise",
-    "href": "slides/03-class.html#create-summaries-with-summarise",
-    "title": "GVPT Maths Boot Camp",
-    "section": "Create summaries with summarise()",
-    "text": "Create summaries with summarise()\n\nlibrary(dplyr)\n\nsummarise(gapminder, avg_pop = mean(pop), avg_gdp_per_cap = mean(gdpPercap))\n\n# A tibble: 1 × 2\n    avg_pop avg_gdp_per_cap\n      <dbl>           <dbl>\n1 29601212.           7215."
-  },
-  {
-    "objectID": "slides/03-class.html#creating-grouped-summaries-with-group_by-and-summarise",
-    "href": "slides/03-class.html#creating-grouped-summaries-with-group_by-and-summarise",
-    "title": "GVPT Maths Boot Camp",
-    "section": "Creating grouped summaries with group_by() and summarise()",
-    "text": "Creating grouped summaries with group_by() and summarise()\n\nlibrary(dplyr)\n\ngapminder_continent <- group_by(gapminder, continent)\n\nsummarise(gapminder_continent, avg_pop = mean(pop), avg_gdp_per_cap = mean(gdpPercap))\n\n# A tibble: 5 × 3\n  continent   avg_pop avg_gdp_per_cap\n  <fct>         <dbl>           <dbl>\n1 Africa     9916003.           2194.\n2 Americas  24504795.           7136.\n3 Asia      77038722.           7902.\n4 Europe    17169765.          14469.\n5 Oceania    8874672.          18622."
-  },
-  {
-    "objectID": "slides/03-class.html#combine-multiple-operations-with-the-pipe",
-    "href": "slides/03-class.html#combine-multiple-operations-with-the-pipe",
-    "title": "GVPT Maths Boot Camp",
-    "section": "Combine multiple operations with the pipe",
-    "text": "Combine multiple operations with the pipe\n\nlibrary(dplyr)\n\ngapminder |> \n  group_by(continent) |> \n  summarise(avg_pop = mean(pop), avg_gdp_per_cap = mean(gdpPercap)) |> \n  arrange(avg_gdp_per_cap)\n\n# A tibble: 5 × 3\n  continent   avg_pop avg_gdp_per_cap\n  <fct>         <dbl>           <dbl>\n1 Africa     9916003.           2194.\n2 Americas  24504795.           7136.\n3 Asia      77038722.           7902.\n4 Europe    17169765.          14469.\n5 Oceania    8874672.          18622."
-  },
-  {
-    "objectID": "slides/03-class.html#combine-multiple-operations-with-the-pipe-1",
-    "href": "slides/03-class.html#combine-multiple-operations-with-the-pipe-1",
-    "title": "GVPT Maths Boot Camp",
-    "section": "Combine multiple operations with the pipe",
-    "text": "Combine multiple operations with the pipe\n\nlibrary(dplyr)\nlibrary(ggplot2)\n\ngapminder |> \n  group_by(continent) |> \n  summarise(avg_pop = mean(pop), avg_gdp_per_cap = mean(gdpPercap)) |> \n  ggplot(aes(x = continent, y = avg_gdp_per_cap)) + \n  geom_col() + \n  theme_minimal()"
-  },
-  {
-    "objectID": "slides/03-class.html#a-note-on-the-pipe",
-    "href": "slides/03-class.html#a-note-on-the-pipe",
-    "title": "GVPT Maths Boot Camp",
-    "section": "A note on the pipe",
-    "text": "A note on the pipe\n\n\nBase pipe:\n\n|>\nCan be used without loading any packages\n\n\nTidyverse pipe:\n\n%>%\nMust load dplyr or magrittr to use"
-  },
-  {
-    "objectID": "slides/03-class.html#a-handy-shortcut-for-counting-data",
-    "href": "slides/03-class.html#a-handy-shortcut-for-counting-data",
-    "title": "GVPT Maths Boot Camp",
-    "section": "A handy shortcut for counting data",
-    "text": "A handy shortcut for counting data\n\n\n\nlibrary(dplyr)\n\ngapminder |> \n  distinct(continent, country) |> \n  group_by(continent) |> \n  summarise(n_countries = n())\n\n# A tibble: 5 × 2\n  continent n_countries\n  <fct>           <int>\n1 Africa             52\n2 Americas           25\n3 Asia               33\n4 Europe             30\n5 Oceania             2\n\n\n\n\nlibrary(dplyr)\n\ngapminder |> \n  distinct(continent, country) |> \n  count(continent)\n\n# A tibble: 5 × 2\n  continent     n\n  <fct>     <int>\n1 Africa       52\n2 Americas     25\n3 Asia         33\n4 Europe       30\n5 Oceania       2"
-  },
-  {
-    "objectID": "slides/03-class.html#a-handy-shortcut-for-counting-data-with-count",
-    "href": "slides/03-class.html#a-handy-shortcut-for-counting-data-with-count",
-    "title": "GVPT Maths Boot Camp",
-    "section": "A handy shortcut for counting data with count()",
-    "text": "A handy shortcut for counting data with count()\n\n\n\nlibrary(dplyr)\n\ngapminder |> \n  distinct(continent, country) |> \n  group_by(continent) |> \n  summarise(n_countries = n())\n\n# A tibble: 5 × 2\n  continent n_countries\n  <fct>           <int>\n1 Africa             52\n2 Americas           25\n3 Asia               33\n4 Europe             30\n5 Oceania             2\n\n\n\n\nlibrary(dplyr)\n\ngapminder |> \n  distinct(continent, country) |> \n  count(continent)\n\n# A tibble: 5 × 2\n  continent     n\n  <fct>     <int>\n1 Africa       52\n2 Americas     25\n3 Asia         33\n4 Europe       30\n5 Oceania       2"
-  },
-  {
-    "objectID": "slides/03-class.html#summary",
-    "href": "slides/03-class.html#summary",
-    "title": "GVPT Maths Boot Camp",
-    "section": "Summary",
-    "text": "Summary\nThis morning you have:\n\nLearnt R basic syntax\nLearnt how to transform your data"
-  },
-  {
-    "objectID": "content/03-content.html#slides",
-    "href": "content/03-content.html#slides",
-    "title": "Data Transformation",
-    "section": "Slides",
-    "text": "Slides"
-  },
-  {
-    "objectID": "content/03-content.html#in-class",
-    "href": "content/03-content.html#in-class",
-    "title": "Data Transformation",
-    "section": "In-class",
-    "text": "In-class"
-  },
-  {
-    "objectID": "content/03-content.html",
-    "href": "content/03-content.html",
-    "title": "Data Transformation",
-    "section": "",
-    "text": "Workflow Basics chapter in Hadley Wickham’s R4DS\n Data Transformation chapter in Hadley Wickham’s R4DS"
-  },
-  {
-    "objectID": "content/04-content.html#slides",
-    "href": "content/04-content.html#slides",
-    "title": "Exploratory Data Analysis",
-    "section": "Slides",
-    "text": "Slides"
-  },
-  {
-    "objectID": "content/04-content.html#in-class",
-    "href": "content/04-content.html#in-class",
-    "title": "Exploratory Data Analysis",
-    "section": "In-class",
-    "text": "In-class"
-  },
-  {
-    "objectID": "slides/04-class.html#learning-objectives",
-    "href": "slides/04-class.html#learning-objectives",
-    "title": "GVPT Maths Boot Camp",
-    "section": "Learning objectives",
-    "text": "Learning objectives\n\nLearn how to generate questions about your data\nLearn how to discern interesting relations in your data\nUse your new data science tools to better understand your data"
-  },
-  {
-    "objectID": "slides/04-class.html#two-basic-questions-to-guide-your-eda",
-    "href": "slides/04-class.html#two-basic-questions-to-guide-your-eda",
-    "title": "GVPT Maths Boot Camp",
-    "section": "Two basic questions to guide your EDA",
-    "text": "Two basic questions to guide your EDA\n\nWhat type of variation occurs within my variables?\n\n\n\nWhat type of covariation occurs between my variables?"
-  },
-  {
-    "objectID": "slides/04-class.html#examining-gapminder",
-    "href": "slides/04-class.html#examining-gapminder",
-    "title": "GVPT Maths Boot Camp",
-    "section": "Examining gapminder",
-    "text": "Examining gapminder\n\nlibrary(gapminder)\nlibrary(dplyr)\n\nhead(gapminder)\n\n# A tibble: 6 × 6\n  country     continent  year lifeExp      pop gdpPercap\n  <fct>       <fct>     <int>   <dbl>    <int>     <dbl>\n1 Afghanistan Asia       1952    28.8  8425333      779.\n2 Afghanistan Asia       1957    30.3  9240934      821.\n3 Afghanistan Asia       1962    32.0 10267083      853.\n4 Afghanistan Asia       1967    34.0 11537966      836.\n5 Afghanistan Asia       1972    36.1 13079460      740.\n6 Afghanistan Asia       1977    38.4 14880372      786."
-  },
-  {
-    "objectID": "slides/04-class.html#variation",
-    "href": "slides/04-class.html#variation",
-    "title": "GVPT Maths Boot Camp",
-    "section": "Variation",
-    "text": "Variation\nHow many countries are there in our data set?\n\ngapminder |> \n  distinct(country) |> \n  nrow()\n\n[1] 142\n\n\nHow many continents?\n\ngapminder |> \n  distinct(continent) |> \n  nrow()\n\n[1] 5\n\n\nHow many years do we cover?\n\ngapminder |> \n  distinct(year) |> \n  nrow()\n\n[1] 12\n\n\nEXERCISE: How many countries in each continent?"
-  },
-  {
-    "objectID": "slides/04-class.html#variation-factors",
-    "href": "slides/04-class.html#variation-factors",
-    "title": "GVPT Maths Boot Camp",
-    "section": "Variation: Factors",
-    "text": "Variation: Factors\nHow many countries are there in our data set?\n\ngapminder |> \n  distinct(country) |> \n  nrow()\n\n[1] 142\n\n\nHow many continents?\n\ngapminder |> \n  distinct(continent) |> \n  nrow()\n\n[1] 5\n\n\nEXERCISE: How many countries in each continent?"
-  },
-  {
-    "objectID": "slides/04-class.html#variation-numeric",
-    "href": "slides/04-class.html#variation-numeric",
-    "title": "GVPT Maths Boot Camp",
-    "section": "Variation: Numeric",
-    "text": "Variation: Numeric\nWhat is the earliest and latest year we cover?\n\nsummarise(gapminder, min(year), max(year))\n\n# A tibble: 1 × 2\n  `min(year)` `max(year)`\n        <int>       <int>\n1        1952        2007\n\n\nWhat about our other numeric variables?\n\nsummarise(gapminder, across(lifeExp:gdpPercap, ~ quantile(.x)))\n\n# A tibble: 5 × 3\n  lifeExp         pop gdpPercap\n    <dbl>       <dbl>     <dbl>\n1    23.6      60011       241.\n2    48.2    2793664      1202.\n3    60.7    7023596.     3532.\n4    70.8   19585222.     9325.\n5    82.6 1318683096    113523."
-  },
-  {
-    "objectID": "slides/04-class.html#interquartile-range",
-    "href": "slides/04-class.html#interquartile-range",
-    "title": "GVPT Maths Boot Camp",
-    "section": "Interquartile Range",
-    "text": "Interquartile Range\nIQR is a useful way to summarise numeric data. Consists of the:\n\nMinimum,\n25th percentile,\n50th percentile (mean or average),\n75th percentile,\nMaximum."
-  },
-  {
-    "objectID": "slides/04-class.html#visualising-the-iqr",
-    "href": "slides/04-class.html#visualising-the-iqr",
-    "title": "GVPT Maths Boot Camp",
-    "section": "Visualising the IQR",
-    "text": "Visualising the IQR\n\nlibrary(ggplot2)\n\nggplot(gapminder, aes(y = lifeExp)) + \n  geom_boxplot() + \n  theme_minimal()"
-  },
-  {
-    "objectID": "slides/04-class.html#visualising-the-distribution-of-numeric-variables",
-    "href": "slides/04-class.html#visualising-the-distribution-of-numeric-variables",
-    "title": "GVPT Maths Boot Camp",
-    "section": "Visualising the distribution of numeric variables",
-    "text": "Visualising the distribution of numeric variables\n\nggplot(gapminder, aes(x = lifeExp)) + \n  geom_histogram() + \n  theme_minimal()"
-  },
-  {
-    "objectID": "slides/04-class.html#visualising-the-distribution-of-numeric-variables-1",
-    "href": "slides/04-class.html#visualising-the-distribution-of-numeric-variables-1",
-    "title": "GVPT Maths Boot Camp",
-    "section": "Visualising the distribution of numeric variables",
-    "text": "Visualising the distribution of numeric variables\n\nggplot(gapminder, aes(x = lifeExp)) + \n  geom_density() + \n  theme_minimal()"
-  },
-  {
-    "objectID": "slides/04-class.html#visualising-counts",
-    "href": "slides/04-class.html#visualising-counts",
-    "title": "GVPT Maths Boot Camp",
-    "section": "Visualising counts",
-    "text": "Visualising counts\n\ngapminder |>\n  distinct(continent, country) |> \n  count(continent) |> \n  ggplot(aes(x = n, y = reorder(continent, n))) + \n  geom_col() + \n  theme_minimal()"
-  },
-  {
-    "objectID": "slides/04-class.html#visualising-the-distribution-of-numeric-variables-2",
-    "href": "slides/04-class.html#visualising-the-distribution-of-numeric-variables-2",
-    "title": "GVPT Maths Boot Camp",
-    "section": "Visualising the distribution of numeric variables",
-    "text": "Visualising the distribution of numeric variables\n\nggplot(gapminder, aes(x = lifeExp, fill = continent)) + \n  geom_density(alpha = 0.5) + \n  theme_minimal()"
-  },
-  {
-    "objectID": "slides/04-class.html#interquartile-range-and-five-number-summary",
-    "href": "slides/04-class.html#interquartile-range-and-five-number-summary",
-    "title": "GVPT Maths Boot Camp",
-    "section": "Interquartile Range and Five Number Summary",
-    "text": "Interquartile Range and Five Number Summary\nIQR is a useful way to summarise numeric data. Consists of the:\n\n25th percentile,\n50th percentile (mean or average),\n75th percentile\n\nThe five number summary also includes the:\n\nMinimum\nMaximum"
-  },
-  {
-    "objectID": "slides/04-class.html#identifying-unusual-values",
-    "href": "slides/04-class.html#identifying-unusual-values",
-    "title": "GVPT Maths Boot Camp",
-    "section": "Identifying unusual values",
-    "text": "Identifying unusual values\n\nggplot(gapminder, aes(x = gdpPercap)) + \n  geom_histogram() + \n  theme_minimal()"
-  },
-  {
-    "objectID": "slides/04-class.html#identifying-unusual-values-1",
-    "href": "slides/04-class.html#identifying-unusual-values-1",
-    "title": "GVPT Maths Boot Camp",
-    "section": "Identifying unusual values",
-    "text": "Identifying unusual values\n\nggplot(gapminder, aes(x = gdpPercap)) + \n  geom_boxplot() + \n  theme_minimal()\n\n\n\n\n\n\n\n\n\n\nThe tails (or whiskers) are equal to 1.5 times the IQR (75th percentile - 25th percentile). All values larger or smaller than these tails are often considered to be outliers. However, be very careful when dealing with outliers. We will discuss this more during the semester."
-  },
-  {
-    "objectID": "slides/04-class.html#identifying-relationships-in-your-data",
-    "href": "slides/04-class.html#identifying-relationships-in-your-data",
-    "title": "GVPT Maths Boot Camp",
-    "section": "Identifying relationships in your data",
-    "text": "Identifying relationships in your data\nDoes one variable tend to move in the same direction as another?\n\nggplot(gapminder, aes(x = log(gdpPercap), y = lifeExp)) + \n  geom_point() + \n  theme_minimal()"
-  },
-  {
-    "objectID": "slides/04-class.html#the-five-number-summary",
-    "href": "slides/04-class.html#the-five-number-summary",
-    "title": "GVPT Maths Boot Camp",
-    "section": "The Five Number Summary",
-    "text": "The Five Number Summary\nThe five number summary is a useful way to summarise numeric data. Consists of the:\n\nMinimum\n25th percentile,\n50th percentile (mean or average),\n75th percentile\nMaximum"
-  },
-  {
-    "objectID": "slides/04-class.html#visualising-the-five-number-summary",
-    "href": "slides/04-class.html#visualising-the-five-number-summary",
-    "title": "GVPT Maths Boot Camp",
-    "section": "Visualising the Five Number Summary",
-    "text": "Visualising the Five Number Summary\n\nlibrary(ggplot2)\n\nggplot(gapminder, aes(y = lifeExp)) + \n  geom_boxplot() + \n  theme_minimal()"
-  },
-  {
-    "objectID": "slides/04-class.html#visualising-the-iqr-for-groups",
-    "href": "slides/04-class.html#visualising-the-iqr-for-groups",
-    "title": "GVPT Maths Boot Camp",
-    "section": "Visualising the IQR for groups",
-    "text": "Visualising the IQR for groups\n\nlibrary(ggplot2)\n\nggplot(gapminder, aes(x = continent, y = lifeExp)) + \n  geom_boxplot() + \n  theme_minimal()"
-  },
-  {
-    "objectID": "slides/04-class.html#a-preview-of-linear-regression",
-    "href": "slides/04-class.html#a-preview-of-linear-regression",
-    "title": "GVPT Maths Boot Camp",
-    "section": "A preview of linear regression",
-    "text": "A preview of linear regression"
-  },
-  {
-    "objectID": "slides/04-class.html#there-has-to-be-an-easier-way",
-    "href": "slides/04-class.html#there-has-to-be-an-easier-way",
-    "title": "GVPT Maths Boot Camp",
-    "section": "There has to be an easier way!",
-    "text": "There has to be an easier way!\nA quick look with glimpse():\n\nglimpse(gapminder)\n\nA quick summary with skim():\n\ninstall.packages(\"skimr\")\n\nskimr::skim(gapminder)\n\n\n\nYou can access functions and data sets from packages without loading the package using package::function. For example, gapminder::gapminder."
-  },
-  {
-    "objectID": "slides/04-class.html#summary",
-    "href": "slides/04-class.html#summary",
-    "title": "GVPT Maths Boot Camp",
-    "section": "Summary",
-    "text": "Summary\nToday you:\n\nLearnt how to explore and visualise interesting relations in your data\nUsed your new data science tools to better understand your data"
-  },
-  {
-    "objectID": "content/04-content.html",
-    "href": "content/04-content.html",
-    "title": "Exploratory Data Analysis",
-    "section": "",
-    "text": "Exploratory Data Analysis chapter in Hadley Wickham’s R4DS"
-  },
-  {
-    "objectID": "slides/02-class.html#your-first-github-repository",
-    "href": "slides/02-class.html#your-first-github-repository",
-    "title": "GVPT Maths Boot Camp",
-    "section": "Your first GitHub repository",
-    "text": "Your first GitHub repository\nVersion control and collaboration\n\nCreate a repository in GitHub for this course\nLink your new repository to a new RStudio project\nSet relevant folders to help organise your work\nCreate a script for today\nPush it all up to your GitHub repo\n\n\n\nFor later reference, head to Jenny Bryan’s New project, GitHub first chapter in Happy Git with R."
-  },
-  {
-    "objectID": "slides/02-class.html#rstudio-projects",
-    "href": "slides/02-class.html#rstudio-projects",
-    "title": "GVPT Maths Boot Camp",
-    "section": "RStudio Projects",
-    "text": "RStudio Projects\nFor your sanity’s sake, for your co-author’s sanity’s sake\n\nKeeps everything:\n\nOrganised\nReproducible\nSustainable\n\n\n\nFor later reference, head to Hadley Wickham’s Workflow: projects chapter in R4DS."
+    "text": "Wrangle section in Hadley Wickham’s R4DS"
   },
   {
     "objectID": "content/05-content.html#slides",
@@ -938,199 +21,1046 @@
     "text": "In-class"
   },
   {
-    "objectID": "content/05-content.html",
-    "href": "content/05-content.html",
-    "title": "Data Wrangling",
+    "objectID": "content/03-content.html",
+    "href": "content/03-content.html",
+    "title": "Data Transformation",
     "section": "",
-    "text": "Wrangle section in Hadley Wickham’s R4DS"
+    "text": "Workflow Basics chapter in Hadley Wickham’s R4DS\n Data Transformation chapter in Hadley Wickham’s R4DS"
+  },
+  {
+    "objectID": "content/03-content.html#slides",
+    "href": "content/03-content.html#slides",
+    "title": "Data Transformation",
+    "section": "Slides",
+    "text": "Slides"
+  },
+  {
+    "objectID": "content/03-content.html#in-class",
+    "href": "content/03-content.html#in-class",
+    "title": "Data Transformation",
+    "section": "In-class",
+    "text": "In-class"
+  },
+  {
+    "objectID": "content/04-content.html",
+    "href": "content/04-content.html",
+    "title": "Exploratory Data Analysis",
+    "section": "",
+    "text": "Exploratory Data Analysis chapter in Hadley Wickham’s R4DS"
+  },
+  {
+    "objectID": "content/04-content.html#slides",
+    "href": "content/04-content.html#slides",
+    "title": "Exploratory Data Analysis",
+    "section": "Slides",
+    "text": "Slides"
+  },
+  {
+    "objectID": "content/04-content.html#in-class",
+    "href": "content/04-content.html#in-class",
+    "title": "Exploratory Data Analysis",
+    "section": "In-class",
+    "text": "In-class"
+  },
+  {
+    "objectID": "content/01-content.html",
+    "href": "content/01-content.html",
+    "title": "Introduction and Set Up",
+    "section": "",
+    "text": "Garrick Aden-Buie’s macOS set up blogpost\n Matti Vuorre’s macOS set up blogpost\n\n\n\n Install or upgrade R and RStudio chapter in Jennifer Bryan’s Happy Git and GitHub for the useR\n\n\n\n Installation and Connect Git, GitHub, RStudio sections in Jennifer Bryan’s Happy Git and GitHub for the useR"
+  },
+  {
+    "objectID": "content/01-content.html#slides",
+    "href": "content/01-content.html#slides",
+    "title": "Introduction and Set Up",
+    "section": "Slides",
+    "text": "Slides"
+  },
+  {
+    "objectID": "content/01-content.html#in-class",
+    "href": "content/01-content.html#in-class",
+    "title": "Introduction and Set Up",
+    "section": "In-class",
+    "text": "In-class"
+  },
+  {
+    "objectID": "content/02-content.html",
+    "href": "content/02-content.html",
+    "title": "Data Visualisation",
+    "section": "",
+    "text": "Data Visualisation chapter in Hadley Wickham’s R4DS\n\n\n\n Kieran Healy’s Data Visualization: A Practical Guide\n Claus O. Wilke’s Fundamentals of Data Visualization"
+  },
+  {
+    "objectID": "content/02-content.html#slides",
+    "href": "content/02-content.html#slides",
+    "title": "Data Visualisation",
+    "section": "Slides",
+    "text": "Slides"
+  },
+  {
+    "objectID": "content/02-content.html#in-class",
+    "href": "content/02-content.html#in-class",
+    "title": "Data Visualisation",
+    "section": "In-class",
+    "text": "In-class"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "GVPT Maths Camp",
+    "section": "",
+    "text": "Introduction to R for Political Scientists\n        \n        \n            Learn to use data science tools to support your research\n        \n        \n            Summer 2023Department of Government and PoliticsUniversity of Maryland, College Park\n        \n    \n    \n      \n        \n        \n        \n      \n    \n\n\n\n\n\nInstructor\n\n   Harriet Goers\n   Chincoteague Building\n   hgoers@umd.edu\n   harrietgoers\n\n\n\nCourse details\n\n   January 9–May 2, 2023\n   7:15–9:45 PM\n   Tydings Building\n   Slack\n\n\n\nContacting me\nE-mail and Slack are the best ways to get in contact with me. I will try to respond to all course-related e-mails and Slack messages within 24 hours."
+  },
+  {
+    "objectID": "slides/01-class.html#welcome",
+    "href": "slides/01-class.html#welcome",
+    "title": "GVPT Maths Camp",
+    "section": "Welcome",
+    "text": "Welcome"
+  },
+  {
+    "objectID": "slides/01-class.html#introductions",
+    "href": "slides/01-class.html#introductions",
+    "title": "GVPT Maths Camp",
+    "section": "Introductions",
+    "text": "Introductions\n\nThird year in the GVPT PhD program\nFocus on secessionist conflict and dependence between states and non-state actors.\nBefore starting my PhD:\n\nHelped to develop the Lowy Institute’s Asia Power Index\nAnalyst with the Australian Department of Defence\nWorked on the Institute for Economics and Peace’s Global Peace Index and Global Terrorism Index\n\nFavourite Smithsonian: the zoo!"
+  },
+  {
+    "objectID": "slides/01-class.html#learning-objectives-for-today",
+    "href": "slides/01-class.html#learning-objectives-for-today",
+    "title": "GVPT Maths Camp",
+    "section": "Learning objectives for today",
+    "text": "Learning objectives for today\n\nIntroduction to R and friends\nGetting your computers set up"
+  },
+  {
+    "objectID": "slides/01-class.html#computational-social-scientists",
+    "href": "slides/01-class.html#computational-social-scientists",
+    "title": "GVPT Maths Camp",
+    "section": "Computational social scientists",
+    "text": "Computational social scientists"
+  },
+  {
+    "objectID": "slides/01-class.html#set-up",
+    "href": "slides/01-class.html#set-up",
+    "title": "GVPT Maths Camp",
+    "section": "Set up",
+    "text": "Set up\n\nHomebrew (macOS or Linux only)\nR and RStudio\nGit and GitHub"
+  },
+  {
+    "objectID": "slides/01-class.html#homebrew-the-missing-package-manager-for-macos-and-linux",
+    "href": "slides/01-class.html#homebrew-the-missing-package-manager-for-macos-and-linux",
+    "title": "GVPT Maths Camp",
+    "section": "Homebrew: The Missing Package Manager for macOS and Linux",
+    "text": "Homebrew: The Missing Package Manager for macOS and Linux\n\n\nGo to https://brew.sh/\nFollow instructions on the homepage"
+  },
+  {
+    "objectID": "slides/01-class.html#r-and-rstudio",
+    "href": "slides/01-class.html#r-and-rstudio",
+    "title": "GVPT Maths Camp",
+    "section": "R and RStudio",
+    "text": "R and RStudio\n\n\nR\nR is a free and open-source programming language and software environment for statistical computing and graphics.\n\nRStudio\nRStudio is an integrated development environment (IDE) for the R programming language.\n\n\n\n\nInstructions on how to download R and RStudio are provided in the Introduction chapter of R4DS."
+  },
+  {
+    "objectID": "slides/01-class.html#a-tour-of-rstudio",
+    "href": "slides/01-class.html#a-tour-of-rstudio",
+    "title": "GVPT Maths Camp",
+    "section": "A Tour of RStudio",
+    "text": "A Tour of RStudio\n\nSource: R4DS"
+  },
+  {
+    "objectID": "slides/01-class.html#git-and-github",
+    "href": "slides/01-class.html#git-and-github",
+    "title": "GVPT Maths Camp",
+    "section": "Git and GitHub",
+    "text": "Git and GitHub\n\n\nGit\nGit is a version control system used for tracking changes in software development projects.\n\nGitHub\nGitHub is a web-based platform for version control and collaborative software development using Git.\n\n\n\n\nInstructions on how to download Git and set up GitHub are provided in the Installation chapter of Happy Git with R."
+  },
+  {
+    "objectID": "slides/01-class.html#summary",
+    "href": "slides/01-class.html#summary",
+    "title": "GVPT Maths Camp",
+    "section": "Summary",
+    "text": "Summary\nThis morning you:\n\nLearnt about new data science tools to help you conduct replicable and reproducable political science research\nSet up your data science tools"
+  },
+  {
+    "objectID": "slides/03-class.html#learning-objectives",
+    "href": "slides/03-class.html#learning-objectives",
+    "title": "GVPT Maths Camp",
+    "section": "Learning objectives",
+    "text": "Learning objectives\n\nLearn basic operations in R\nBe introduced to dplyr\nClean up and transform your data"
+  },
+  {
+    "objectID": "slides/03-class.html#r-as-a-calculator",
+    "href": "slides/03-class.html#r-as-a-calculator",
+    "title": "GVPT Maths Camp",
+    "section": "R as a calculator",
+    "text": "R as a calculator\n\n\n1 / 200 * 30\n\n[1] 0.15\n\n\n\n\n(59 + 73 + 2) / 3\n\n[1] 44.66667\n\n\n\n\nsin(pi / 2)\n\n[1] 1"
+  },
+  {
+    "objectID": "slides/03-class.html#r-objects",
+    "href": "slides/03-class.html#r-objects",
+    "title": "GVPT Maths Camp",
+    "section": "R objects",
+    "text": "R objects\nCreate new objects with <-\n\nx <- 3 * 4\n\nx\n\n[1] 12\n\n\n\n\nx <- 3 * 10\n\nx\n\n[1] 30"
+  },
+  {
+    "objectID": "slides/03-class.html#r-functions",
+    "href": "slides/03-class.html#r-functions",
+    "title": "GVPT Maths Camp",
+    "section": "R functions",
+    "text": "R functions\nMany functions come with R straight out of the box:\n\nseq(1, 10)\n\n [1]  1  2  3  4  5  6  7  8  9 10\n\n\n\nYou can create objects using functions:\n\nx <- seq(1, 10)\n\nx\n\n [1]  1  2  3  4  5  6  7  8  9 10"
+  },
+  {
+    "objectID": "slides/03-class.html#introduction-to-data-transformation",
+    "href": "slides/03-class.html#introduction-to-data-transformation",
+    "title": "GVPT Maths Camp",
+    "section": "Introduction to data transformation",
+    "text": "Introduction to data transformation"
+  },
+  {
+    "objectID": "slides/03-class.html#accessing-gapminder-data",
+    "href": "slides/03-class.html#accessing-gapminder-data",
+    "title": "GVPT Maths Camp",
+    "section": "Accessing gapminder data",
+    "text": "Accessing gapminder data\nFirst, you need to install the gapminder package:\n\ninstall.packages(\"gapminder\")\n\nThen access the gapminder data set:\n\nlibrary(gapminder)\n\nhead(gapminder)\n\n# A tibble: 6 × 6\n  country     continent  year lifeExp      pop gdpPercap\n  <fct>       <fct>     <int>   <dbl>    <int>     <dbl>\n1 Afghanistan Asia       1952    28.8  8425333      779.\n2 Afghanistan Asia       1957    30.3  9240934      821.\n3 Afghanistan Asia       1962    32.0 10267083      853.\n4 Afghanistan Asia       1967    34.0 11537966      836.\n5 Afghanistan Asia       1972    36.1 13079460      740.\n6 Afghanistan Asia       1977    38.4 14880372      786."
+  },
+  {
+    "objectID": "slides/03-class.html#data-types",
+    "href": "slides/03-class.html#data-types",
+    "title": "GVPT Maths Camp",
+    "section": "Data types",
+    "text": "Data types\nIn gapminder:\n\nfctr stands for factors, which R uses to represent categorical variables with fixed possible values.\nint stands for integer.\ndbl stands for doubles (or real numbers)."
+  },
+  {
+    "objectID": "slides/03-class.html#data-types-1",
+    "href": "slides/03-class.html#data-types-1",
+    "title": "GVPT Maths Camp",
+    "section": "Data types",
+    "text": "Data types\nOther types:\n\nchr stands for character vectors, or strings.\ndttm stands for date-times (a date + a time).\nlgl stands for logical, vectors that contain only TRUE or FALSE.1\n\nTRUE can be shortened to T and FALSE can be shortened to F."
+  },
+  {
+    "objectID": "slides/03-class.html#introducing-dplyr",
+    "href": "slides/03-class.html#introducing-dplyr",
+    "title": "GVPT Maths Camp",
+    "section": "Introducing dplyr",
+    "text": "Introducing dplyr\nHelp you with most of your data transformation needs.\nFive basic functions:\n\nfilter()\narrange()\nselect()\nmutate()\nsummarise()"
+  },
+  {
+    "objectID": "slides/03-class.html#filter-rows-with-filter",
+    "href": "slides/03-class.html#filter-rows-with-filter",
+    "title": "GVPT Maths Camp",
+    "section": "Filter rows with filter()",
+    "text": "Filter rows with filter()\n\nlibrary(dplyr)\n\nfilter(gapminder, country == \"Australia\", year > 2000)\n\n# A tibble: 2 × 6\n  country   continent  year lifeExp      pop gdpPercap\n  <fct>     <fct>     <int>   <dbl>    <int>     <dbl>\n1 Australia Oceania    2002    80.4 19546792    30688.\n2 Australia Oceania    2007    81.2 20434176    34435."
+  },
+  {
+    "objectID": "slides/03-class.html#filter-rows-with-filter-1",
+    "href": "slides/03-class.html#filter-rows-with-filter-1",
+    "title": "GVPT Maths Camp",
+    "section": "Filter rows with filter()",
+    "text": "Filter rows with filter()\n\nlibrary(dplyr)\n\nfilter(gapminder, continent %in% c(\"Asia\", \"Oceania\"))\n\n# A tibble: 420 × 6\n   country     continent  year lifeExp      pop gdpPercap\n   <fct>       <fct>     <int>   <dbl>    <int>     <dbl>\n 1 Afghanistan Asia       1952    28.8  8425333      779.\n 2 Afghanistan Asia       1957    30.3  9240934      821.\n 3 Afghanistan Asia       1962    32.0 10267083      853.\n 4 Afghanistan Asia       1967    34.0 11537966      836.\n 5 Afghanistan Asia       1972    36.1 13079460      740.\n 6 Afghanistan Asia       1977    38.4 14880372      786.\n 7 Afghanistan Asia       1982    39.9 12881816      978.\n 8 Afghanistan Asia       1987    40.8 13867957      852.\n 9 Afghanistan Asia       1992    41.7 16317921      649.\n10 Afghanistan Asia       1997    41.8 22227415      635.\n# ℹ 410 more rows"
+  },
+  {
+    "objectID": "slides/03-class.html#filter-rows-with-filter-2",
+    "href": "slides/03-class.html#filter-rows-with-filter-2",
+    "title": "GVPT Maths Camp",
+    "section": "Filter rows with filter()",
+    "text": "Filter rows with filter()\n\nlibrary(dplyr)\n\nfilter(gapminder, pop > 500000 & pop < 1000000)\n\n# A tibble: 88 × 6\n   country  continent  year lifeExp    pop gdpPercap\n   <fct>    <fct>     <int>   <dbl>  <int>     <dbl>\n 1 Bahrain  Asia       1992    72.6 529491    19036.\n 2 Bahrain  Asia       1997    73.9 598561    20292.\n 3 Bahrain  Asia       2002    74.8 656397    23404.\n 4 Bahrain  Asia       2007    75.6 708573    29796.\n 5 Botswana Africa     1962    51.5 512764      984.\n 6 Botswana Africa     1967    53.3 553541     1215.\n 7 Botswana Africa     1972    56.0 619351     2264.\n 8 Botswana Africa     1977    59.3 781472     3215.\n 9 Botswana Africa     1982    61.5 970347     4551.\n10 Comoros  Africa     1997    60.7 527982     1174.\n# ℹ 78 more rows"
+  },
+  {
+    "objectID": "slides/03-class.html#filter-rows-with-filter-3",
+    "href": "slides/03-class.html#filter-rows-with-filter-3",
+    "title": "GVPT Maths Camp",
+    "section": "Filter rows with filter()",
+    "text": "Filter rows with filter()\n\nlibrary(dplyr)\n\nfilter(gapminder, pop > 500000 | pop < 1000000)\n\n# A tibble: 1,704 × 6\n   country     continent  year lifeExp      pop gdpPercap\n   <fct>       <fct>     <int>   <dbl>    <int>     <dbl>\n 1 Afghanistan Asia       1952    28.8  8425333      779.\n 2 Afghanistan Asia       1957    30.3  9240934      821.\n 3 Afghanistan Asia       1962    32.0 10267083      853.\n 4 Afghanistan Asia       1967    34.0 11537966      836.\n 5 Afghanistan Asia       1972    36.1 13079460      740.\n 6 Afghanistan Asia       1977    38.4 14880372      786.\n 7 Afghanistan Asia       1982    39.9 12881816      978.\n 8 Afghanistan Asia       1987    40.8 13867957      852.\n 9 Afghanistan Asia       1992    41.7 16317921      649.\n10 Afghanistan Asia       1997    41.8 22227415      635.\n# ℹ 1,694 more rows"
+  },
+  {
+    "objectID": "slides/03-class.html#arrange-rows-with-arrange",
+    "href": "slides/03-class.html#arrange-rows-with-arrange",
+    "title": "GVPT Maths Camp",
+    "section": "Arrange rows with arrange()",
+    "text": "Arrange rows with arrange()\n\nlibrary(dplyr)\n\narrange(gapminder, country, year)\n\n# A tibble: 1,704 × 6\n   country     continent  year lifeExp      pop gdpPercap\n   <fct>       <fct>     <int>   <dbl>    <int>     <dbl>\n 1 Afghanistan Asia       1952    28.8  8425333      779.\n 2 Afghanistan Asia       1957    30.3  9240934      821.\n 3 Afghanistan Asia       1962    32.0 10267083      853.\n 4 Afghanistan Asia       1967    34.0 11537966      836.\n 5 Afghanistan Asia       1972    36.1 13079460      740.\n 6 Afghanistan Asia       1977    38.4 14880372      786.\n 7 Afghanistan Asia       1982    39.9 12881816      978.\n 8 Afghanistan Asia       1987    40.8 13867957      852.\n 9 Afghanistan Asia       1992    41.7 16317921      649.\n10 Afghanistan Asia       1997    41.8 22227415      635.\n# ℹ 1,694 more rows"
+  },
+  {
+    "objectID": "slides/03-class.html#arrange-rows-with-arrange-1",
+    "href": "slides/03-class.html#arrange-rows-with-arrange-1",
+    "title": "GVPT Maths Camp",
+    "section": "Arrange rows with arrange()",
+    "text": "Arrange rows with arrange()\n\nlibrary(dplyr)\n\narrange(gapminder, country, desc(year))\n\n# A tibble: 1,704 × 6\n   country     continent  year lifeExp      pop gdpPercap\n   <fct>       <fct>     <int>   <dbl>    <int>     <dbl>\n 1 Afghanistan Asia       2007    43.8 31889923      975.\n 2 Afghanistan Asia       2002    42.1 25268405      727.\n 3 Afghanistan Asia       1997    41.8 22227415      635.\n 4 Afghanistan Asia       1992    41.7 16317921      649.\n 5 Afghanistan Asia       1987    40.8 13867957      852.\n 6 Afghanistan Asia       1982    39.9 12881816      978.\n 7 Afghanistan Asia       1977    38.4 14880372      786.\n 8 Afghanistan Asia       1972    36.1 13079460      740.\n 9 Afghanistan Asia       1967    34.0 11537966      836.\n10 Afghanistan Asia       1962    32.0 10267083      853.\n# ℹ 1,694 more rows"
+  },
+  {
+    "objectID": "slides/03-class.html#select-columns-with-select",
+    "href": "slides/03-class.html#select-columns-with-select",
+    "title": "GVPT Maths Camp",
+    "section": "Select columns with select()",
+    "text": "Select columns with select()\n\nlibrary(dplyr)\n\nselect(gapminder, country, year, pop)\n\n# A tibble: 1,704 × 3\n   country      year      pop\n   <fct>       <int>    <int>\n 1 Afghanistan  1952  8425333\n 2 Afghanistan  1957  9240934\n 3 Afghanistan  1962 10267083\n 4 Afghanistan  1967 11537966\n 5 Afghanistan  1972 13079460\n 6 Afghanistan  1977 14880372\n 7 Afghanistan  1982 12881816\n 8 Afghanistan  1987 13867957\n 9 Afghanistan  1992 16317921\n10 Afghanistan  1997 22227415\n# ℹ 1,694 more rows"
+  },
+  {
+    "objectID": "slides/03-class.html#select-columns-with-select-1",
+    "href": "slides/03-class.html#select-columns-with-select-1",
+    "title": "GVPT Maths Camp",
+    "section": "Select columns with select()",
+    "text": "Select columns with select()\n\nlibrary(dplyr)\n\nselect(gapminder, country:pop)\n\n# A tibble: 1,704 × 5\n   country     continent  year lifeExp      pop\n   <fct>       <fct>     <int>   <dbl>    <int>\n 1 Afghanistan Asia       1952    28.8  8425333\n 2 Afghanistan Asia       1957    30.3  9240934\n 3 Afghanistan Asia       1962    32.0 10267083\n 4 Afghanistan Asia       1967    34.0 11537966\n 5 Afghanistan Asia       1972    36.1 13079460\n 6 Afghanistan Asia       1977    38.4 14880372\n 7 Afghanistan Asia       1982    39.9 12881816\n 8 Afghanistan Asia       1987    40.8 13867957\n 9 Afghanistan Asia       1992    41.7 16317921\n10 Afghanistan Asia       1997    41.8 22227415\n# ℹ 1,694 more rows"
+  },
+  {
+    "objectID": "slides/03-class.html#select-columns-with-select-2",
+    "href": "slides/03-class.html#select-columns-with-select-2",
+    "title": "GVPT Maths Camp",
+    "section": "Select columns with select()",
+    "text": "Select columns with select()\n\nlibrary(dplyr)\n\nselect(gapminder, -(lifeExp:pop))\n\n# A tibble: 1,704 × 4\n   country     continent  year gdpPercap\n   <fct>       <fct>     <int>     <dbl>\n 1 Afghanistan Asia       1952      779.\n 2 Afghanistan Asia       1957      821.\n 3 Afghanistan Asia       1962      853.\n 4 Afghanistan Asia       1967      836.\n 5 Afghanistan Asia       1972      740.\n 6 Afghanistan Asia       1977      786.\n 7 Afghanistan Asia       1982      978.\n 8 Afghanistan Asia       1987      852.\n 9 Afghanistan Asia       1992      649.\n10 Afghanistan Asia       1997      635.\n# ℹ 1,694 more rows"
+  },
+  {
+    "objectID": "slides/03-class.html#add-new-variables-with-mutate",
+    "href": "slides/03-class.html#add-new-variables-with-mutate",
+    "title": "GVPT Maths Camp",
+    "section": "Add new variables with mutate()",
+    "text": "Add new variables with mutate()\n\nlibrary(dplyr)\n\nmutate(gapminder, gdp = gdpPercap * pop)\n\n# A tibble: 1,704 × 7\n   country     continent  year lifeExp      pop gdpPercap          gdp\n   <fct>       <fct>     <int>   <dbl>    <int>     <dbl>        <dbl>\n 1 Afghanistan Asia       1952    28.8  8425333      779.  6567086330.\n 2 Afghanistan Asia       1957    30.3  9240934      821.  7585448670.\n 3 Afghanistan Asia       1962    32.0 10267083      853.  8758855797.\n 4 Afghanistan Asia       1967    34.0 11537966      836.  9648014150.\n 5 Afghanistan Asia       1972    36.1 13079460      740.  9678553274.\n 6 Afghanistan Asia       1977    38.4 14880372      786. 11697659231.\n 7 Afghanistan Asia       1982    39.9 12881816      978. 12598563401.\n 8 Afghanistan Asia       1987    40.8 13867957      852. 11820990309.\n 9 Afghanistan Asia       1992    41.7 16317921      649. 10595901589.\n10 Afghanistan Asia       1997    41.8 22227415      635. 14121995875.\n# ℹ 1,694 more rows"
+  },
+  {
+    "objectID": "slides/03-class.html#select-transform-and-add-new-variables-with-transmute",
+    "href": "slides/03-class.html#select-transform-and-add-new-variables-with-transmute",
+    "title": "GVPT Maths Camp",
+    "section": "Select, transform, and add new variables with transmute()",
+    "text": "Select, transform, and add new variables with transmute()\n\nlibrary(dplyr)\n\ntransmute(gapminder, country, year, gdp = gdpPercap * pop)\n\n# A tibble: 1,704 × 3\n   country      year          gdp\n   <fct>       <int>        <dbl>\n 1 Afghanistan  1952  6567086330.\n 2 Afghanistan  1957  7585448670.\n 3 Afghanistan  1962  8758855797.\n 4 Afghanistan  1967  9648014150.\n 5 Afghanistan  1972  9678553274.\n 6 Afghanistan  1977 11697659231.\n 7 Afghanistan  1982 12598563401.\n 8 Afghanistan  1987 11820990309.\n 9 Afghanistan  1992 10595901589.\n10 Afghanistan  1997 14121995875.\n# ℹ 1,694 more rows"
+  },
+  {
+    "objectID": "slides/03-class.html#create-summaries-with-summarise",
+    "href": "slides/03-class.html#create-summaries-with-summarise",
+    "title": "GVPT Maths Camp",
+    "section": "Create summaries with summarise()",
+    "text": "Create summaries with summarise()\n\nlibrary(dplyr)\n\nsummarise(\n  gapminder, avg_pop = mean(pop), avg_gdp_per_cap = mean(gdpPercap)\n)\n\n# A tibble: 1 × 2\n    avg_pop avg_gdp_per_cap\n      <dbl>           <dbl>\n1 29601212.           7215."
+  },
+  {
+    "objectID": "slides/03-class.html#creating-grouped-summaries-with-group_by-and-summarise",
+    "href": "slides/03-class.html#creating-grouped-summaries-with-group_by-and-summarise",
+    "title": "GVPT Maths Camp",
+    "section": "Creating grouped summaries with group_by() and summarise()",
+    "text": "Creating grouped summaries with group_by() and summarise()\n\nlibrary(dplyr)\n\ngapminder_continent <- group_by(gapminder, continent)\n\nsummarise(\n  gapminder_continent, avg_pop = mean(pop), avg_gdp_per_cap = mean(gdpPercap)\n)\n\n# A tibble: 5 × 3\n  continent   avg_pop avg_gdp_per_cap\n  <fct>         <dbl>           <dbl>\n1 Africa     9916003.           2194.\n2 Americas  24504795.           7136.\n3 Asia      77038722.           7902.\n4 Europe    17169765.          14469.\n5 Oceania    8874672.          18622."
+  },
+  {
+    "objectID": "slides/03-class.html#combine-multiple-operations-with-the-pipe",
+    "href": "slides/03-class.html#combine-multiple-operations-with-the-pipe",
+    "title": "GVPT Maths Camp",
+    "section": "Combine multiple operations with the pipe",
+    "text": "Combine multiple operations with the pipe\n\nlibrary(dplyr)\n\ngapminder |> \n  group_by(continent) |> \n  summarise(avg_pop = mean(pop), avg_gdp_per_cap = mean(gdpPercap)) |> \n  arrange(avg_gdp_per_cap)\n\n# A tibble: 5 × 3\n  continent   avg_pop avg_gdp_per_cap\n  <fct>         <dbl>           <dbl>\n1 Africa     9916003.           2194.\n2 Americas  24504795.           7136.\n3 Asia      77038722.           7902.\n4 Europe    17169765.          14469.\n5 Oceania    8874672.          18622."
+  },
+  {
+    "objectID": "slides/03-class.html#combine-multiple-operations-with-the-pipe-1",
+    "href": "slides/03-class.html#combine-multiple-operations-with-the-pipe-1",
+    "title": "GVPT Maths Camp",
+    "section": "Combine multiple operations with the pipe",
+    "text": "Combine multiple operations with the pipe\n\nlibrary(dplyr)\nlibrary(ggplot2)\n\ngapminder |> \n  group_by(continent) |> \n  summarise(avg_pop = mean(pop), avg_gdp_per_cap = mean(gdpPercap)) |> \n  ggplot(aes(x = continent, y = avg_gdp_per_cap)) + \n  geom_col() + \n  theme_minimal()"
+  },
+  {
+    "objectID": "slides/03-class.html#a-note-on-the-pipe",
+    "href": "slides/03-class.html#a-note-on-the-pipe",
+    "title": "GVPT Maths Camp",
+    "section": "A note on the pipe",
+    "text": "A note on the pipe\n\n\nBase pipe:\n\n|>\nCan be used without loading any packages\n\n\nTidyverse pipe:\n\n%>%\nMust load dplyr or magrittr to use"
+  },
+  {
+    "objectID": "slides/03-class.html#a-handy-shortcut-for-counting-data-with-count",
+    "href": "slides/03-class.html#a-handy-shortcut-for-counting-data-with-count",
+    "title": "GVPT Maths Camp",
+    "section": "A handy shortcut for counting data with count()",
+    "text": "A handy shortcut for counting data with count()\n\n\n\nlibrary(dplyr)\n\ngapminder |> \n  distinct(continent, country) |> \n  group_by(continent) |> \n  summarise(n_countries = n())\n\n# A tibble: 5 × 2\n  continent n_countries\n  <fct>           <int>\n1 Africa             52\n2 Americas           25\n3 Asia               33\n4 Europe             30\n5 Oceania             2\n\n\n\n\nlibrary(dplyr)\n\ngapminder |> \n  distinct(continent, country) |> \n  count(continent)\n\n# A tibble: 5 × 2\n  continent     n\n  <fct>     <int>\n1 Africa       52\n2 Americas     25\n3 Asia         33\n4 Europe       30\n5 Oceania       2"
+  },
+  {
+    "objectID": "slides/03-class.html#summary",
+    "href": "slides/03-class.html#summary",
+    "title": "GVPT Maths Camp",
+    "section": "Summary",
+    "text": "Summary\nThis morning you have:\n\nLearnt R basic syntax\nLearnt how to transform your data"
   },
   {
     "objectID": "slides/05-class.html#learning-objectives",
     "href": "slides/05-class.html#learning-objectives",
-    "title": "GVPT Maths Boot Camp",
+    "title": "GVPT Maths Camp",
     "section": "Learning objectives",
     "text": "Learning objectives\n\nImport your data\nClean your data\nExplore relational data"
   },
   {
     "objectID": "slides/05-class.html#data-wrangling",
     "href": "slides/05-class.html#data-wrangling",
-    "title": "GVPT Maths Boot Camp",
+    "title": "GVPT Maths Camp",
     "section": "Data wrangling",
     "text": "Data wrangling\n\nSource: R4DS"
   },
   {
-    "objectID": "slides/05-class.html#ucpdprio-armed-conflict-data",
-    "href": "slides/05-class.html#ucpdprio-armed-conflict-data",
-    "title": "GVPT Maths Boot Camp",
-    "section": "UCPD/PRIO Armed Conflict Data",
-    "text": "UCPD/PRIO Armed Conflict Data\nhttps://ucdp.uu.se/downloads/\n\nLeading source of global conflict data\nWidely used in conflict research\nVery, frustratingly messy!"
-  },
-  {
-    "objectID": "slides/05-class.html#download-the-yearly-conflict-data-set",
-    "href": "slides/05-class.html#download-the-yearly-conflict-data-set",
-    "title": "GVPT Maths Boot Camp",
-    "section": "Download the yearly conflict data set",
-    "text": "Download the yearly conflict data set\n\nSource: UCDP/PRIO"
-  },
-  {
-    "objectID": "slides/05-class.html#working-with-external-data",
-    "href": "slides/05-class.html#working-with-external-data",
-    "title": "GVPT Maths Boot Camp",
-    "section": "Working with external data",
-    "text": "Working with external data\nIntroducing here::here()\n\ninstall.packages(\"here\")\n\nPoints to where you are on your computer. Updates for everyone on any computer!\n\nhere::here()\n\n[1] \"/Users/harrietgoers/Documents/intro_to_r_ps\"\n\n\n\n\nPackage documentation: https://here.r-lib.org/"
-  },
-  {
-    "objectID": "slides/05-class.html#reading-in-your-csv",
-    "href": "slides/05-class.html#reading-in-your-csv",
-    "title": "GVPT Maths Boot Camp",
-    "section": "Reading in your csv",
-    "text": "Reading in your csv\n\nlibrary(tidyverse)\n\ngdp_raw <- read_csv(here::here(\"slides\", \"data-raw\", \"wb_gdp.csv\"))\n\nhead(gdp_raw)\n\n# A tibble: 6 × 3\n  `Data Source`               `World Development Indicators` ...3               \n  <chr>                       <chr>                          <chr>              \n1 Last Updated Date           2023-03-01                      <NA>              \n2 Country Name                Country Code                   \"Indicator Name,In…\n3 Aruba                       ABW                            \"GDP (current US$)…\n4 Africa Eastern and Southern AFE                            \"GDP (current US$)…\n5 Afghanistan                 AFG                            \"GDP (current US$)…\n6 Africa Western and Central  AFW                            \"GDP (current US$)…"
-  },
-  {
-    "objectID": "slides/05-class.html#reading-in-most-rectangular-data",
-    "href": "slides/05-class.html#reading-in-most-rectangular-data",
-    "title": "GVPT Maths Boot Camp",
-    "section": "Reading in most rectangular data",
-    "text": "Reading in most rectangular data\n\n# Install the `rio` package\n\ninstall.packages(\"rio\")\n\n\n\nlibrary(rio)\n\ngdp_raw <- import(here::here(\"slides\", \"data-raw\", \"wb_gdp.csv\"), skip = 4)\n\ndim(gdp_raw)\n\n[1] 267  67\n\n\n\n\nPackage documentation can be found here."
-  },
-  {
-    "objectID": "slides/05-class.html#exercise",
-    "href": "slides/05-class.html#exercise",
-    "title": "GVPT Maths Boot Camp",
-    "section": "EXERCISE",
-    "text": "EXERCISE\n\nRead the ?read_csv help file. What arguments does this function take?\nHead to the readr package documentation and find what other file types you can read in."
-  },
-  {
-    "objectID": "slides/05-class.html#exercises",
-    "href": "slides/05-class.html#exercises",
-    "title": "GVPT Maths Boot Camp",
-    "section": "EXERCISES",
-    "text": "EXERCISES\n\nRead the ?read_csv help file. What arguments does this function take?\nHead to the readr package documentation and find what other file types you can read in."
-  },
-  {
-    "objectID": "slides/05-class.html#take-a-look-at-your-data",
-    "href": "slides/05-class.html#take-a-look-at-your-data",
-    "title": "GVPT Maths Boot Camp",
-    "section": "Take a look at your data",
-    "text": "Take a look at your data\nTaking a look at this data set:\n\nskimr::skim(gdp_raw)\n\n\nWhat types of data do we have? Are they the right type of data?\n\nAre we missing data points?"
-  },
-  {
-    "objectID": "slides/05-class.html#tidy-data-structures",
-    "href": "slides/05-class.html#tidy-data-structures",
-    "title": "GVPT Maths Boot Camp",
-    "section": "Tidy Data Structures",
-    "text": "Tidy Data Structures\n\nSource: R4DS"
-  },
-  {
     "objectID": "slides/05-class.html#world-bank-gdp-data",
     "href": "slides/05-class.html#world-bank-gdp-data",
-    "title": "GVPT Maths Boot Camp",
+    "title": "GVPT Maths Camp",
     "section": "World Bank GDP data",
     "text": "World Bank GDP data\nhttps://data.worldbank.org/indicator/NY.GDP.MKTP.CD\n\nOfficial source of global and historical GDP data\nA very common control variable for IR and CP analysis\nVery frustratingly messy!"
   },
   {
     "objectID": "slides/05-class.html#download-global-gdp-data",
     "href": "slides/05-class.html#download-global-gdp-data",
-    "title": "GVPT Maths Boot Camp",
+    "title": "GVPT Maths Camp",
     "section": "Download global GDP data",
-    "text": "Download global GDP data\n\n\n\nSource: World Bank\n\n\n\n\nLater, we will discuss how to access this and other data programmatically."
+    "text": "Download global GDP data\n\nSource: World Bank"
+  },
+  {
+    "objectID": "slides/05-class.html#working-with-external-data",
+    "href": "slides/05-class.html#working-with-external-data",
+    "title": "GVPT Maths Camp",
+    "section": "Working with external data",
+    "text": "Working with external data\nIntroducing here::here()\n\ninstall.packages(\"here\")\n\n\nPoints to where you are on your computer. Updates for everyone on any computer!\n\nhere::here()\n\n[1] \"/Users/harrietgoers/Documents/intro_to_r_ps\"\n\n\n\nEXERCISE: See where you are!\n\n\nPackage documentation: https://here.r-lib.org/"
+  },
+  {
+    "objectID": "slides/05-class.html#reading-in-your-csv",
+    "href": "slides/05-class.html#reading-in-your-csv",
+    "title": "GVPT Maths Camp",
+    "section": "Reading in your csv",
+    "text": "Reading in your csv\n\nI like to store raw data in a folder called data-raw within my project.\nI then store any clean data that is ready for analysis in a data folder within my project.\n\n\nYou will start to see this structure throughout my scripts. You should come up with something that works for you. It should be intuitive. This will help future you and any other people who want to explore your work navigate your projects."
+  },
+  {
+    "objectID": "slides/05-class.html#reading-in-your-csv-1",
+    "href": "slides/05-class.html#reading-in-your-csv-1",
+    "title": "GVPT Maths Camp",
+    "section": "Reading in your csv",
+    "text": "Reading in your csv\n\nlibrary(tidyverse)\n\ngdp_raw <- read_csv(here::here(\"slides\", \"data-raw\", \"wb_gdp.csv\"))\n\nhead(gdp_raw)\n\n# A tibble: 6 × 3\n  `Data Source`               `World Development Indicators` ...3               \n  <chr>                       <chr>                          <chr>              \n1 Last Updated Date           2023-03-01                      <NA>              \n2 Country Name                Country Code                   \"Indicator Name,In…\n3 Aruba                       ABW                            \"GDP (current US$)…\n4 Africa Eastern and Southern AFE                            \"GDP (current US$)…\n5 Afghanistan                 AFG                            \"GDP (current US$)…\n6 Africa Western and Central  AFW                            \"GDP (current US$)…"
+  },
+  {
+    "objectID": "slides/05-class.html#exercises",
+    "href": "slides/05-class.html#exercises",
+    "title": "GVPT Maths Camp",
+    "section": "EXERCISES",
+    "text": "EXERCISES\n\nRead the ?read_csv help file. What arguments does this function take?\nHead to the readr package documentation and find what other file types you can read in."
   },
   {
     "objectID": "slides/05-class.html#skipping-non-relevant-rows",
     "href": "slides/05-class.html#skipping-non-relevant-rows",
-    "title": "GVPT Maths Boot Camp",
+    "title": "GVPT Maths Camp",
     "section": "Skipping non-relevant rows",
     "text": "Skipping non-relevant rows\n\nSource: World Bank"
   },
   {
     "objectID": "slides/05-class.html#skipping-non-relevant-rows-1",
     "href": "slides/05-class.html#skipping-non-relevant-rows-1",
-    "title": "GVPT Maths Boot Camp",
+    "title": "GVPT Maths Camp",
     "section": "Skipping non-relevant rows",
-    "text": "Skipping non-relevant rows\n\ngdp_raw <- read_csv(here::here(\"slides\", \"data-raw\", \"wb_gdp.csv\"), skip = 4, col_select = 1:66)\n\nhead(gdp_raw)\n\n# A tibble: 6 × 66\n  Country…¹ Count…² Indic…³ Indic…⁴   `1960`   `1961`   `1962`   `1963`   `1964`\n  <chr>     <chr>   <chr>   <chr>      <dbl>    <dbl>    <dbl>    <dbl>    <dbl>\n1 Aruba     ABW     GDP (c… NY.GDP… NA       NA       NA       NA       NA      \n2 Africa E… AFE     GDP (c… NY.GDP…  2.13e10  2.18e10  2.37e10  2.82e10  2.61e10\n3 Afghanis… AFG     GDP (c… NY.GDP…  5.38e 8  5.49e 8  5.47e 8  7.51e 8  8.00e 8\n4 Africa W… AFW     GDP (c… NY.GDP…  1.04e10  1.11e10  1.19e10  1.27e10  1.38e10\n5 Angola    AGO     GDP (c… NY.GDP… NA       NA       NA       NA       NA      \n6 Albania   ALB     GDP (c… NY.GDP… NA       NA       NA       NA       NA      \n# … with 57 more variables: `1965` <dbl>, `1966` <dbl>, `1967` <dbl>,\n#   `1968` <dbl>, `1969` <dbl>, `1970` <dbl>, `1971` <dbl>, `1972` <dbl>,\n#   `1973` <dbl>, `1974` <dbl>, `1975` <dbl>, `1976` <dbl>, `1977` <dbl>,\n#   `1978` <dbl>, `1979` <dbl>, `1980` <dbl>, `1981` <dbl>, `1982` <dbl>,\n#   `1983` <dbl>, `1984` <dbl>, `1985` <dbl>, `1986` <dbl>, `1987` <dbl>,\n#   `1988` <dbl>, `1989` <dbl>, `1990` <dbl>, `1991` <dbl>, `1992` <dbl>,\n#   `1993` <dbl>, `1994` <dbl>, `1995` <dbl>, `1996` <dbl>, `1997` <dbl>, …"
+    "text": "Skipping non-relevant rows\n\ngdp_raw <- read_csv(\n  here::here(\"slides\", \"data-raw\", \"wb_gdp.csv\"), skip = 4, col_select = 1:66\n)\n\nhead(gdp_raw)\n\n# A tibble: 6 × 66\n  `Country Name`       `Country Code` `Indicator Name` `Indicator Code`   `1960`\n  <chr>                <chr>          <chr>            <chr>               <dbl>\n1 Aruba                ABW            GDP (current US… NY.GDP.MKTP.CD   NA      \n2 Africa Eastern and … AFE            GDP (current US… NY.GDP.MKTP.CD    2.13e10\n3 Afghanistan          AFG            GDP (current US… NY.GDP.MKTP.CD    5.38e 8\n4 Africa Western and … AFW            GDP (current US… NY.GDP.MKTP.CD    1.04e10\n5 Angola               AGO            GDP (current US… NY.GDP.MKTP.CD   NA      \n6 Albania              ALB            GDP (current US… NY.GDP.MKTP.CD   NA      \n# ℹ 61 more variables: `1961` <dbl>, `1962` <dbl>, `1963` <dbl>, `1964` <dbl>,\n#   `1965` <dbl>, `1966` <dbl>, `1967` <dbl>, `1968` <dbl>, `1969` <dbl>,\n#   `1970` <dbl>, `1971` <dbl>, `1972` <dbl>, `1973` <dbl>, `1974` <dbl>,\n#   `1975` <dbl>, `1976` <dbl>, `1977` <dbl>, `1978` <dbl>, `1979` <dbl>,\n#   `1980` <dbl>, `1981` <dbl>, `1982` <dbl>, `1983` <dbl>, `1984` <dbl>,\n#   `1985` <dbl>, `1986` <dbl>, `1987` <dbl>, `1988` <dbl>, `1989` <dbl>,\n#   `1990` <dbl>, `1991` <dbl>, `1992` <dbl>, `1993` <dbl>, `1994` <dbl>, …"
+  },
+  {
+    "objectID": "slides/05-class.html#exercises-1",
+    "href": "slides/05-class.html#exercises-1",
+    "title": "GVPT Maths Camp",
+    "section": "EXERCISES",
+    "text": "EXERCISES\nTaking a look at this data set:\n\nskimr::skim(gdp_raw)\n\n\nWhat types of data do we have? Are they the right type of data?\n\nAre we missing data points?"
+  },
+  {
+    "objectID": "slides/05-class.html#tidy-data-structures",
+    "href": "slides/05-class.html#tidy-data-structures",
+    "title": "GVPT Maths Camp",
+    "section": "Tidy Data Structures",
+    "text": "Tidy Data Structures\n\nSource: R4DS"
   },
   {
     "objectID": "slides/05-class.html#tidying-world-bank-data",
     "href": "slides/05-class.html#tidying-world-bank-data",
-    "title": "GVPT Maths Boot Camp",
+    "title": "GVPT Maths Camp",
     "section": "Tidying World Bank data",
     "text": "Tidying World Bank data\nWhat do you want to do with your data?\n\nI want to analyse country, regional, and global trends in GDP over time\n\nWhat I need:\n\nAnnual data on each country’s GDP\nThe region to which each country belongs"
   },
   {
-    "objectID": "slides/05-class.html#pivoting-your-data",
-    "href": "slides/05-class.html#pivoting-your-data",
-    "title": "GVPT Maths Boot Camp",
-    "section": "Pivoting your data",
-    "text": "Pivoting your data\n\ngdp_df <- pivot_longer(\n  data = gdp_raw, \n  cols = `1960`:`2021`,\n  names_to = \"year\",\n  values_to = \"gdp\"\n)\n\n\n\n\n\ncolnames(gdp_raw)\n\n [1] \"Country Name\"   \"Country Code\"   \"Indicator Name\" \"Indicator Code\"\n [5] \"1960\"           \"1961\"           \"1962\"           \"1963\"          \n [9] \"1964\"           \"1965\"           \"1966\"           \"1967\"          \n[13] \"1968\"           \"1969\"           \"1970\"           \"1971\"          \n[17] \"1972\"           \"1973\"           \"1974\"           \"1975\"          \n[21] \"1976\"           \"1977\"           \"1978\"           \"1979\"          \n[25] \"1980\"           \"1981\"           \"1982\"           \"1983\"          \n[29] \"1984\"           \"1985\"           \"1986\"           \"1987\"          \n[33] \"1988\"           \"1989\"           \"1990\"           \"1991\"          \n[37] \"1992\"           \"1993\"           \"1994\"           \"1995\"          \n[41] \"1996\"           \"1997\"           \"1998\"           \"1999\"          \n[45] \"2000\"           \"2001\"           \"2002\"           \"2003\"          \n[49] \"2004\"           \"2005\"           \"2006\"           \"2007\"          \n[53] \"2008\"           \"2009\"           \"2010\"           \"2011\"          \n[57] \"2012\"           \"2013\"           \"2014\"           \"2015\"          \n[61] \"2016\"           \"2017\"           \"2018\"           \"2019\"          \n[65] \"2020\"           \"2021\"          \n\n\n\n\ncolnames(gdp_df)\n\n[1] \"Country Name\"   \"Country Code\"   \"Indicator Name\" \"Indicator Code\"\n[5] \"year\"           \"gdp\""
-  },
-  {
     "objectID": "slides/05-class.html#tidying-world-bank-data-1",
     "href": "slides/05-class.html#tidying-world-bank-data-1",
-    "title": "GVPT Maths Boot Camp",
+    "title": "GVPT Maths Camp",
     "section": "Tidying World Bank data",
     "text": "Tidying World Bank data\nTo do:\n\nMove the yearly data from columns to rows\nClean up these column names so that they are easier to use in R\nAdd regional data"
   },
   {
+    "objectID": "slides/05-class.html#pivoting-your-data",
+    "href": "slides/05-class.html#pivoting-your-data",
+    "title": "GVPT Maths Camp",
+    "section": "Pivoting your data",
+    "text": "Pivoting your data\n\ngdp_df <- pivot_longer(\n  data = gdp_raw, \n  cols = `1960`:`2021`,\n  names_to = \"year\",\n  values_to = \"gdp\"\n)\n\n\n\n\n\ncolnames(gdp_raw)\n\n [1] \"Country Name\"   \"Country Code\"   \"Indicator Name\" \"Indicator Code\"\n [5] \"1960\"           \"1961\"           \"1962\"           \"1963\"          \n [9] \"1964\"           \"1965\"           \"1966\"           \"1967\"          \n[13] \"1968\"           \"1969\"           \"1970\"           \"1971\"          \n[17] \"1972\"           \"1973\"           \"1974\"           \"1975\"          \n[21] \"1976\"           \"1977\"           \"1978\"           \"1979\"          \n[25] \"1980\"           \"1981\"           \"1982\"           \"1983\"          \n[29] \"1984\"           \"1985\"           \"1986\"           \"1987\"          \n[33] \"1988\"           \"1989\"           \"1990\"           \"1991\"          \n[37] \"1992\"           \"1993\"           \"1994\"           \"1995\"          \n[41] \"1996\"           \"1997\"           \"1998\"           \"1999\"          \n[45] \"2000\"           \"2001\"           \"2002\"           \"2003\"          \n[49] \"2004\"           \"2005\"           \"2006\"           \"2007\"          \n[53] \"2008\"           \"2009\"           \"2010\"           \"2011\"          \n[57] \"2012\"           \"2013\"           \"2014\"           \"2015\"          \n[61] \"2016\"           \"2017\"           \"2018\"           \"2019\"          \n[65] \"2020\"           \"2021\"          \n\n\n\n\ncolnames(gdp_df)\n\n[1] \"Country Name\"   \"Country Code\"   \"Indicator Name\" \"Indicator Code\"\n[5] \"year\"           \"gdp\""
+  },
+  {
     "objectID": "slides/05-class.html#clean-column-names",
     "href": "slides/05-class.html#clean-column-names",
-    "title": "GVPT Maths Boot Camp",
+    "title": "GVPT Maths Camp",
     "section": "Clean column names",
-    "text": "Clean column names\nColumn names should not:\n\nHave spaces\nStart with numbers\n\nIntroducing janitor:\n\n# Install the `janitor` package\n\ninstall.packages(\"janitor\")\n\n\ngdp_df <- janitor::clean_names(gdp_df)\n\ncolnames(gdp_df)\n\n[1] \"country_name\"   \"country_code\"   \"indicator_name\" \"indicator_code\"\n[5] \"year\"           \"gdp\""
+    "text": "Clean column names\nColumn names should not:\n\nHave spaces\nStart with numbers\n\nIntroducing janitor:\n\n# Install the `janitor` package\n\ninstall.packages(\"janitor\")\n\n\n\ngdp_df <- janitor::clean_names(gdp_df)\n\ncolnames(gdp_df)\n\n[1] \"country_name\"   \"country_code\"   \"indicator_name\" \"indicator_code\"\n[5] \"year\"           \"gdp\""
   },
   {
     "objectID": "slides/05-class.html#add-region-data",
     "href": "slides/05-class.html#add-region-data",
-    "title": "GVPT Maths Boot Camp",
+    "title": "GVPT Maths Camp",
     "section": "Add region data",
-    "text": "Add region data\nIntroducing the countrycode package - the indispensable workhorse of country data:\n\n# Install the `countrycode` package\n\ninstall.packages(\"countrycode\")\n\n\n\nlibrary(countrycode)\n\n# Add each country's World Bank region to the data set\n\ngdp_df <- gdp_df |> \n  mutate(region = countrycode(country_name, \"country.name\", \"region\", custom_match = c(\"Turkiye\" = \"Europe & Central Asia\"))) |> \n  # Remove observations that are regions, eg. \"East Asia & Pacific\" or \"World\"\n  drop_na(region) |> \n  relocate(region, .after = \"country_code\")"
+    "text": "Add region data\nIntroducing the countrycode package - the indispensable workhorse of country data:\n\n# Install the `countrycode` package\n\ninstall.packages(\"countrycode\")"
   },
   {
     "objectID": "slides/05-class.html#add-region-data-1",
     "href": "slides/05-class.html#add-region-data-1",
-    "title": "GVPT Maths Boot Camp",
+    "title": "GVPT Maths Camp",
+    "section": "Add region data",
+    "text": "Add region data\n\nlibrary(countrycode)\n\n# Add each country's World Bank region to the data set\n\ngdp_df <- gdp_df |> \n  mutate(\n    region = countrycode(country_name, \n                         \"country.name\", \n                         \"region\", \n                         custom_match = c(\"Turkiye\" = \"Europe & Central Asia\"))\n  ) |> \n  # Remove observations that are regions\n  drop_na(region) |> \n  relocate(region, .after = \"country_code\")"
+  },
+  {
+    "objectID": "slides/05-class.html#add-region-data-2",
+    "href": "slides/05-class.html#add-region-data-2",
+    "title": "GVPT Maths Camp",
     "section": "Add region data",
     "text": "Add region data\n\ngdp_df |> \n  distinct(country_name, region) |> \n  head(10)\n\n# A tibble: 10 × 2\n   country_name         region                    \n   <chr>                <chr>                     \n 1 Aruba                Latin America & Caribbean \n 2 Afghanistan          South Asia                \n 3 Angola               Sub-Saharan Africa        \n 4 Albania              Europe & Central Asia     \n 5 Andorra              Europe & Central Asia     \n 6 United Arab Emirates Middle East & North Africa\n 7 Argentina            Latin America & Caribbean \n 8 Armenia              Europe & Central Asia     \n 9 American Samoa       East Asia & Pacific       \n10 Antigua and Barbuda  Latin America & Caribbean"
   },
   {
     "objectID": "slides/05-class.html#make-sure-all-data-are-the-right-type",
     "href": "slides/05-class.html#make-sure-all-data-are-the-right-type",
-    "title": "GVPT Maths Boot Camp",
+    "title": "GVPT Maths Camp",
     "section": "Make sure all data are the right type",
     "text": "Make sure all data are the right type\n\nglimpse(gdp_df)\n\nRows: 13,454\nColumns: 7\n$ country_name   <chr> \"Aruba\", \"Aruba\", \"Aruba\", \"Aruba\", \"Aruba\", \"Aruba\", \"…\n$ country_code   <chr> \"ABW\", \"ABW\", \"ABW\", \"ABW\", \"ABW\", \"ABW\", \"ABW\", \"ABW\",…\n$ region         <chr> \"Latin America & Caribbean\", \"Latin America & Caribbean…\n$ indicator_name <chr> \"GDP (current US$)\", \"GDP (current US$)\", \"GDP (current…\n$ indicator_code <chr> \"NY.GDP.MKTP.CD\", \"NY.GDP.MKTP.CD\", \"NY.GDP.MKTP.CD\", \"…\n$ year           <chr> \"1960\", \"1961\", \"1962\", \"1963\", \"1964\", \"1965\", \"1966\",…\n$ gdp            <dbl> NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA,…"
   },
   {
     "objectID": "slides/05-class.html#make-sure-all-data-are-the-right-type-1",
     "href": "slides/05-class.html#make-sure-all-data-are-the-right-type-1",
-    "title": "GVPT Maths Boot Camp",
+    "title": "GVPT Maths Camp",
     "section": "Make sure all data are the right type",
     "text": "Make sure all data are the right type\n\ngdp_df <- transmute(\n  gdp_df,\n  country_name, \n  region, \n  year = as.integer(year),\n  gdp\n)\n\nglimpse(gdp_df)\n\nRows: 13,454\nColumns: 4\n$ country_name <chr> \"Aruba\", \"Aruba\", \"Aruba\", \"Aruba\", \"Aruba\", \"Aruba\", \"Ar…\n$ region       <chr> \"Latin America & Caribbean\", \"Latin America & Caribbean\",…\n$ year         <int> 1960, 1961, 1962, 1963, 1964, 1965, 1966, 1967, 1968, 196…\n$ gdp          <dbl> NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, N…"
   },
   {
     "objectID": "slides/05-class.html#how-do-countries-compare-over-time",
     "href": "slides/05-class.html#how-do-countries-compare-over-time",
-    "title": "GVPT Maths Boot Camp",
+    "title": "GVPT Maths Camp",
     "section": "How do countries compare over time?",
     "text": "How do countries compare over time?\n\nggplot(gdp_df, aes(\n  x = year, y = gdp, colour = region, group = country_name\n)) + \n  geom_line() + \n  theme_minimal()"
   },
   {
     "objectID": "slides/05-class.html#how-do-regions-compare-over-time",
     "href": "slides/05-class.html#how-do-regions-compare-over-time",
-    "title": "GVPT Maths Boot Camp",
+    "title": "GVPT Maths Camp",
     "section": "How do regions compare over time?",
     "text": "How do regions compare over time?\nBy default, R will carry forward NAs. This is good!\n\ngdp_df |> \n  group_by(region, year) |> \n  summarise(avg_gdp = mean(gdp)) |> \n  ggplot(aes(x = year, y = avg_gdp, colour = region)) + \n  geom_line() + \n  theme_minimal()"
   },
   {
     "objectID": "slides/05-class.html#dealing-with-missing-data",
     "href": "slides/05-class.html#dealing-with-missing-data",
-    "title": "GVPT Maths Boot Camp",
+    "title": "GVPT Maths Camp",
     "section": "Dealing with missing data",
-    "text": "Dealing with missing data\n\n\n\n\n\n\n\nYou usually won’t want to drop all NAs without interrogating why they are there. We will discuss how to handle missing data during the semester."
+    "text": "Dealing with missing data\n\ngdp_df |> \n  group_by(region, year) |> \n  summarise(avg_gdp = mean(gdp, na.rm = T)) |> \n  ggplot(aes(x = year, y = avg_gdp, colour = region)) + \n  geom_line() + \n  theme_minimal()\n\n\n\nYou usually won’t want to drop all NAs without interrogating why they are there. We will discuss how to handle missing data during the semester."
+  },
+  {
+    "objectID": "slides/05-class.html#dealing-with-missing-data-1",
+    "href": "slides/05-class.html#dealing-with-missing-data-1",
+    "title": "GVPT Maths Camp",
+    "section": "Dealing with missing data",
+    "text": "Dealing with missing data"
   },
   {
     "objectID": "slides/05-class.html#summary",
     "href": "slides/05-class.html#summary",
-    "title": "GVPT Maths Boot Camp",
+    "title": "GVPT Maths Camp",
     "section": "Summary",
-    "text": "Summary\nToday you:\n\nLearnt how to read in external data\nLearnt how to clean common data problems using R"
+    "text": "Summary\nToday you:\n\nLearnt how to read in external data\nLearnt how to clean up common problems using R"
+  },
+  {
+    "objectID": "slides/02-class.html#learning-objectives-for-today",
+    "href": "slides/02-class.html#learning-objectives-for-today",
+    "title": "GVPT Maths Camp",
+    "section": "Learning objectives for today",
+    "text": "Learning objectives for today\n\nIntroduction to R\nCreate your first plot in R\nTest your hypotheses using informative data visualizations"
+  },
+  {
+    "objectID": "slides/02-class.html#the-research-process",
+    "href": "slides/02-class.html#the-research-process",
+    "title": "GVPT Maths Camp",
+    "section": "The Research Process",
+    "text": "The Research Process\n\nSource: R4DS"
+  },
+  {
+    "objectID": "slides/02-class.html#r-basics",
+    "href": "slides/02-class.html#r-basics",
+    "title": "GVPT Maths Camp",
+    "section": "R basics",
+    "text": "R basics\nR code:\n\n1 + 2\n\n[1] 3\n\n\nFunctions:\n\nsum(1, 2)\n\n[1] 3"
+  },
+  {
+    "objectID": "slides/02-class.html#r-packages",
+    "href": "slides/02-class.html#r-packages",
+    "title": "GVPT Maths Camp",
+    "section": "R packages",
+    "text": "R packages\nPackages are collections of R functions, data, and compiled code in a well-defined format.\n\n# Install the relevant package(s)\ninstall.packages(\"tidyverse\")\n\n# Load the packages in current session\nlibrary(tidyverse)\n\n\n\ntidyverse is a collection of many different packages housed within this universe. The individual packages are listed when you load the tidyverse package."
+  },
+  {
+    "objectID": "slides/02-class.html#your-first-github-repository",
+    "href": "slides/02-class.html#your-first-github-repository",
+    "title": "GVPT Maths Camp",
+    "section": "Your first GitHub repository",
+    "text": "Your first GitHub repository\nVersion control and collaboration\n\nWe will use Github to share and manage our scripts.\nYour GVPT622 homework assignments will be submitted via Github.\nA great tool for collaboration and dissemination of research."
+  },
+  {
+    "objectID": "slides/02-class.html#rstudio-projects",
+    "href": "slides/02-class.html#rstudio-projects",
+    "title": "GVPT Maths Camp",
+    "section": "RStudio Projects",
+    "text": "RStudio Projects\nFor your sanity’s sake, for your co-author’s sanity’s sake\n\nKeeps everything:\n\nOrganised\nReproducible\nSustainable\n\n\n\nFor later reference, head to Hadley Wickham’s Workflow: projects chapter in R4DS."
+  },
+  {
+    "objectID": "slides/02-class.html#data-visualisation",
+    "href": "slides/02-class.html#data-visualisation",
+    "title": "GVPT Maths Camp",
+    "section": "Data visualisation",
+    "text": "Data visualisation\nFrom R4DS - Data Visualization:\n\nDo cars with big engines use more fuel than cars with small engines?\n\n\nLet’s use our first graph to answer a question: Do cars with big engines use more fuel than cars with small engines? You probably already have an answer, but try to make your answer precise. What does the relationship between engine size and fuel efficiency look like? Is it positive? Negative? Linear? Nonlinear?"
+  },
+  {
+    "objectID": "slides/02-class.html#skipping-to-the-end",
+    "href": "slides/02-class.html#skipping-to-the-end",
+    "title": "GVPT Maths Camp",
+    "section": "Skipping to the end",
+    "text": "Skipping to the end"
+  },
+  {
+    "objectID": "slides/02-class.html#load-relevant-packages-and-data",
+    "href": "slides/02-class.html#load-relevant-packages-and-data",
+    "title": "GVPT Maths Camp",
+    "section": "Load relevant packages and data",
+    "text": "Load relevant packages and data\n\n# Load the relevant packages\nlibrary(tidyverse)\n\n# Load the data\nmpg\n\n\n\n\n\n\nmanufacturer\nmodel\ndispl\nyear\ncyl\n\n\n\n\naudi\na4\n1.8\n1999\n4\n\n\naudi\na4\n1.8\n1999\n4\n\n\naudi\na4\n2.0\n2008\n4\n\n\naudi\na4\n2.0\n2008\n4\n\n\naudi\na4\n2.8\n1999\n6\n\n\naudi\na4\n2.8\n1999\n6\n\n\n\n\n\n\nYou only need to install a package once, but you need to reload it every time you start a new session.\nA data frame is a rectangular collection of variables (in the columns) and observations (in the rows). mpg contains observations collected by the US Environmental Protection Agency on 38 models of car."
+  },
+  {
+    "objectID": "slides/02-class.html#learning-more-about-the-data",
+    "href": "slides/02-class.html#learning-more-about-the-data",
+    "title": "GVPT Maths Camp",
+    "section": "Learning more about the data",
+    "text": "Learning more about the data\nTo get help on any function or dataset use: ?function\n\nFor example, to learn more about this dataset, type ?mpg into your console.\n\nAmong the variables in mpg are:\n\ndispl, a car’s engine size, in litres.\nhwy, a car’s fuel efficiency on the highway, in miles per gallon (mpg). A car with a low fuel efficiency consumes more fuel than a car with a high fuel efficiency when they travel the same distance."
+  },
+  {
+    "objectID": "slides/02-class.html#plot-your-data",
+    "href": "slides/02-class.html#plot-your-data",
+    "title": "GVPT Maths Camp",
+    "section": "Plot your data",
+    "text": "Plot your data\n\nlibrary(ggplot2)\n\nggplot(data = mpg) + \n  geom_point(mapping = aes(x = displ, y = hwy))\n\n\n\nThe plot shows a negative relationship between engine size (displ) and fuel efficiency (hwy). In other words, cars with big engines use more fuel. Does this confirm or refute your hypothesis about fuel efficiency and engine size?\nWith ggplot2, you begin a plot with the function ggplot(). ggplot() creates a coordinate system that you can add layers to. The first argument of ggplot() is the dataset to use in the graph. So ggplot(data = mpg) creates an empty graph, but it’s not very interesting so I’m not going to show it here.\nYou complete your graph by adding one or more layers to ggplot(). The function geom_point() adds a layer of points to your plot, which creates a scatterplot. ggplot2 comes with many geom functions that each add a different type of layer to a plot. You’ll learn a whole bunch of them throughout this chapter.\nEach geom function in ggplot2 takes a mapping argument. This defines how variables in your dataset are mapped to visual properties. The mapping argument is always paired with aes(), and the x and y arguments of aes() specify which variables to map to the x and y axes. ggplot2 looks for the mapped variables in the data argument, in this case, mpg."
+  },
+  {
+    "objectID": "slides/02-class.html#exercises",
+    "href": "slides/02-class.html#exercises",
+    "title": "GVPT Maths Camp",
+    "section": "EXERCISES",
+    "text": "EXERCISES\nWhat’s gone wrong with this code? Why are the points not blue?\n\nggplot(data = mpg) + \n  geom_point(mapping = aes(x = displ, y = hwy, color = \"blue\"))"
+  },
+  {
+    "objectID": "slides/02-class.html#exercises-continued",
+    "href": "slides/02-class.html#exercises-continued",
+    "title": "GVPT Maths Camp",
+    "section": "EXERCISES (continued)",
+    "text": "EXERCISES (continued)\nMake a scatterplot of hwy vs cyl.\nWhat happens if you make a scatterplot of class vs drv? Why is the plot not useful?"
+  },
+  {
+    "objectID": "slides/02-class.html#lets-look-at-groups-in-the-data",
+    "href": "slides/02-class.html#lets-look-at-groups-in-the-data",
+    "title": "GVPT Maths Camp",
+    "section": "Let’s look at groups in the data",
+    "text": "Let’s look at groups in the data\n\nWe are not restricted to looking at only two interesting elements of our data.\nYou can use visual elements or aesthetics (aes) to communicate many dimensions in your data.\nLet’s look at a categorical variable: the class of car (SUV, 2 seater, pick up truck, etc.).\nLook for meaningfully defined groups."
+  },
+  {
+    "objectID": "slides/02-class.html#lets-look-at-groups-in-the-data-1",
+    "href": "slides/02-class.html#lets-look-at-groups-in-the-data-1",
+    "title": "GVPT Maths Camp",
+    "section": "Let’s look at groups in the data",
+    "text": "Let’s look at groups in the data\n\nggplot(data = mpg) + \n  geom_point(mapping = aes(x = displ, y = hwy, color = class))"
+  },
+  {
+    "objectID": "slides/02-class.html#lets-look-at-groups-in-the-data-2",
+    "href": "slides/02-class.html#lets-look-at-groups-in-the-data-2",
+    "title": "GVPT Maths Camp",
+    "section": "Let’s look at groups in the data",
+    "text": "Let’s look at groups in the data\n\nggplot(data = mpg) + \n  geom_point(mapping = aes(x = displ, y = hwy, size = class))"
+  },
+  {
+    "objectID": "slides/02-class.html#lets-make-this-prettier",
+    "href": "slides/02-class.html#lets-make-this-prettier",
+    "title": "GVPT Maths Camp",
+    "section": "Let’s make this prettier",
+    "text": "Let’s make this prettier\n\nggplot(data = mpg) + \n  geom_point(mapping = aes(x = displ, y = hwy), color = \"blue\")"
+  },
+  {
+    "objectID": "slides/02-class.html#lets-add-useful-headings",
+    "href": "slides/02-class.html#lets-add-useful-headings",
+    "title": "GVPT Maths Camp",
+    "section": "Let’s add useful headings",
+    "text": "Let’s add useful headings\n\nggplot(data = mpg) + \n  geom_point(mapping = aes(x = displ, y = hwy), color = \"red\") + \n  labs(\n    title = \"Relationship between engine displacement and highway miles per gallon\",\n    x = \"Engine displacement (L)\",\n    y = \"Highway miles per gallon\"\n  )"
+  },
+  {
+    "objectID": "slides/02-class.html#lets-add-useful-headings-1",
+    "href": "slides/02-class.html#lets-add-useful-headings-1",
+    "title": "GVPT Maths Camp",
+    "section": "Let’s add useful headings",
+    "text": "Let’s add useful headings\n\nggplot(data = mpg) + \n  geom_point(mapping = aes(x = displ, y = hwy), color = \"blue\") + \n  labs(\n    title = \"Relationship between engine displacement and highway miles per gallon\",\n    x = \"Engine displacement (L)\",\n    y = \"Highway miles per gallon\"\n  )"
+  },
+  {
+    "objectID": "slides/02-class.html#lets-clean-this-up",
+    "href": "slides/02-class.html#lets-clean-this-up",
+    "title": "GVPT Maths Camp",
+    "section": "Let’s clean this up",
+    "text": "Let’s clean this up\nLess is more when it comes to data visualization.\n\nggplot(data = mpg) + \n  geom_point(mapping = aes(x = displ, y = hwy), color = \"blue\") + \n  theme_minimal() + \n  labs(\n    title = \"Relationship between engine displacement and highway miles per gallon\",\n    x = \"Engine displacement (L)\",\n    y = \"Highway miles per gallon\"\n  )\n\n\n\nAll pre-set ggplot themes can be found in the ggplot documentation."
+  },
+  {
+    "objectID": "slides/02-class.html#lets-clean-this-up-1",
+    "href": "slides/02-class.html#lets-clean-this-up-1",
+    "title": "GVPT Maths Camp",
+    "section": "Let’s clean this up",
+    "text": "Let’s clean this up"
+  },
+  {
+    "objectID": "slides/02-class.html#creating-your-own-theme",
+    "href": "slides/02-class.html#creating-your-own-theme",
+    "title": "GVPT Maths Camp",
+    "section": "Creating your own theme",
+    "text": "Creating your own theme\n\nggplot(data = mpg) + \n  geom_point(mapping = aes(x = displ, y = hwy, color = class)) + \n  theme(\n    legend.position = \"bottom\",\n    panel.grid = element_blank(),\n    panel.background = element_blank(),\n    plot.title.position = \"plot\",\n    plot.title = element_text(face = \"bold\")\n  ) + \n  labs(\n    title = \"Relationship between engine displacement and highway miles per gallon by class\",\n    x = \"Engine displacement (L)\",\n    y = \"Highway miles per gallon\",\n    color = \"Class\"\n  )\n\n\n\nAll theme elements that you can control can be found in the ggplot documentation. There are a lot!"
+  },
+  {
+    "objectID": "slides/02-class.html#creating-your-own-theme-1",
+    "href": "slides/02-class.html#creating-your-own-theme-1",
+    "title": "GVPT Maths Camp",
+    "section": "Creating your own theme",
+    "text": "Creating your own theme"
+  },
+  {
+    "objectID": "slides/02-class.html#exercises-1",
+    "href": "slides/02-class.html#exercises-1",
+    "title": "GVPT Maths Camp",
+    "section": "EXERCISES",
+    "text": "EXERCISES\nWhich variables in mpg are categorical? Which variables are continuous?\n\nMap a continuous variable to color, size, and shape. How do these aesthetics behave differently for categorical vs. continuous variables?\n\nWhat happens if you map the same variable to multiple aesthetics?"
+  },
+  {
+    "objectID": "slides/02-class.html#exercises-2",
+    "href": "slides/02-class.html#exercises-2",
+    "title": "GVPT Maths Camp",
+    "section": "EXERCISES",
+    "text": "EXERCISES\nWhat does the stroke aesthetic do? What shapes does it work with?\n\nWhat happens if you map an aesthetic to something other than a variable name, like aes(colour = displ < 5)? Note, you’ll also need to specify x and y."
+  },
+  {
+    "objectID": "slides/02-class.html#exercises-3",
+    "href": "slides/02-class.html#exercises-3",
+    "title": "GVPT Maths Camp",
+    "section": "EXERCISES",
+    "text": "EXERCISES\nWhat does the stroke aesthetic do? What shapes does it work with?\n\nWhat happens if you map an aesthetic to something other than a variable name, like aes(colour = displ < 5)? Note, you’ll also need to specify x and y."
+  },
+  {
+    "objectID": "slides/02-class.html#looking-at-group-specific-trends",
+    "href": "slides/02-class.html#looking-at-group-specific-trends",
+    "title": "GVPT Maths Camp",
+    "section": "Looking at group-specific trends",
+    "text": "Looking at group-specific trends\n\nggplot(data = mpg) + \n  geom_point(mapping = aes(x = displ, y = hwy)) + \n  facet_wrap(~ class, nrow = 2)"
+  },
+  {
+    "objectID": "slides/02-class.html#looking-at-group-specific-trends-1",
+    "href": "slides/02-class.html#looking-at-group-specific-trends-1",
+    "title": "GVPT Maths Camp",
+    "section": "Looking at group-specific trends",
+    "text": "Looking at group-specific trends\n\nggplot(data = mpg) + \n  geom_point(mapping = aes(x = displ, y = hwy)) + \n  facet_grid(drv ~ cyl)"
+  },
+  {
+    "objectID": "slides/02-class.html#summarising-relationships-in-the-data",
+    "href": "slides/02-class.html#summarising-relationships-in-the-data",
+    "title": "GVPT Maths Camp",
+    "section": "Summarising relationships in the data",
+    "text": "Summarising relationships in the data\n\nggplot(data = mpg, mapping = aes(x = displ, y = hwy)) + \n  geom_point() + \n  geom_smooth(method = \"lm\", se = F)\n\n\n\nBecause both geom_point() and geom_smooth() take the arguement mapping = aes(x = displ, y = hwy), we can feed it to them both through ggplot(). We are previewing a feature heavily used in the tidyverse: the pipe."
+  },
+  {
+    "objectID": "slides/02-class.html#group-specific-relationships",
+    "href": "slides/02-class.html#group-specific-relationships",
+    "title": "GVPT Maths Camp",
+    "section": "Group-specific relationships",
+    "text": "Group-specific relationships\n\nggplot(data = mpg, mapping = aes(x = displ, y = hwy, color = drv)) + \n  geom_point() + \n  geom_smooth(method = \"lm\", se = F) + \n  theme_minimal()"
+  },
+  {
+    "objectID": "slides/02-class.html#summary",
+    "href": "slides/02-class.html#summary",
+    "title": "GVPT Maths Camp",
+    "section": "Summary",
+    "text": "Summary\nToday you:\n\nSet up your data science tools\nPlotted complex data in an engaging way\nDiscovered interesting relationships in the data\nConnected these relationships or trends to your expectations (or hypotheses about the data)\nCreated and used your first ever Github repository."
+  },
+  {
+    "objectID": "slides/04-class.html#learning-objectives",
+    "href": "slides/04-class.html#learning-objectives",
+    "title": "GVPT Maths Camp",
+    "section": "Learning objectives",
+    "text": "Learning objectives\n\nLearn how to answer basic questions about your data\nLearn how to identify interesting relationships in your data\nUse your new data science tools to better understand your data"
+  },
+  {
+    "objectID": "slides/04-class.html#two-basic-questions-to-guide-your-eda",
+    "href": "slides/04-class.html#two-basic-questions-to-guide-your-eda",
+    "title": "GVPT Maths Camp",
+    "section": "Two basic questions to guide your EDA",
+    "text": "Two basic questions to guide your EDA\n\nWhat type of variation occurs within my variables?\n\n\n\nWhat type of covariation occurs between my variables?"
+  },
+  {
+    "objectID": "slides/04-class.html#examining-gapminder",
+    "href": "slides/04-class.html#examining-gapminder",
+    "title": "GVPT Maths Camp",
+    "section": "Examining gapminder",
+    "text": "Examining gapminder\n\nlibrary(gapminder)\nlibrary(dplyr)\n\nhead(gapminder)\n\n# A tibble: 6 × 6\n  country     continent  year lifeExp      pop gdpPercap\n  <fct>       <fct>     <int>   <dbl>    <int>     <dbl>\n1 Afghanistan Asia       1952    28.8  8425333      779.\n2 Afghanistan Asia       1957    30.3  9240934      821.\n3 Afghanistan Asia       1962    32.0 10267083      853.\n4 Afghanistan Asia       1967    34.0 11537966      836.\n5 Afghanistan Asia       1972    36.1 13079460      740.\n6 Afghanistan Asia       1977    38.4 14880372      786."
+  },
+  {
+    "objectID": "slides/04-class.html#variation-factors",
+    "href": "slides/04-class.html#variation-factors",
+    "title": "GVPT Maths Camp",
+    "section": "Variation: Factors",
+    "text": "Variation: Factors\nHow many countries are there in our data set?\n\ngapminder |> \n  distinct(country) |> \n  nrow()\n\n[1] 142\n\n\nHow many continents?\n\ngapminder |> \n  distinct(continent) |> \n  nrow()\n\n[1] 5\n\n\nEXERCISE: How many countries in each continent?"
+  },
+  {
+    "objectID": "slides/04-class.html#variation-numeric",
+    "href": "slides/04-class.html#variation-numeric",
+    "title": "GVPT Maths Camp",
+    "section": "Variation: Numeric",
+    "text": "Variation: Numeric\nWhat is the earliest and latest year we cover?\n\nsummarise(gapminder, min(year), max(year))\n\n# A tibble: 1 × 2\n  `min(year)` `max(year)`\n        <int>       <int>\n1        1952        2007\n\n\nWhat about our other numeric variables?\n\nsummarise(gapminder, across(lifeExp:gdpPercap, ~ quantile(.x)))\n\n# A tibble: 5 × 3\n  lifeExp         pop gdpPercap\n    <dbl>       <dbl>     <dbl>\n1    23.6      60011       241.\n2    48.2    2793664      1202.\n3    60.7    7023596.     3532.\n4    70.8   19585222.     9325.\n5    82.6 1318683096    113523."
+  },
+  {
+    "objectID": "slides/04-class.html#the-five-number-summary",
+    "href": "slides/04-class.html#the-five-number-summary",
+    "title": "GVPT Maths Camp",
+    "section": "The Five Number Summary",
+    "text": "The Five Number Summary\nThe five number summary is a useful way to summarise numeric data. Consists of the:\n\nMinimum,\n25th percentile,\n50th percentile (mean or average),\n75th percentile,\nMaximum"
+  },
+  {
+    "objectID": "slides/04-class.html#visualising-the-five-number-summary",
+    "href": "slides/04-class.html#visualising-the-five-number-summary",
+    "title": "GVPT Maths Camp",
+    "section": "Visualising the Five Number Summary",
+    "text": "Visualising the Five Number Summary\n\nlibrary(ggplot2)\n\nggplot(gapminder, aes(y = lifeExp)) + \n  geom_boxplot() + \n  theme_minimal()"
+  },
+  {
+    "objectID": "slides/04-class.html#visualising-the-iqr-for-groups",
+    "href": "slides/04-class.html#visualising-the-iqr-for-groups",
+    "title": "GVPT Maths Camp",
+    "section": "Visualising the IQR for groups",
+    "text": "Visualising the IQR for groups\n\nlibrary(ggplot2)\n\nggplot(gapminder, aes(x = continent, y = lifeExp)) + \n  geom_boxplot() + \n  theme_minimal()"
+  },
+  {
+    "objectID": "slides/04-class.html#visualising-the-distribution-of-numeric-variables",
+    "href": "slides/04-class.html#visualising-the-distribution-of-numeric-variables",
+    "title": "GVPT Maths Camp",
+    "section": "Visualising the distribution of numeric variables",
+    "text": "Visualising the distribution of numeric variables\n\nggplot(gapminder, aes(x = lifeExp)) + \n  geom_histogram() + \n  theme_minimal()"
+  },
+  {
+    "objectID": "slides/04-class.html#visualising-the-distribution-of-numeric-variables-1",
+    "href": "slides/04-class.html#visualising-the-distribution-of-numeric-variables-1",
+    "title": "GVPT Maths Camp",
+    "section": "Visualising the distribution of numeric variables",
+    "text": "Visualising the distribution of numeric variables\n\nggplot(gapminder, aes(x = lifeExp)) + \n  geom_density() + \n  theme_minimal()"
+  },
+  {
+    "objectID": "slides/04-class.html#visualising-the-distribution-of-numeric-variables-2",
+    "href": "slides/04-class.html#visualising-the-distribution-of-numeric-variables-2",
+    "title": "GVPT Maths Camp",
+    "section": "Visualising the distribution of numeric variables",
+    "text": "Visualising the distribution of numeric variables\n\nggplot(gapminder, aes(x = lifeExp, fill = continent)) + \n  geom_density(alpha = 0.5) + \n  theme_minimal()"
+  },
+  {
+    "objectID": "slides/04-class.html#visualising-counts",
+    "href": "slides/04-class.html#visualising-counts",
+    "title": "GVPT Maths Camp",
+    "section": "Visualising counts",
+    "text": "Visualising counts\n\ngapminder |>\n  distinct(continent, country) |> \n  count(continent) |> \n  ggplot(aes(x = n, y = reorder(continent, n))) + \n  geom_col() + \n  theme_minimal()"
+  },
+  {
+    "objectID": "slides/04-class.html#identifying-unusual-values",
+    "href": "slides/04-class.html#identifying-unusual-values",
+    "title": "GVPT Maths Camp",
+    "section": "Identifying unusual values",
+    "text": "Identifying unusual values\n\nggplot(gapminder, aes(x = gdpPercap)) + \n  geom_histogram() + \n  theme_minimal()"
+  },
+  {
+    "objectID": "slides/04-class.html#identifying-unusual-values-1",
+    "href": "slides/04-class.html#identifying-unusual-values-1",
+    "title": "GVPT Maths Camp",
+    "section": "Identifying unusual values",
+    "text": "Identifying unusual values\n\nggplot(gapminder, aes(x = gdpPercap)) + \n  geom_boxplot() + \n  theme_minimal()\n\n\n\n\n\n\n\n\n\n\nThe tails (or whiskers) are equal to 1.5 times the IQR (75th percentile - 25th percentile). All values larger or smaller than these tails are often considered to be outliers. However, be very careful when dealing with outliers. We will discuss this more during the semester."
+  },
+  {
+    "objectID": "slides/04-class.html#identifying-relationships-in-your-data",
+    "href": "slides/04-class.html#identifying-relationships-in-your-data",
+    "title": "GVPT Maths Camp",
+    "section": "Identifying relationships in your data",
+    "text": "Identifying relationships in your data\nDoes one variable tend to move in the same direction as another?\n\nggplot(gapminder, aes(x = log(gdpPercap), y = lifeExp)) + \n  geom_point() + \n  theme_minimal()"
+  },
+  {
+    "objectID": "slides/04-class.html#a-preview-of-linear-regression",
+    "href": "slides/04-class.html#a-preview-of-linear-regression",
+    "title": "GVPT Maths Camp",
+    "section": "A preview of linear regression",
+    "text": "A preview of linear regression"
+  },
+  {
+    "objectID": "slides/04-class.html#there-has-to-be-an-easier-way",
+    "href": "slides/04-class.html#there-has-to-be-an-easier-way",
+    "title": "GVPT Maths Camp",
+    "section": "There has to be an easier way!",
+    "text": "There has to be an easier way!\nA quick look with glimpse():\n\nglimpse(gapminder)\n\nA quick summary with skim():\n\ninstall.packages(\"skimr\")\n\nskimr::skim(gapminder)\n\n\n\nYou can access functions and data sets from packages without loading the package using package::function. For example, gapminder::gapminder."
+  },
+  {
+    "objectID": "slides/04-class.html#summary",
+    "href": "slides/04-class.html#summary",
+    "title": "GVPT Maths Camp",
+    "section": "Summary",
+    "text": "Summary\nToday you:\n\nLearnt how to explore and visualise interesting relations in your data\nUsed your new data science tools to better understand your data"
+  },
+  {
+    "objectID": "schedule.html",
+    "href": "schedule.html",
+    "title": "Schedule",
+    "section": "",
+    "text": "DATE \n    TITLE \n    CONTENT \n    ASSIGNMENT \n  \n \n\n  \n    Monday \n    Introduction and Set Up \n     \n     \n  \n  \n    Tuesday \n    Data Visualisation \n     \n     \n  \n  \n    Wednesday \n    Data Transformation \n     \n     \n  \n  \n    Thursday \n    Exploratory Data Analysis \n     \n     \n  \n  \n    Friday \n    Data Wrangling"
+  },
+  {
+    "objectID": "slides/02-class.html#exercise",
+    "href": "slides/02-class.html#exercise",
+    "title": "GVPT Maths Camp",
+    "section": "EXERCISE",
+    "text": "EXERCISE\n\nOpen up RStudio.\nUsing the console, find the summation of 45, 978, and 121.\nWhat is 67 divided by 6?\nWhat is the square root of 894?"
+  },
+  {
+    "objectID": "slides/02-class.html#exercise-1",
+    "href": "slides/02-class.html#exercise-1",
+    "title": "GVPT Maths Camp",
+    "section": "EXERCISE",
+    "text": "EXERCISE\n\nOpen up RStudio.\nUsing the consol, install the tidyverse packages.\n\n\ninstall.packages(\"tidyverse\")\n\n\nLoad these packages in your current session\n\n\nlibrary(tidyverse)"
+  },
+  {
+    "objectID": "slides/02-class.html#check-your-answers",
+    "href": "slides/02-class.html#check-your-answers",
+    "title": "GVPT Maths Camp",
+    "section": "CHECK YOUR ANSWERS",
+    "text": "CHECK YOUR ANSWERS\nUsing the consol, find the summation of 45, 978, and 121.\n\nsum(45, 978, 121)\n\n[1] 1144\n\n\nOr:\n\n45 + 978 + 121\n\n[1] 1144\n\n\nWhat is 67 divided by 6?\n\n67 / 6\n\n[1] 11.16667\n\n\nWhat is the square root of 894?\n\nsqrt(894)\n\n[1] 29.89983"
+  },
+  {
+    "objectID": "slides/02-class.html#check-your-answers-1",
+    "href": "slides/02-class.html#check-your-answers-1",
+    "title": "GVPT Maths Camp",
+    "section": "CHECK YOUR ANSWERS",
+    "text": "CHECK YOUR ANSWERS\nWhat is 67 divided by 6?\n\n67 / 6\n\n[1] 11.16667\n\n\nWhat is the square root of 894?\n\nsqrt(894)\n\n[1] 29.89983"
+  },
+  {
+    "objectID": "slides/02-class.html#exercise-2",
+    "href": "slides/02-class.html#exercise-2",
+    "title": "GVPT Maths Camp",
+    "section": "EXERCISE",
+    "text": "EXERCISE\nFollow along as we:\n\nCreate a repository in GitHub for this course\nLink your new repository to a new RStudio project\n\n\n\nFor later reference, head to Jenny Bryan’s New project, GitHub first chapter in Happy Git with R."
+  },
+  {
+    "objectID": "slides/02-class.html#how-did-we-do-this",
+    "href": "slides/02-class.html#how-did-we-do-this",
+    "title": "GVPT Maths Camp",
+    "section": "How did we do this?",
+    "text": "How did we do this?\n\nlibrary(ggplot2)\n\nggplot(data = mpg) + \n  geom_point(mapping = aes(x = displ, y = hwy, color = class)) + \n  theme(\n    legend.position = \"bottom\",\n    panel.grid = element_blank(),\n    panel.background = element_blank(),\n    plot.title.position = \"plot\",\n    plot.title = element_text(face = \"bold\")\n  ) + \n  labs(\n    title = \"Relationship between engine displacement and highway miles per gallon by class\",\n    x = \"Engine displacement (L)\",\n    y = \"Highway miles per gallon\",\n    color = \"Class\"\n  )\n\n\n\nWe will step through this now. By the end of this session, you will be able to make your own colourful data visualisations using R."
+  },
+  {
+    "objectID": "slides/02-class.html#exercise-3",
+    "href": "slides/02-class.html#exercise-3",
+    "title": "GVPT Maths Camp",
+    "section": "EXERCISE",
+    "text": "EXERCISE\n\nLearn more about this data set by typing ?mpg into your console.\n\n\nTo get help on any function or data set use: ?function"
+  },
+  {
+    "objectID": "slides/02-class.html#exercise-4",
+    "href": "slides/02-class.html#exercise-4",
+    "title": "GVPT Maths Camp",
+    "section": "EXERCISE",
+    "text": "EXERCISE\nWhat do you see when you run the following?\n\nggplot(data = mpg)\n\nHow many rows are in mpg? How many columns?\n\nnrow(mpg)\nncol(mpg)\n\nWhat does the drv variable describe?\n\n?mpg"
+  },
+  {
+    "objectID": "slides/02-class.html#exercise-5",
+    "href": "slides/02-class.html#exercise-5",
+    "title": "GVPT Maths Camp",
+    "section": "EXERCISE",
+    "text": "EXERCISE\nMake a scatterplot of hwy vs cyl.\n\nggplot(data = mpg) + \n  geom_point(mapping = aes(x = hwy, y = cyl))\n\nWhat happens if you make a scatterplot of class vs drv? Why is the plot not useful?\n\nggplot(data = mpg) + \n  geom_point(mapping = aes(x = class, y = drv))"
+  },
+  {
+    "objectID": "slides/02-class.html#lets-look-at-groups-in-the-data-3",
+    "href": "slides/02-class.html#lets-look-at-groups-in-the-data-3",
+    "title": "GVPT Maths Camp",
+    "section": "Let’s look at groups in the data",
+    "text": "Let’s look at groups in the data\n\nggplot(data = mpg) + \n  geom_point(mapping = aes(x = displ, y = hwy, shape = class))"
+  },
+  {
+    "objectID": "slides/02-class.html#ggplot2-is-very-flexible",
+    "href": "slides/02-class.html#ggplot2-is-very-flexible",
+    "title": "GVPT Maths Camp",
+    "section": "ggplot2 is very flexible",
+    "text": "ggplot2 is very flexible\nYou can use visual elements to communicate your findings in engaging ways.\n\nggplot(data = mpg) + \n  geom_point(mapping = aes(x = displ, y = hwy, color = class == \"2seater\"))"
+  },
+  {
+    "objectID": "slides/02-class.html#flexible-visualization",
+    "href": "slides/02-class.html#flexible-visualization",
+    "title": "GVPT Maths Camp",
+    "section": "Flexible visualization",
+    "text": "Flexible visualization\nYou can use visual elements to communicate your findings in engaging ways.\n\nggplot(data = mpg) + \n  geom_point(mapping = aes(x = displ, y = hwy, color = class == \"2seater\"))"
+  },
+  {
+    "objectID": "slides/02-class.html#making-your-plot-more-visually-appealing",
+    "href": "slides/02-class.html#making-your-plot-more-visually-appealing",
+    "title": "GVPT Maths Camp",
+    "section": "Making your plot more visually appealing",
+    "text": "Making your plot more visually appealing\n\nggplot(data = mpg) + \n  geom_point(mapping = aes(x = displ, y = hwy), color = \"red\")"
+  },
+  {
+    "objectID": "slides/02-class.html#exercise-6",
+    "href": "slides/02-class.html#exercise-6",
+    "title": "GVPT Maths Camp",
+    "section": "EXERCISE",
+    "text": "EXERCISE\nWhat’s gone wrong with this code? Why are the points not blue?\n\nggplot(data = mpg) + \n  geom_point(mapping = aes(x = displ, y = hwy, color = \"blue\"))"
+  },
+  {
+    "objectID": "slides/02-class.html#exercise-7",
+    "href": "slides/02-class.html#exercise-7",
+    "title": "GVPT Maths Camp",
+    "section": "EXERCISE",
+    "text": "EXERCISE\nWhich variables in mpg are categorical? Which variables are continuous?\n\nMap a continuous variable to color, size, and shape. How do these aesthetics behave differently for categorical vs. continuous variables?\n\nWhat happens if you map the same variable to multiple aesthetics?"
+  },
+  {
+    "objectID": "slides/02-class.html#changing-the-look-of-your-plots",
+    "href": "slides/02-class.html#changing-the-look-of-your-plots",
+    "title": "GVPT Maths Camp",
+    "section": "Changing the look of your plots",
+    "text": "Changing the look of your plots\n\nggplot(data = mpg) + \n  geom_point(mapping = aes(x = displ, y = hwy), color = \"red\")"
+  },
+  {
+    "objectID": "slides/02-class.html#exercise-8",
+    "href": "slides/02-class.html#exercise-8",
+    "title": "GVPT Maths Camp",
+    "section": "EXERCISE",
+    "text": "EXERCISE\n\nCreate a scatterplot of hwy vs displ and a categorical variable in the mpg data set.\nCustomize your plot using the theme() argument."
+  },
+  {
+    "objectID": "slides/02-class.html#exercise-9",
+    "href": "slides/02-class.html#exercise-9",
+    "title": "GVPT Maths Camp",
+    "section": "EXERCISE",
+    "text": "EXERCISE\n\nWhat happens if you facet on a continuous variable?\nWhat do the empty cells in previous plot with facet_grid(drv ~ cyl) mean? How do they relate to this plot?"
+  },
+  {
+    "objectID": "slides/02-class.html#exercise-10",
+    "href": "slides/02-class.html#exercise-10",
+    "title": "GVPT Maths Camp",
+    "section": "EXERCISE",
+    "text": "EXERCISE\n\nCreate the following plots. What does . do?\n\n\nggplot(data = mpg) + \n  geom_point(mapping = aes(x = displ, y = hwy)) +\n  facet_grid(drv ~ .)\n\nggplot(data = mpg) + \n  geom_point(mapping = aes(x = displ, y = hwy)) +\n  facet_grid(. ~ cyl)"
+  },
+  {
+    "objectID": "slides/02-class.html#summarising-relationships-in-your-data",
+    "href": "slides/02-class.html#summarising-relationships-in-your-data",
+    "title": "GVPT Maths Camp",
+    "section": "Summarising relationships in your data",
+    "text": "Summarising relationships in your data\n\nggplot(data = mpg, mapping = aes(x = displ, y = hwy)) + \n  geom_point() + \n  geom_smooth(method = \"lm\", se = F)\n\n\n\nBecause both geom_point() and geom_smooth() take the arguement mapping = aes(x = displ, y = hwy), we can feed it to them both through ggplot(). We are previewing a feature heavily used in the tidyverse: the pipe."
+  },
+  {
+    "objectID": "slides/02-class.html#saving-our-work-with-git-and-github",
+    "href": "slides/02-class.html#saving-our-work-with-git-and-github",
+    "title": "GVPT Maths Camp",
+    "section": "Saving our work with Git and Github",
+    "text": "Saving our work with Git and Github\nLet’s wrap up! We need to:\n\nSave our work locally,\nGet our files ready to save to Github,\nAdd a helpful message for our future selves letting us know what we did,\nSave our work to Github."
+  },
+  {
+    "objectID": "slides/02-class.html#exercise-11",
+    "href": "slides/02-class.html#exercise-11",
+    "title": "GVPT Maths Camp",
+    "section": "EXERCISE",
+    "text": "EXERCISE\nTo wrap up, let’s push our work to Github:\n\nSave your new script.\nHead over to the Git tab in the same area as our Environment tab.\nStage your new file.\nHit the commit button.\n\n\n\nWe will go over this in much more detail tomorrow."
+  },
+  {
+    "objectID": "slides/02-class.html#exercise-12",
+    "href": "slides/02-class.html#exercise-12",
+    "title": "GVPT Maths Camp",
+    "section": "EXERCISE",
+    "text": "EXERCISE\n\nAdd a useful message in the message area.\nHit the commit button.\nPush your work to Github.\nHead over to your class repository on Github. You should see your file.\n\n\n\nWe will go over this in much more detail tomorrow."
   }
 ]
