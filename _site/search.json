@@ -200,7 +200,7 @@
     "href": "slides/03-class.html#r-objects",
     "title": "GVPT Maths Camp",
     "section": "R objects",
-    "text": "R objects\nCreate new objects with <-\n\nx <- 3 * 4\n\nx\n\n[1] 12\n\n\n\n\nx <- 3 * 10\n\nx\n\n[1] 30"
+    "text": "R objects\nCreate new objects with <-\n\nx <- 3 * 4\n\nx\n\n[1] 12\n\n\n\n\nx <- 3 * 10\n\nx\n\n[1] 30\n\n\n\n\nSome people use = instead of <-. I strongly recommend against this. It makes your script difficult to read, and it can lead to syntax errors."
   },
   {
     "objectID": "slides/03-class.html#r-functions",
@@ -249,133 +249,133 @@
     "href": "slides/03-class.html#filter-rows-with-filter",
     "title": "GVPT Maths Camp",
     "section": "Filter rows with filter()",
-    "text": "Filter rows with filter()\n\nlibrary(dplyr)\n\nfilter(gapminder, country == \"Australia\", year > 2000)\n\n# A tibble: 2 × 6\n  country   continent  year lifeExp      pop gdpPercap\n  <fct>     <fct>     <int>   <dbl>    <int>     <dbl>\n1 Australia Oceania    2002    80.4 19546792    30688.\n2 Australia Oceania    2007    81.2 20434176    34435."
+    "text": "Filter rows with filter()\n\nfilter(gapminder, country == \"Australia\", year > 2000)\n\n# A tibble: 2 × 6\n  country   continent  year lifeExp      pop gdpPercap\n  <fct>     <fct>     <int>   <dbl>    <int>     <dbl>\n1 Australia Oceania    2002    80.4 19546792    30688.\n2 Australia Oceania    2007    81.2 20434176    34435."
   },
   {
     "objectID": "slides/03-class.html#filter-rows-with-filter-1",
     "href": "slides/03-class.html#filter-rows-with-filter-1",
     "title": "GVPT Maths Camp",
     "section": "Filter rows with filter()",
-    "text": "Filter rows with filter()\n\nlibrary(dplyr)\n\nfilter(gapminder, continent %in% c(\"Asia\", \"Oceania\"))\n\n# A tibble: 420 × 6\n   country     continent  year lifeExp      pop gdpPercap\n   <fct>       <fct>     <int>   <dbl>    <int>     <dbl>\n 1 Afghanistan Asia       1952    28.8  8425333      779.\n 2 Afghanistan Asia       1957    30.3  9240934      821.\n 3 Afghanistan Asia       1962    32.0 10267083      853.\n 4 Afghanistan Asia       1967    34.0 11537966      836.\n 5 Afghanistan Asia       1972    36.1 13079460      740.\n 6 Afghanistan Asia       1977    38.4 14880372      786.\n 7 Afghanistan Asia       1982    39.9 12881816      978.\n 8 Afghanistan Asia       1987    40.8 13867957      852.\n 9 Afghanistan Asia       1992    41.7 16317921      649.\n10 Afghanistan Asia       1997    41.8 22227415      635.\n# ℹ 410 more rows"
+    "text": "Filter rows with filter()\n\nfilter(gapminder, continent %in% c(\"Asia\", \"Oceania\"))\n\n# A tibble: 420 × 6\n   country     continent  year lifeExp      pop gdpPercap\n   <fct>       <fct>     <int>   <dbl>    <int>     <dbl>\n 1 Afghanistan Asia       1952    28.8  8425333      779.\n 2 Afghanistan Asia       1957    30.3  9240934      821.\n 3 Afghanistan Asia       1962    32.0 10267083      853.\n 4 Afghanistan Asia       1967    34.0 11537966      836.\n 5 Afghanistan Asia       1972    36.1 13079460      740.\n 6 Afghanistan Asia       1977    38.4 14880372      786.\n 7 Afghanistan Asia       1982    39.9 12881816      978.\n 8 Afghanistan Asia       1987    40.8 13867957      852.\n 9 Afghanistan Asia       1992    41.7 16317921      649.\n10 Afghanistan Asia       1997    41.8 22227415      635.\n# ℹ 410 more rows"
   },
   {
     "objectID": "slides/03-class.html#filter-rows-with-filter-2",
     "href": "slides/03-class.html#filter-rows-with-filter-2",
     "title": "GVPT Maths Camp",
     "section": "Filter rows with filter()",
-    "text": "Filter rows with filter()\n\nlibrary(dplyr)\n\nfilter(gapminder, pop > 500000 & pop < 1000000)\n\n# A tibble: 88 × 6\n   country  continent  year lifeExp    pop gdpPercap\n   <fct>    <fct>     <int>   <dbl>  <int>     <dbl>\n 1 Bahrain  Asia       1992    72.6 529491    19036.\n 2 Bahrain  Asia       1997    73.9 598561    20292.\n 3 Bahrain  Asia       2002    74.8 656397    23404.\n 4 Bahrain  Asia       2007    75.6 708573    29796.\n 5 Botswana Africa     1962    51.5 512764      984.\n 6 Botswana Africa     1967    53.3 553541     1215.\n 7 Botswana Africa     1972    56.0 619351     2264.\n 8 Botswana Africa     1977    59.3 781472     3215.\n 9 Botswana Africa     1982    61.5 970347     4551.\n10 Comoros  Africa     1997    60.7 527982     1174.\n# ℹ 78 more rows"
+    "text": "Filter rows with filter()\n\nfilter(gapminder, pop > 500000 & pop < 1000000)\n\n# A tibble: 88 × 6\n   country  continent  year lifeExp    pop gdpPercap\n   <fct>    <fct>     <int>   <dbl>  <int>     <dbl>\n 1 Bahrain  Asia       1992    72.6 529491    19036.\n 2 Bahrain  Asia       1997    73.9 598561    20292.\n 3 Bahrain  Asia       2002    74.8 656397    23404.\n 4 Bahrain  Asia       2007    75.6 708573    29796.\n 5 Botswana Africa     1962    51.5 512764      984.\n 6 Botswana Africa     1967    53.3 553541     1215.\n 7 Botswana Africa     1972    56.0 619351     2264.\n 8 Botswana Africa     1977    59.3 781472     3215.\n 9 Botswana Africa     1982    61.5 970347     4551.\n10 Comoros  Africa     1997    60.7 527982     1174.\n# ℹ 78 more rows"
   },
   {
     "objectID": "slides/03-class.html#filter-rows-with-filter-3",
     "href": "slides/03-class.html#filter-rows-with-filter-3",
     "title": "GVPT Maths Camp",
     "section": "Filter rows with filter()",
-    "text": "Filter rows with filter()\n\nlibrary(dplyr)\n\nfilter(gapminder, pop > 500000 | pop < 1000000)\n\n# A tibble: 1,704 × 6\n   country     continent  year lifeExp      pop gdpPercap\n   <fct>       <fct>     <int>   <dbl>    <int>     <dbl>\n 1 Afghanistan Asia       1952    28.8  8425333      779.\n 2 Afghanistan Asia       1957    30.3  9240934      821.\n 3 Afghanistan Asia       1962    32.0 10267083      853.\n 4 Afghanistan Asia       1967    34.0 11537966      836.\n 5 Afghanistan Asia       1972    36.1 13079460      740.\n 6 Afghanistan Asia       1977    38.4 14880372      786.\n 7 Afghanistan Asia       1982    39.9 12881816      978.\n 8 Afghanistan Asia       1987    40.8 13867957      852.\n 9 Afghanistan Asia       1992    41.7 16317921      649.\n10 Afghanistan Asia       1997    41.8 22227415      635.\n# ℹ 1,694 more rows"
+    "text": "Filter rows with filter()\n\nfilter(gapminder, pop > 500000 | pop < 1000000)\n\n# A tibble: 1,704 × 6\n   country     continent  year lifeExp      pop gdpPercap\n   <fct>       <fct>     <int>   <dbl>    <int>     <dbl>\n 1 Afghanistan Asia       1952    28.8  8425333      779.\n 2 Afghanistan Asia       1957    30.3  9240934      821.\n 3 Afghanistan Asia       1962    32.0 10267083      853.\n 4 Afghanistan Asia       1967    34.0 11537966      836.\n 5 Afghanistan Asia       1972    36.1 13079460      740.\n 6 Afghanistan Asia       1977    38.4 14880372      786.\n 7 Afghanistan Asia       1982    39.9 12881816      978.\n 8 Afghanistan Asia       1987    40.8 13867957      852.\n 9 Afghanistan Asia       1992    41.7 16317921      649.\n10 Afghanistan Asia       1997    41.8 22227415      635.\n# ℹ 1,694 more rows"
   },
   {
     "objectID": "slides/03-class.html#arrange-rows-with-arrange",
     "href": "slides/03-class.html#arrange-rows-with-arrange",
     "title": "GVPT Maths Camp",
     "section": "Arrange rows with arrange()",
-    "text": "Arrange rows with arrange()\n\nlibrary(dplyr)\n\narrange(gapminder, country, year)\n\n# A tibble: 1,704 × 6\n   country     continent  year lifeExp      pop gdpPercap\n   <fct>       <fct>     <int>   <dbl>    <int>     <dbl>\n 1 Afghanistan Asia       1952    28.8  8425333      779.\n 2 Afghanistan Asia       1957    30.3  9240934      821.\n 3 Afghanistan Asia       1962    32.0 10267083      853.\n 4 Afghanistan Asia       1967    34.0 11537966      836.\n 5 Afghanistan Asia       1972    36.1 13079460      740.\n 6 Afghanistan Asia       1977    38.4 14880372      786.\n 7 Afghanistan Asia       1982    39.9 12881816      978.\n 8 Afghanistan Asia       1987    40.8 13867957      852.\n 9 Afghanistan Asia       1992    41.7 16317921      649.\n10 Afghanistan Asia       1997    41.8 22227415      635.\n# ℹ 1,694 more rows"
+    "text": "Arrange rows with arrange()\n\narrange(gapminder, country, year)\n\n# A tibble: 1,704 × 6\n   country     continent  year lifeExp      pop gdpPercap\n   <fct>       <fct>     <int>   <dbl>    <int>     <dbl>\n 1 Afghanistan Asia       1952    28.8  8425333      779.\n 2 Afghanistan Asia       1957    30.3  9240934      821.\n 3 Afghanistan Asia       1962    32.0 10267083      853.\n 4 Afghanistan Asia       1967    34.0 11537966      836.\n 5 Afghanistan Asia       1972    36.1 13079460      740.\n 6 Afghanistan Asia       1977    38.4 14880372      786.\n 7 Afghanistan Asia       1982    39.9 12881816      978.\n 8 Afghanistan Asia       1987    40.8 13867957      852.\n 9 Afghanistan Asia       1992    41.7 16317921      649.\n10 Afghanistan Asia       1997    41.8 22227415      635.\n# ℹ 1,694 more rows"
   },
   {
     "objectID": "slides/03-class.html#arrange-rows-with-arrange-1",
     "href": "slides/03-class.html#arrange-rows-with-arrange-1",
     "title": "GVPT Maths Camp",
     "section": "Arrange rows with arrange()",
-    "text": "Arrange rows with arrange()\n\nlibrary(dplyr)\n\narrange(gapminder, country, desc(year))\n\n# A tibble: 1,704 × 6\n   country     continent  year lifeExp      pop gdpPercap\n   <fct>       <fct>     <int>   <dbl>    <int>     <dbl>\n 1 Afghanistan Asia       2007    43.8 31889923      975.\n 2 Afghanistan Asia       2002    42.1 25268405      727.\n 3 Afghanistan Asia       1997    41.8 22227415      635.\n 4 Afghanistan Asia       1992    41.7 16317921      649.\n 5 Afghanistan Asia       1987    40.8 13867957      852.\n 6 Afghanistan Asia       1982    39.9 12881816      978.\n 7 Afghanistan Asia       1977    38.4 14880372      786.\n 8 Afghanistan Asia       1972    36.1 13079460      740.\n 9 Afghanistan Asia       1967    34.0 11537966      836.\n10 Afghanistan Asia       1962    32.0 10267083      853.\n# ℹ 1,694 more rows"
+    "text": "Arrange rows with arrange()\n\narrange(gapminder, country, desc(year))\n\n# A tibble: 1,704 × 6\n   country     continent  year lifeExp      pop gdpPercap\n   <fct>       <fct>     <int>   <dbl>    <int>     <dbl>\n 1 Afghanistan Asia       2007    43.8 31889923      975.\n 2 Afghanistan Asia       2002    42.1 25268405      727.\n 3 Afghanistan Asia       1997    41.8 22227415      635.\n 4 Afghanistan Asia       1992    41.7 16317921      649.\n 5 Afghanistan Asia       1987    40.8 13867957      852.\n 6 Afghanistan Asia       1982    39.9 12881816      978.\n 7 Afghanistan Asia       1977    38.4 14880372      786.\n 8 Afghanistan Asia       1972    36.1 13079460      740.\n 9 Afghanistan Asia       1967    34.0 11537966      836.\n10 Afghanistan Asia       1962    32.0 10267083      853.\n# ℹ 1,694 more rows"
   },
   {
     "objectID": "slides/03-class.html#select-columns-with-select",
     "href": "slides/03-class.html#select-columns-with-select",
     "title": "GVPT Maths Camp",
     "section": "Select columns with select()",
-    "text": "Select columns with select()\n\nlibrary(dplyr)\n\nselect(gapminder, country, year, pop)\n\n# A tibble: 1,704 × 3\n   country      year      pop\n   <fct>       <int>    <int>\n 1 Afghanistan  1952  8425333\n 2 Afghanistan  1957  9240934\n 3 Afghanistan  1962 10267083\n 4 Afghanistan  1967 11537966\n 5 Afghanistan  1972 13079460\n 6 Afghanistan  1977 14880372\n 7 Afghanistan  1982 12881816\n 8 Afghanistan  1987 13867957\n 9 Afghanistan  1992 16317921\n10 Afghanistan  1997 22227415\n# ℹ 1,694 more rows"
+    "text": "Select columns with select()\n\nselect(gapminder, country, year, pop)\n\n# A tibble: 1,704 × 3\n   country      year      pop\n   <fct>       <int>    <int>\n 1 Afghanistan  1952  8425333\n 2 Afghanistan  1957  9240934\n 3 Afghanistan  1962 10267083\n 4 Afghanistan  1967 11537966\n 5 Afghanistan  1972 13079460\n 6 Afghanistan  1977 14880372\n 7 Afghanistan  1982 12881816\n 8 Afghanistan  1987 13867957\n 9 Afghanistan  1992 16317921\n10 Afghanistan  1997 22227415\n# ℹ 1,694 more rows"
   },
   {
     "objectID": "slides/03-class.html#select-columns-with-select-1",
     "href": "slides/03-class.html#select-columns-with-select-1",
     "title": "GVPT Maths Camp",
     "section": "Select columns with select()",
-    "text": "Select columns with select()\n\nlibrary(dplyr)\n\nselect(gapminder, country:pop)\n\n# A tibble: 1,704 × 5\n   country     continent  year lifeExp      pop\n   <fct>       <fct>     <int>   <dbl>    <int>\n 1 Afghanistan Asia       1952    28.8  8425333\n 2 Afghanistan Asia       1957    30.3  9240934\n 3 Afghanistan Asia       1962    32.0 10267083\n 4 Afghanistan Asia       1967    34.0 11537966\n 5 Afghanistan Asia       1972    36.1 13079460\n 6 Afghanistan Asia       1977    38.4 14880372\n 7 Afghanistan Asia       1982    39.9 12881816\n 8 Afghanistan Asia       1987    40.8 13867957\n 9 Afghanistan Asia       1992    41.7 16317921\n10 Afghanistan Asia       1997    41.8 22227415\n# ℹ 1,694 more rows"
+    "text": "Select columns with select()\n\nselect(gapminder, country:pop)\n\n# A tibble: 1,704 × 5\n   country     continent  year lifeExp      pop\n   <fct>       <fct>     <int>   <dbl>    <int>\n 1 Afghanistan Asia       1952    28.8  8425333\n 2 Afghanistan Asia       1957    30.3  9240934\n 3 Afghanistan Asia       1962    32.0 10267083\n 4 Afghanistan Asia       1967    34.0 11537966\n 5 Afghanistan Asia       1972    36.1 13079460\n 6 Afghanistan Asia       1977    38.4 14880372\n 7 Afghanistan Asia       1982    39.9 12881816\n 8 Afghanistan Asia       1987    40.8 13867957\n 9 Afghanistan Asia       1992    41.7 16317921\n10 Afghanistan Asia       1997    41.8 22227415\n# ℹ 1,694 more rows"
   },
   {
     "objectID": "slides/03-class.html#select-columns-with-select-2",
     "href": "slides/03-class.html#select-columns-with-select-2",
     "title": "GVPT Maths Camp",
     "section": "Select columns with select()",
-    "text": "Select columns with select()\n\nlibrary(dplyr)\n\nselect(gapminder, -(lifeExp:pop))\n\n# A tibble: 1,704 × 4\n   country     continent  year gdpPercap\n   <fct>       <fct>     <int>     <dbl>\n 1 Afghanistan Asia       1952      779.\n 2 Afghanistan Asia       1957      821.\n 3 Afghanistan Asia       1962      853.\n 4 Afghanistan Asia       1967      836.\n 5 Afghanistan Asia       1972      740.\n 6 Afghanistan Asia       1977      786.\n 7 Afghanistan Asia       1982      978.\n 8 Afghanistan Asia       1987      852.\n 9 Afghanistan Asia       1992      649.\n10 Afghanistan Asia       1997      635.\n# ℹ 1,694 more rows"
+    "text": "Select columns with select()\n\nselect(gapminder, -(lifeExp:pop))\n\n# A tibble: 1,704 × 4\n   country     continent  year gdpPercap\n   <fct>       <fct>     <int>     <dbl>\n 1 Afghanistan Asia       1952      779.\n 2 Afghanistan Asia       1957      821.\n 3 Afghanistan Asia       1962      853.\n 4 Afghanistan Asia       1967      836.\n 5 Afghanistan Asia       1972      740.\n 6 Afghanistan Asia       1977      786.\n 7 Afghanistan Asia       1982      978.\n 8 Afghanistan Asia       1987      852.\n 9 Afghanistan Asia       1992      649.\n10 Afghanistan Asia       1997      635.\n# ℹ 1,694 more rows"
   },
   {
     "objectID": "slides/03-class.html#add-new-variables-with-mutate",
     "href": "slides/03-class.html#add-new-variables-with-mutate",
     "title": "GVPT Maths Camp",
     "section": "Add new variables with mutate()",
-    "text": "Add new variables with mutate()\n\nlibrary(dplyr)\n\nmutate(gapminder, gdp = gdpPercap * pop)\n\n# A tibble: 1,704 × 7\n   country     continent  year lifeExp      pop gdpPercap          gdp\n   <fct>       <fct>     <int>   <dbl>    <int>     <dbl>        <dbl>\n 1 Afghanistan Asia       1952    28.8  8425333      779.  6567086330.\n 2 Afghanistan Asia       1957    30.3  9240934      821.  7585448670.\n 3 Afghanistan Asia       1962    32.0 10267083      853.  8758855797.\n 4 Afghanistan Asia       1967    34.0 11537966      836.  9648014150.\n 5 Afghanistan Asia       1972    36.1 13079460      740.  9678553274.\n 6 Afghanistan Asia       1977    38.4 14880372      786. 11697659231.\n 7 Afghanistan Asia       1982    39.9 12881816      978. 12598563401.\n 8 Afghanistan Asia       1987    40.8 13867957      852. 11820990309.\n 9 Afghanistan Asia       1992    41.7 16317921      649. 10595901589.\n10 Afghanistan Asia       1997    41.8 22227415      635. 14121995875.\n# ℹ 1,694 more rows"
+    "text": "Add new variables with mutate()\n\nmutate(gapminder, gdp = gdpPercap * pop)\n\n# A tibble: 1,704 × 7\n   country     continent  year lifeExp      pop gdpPercap          gdp\n   <fct>       <fct>     <int>   <dbl>    <int>     <dbl>        <dbl>\n 1 Afghanistan Asia       1952    28.8  8425333      779.  6567086330.\n 2 Afghanistan Asia       1957    30.3  9240934      821.  7585448670.\n 3 Afghanistan Asia       1962    32.0 10267083      853.  8758855797.\n 4 Afghanistan Asia       1967    34.0 11537966      836.  9648014150.\n 5 Afghanistan Asia       1972    36.1 13079460      740.  9678553274.\n 6 Afghanistan Asia       1977    38.4 14880372      786. 11697659231.\n 7 Afghanistan Asia       1982    39.9 12881816      978. 12598563401.\n 8 Afghanistan Asia       1987    40.8 13867957      852. 11820990309.\n 9 Afghanistan Asia       1992    41.7 16317921      649. 10595901589.\n10 Afghanistan Asia       1997    41.8 22227415      635. 14121995875.\n# ℹ 1,694 more rows"
   },
   {
     "objectID": "slides/03-class.html#select-transform-and-add-new-variables-with-transmute",
     "href": "slides/03-class.html#select-transform-and-add-new-variables-with-transmute",
     "title": "GVPT Maths Camp",
     "section": "Select, transform, and add new variables with transmute()",
-    "text": "Select, transform, and add new variables with transmute()\n\nlibrary(dplyr)\n\ntransmute(gapminder, country, year, gdp = gdpPercap * pop)\n\n# A tibble: 1,704 × 3\n   country      year          gdp\n   <fct>       <int>        <dbl>\n 1 Afghanistan  1952  6567086330.\n 2 Afghanistan  1957  7585448670.\n 3 Afghanistan  1962  8758855797.\n 4 Afghanistan  1967  9648014150.\n 5 Afghanistan  1972  9678553274.\n 6 Afghanistan  1977 11697659231.\n 7 Afghanistan  1982 12598563401.\n 8 Afghanistan  1987 11820990309.\n 9 Afghanistan  1992 10595901589.\n10 Afghanistan  1997 14121995875.\n# ℹ 1,694 more rows"
+    "text": "Select, transform, and add new variables with transmute()\n\ntransmute(gapminder, country, year, gdp = gdpPercap * pop)\n\n# A tibble: 1,704 × 3\n   country      year          gdp\n   <fct>       <int>        <dbl>\n 1 Afghanistan  1952  6567086330.\n 2 Afghanistan  1957  7585448670.\n 3 Afghanistan  1962  8758855797.\n 4 Afghanistan  1967  9648014150.\n 5 Afghanistan  1972  9678553274.\n 6 Afghanistan  1977 11697659231.\n 7 Afghanistan  1982 12598563401.\n 8 Afghanistan  1987 11820990309.\n 9 Afghanistan  1992 10595901589.\n10 Afghanistan  1997 14121995875.\n# ℹ 1,694 more rows"
   },
   {
     "objectID": "slides/03-class.html#create-summaries-with-summarise",
     "href": "slides/03-class.html#create-summaries-with-summarise",
     "title": "GVPT Maths Camp",
     "section": "Create summaries with summarise()",
-    "text": "Create summaries with summarise()\n\nlibrary(dplyr)\n\nsummarise(\n  gapminder, avg_pop = mean(pop), avg_gdp_per_cap = mean(gdpPercap)\n)\n\n# A tibble: 1 × 2\n    avg_pop avg_gdp_per_cap\n      <dbl>           <dbl>\n1 29601212.           7215."
+    "text": "Create summaries with summarise()\n\nsummarise(\n  gapminder, avg_pop = mean(pop), avg_gdp_per_cap = mean(gdpPercap)\n)\n\n# A tibble: 1 × 2\n    avg_pop avg_gdp_per_cap\n      <dbl>           <dbl>\n1 29601212.           7215."
   },
   {
     "objectID": "slides/03-class.html#creating-grouped-summaries-with-group_by-and-summarise",
     "href": "slides/03-class.html#creating-grouped-summaries-with-group_by-and-summarise",
     "title": "GVPT Maths Camp",
     "section": "Creating grouped summaries with group_by() and summarise()",
-    "text": "Creating grouped summaries with group_by() and summarise()\n\nlibrary(dplyr)\n\ngapminder_continent <- group_by(gapminder, continent)\n\nsummarise(\n  gapminder_continent, avg_pop = mean(pop), avg_gdp_per_cap = mean(gdpPercap)\n)\n\n# A tibble: 5 × 3\n  continent   avg_pop avg_gdp_per_cap\n  <fct>         <dbl>           <dbl>\n1 Africa     9916003.           2194.\n2 Americas  24504795.           7136.\n3 Asia      77038722.           7902.\n4 Europe    17169765.          14469.\n5 Oceania    8874672.          18622."
+    "text": "Creating grouped summaries with group_by() and summarise()\n\ngapminder_continent <- group_by(gapminder, continent)\n\nsummarise(\n  gapminder_continent, avg_pop = mean(pop), avg_gdp_per_cap = mean(gdpPercap)\n)\n\n# A tibble: 5 × 3\n  continent   avg_pop avg_gdp_per_cap\n  <fct>         <dbl>           <dbl>\n1 Africa     9916003.           2194.\n2 Americas  24504795.           7136.\n3 Asia      77038722.           7902.\n4 Europe    17169765.          14469.\n5 Oceania    8874672.          18622."
   },
   {
     "objectID": "slides/03-class.html#combine-multiple-operations-with-the-pipe",
     "href": "slides/03-class.html#combine-multiple-operations-with-the-pipe",
     "title": "GVPT Maths Camp",
     "section": "Combine multiple operations with the pipe",
-    "text": "Combine multiple operations with the pipe\n\nlibrary(dplyr)\n\ngapminder |> \n  group_by(continent) |> \n  summarise(avg_pop = mean(pop), avg_gdp_per_cap = mean(gdpPercap)) |> \n  arrange(avg_gdp_per_cap)\n\n# A tibble: 5 × 3\n  continent   avg_pop avg_gdp_per_cap\n  <fct>         <dbl>           <dbl>\n1 Africa     9916003.           2194.\n2 Americas  24504795.           7136.\n3 Asia      77038722.           7902.\n4 Europe    17169765.          14469.\n5 Oceania    8874672.          18622."
+    "text": "Combine multiple operations with the pipe\nThat got messy!\n\nWe had a lot of different objects representing intermediate steps in our calculations.\nWe never need those objects again. Can we avoid creating them?\n\nLet’s introduce perhaps the defining feature of the tidyverse: the pipe."
   },
   {
     "objectID": "slides/03-class.html#combine-multiple-operations-with-the-pipe-1",
     "href": "slides/03-class.html#combine-multiple-operations-with-the-pipe-1",
     "title": "GVPT Maths Camp",
     "section": "Combine multiple operations with the pipe",
-    "text": "Combine multiple operations with the pipe\n\nlibrary(dplyr)\nlibrary(ggplot2)\n\ngapminder |> \n  group_by(continent) |> \n  summarise(avg_pop = mean(pop), avg_gdp_per_cap = mean(gdpPercap)) |> \n  ggplot(aes(x = continent, y = avg_gdp_per_cap)) + \n  geom_col() + \n  theme_minimal()"
+    "text": "Combine multiple operations with the pipe\nRead the pipe as:\nDo this |> (and then…)      do this |> (and then…)      do this\n\ngapminder |> \n  group_by(continent) |> \n  summarise(avg_pop = mean(pop), avg_gdp_per_cap = mean(gdpPercap)) |> \n  arrange(avg_gdp_per_cap)\n\n# A tibble: 5 × 3\n  continent   avg_pop avg_gdp_per_cap\n  <fct>         <dbl>           <dbl>\n1 Africa     9916003.           2194.\n2 Americas  24504795.           7136.\n3 Asia      77038722.           7902.\n4 Europe    17169765.          14469.\n5 Oceania    8874672.          18622."
   },
   {
     "objectID": "slides/03-class.html#a-note-on-the-pipe",
     "href": "slides/03-class.html#a-note-on-the-pipe",
     "title": "GVPT Maths Camp",
     "section": "A note on the pipe",
-    "text": "A note on the pipe\n\n\nBase pipe:\n\n|>\nCan be used without loading any packages\n\n\nTidyverse pipe:\n\n%>%\nMust load dplyr or magrittr to use"
+    "text": "A note on the pipe\n\n\nBase pipe:\n\n|>\nCan be used without loading any packages\nRelatively new: introduced in 2021\n\n\nTidyverse pipe:\n\n%>%\nMust load dplyr or magrittr to use"
   },
   {
     "objectID": "slides/03-class.html#a-handy-shortcut-for-counting-data-with-count",
     "href": "slides/03-class.html#a-handy-shortcut-for-counting-data-with-count",
     "title": "GVPT Maths Camp",
     "section": "A handy shortcut for counting data with count()",
-    "text": "A handy shortcut for counting data with count()\n\n\n\nlibrary(dplyr)\n\ngapminder |> \n  distinct(continent, country) |> \n  group_by(continent) |> \n  summarise(n_countries = n())\n\n# A tibble: 5 × 2\n  continent n_countries\n  <fct>           <int>\n1 Africa             52\n2 Americas           25\n3 Asia               33\n4 Europe             30\n5 Oceania             2\n\n\n\n\nlibrary(dplyr)\n\ngapminder |> \n  distinct(continent, country) |> \n  count(continent)\n\n# A tibble: 5 × 2\n  continent     n\n  <fct>     <int>\n1 Africa       52\n2 Americas     25\n3 Asia         33\n4 Europe       30\n5 Oceania       2"
+    "text": "A handy shortcut for counting data with count()\n\n\n\ngapminder |> \n  distinct(continent, country) |> \n  group_by(continent) |> \n  summarise(n_countries = n())\n\n# A tibble: 5 × 2\n  continent n_countries\n  <fct>           <int>\n1 Africa             52\n2 Americas           25\n3 Asia               33\n4 Europe             30\n5 Oceania             2\n\n\n\n\ngapminder |> \n  distinct(continent, country) |> \n  count(continent)\n\n# A tibble: 5 × 2\n  continent     n\n  <fct>     <int>\n1 Africa       52\n2 Americas     25\n3 Asia         33\n4 Europe       30\n5 Oceania       2\n\n\n\n\n\n\ndistinct() selects only unique rows from a data frame. Check out ?distinct for more detail."
   },
   {
     "objectID": "slides/03-class.html#summary",
     "href": "slides/03-class.html#summary",
     "title": "GVPT Maths Camp",
     "section": "Summary",
-    "text": "Summary\nThis morning you have:\n\nLearnt R basic syntax\nLearnt how to transform your data"
+    "text": "Summary\nThis session you have:\n\nLearnt R basic syntax\nLearnt how to transform your data\nWritten concise code that is easy to follow"
   },
   {
     "objectID": "slides/05-class.html#learning-objectives",
     "href": "slides/05-class.html#learning-objectives",
     "title": "GVPT Maths Camp",
     "section": "Learning objectives",
-    "text": "Learning objectives\n\nImport your data\nClean your data\nExplore relational data"
+    "text": "Learning objectives\n\nImport your data\nClean your data\nExplore relational data\nStart to manage your scripts with Github"
   },
   {
     "objectID": "slides/05-class.html#data-wrangling",
@@ -774,21 +774,21 @@
     "href": "slides/04-class.html#learning-objectives",
     "title": "GVPT Maths Camp",
     "section": "Learning objectives",
-    "text": "Learning objectives\n\nLearn how to answer basic questions about your data\nLearn how to identify interesting relationships in your data\nUse your new data science tools to better understand your data"
+    "text": "Learning objectives\n\nLearn how to answer basic questions about your data\nLearn how to identify interesting relationships in your data\nUse your new data science tools to better understand your data\nUpload your scripts to Github"
   },
   {
     "objectID": "slides/04-class.html#two-basic-questions-to-guide-your-eda",
     "href": "slides/04-class.html#two-basic-questions-to-guide-your-eda",
     "title": "GVPT Maths Camp",
     "section": "Two basic questions to guide your EDA",
-    "text": "Two basic questions to guide your EDA\n\nWhat type of variation occurs within my variables?\n\n\n\nWhat type of covariation occurs between my variables?"
+    "text": "Two basic questions to guide your EDA\nExploratory data analysis is a critical step in your quantitative research process.\n\nWhat type of variation occurs within my variables?\nWhat type of covariation occurs between my variables?\n\n\n\nWe will talk in detail about EDA during GVPT622."
   },
   {
     "objectID": "slides/04-class.html#examining-gapminder",
     "href": "slides/04-class.html#examining-gapminder",
     "title": "GVPT Maths Camp",
     "section": "Examining gapminder",
-    "text": "Examining gapminder\n\nlibrary(gapminder)\nlibrary(dplyr)\n\nhead(gapminder)\n\n# A tibble: 6 × 6\n  country     continent  year lifeExp      pop gdpPercap\n  <fct>       <fct>     <int>   <dbl>    <int>     <dbl>\n1 Afghanistan Asia       1952    28.8  8425333      779.\n2 Afghanistan Asia       1957    30.3  9240934      821.\n3 Afghanistan Asia       1962    32.0 10267083      853.\n4 Afghanistan Asia       1967    34.0 11537966      836.\n5 Afghanistan Asia       1972    36.1 13079460      740.\n6 Afghanistan Asia       1977    38.4 14880372      786."
+    "text": "Examining gapminder\n\nlibrary(tidyverse)\nlibrary(gapminder)\n\nhead(gapminder)\n\n# A tibble: 6 × 6\n  country     continent  year lifeExp      pop gdpPercap\n  <fct>       <fct>     <int>   <dbl>    <int>     <dbl>\n1 Afghanistan Asia       1952    28.8  8425333      779.\n2 Afghanistan Asia       1957    30.3  9240934      821.\n3 Afghanistan Asia       1962    32.0 10267083      853.\n4 Afghanistan Asia       1967    34.0 11537966      836.\n5 Afghanistan Asia       1972    36.1 13079460      740.\n6 Afghanistan Asia       1977    38.4 14880372      786."
   },
   {
     "objectID": "slides/04-class.html#variation-factors",
@@ -879,7 +879,7 @@
     "href": "slides/04-class.html#a-preview-of-linear-regression",
     "title": "GVPT Maths Camp",
     "section": "A preview of linear regression",
-    "text": "A preview of linear regression"
+    "text": "A preview of linear regression\n\nggplot(gapminder, aes(x = log(gdpPercap), y = lifeExp)) + \n  geom_point(alpha = 0.5) + \n  geom_smooth(method = \"lm\") + \n  theme_minimal()"
   },
   {
     "objectID": "slides/04-class.html#there-has-to-be-an-easier-way",
@@ -1062,5 +1062,495 @@
     "title": "GVPT Maths Camp",
     "section": "EXERCISE",
     "text": "EXERCISE\n\nAdd a useful message in the message area.\nHit the commit button.\nPush your work to Github.\nHead over to your class repository on Github. You should see your file.\n\n\n\nWe will go over this in much more detail tomorrow."
+  },
+  {
+    "objectID": "slides/03-class.html#exercise",
+    "href": "slides/03-class.html#exercise",
+    "title": "GVPT Maths Camp",
+    "section": "EXERCISE",
+    "text": "EXERCISE\nFirst, you need to install the gapminder package:\n\ninstall.packages(\"gapminder\")\n\nThen access the gapminder data set:\n\nlibrary(tidyverse)\nlibrary(gapminder)\n\nhead(gapminder)\n\n# A tibble: 6 × 6\n  country     continent  year lifeExp      pop gdpPercap\n  <fct>       <fct>     <int>   <dbl>    <int>     <dbl>\n1 Afghanistan Asia       1952    28.8  8425333      779.\n2 Afghanistan Asia       1957    30.3  9240934      821.\n3 Afghanistan Asia       1962    32.0 10267083      853.\n4 Afghanistan Asia       1967    34.0 11537966      836.\n5 Afghanistan Asia       1972    36.1 13079460      740.\n6 Afghanistan Asia       1977    38.4 14880372      786."
+  },
+  {
+    "objectID": "slides/03-class.html#exercise-1",
+    "href": "slides/03-class.html#exercise-1",
+    "title": "GVPT Maths Camp",
+    "section": "EXERCISE",
+    "text": "EXERCISE\n\nFind all country-years that have populations greater than 1 billion people.\nFind all countries in Oceania.\n\n\nHINT: Check out distinct().\n\n\nFind all countries in both Asia and Europe.\nFind all country-years that have a life expectancy greater than 50 years and less than 60 years.\nFind all country-years that have a life expectancy less than 50 years or greater than 60 years."
+  },
+  {
+    "objectID": "slides/03-class.html#exercise-2",
+    "href": "slides/03-class.html#exercise-2",
+    "title": "GVPT Maths Camp",
+    "section": "EXERCISE",
+    "text": "EXERCISE\n\nWhich country-year has the lowest life expectancy?\nWhich country-year has the largest population?"
+  },
+  {
+    "objectID": "slides/03-class.html#check-your-answers",
+    "href": "slides/03-class.html#check-your-answers",
+    "title": "GVPT Maths Camp",
+    "section": "CHECK YOUR ANSWERS",
+    "text": "CHECK YOUR ANSWERS\n\nFind all country-years that have populations greater than 1 billion people.\n\n\nfilter(gapminder, pop > 1e9)\n\n# A tibble: 8 × 6\n  country continent  year lifeExp        pop gdpPercap\n  <fct>   <fct>     <int>   <dbl>      <int>     <dbl>\n1 China   Asia       1982    65.5 1000281000      962.\n2 China   Asia       1987    67.3 1084035000     1379.\n3 China   Asia       1992    68.7 1164970000     1656.\n4 China   Asia       1997    70.4 1230075000     2289.\n5 China   Asia       2002    72.0 1280400000     3119.\n6 China   Asia       2007    73.0 1318683096     4959.\n7 India   Asia       2002    62.9 1034172547     1747.\n8 India   Asia       2007    64.7 1110396331     2452."
+  },
+  {
+    "objectID": "slides/03-class.html#check-your-answers-1",
+    "href": "slides/03-class.html#check-your-answers-1",
+    "title": "GVPT Maths Camp",
+    "section": "CHECK YOUR ANSWERS",
+    "text": "CHECK YOUR ANSWERS\n\nFind all countries in Oceania.\n\n\ndistinct(filter(gapminder, continent == \"Oceania\"), country)\n\n# A tibble: 2 × 1\n  country    \n  <fct>      \n1 Australia  \n2 New Zealand"
+  },
+  {
+    "objectID": "slides/03-class.html#check-your-answers-2",
+    "href": "slides/03-class.html#check-your-answers-2",
+    "title": "GVPT Maths Camp",
+    "section": "CHECK YOUR ANSWERS",
+    "text": "CHECK YOUR ANSWERS\n\nFind all countries in both Asia and Europe.\n\n\ndistinct(filter(gapminder, continent %in% c(\"Asia\", \"Europe\")), country)\n\n# A tibble: 63 × 1\n   country               \n   <fct>                 \n 1 Afghanistan           \n 2 Albania               \n 3 Austria               \n 4 Bahrain               \n 5 Bangladesh            \n 6 Belgium               \n 7 Bosnia and Herzegovina\n 8 Bulgaria              \n 9 Cambodia              \n10 China                 \n# ℹ 53 more rows"
+  },
+  {
+    "objectID": "slides/03-class.html#check-your-answers-3",
+    "href": "slides/03-class.html#check-your-answers-3",
+    "title": "GVPT Maths Camp",
+    "section": "CHECK YOUR ANSWERS",
+    "text": "CHECK YOUR ANSWERS\n\nFind all country-years that have a life expectancy greater than 50 years and less than 60 years.\n\n\nfilter(gapminder, lifeExp > 50 & lifeExp < 60)\n\n# A tibble: 336 × 6\n   country    continent  year lifeExp      pop gdpPercap\n   <fct>      <fct>     <int>   <dbl>    <int>     <dbl>\n 1 Albania    Europe     1952    55.2  1282697     1601.\n 2 Albania    Europe     1957    59.3  1476505     1942.\n 3 Algeria    Africa     1967    51.4 12760499     3247.\n 4 Algeria    Africa     1972    54.5 14760787     4183.\n 5 Algeria    Africa     1977    58.0 17152804     4910.\n 6 Bahrain    Asia       1952    50.9   120447     9867.\n 7 Bahrain    Asia       1957    53.8   138655    11636.\n 8 Bahrain    Asia       1962    56.9   171863    12753.\n 9 Bahrain    Asia       1967    59.9   202182    14805.\n10 Bangladesh Asia       1982    50.0 93074406      677.\n# ℹ 326 more rows"
+  },
+  {
+    "objectID": "slides/03-class.html#check-your-answers-4",
+    "href": "slides/03-class.html#check-your-answers-4",
+    "title": "GVPT Maths Camp",
+    "section": "CHECK YOUR ANSWERS",
+    "text": "CHECK YOUR ANSWERS\n\nFind all country-years that have a life expectancy less than 50 years or greater than 60 years.\n\n\nfilter(gapminder, lifeExp < 50 | lifeExp > 60)\n\n# A tibble: 1,368 × 6\n   country     continent  year lifeExp      pop gdpPercap\n   <fct>       <fct>     <int>   <dbl>    <int>     <dbl>\n 1 Afghanistan Asia       1952    28.8  8425333      779.\n 2 Afghanistan Asia       1957    30.3  9240934      821.\n 3 Afghanistan Asia       1962    32.0 10267083      853.\n 4 Afghanistan Asia       1967    34.0 11537966      836.\n 5 Afghanistan Asia       1972    36.1 13079460      740.\n 6 Afghanistan Asia       1977    38.4 14880372      786.\n 7 Afghanistan Asia       1982    39.9 12881816      978.\n 8 Afghanistan Asia       1987    40.8 13867957      852.\n 9 Afghanistan Asia       1992    41.7 16317921      649.\n10 Afghanistan Asia       1997    41.8 22227415      635.\n# ℹ 1,358 more rows"
+  },
+  {
+    "objectID": "slides/03-class.html#handy-operations",
+    "href": "slides/03-class.html#handy-operations",
+    "title": "GVPT Maths Camp",
+    "section": "Handy operations",
+    "text": "Handy operations\n== is equal to\n\n=! is not equal to\n\n>= is greater than or equal to\n\n<= is less than or equal to"
+  },
+  {
+    "objectID": "slides/03-class.html#check-your-answers-5",
+    "href": "slides/03-class.html#check-your-answers-5",
+    "title": "GVPT Maths Camp",
+    "section": "CHECK YOUR ANSWERS",
+    "text": "CHECK YOUR ANSWERS\n\nWhich country-year has the lowest life expectancy?\n\n\narrange(gapminder, lifeExp)\n\n# A tibble: 1,704 × 6\n   country      continent  year lifeExp     pop gdpPercap\n   <fct>        <fct>     <int>   <dbl>   <int>     <dbl>\n 1 Rwanda       Africa     1992    23.6 7290203      737.\n 2 Afghanistan  Asia       1952    28.8 8425333      779.\n 3 Gambia       Africa     1952    30    284320      485.\n 4 Angola       Africa     1952    30.0 4232095     3521.\n 5 Sierra Leone Africa     1952    30.3 2143249      880.\n 6 Afghanistan  Asia       1957    30.3 9240934      821.\n 7 Cambodia     Asia       1977    31.2 6978607      525.\n 8 Mozambique   Africa     1952    31.3 6446316      469.\n 9 Sierra Leone Africa     1957    31.6 2295678     1004.\n10 Burkina Faso Africa     1952    32.0 4469979      543.\n# ℹ 1,694 more rows\n\n\n\n\nCheck out slice_min() and slice_max() for more efficient ways of doing this."
+  },
+  {
+    "objectID": "slides/03-class.html#check-your-answers-6",
+    "href": "slides/03-class.html#check-your-answers-6",
+    "title": "GVPT Maths Camp",
+    "section": "CHECK YOUR ANSWERS",
+    "text": "CHECK YOUR ANSWERS\n\nWhich country-year has the largest population?\n\n\narrange(gapminder, desc(pop))\n\n# A tibble: 1,704 × 6\n   country continent  year lifeExp        pop gdpPercap\n   <fct>   <fct>     <int>   <dbl>      <int>     <dbl>\n 1 China   Asia       2007    73.0 1318683096     4959.\n 2 China   Asia       2002    72.0 1280400000     3119.\n 3 China   Asia       1997    70.4 1230075000     2289.\n 4 China   Asia       1992    68.7 1164970000     1656.\n 5 India   Asia       2007    64.7 1110396331     2452.\n 6 China   Asia       1987    67.3 1084035000     1379.\n 7 India   Asia       2002    62.9 1034172547     1747.\n 8 China   Asia       1982    65.5 1000281000      962.\n 9 India   Asia       1997    61.8  959000000     1459.\n10 China   Asia       1977    64.0  943455000      741.\n# ℹ 1,694 more rows\n\n\n\n\nCheck out slice_min() and slice_max() for more efficient ways of doing this."
+  },
+  {
+    "objectID": "slides/03-class.html#exercise-3",
+    "href": "slides/03-class.html#exercise-3",
+    "title": "GVPT Maths Camp",
+    "section": "EXERCISE",
+    "text": "EXERCISE\n\nSelect only the country, year, and lifeExp variables from gapminder.\nWhat does the any_of() function do? Why might it be helpful in conjunction with this vector?\n\n\nvars <- c(\"country\", \"year\", \"lifeExp\")\n\n\nWhat does the following code produce?\n\n\nselect(gapminder, starts_with(\"c\"))"
+  },
+  {
+    "objectID": "slides/03-class.html#check-your-answers-7",
+    "href": "slides/03-class.html#check-your-answers-7",
+    "title": "GVPT Maths Camp",
+    "section": "CHECK YOUR ANSWERS",
+    "text": "CHECK YOUR ANSWERS\n\nSelect only the country, year, and lifeExp variables from gapminder.\n\n\nselect(gapminder, country, year, lifeExp)\n\n# A tibble: 1,704 × 3\n   country      year lifeExp\n   <fct>       <int>   <dbl>\n 1 Afghanistan  1952    28.8\n 2 Afghanistan  1957    30.3\n 3 Afghanistan  1962    32.0\n 4 Afghanistan  1967    34.0\n 5 Afghanistan  1972    36.1\n 6 Afghanistan  1977    38.4\n 7 Afghanistan  1982    39.9\n 8 Afghanistan  1987    40.8\n 9 Afghanistan  1992    41.7\n10 Afghanistan  1997    41.8\n# ℹ 1,694 more rows"
+  },
+  {
+    "objectID": "slides/03-class.html#check-your-answers-8",
+    "href": "slides/03-class.html#check-your-answers-8",
+    "title": "GVPT Maths Camp",
+    "section": "CHECK YOUR ANSWERS",
+    "text": "CHECK YOUR ANSWERS\n\nWhat does the any_of() function do? Why might it be helpful in conjunction with this vector?\n\n\nvars <- c(\"country\", \"year\", \"lifeExp\")\n\nselect(gapminder, any_of(vars))\n\n# A tibble: 1,704 × 3\n   country      year lifeExp\n   <fct>       <int>   <dbl>\n 1 Afghanistan  1952    28.8\n 2 Afghanistan  1957    30.3\n 3 Afghanistan  1962    32.0\n 4 Afghanistan  1967    34.0\n 5 Afghanistan  1972    36.1\n 6 Afghanistan  1977    38.4\n 7 Afghanistan  1982    39.9\n 8 Afghanistan  1987    40.8\n 9 Afghanistan  1992    41.7\n10 Afghanistan  1997    41.8\n# ℹ 1,694 more rows"
+  },
+  {
+    "objectID": "slides/03-class.html#check-your-answers-9",
+    "href": "slides/03-class.html#check-your-answers-9",
+    "title": "GVPT Maths Camp",
+    "section": "CHECK YOUR ANSWERS",
+    "text": "CHECK YOUR ANSWERS\n\nWhat does the following code produce?\n\n\nselect(gapminder, starts_with(\"c\"))\n\n# A tibble: 1,704 × 2\n   country     continent\n   <fct>       <fct>    \n 1 Afghanistan Asia     \n 2 Afghanistan Asia     \n 3 Afghanistan Asia     \n 4 Afghanistan Asia     \n 5 Afghanistan Asia     \n 6 Afghanistan Asia     \n 7 Afghanistan Asia     \n 8 Afghanistan Asia     \n 9 Afghanistan Asia     \n10 Afghanistan Asia     \n# ℹ 1,694 more rows"
+  },
+  {
+    "objectID": "slides/03-class.html#exercise-4",
+    "href": "slides/03-class.html#exercise-4",
+    "title": "GVPT Maths Camp",
+    "section": "EXERCISE",
+    "text": "EXERCISE\n\nCalculate each country-year’s GDP.\nFind each country’s average GDP across all years in the gapminder data set.\nFind the country with the smallest average GDP across these years.\nFind the country with the largest average GDP across these years."
+  },
+  {
+    "objectID": "slides/03-class.html#check-your-answers-10",
+    "href": "slides/03-class.html#check-your-answers-10",
+    "title": "GVPT Maths Camp",
+    "section": "CHECK YOUR ANSWERS",
+    "text": "CHECK YOUR ANSWERS\n\nCalculate each country-year’s GDP.\n\n\nmutate(gapminder, gdp = pop * gdpPercap)\n\n# A tibble: 1,704 × 7\n   country     continent  year lifeExp      pop gdpPercap          gdp\n   <fct>       <fct>     <int>   <dbl>    <int>     <dbl>        <dbl>\n 1 Afghanistan Asia       1952    28.8  8425333      779.  6567086330.\n 2 Afghanistan Asia       1957    30.3  9240934      821.  7585448670.\n 3 Afghanistan Asia       1962    32.0 10267083      853.  8758855797.\n 4 Afghanistan Asia       1967    34.0 11537966      836.  9648014150.\n 5 Afghanistan Asia       1972    36.1 13079460      740.  9678553274.\n 6 Afghanistan Asia       1977    38.4 14880372      786. 11697659231.\n 7 Afghanistan Asia       1982    39.9 12881816      978. 12598563401.\n 8 Afghanistan Asia       1987    40.8 13867957      852. 11820990309.\n 9 Afghanistan Asia       1992    41.7 16317921      649. 10595901589.\n10 Afghanistan Asia       1997    41.8 22227415      635. 14121995875.\n# ℹ 1,694 more rows"
+  },
+  {
+    "objectID": "slides/03-class.html#check-your-answers-11",
+    "href": "slides/03-class.html#check-your-answers-11",
+    "title": "GVPT Maths Camp",
+    "section": "CHECK YOUR ANSWERS",
+    "text": "CHECK YOUR ANSWERS\n\nFind each country’s average GDP across all years in the gapminder data set.\n\n\ngapminder_country <- group_by(gapminder, country)\n\ngapminder_country_avg <- summarise(\n  mutate(gapminder_country, gdp = pop * gdpPercap), avg_gdp = mean(gdp)\n)\n\nhead(gapminder_country_avg)\n\n# A tibble: 6 × 2\n  country           avg_gdp\n  <fct>               <dbl>\n1 Afghanistan  12709647583.\n2 Albania       9094669267.\n3 Algeria      96735171261.\n4 Angola       25532681843.\n5 Argentina   266754123835.\n6 Australia   320253755823."
+  },
+  {
+    "objectID": "slides/03-class.html#check-your-answers-12",
+    "href": "slides/03-class.html#check-your-answers-12",
+    "title": "GVPT Maths Camp",
+    "section": "CHECK YOUR ANSWERS",
+    "text": "CHECK YOUR ANSWERS\n\nFind the country with the smallest average GDP across these years.\n\n\narrange(gapminder_country_avg, avg_gdp)\n\n# A tibble: 142 × 2\n   country                   avg_gdp\n   <fct>                       <dbl>\n 1 Sao Tome and Principe  151723722.\n 2 Comoros                450509962.\n 3 Gambia                 551998132.\n 4 Guinea-Bissau          583673324.\n 5 Djibouti               647199614.\n 6 Liberia               1054141313.\n 7 Equatorial Guinea     1143738921.\n 8 Lesotho               1257957241.\n 9 Eritrea               1683400010.\n10 Burundi               2253225196.\n# ℹ 132 more rows"
+  },
+  {
+    "objectID": "slides/03-class.html#check-your-answers-13",
+    "href": "slides/03-class.html#check-your-answers-13",
+    "title": "GVPT Maths Camp",
+    "section": "CHECK YOUR ANSWERS",
+    "text": "CHECK YOUR ANSWERS\n\nFind the country with the largest average GDP across these years.\n\n\narrange(gapminder_country_avg, desc(avg_gdp))\n\n# A tibble: 142 × 2\n   country        avg_gdp\n   <fct>            <dbl>\n 1 United States  6.40e12\n 2 Japan          2.12e12\n 3 China          1.70e12\n 4 Germany        1.62e12\n 5 United Kingdom 1.11e12\n 6 France         1.04e12\n 7 Italy          9.11e11\n 8 India          8.62e11\n 9 Brazil         8.11e11\n10 Mexico         5.95e11\n# ℹ 132 more rows"
+  },
+  {
+    "objectID": "slides/03-class.html#combine-multiple-operations-with-the-pipe-2",
+    "href": "slides/03-class.html#combine-multiple-operations-with-the-pipe-2",
+    "title": "GVPT Maths Camp",
+    "section": "Combine multiple operations with the pipe",
+    "text": "Combine multiple operations with the pipe\n\ngapminder |> \n  group_by(continent) |> \n  summarise(avg_pop = mean(pop), avg_gdp_per_cap = mean(gdpPercap)) |> \n  ggplot(aes(x = continent, y = avg_gdp_per_cap)) + \n  geom_col() + \n  theme_minimal()"
+  },
+  {
+    "objectID": "slides/03-class.html#handy-operations-1",
+    "href": "slides/03-class.html#handy-operations-1",
+    "title": "GVPT Maths Camp",
+    "section": "Handy operations",
+    "text": "Handy operations\n\n| is OR\n\n& is AND\n\n%in% is in"
+  },
+  {
+    "objectID": "slides/03-class.html#exercise-5",
+    "href": "slides/03-class.html#exercise-5",
+    "title": "GVPT Maths Camp",
+    "section": "EXERCISE",
+    "text": "EXERCISE\n\nCalculate the average GDP per capita for countries in the Americas in 2007. Display only the country and average GDP per capita variables.\nPlot your results."
+  },
+  {
+    "objectID": "slides/03-class.html#check-your-answers-14",
+    "href": "slides/03-class.html#check-your-answers-14",
+    "title": "GVPT Maths Camp",
+    "section": "CHECK YOUR ANSWERS",
+    "text": "CHECK YOUR ANSWERS\n\nCalculate the average GDP per capita for countries in the Americas in all years including or after 2000.\n\n\ngapminder_americas_2000 <- gapminder |> \n  filter(continent == \"Americas\", year >= 2000) |> \n  group_by(country) |> \n  summarise(avg_gdp_per_cap = mean(gdpPercap))\n\ngapminder_americas_2000\n\n# A tibble: 25 × 2\n   country            avg_gdp_per_cap\n   <fct>                        <dbl>\n 1 Argentina                   10789.\n 2 Bolivia                      3618.\n 3 Brazil                       8599.\n 4 Canada                      34824.\n 5 Chile                       11975.\n 6 Colombia                     6381.\n 7 Costa Rica                   8684.\n 8 Cuba                         7644.\n 9 Dominican Republic           5295.\n10 Ecuador                      6323.\n# ℹ 15 more rows"
+  },
+  {
+    "objectID": "slides/03-class.html#check-your-answers-15",
+    "href": "slides/03-class.html#check-your-answers-15",
+    "title": "GVPT Maths Camp",
+    "section": "CHECK YOUR ANSWERS",
+    "text": "CHECK YOUR ANSWERS\n\nPlot your results."
+  },
+  {
+    "objectID": "slides/03-class.html#check-your-answers-16",
+    "href": "slides/03-class.html#check-your-answers-16",
+    "title": "GVPT Maths Camp",
+    "section": "CHECK YOUR ANSWERS",
+    "text": "CHECK YOUR ANSWERS\n\nPlot your results.\n\n\nggplot(\n  gapminder_americas_2000, \n  aes(x = avg_gdp_per_cap, y = reorder(country, avg_gdp_per_cap))\n) + \n  geom_col() +\n  theme_minimal() + \n  labs(title = \"Average GDP per capita for countries in the Americas in 2002 and 2007\",\n       x = \"Average GDP per capita (US$)\",\n       y = NULL) + \n  scale_x_continuous(labels = scales::label_dollar())\n\n\n\nCheck out the scales R package for very handy formatting functions: https://scales.r-lib.org"
+  },
+  {
+    "objectID": "slides/04-class.html#a-familiar-problem",
+    "href": "slides/04-class.html#a-familiar-problem",
+    "title": "GVPT Maths Camp",
+    "section": "A familiar problem",
+    "text": "A familiar problem"
+  },
+  {
+    "objectID": "slides/04-class.html#a-solution",
+    "href": "slides/04-class.html#a-solution",
+    "title": "GVPT Maths Camp",
+    "section": "A solution",
+    "text": "A solution\n\nTrack changes to your documents, code, or data over time\nWork from one document\nHave access to your work from anywhere\nCreate safe points in case something breaks or you want to experiment"
+  },
+  {
+    "objectID": "slides/04-class.html#git-and-github",
+    "href": "slides/04-class.html#git-and-github",
+    "title": "GVPT Maths Camp",
+    "section": "Git and Github",
+    "text": "Git and Github\n\n\n\nOpen source version control software.\n\nThink R.\n\n\nA website that allows you to store your Git repositories online and makes it easy to collaborate with others.\n\nThink RStudio."
+  },
+  {
+    "objectID": "slides/04-class.html#why-should-i-use-git-and-github",
+    "href": "slides/04-class.html#why-should-i-use-git-and-github",
+    "title": "GVPT Maths Camp",
+    "section": "Why should I use Git and Github? 🤔",
+    "text": "Why should I use Git and Github? 🤔\n\nMore reproducible, transparent research\nBetter version control\nEasy collaboration with others"
+  },
+  {
+    "objectID": "slides/04-class.html#the-basics",
+    "href": "slides/04-class.html#the-basics",
+    "title": "GVPT Maths Camp",
+    "section": "The basics",
+    "text": "The basics\nFour verbs you need to know to use Git for version control:\n\nadd\ncommit\npush\npull"
+  },
+  {
+    "objectID": "slides/04-class.html#using-git-in-rstudio",
+    "href": "slides/04-class.html#using-git-in-rstudio",
+    "title": "GVPT Maths Camp",
+    "section": "Using Git in RStudio",
+    "text": "Using Git in RStudio\nThree different options:\n\nRStudio GUI\nShell/terminal\nGithub desktop1\n\nWe won’t talk about this option, but it’s great!"
+  },
+  {
+    "objectID": "slides/04-class.html#repositories",
+    "href": "slides/04-class.html#repositories",
+    "title": "GVPT Maths Camp",
+    "section": "Repositories",
+    "text": "Repositories\n\nA repository is like a folder for your project, but better!\nOrganises your work\nDisplays useful information, including a general description, navigation, changes\nA great tool for project-oriented workflows"
+  },
+  {
+    "objectID": "slides/04-class.html#starting-a-new-project-create-a-repository",
+    "href": "slides/04-class.html#starting-a-new-project-create-a-repository",
+    "title": "GVPT Maths Camp",
+    "section": "Starting a new project: create a repository",
+    "text": "Starting a new project: create a repository"
+  },
+  {
+    "objectID": "slides/04-class.html#starting-a-new-project-create-a-repository-1",
+    "href": "slides/04-class.html#starting-a-new-project-create-a-repository-1",
+    "title": "GVPT Maths Camp",
+    "section": "Starting a new project: create a repository",
+    "text": "Starting a new project: create a repository"
+  },
+  {
+    "objectID": "slides/04-class.html#sync-your-online-repository-with-rstudio",
+    "href": "slides/04-class.html#sync-your-online-repository-with-rstudio",
+    "title": "GVPT Maths Camp",
+    "section": "Sync your online repository with RStudio",
+    "text": "Sync your online repository with RStudio"
+  },
+  {
+    "objectID": "slides/04-class.html#sync-your-online-repository-with-rstudio-1",
+    "href": "slides/04-class.html#sync-your-online-repository-with-rstudio-1",
+    "title": "GVPT Maths Camp",
+    "section": "Sync your online repository with RStudio",
+    "text": "Sync your online repository with RStudio"
+  },
+  {
+    "objectID": "slides/04-class.html#sync-your-online-repository-with-rstudio-2",
+    "href": "slides/04-class.html#sync-your-online-repository-with-rstudio-2",
+    "title": "GVPT Maths Camp",
+    "section": "Sync your online repository with RStudio",
+    "text": "Sync your online repository with RStudio"
+  },
+  {
+    "objectID": "slides/04-class.html#sync-your-online-repository-with-rstudio-3",
+    "href": "slides/04-class.html#sync-your-online-repository-with-rstudio-3",
+    "title": "GVPT Maths Camp",
+    "section": "Sync your online repository with RStudio",
+    "text": "Sync your online repository with RStudio"
+  },
+  {
+    "objectID": "slides/04-class.html#rstudio-gui-workflow",
+    "href": "slides/04-class.html#rstudio-gui-workflow",
+    "title": "GVPT Maths Camp",
+    "section": "RStudio GUI: Workflow",
+    "text": "RStudio GUI: Workflow\n\npulladdcommitpush\n\n\npull any changes made and stored in your Github repository before making your changes\n\n\n\n\n\n\n\nadd those changes to your staging area\n\n\n\n\n\n\n\ncommit your changes with a meaningful message\n\n\n\n\n\n\n\npush those committed changes up to Github"
+  },
+  {
+    "objectID": "slides/04-class.html#shellterminal-workflow",
+    "href": "slides/04-class.html#shellterminal-workflow",
+    "title": "GVPT Maths Camp",
+    "section": "Shell/terminal: Workflow",
+    "text": "Shell/terminal: Workflow\n\npulladdcommitpush\n\n\npull any changes made and stored in your Github repository before making your changes\n\n\n\n\n\n\n\nadd those changes to your staging area\n\n\n\n\n\n\n\ncommit your changes with a meaningful message\n\n\n\n\n\n\n\npush those committed changes up to Github"
+  },
+  {
+    "objectID": "slides/04-class.html#working-with-others",
+    "href": "slides/04-class.html#working-with-others",
+    "title": "GVPT Maths Camp",
+    "section": "Working with others",
+    "text": "Working with others\nGithub is like Google Docs for your code."
+  },
+  {
+    "objectID": "slides/04-class.html#sync-your-online-repository-with-rstudio-from-scratch",
+    "href": "slides/04-class.html#sync-your-online-repository-with-rstudio-from-scratch",
+    "title": "GVPT Maths Camp",
+    "section": "Sync your online repository with RStudio: from scratch",
+    "text": "Sync your online repository with RStudio: from scratch"
+  },
+  {
+    "objectID": "slides/04-class.html#sync-your-online-repository-with-rstudio-from-scratch-1",
+    "href": "slides/04-class.html#sync-your-online-repository-with-rstudio-from-scratch-1",
+    "title": "GVPT Maths Camp",
+    "section": "Sync your online repository with RStudio: from scratch",
+    "text": "Sync your online repository with RStudio: from scratch"
+  },
+  {
+    "objectID": "slides/04-class.html#sync-your-online-repository-with-rstudio-from-scratch-2",
+    "href": "slides/04-class.html#sync-your-online-repository-with-rstudio-from-scratch-2",
+    "title": "GVPT Maths Camp",
+    "section": "Sync your online repository with RStudio: from scratch",
+    "text": "Sync your online repository with RStudio: from scratch"
+  },
+  {
+    "objectID": "slides/04-class.html#sync-your-online-repository-with-rstudio-from-scratch-3",
+    "href": "slides/04-class.html#sync-your-online-repository-with-rstudio-from-scratch-3",
+    "title": "GVPT Maths Camp",
+    "section": "Sync your online repository with RStudio: from scratch",
+    "text": "Sync your online repository with RStudio: from scratch"
+  },
+  {
+    "objectID": "slides/04-class.html#sync-your-online-repository-with-rstudio-existing-r-project",
+    "href": "slides/04-class.html#sync-your-online-repository-with-rstudio-existing-r-project",
+    "title": "GVPT Maths Camp",
+    "section": "Sync your online repository with RStudio: existing R project",
+    "text": "Sync your online repository with RStudio: existing R project\n\nWe already have R projects that we started yesterday.\nWe can sync the existing R project with our new repository.\n\n\n\nFor future reference, head over to the Existing project, GitHub first chapter of Happy Git with R."
+  },
+  {
+    "objectID": "slides/04-class.html#sync-your-online-repository-with-rstudio-existing-r-project-1",
+    "href": "slides/04-class.html#sync-your-online-repository-with-rstudio-existing-r-project-1",
+    "title": "GVPT Maths Camp",
+    "section": "Sync your online repository with RStudio: existing R project",
+    "text": "Sync your online repository with RStudio: existing R project\nThe usethis R package is a brilliant helper package.\n\ninstall.packages(\"usethis\")\n\n\n\nusethis::create_from_github(\n  \"https://github.com/YOU/YOUR_REPO.git\",\n  destdir = \"~/path/to/where/you/want/the/local/repo/\"\n)\n\n\n\nYou can use functions directly (without loading the package in your session) using the following general rule: package::function(). This is useful when you only want to use one function from a package."
+  },
+  {
+    "objectID": "slides/04-class.html#starting-a-new-project-create-a-repository-2",
+    "href": "slides/04-class.html#starting-a-new-project-create-a-repository-2",
+    "title": "GVPT Maths Camp",
+    "section": "Starting a new project: create a repository",
+    "text": "Starting a new project: create a repository"
+  },
+  {
+    "objectID": "slides/04-class.html#exercise",
+    "href": "slides/04-class.html#exercise",
+    "title": "GVPT Maths Camp",
+    "section": "EXERCISE",
+    "text": "EXERCISE\n\nCreate a new Github repository for this camp.\nSync your existing R project to this new repository.\nadd your scripts from yesterday and today.\nWrite a helpful commit message for your future self.\npush your work up to Github.\nAdd me as a collaborator: @hgoers."
+  },
+  {
+    "objectID": "slides/05-class.html#a-familiar-problem",
+    "href": "slides/05-class.html#a-familiar-problem",
+    "title": "GVPT Maths Camp",
+    "section": "A familiar problem",
+    "text": "A familiar problem"
+  },
+  {
+    "objectID": "slides/05-class.html#a-solution",
+    "href": "slides/05-class.html#a-solution",
+    "title": "GVPT Maths Camp",
+    "section": "A solution",
+    "text": "A solution\n\nTrack changes to your documents, code, or data over time\nWork from one document\nHave access to your work from anywhere\nCreate safe points in case something breaks or you want to experiment"
+  },
+  {
+    "objectID": "slides/05-class.html#git-and-github",
+    "href": "slides/05-class.html#git-and-github",
+    "title": "GVPT Maths Camp",
+    "section": "Git and Github",
+    "text": "Git and Github\n\n\n\nOpen source version control software.\n\nThink R.\n\n\nA website that allows you to store your Git repositories online and makes it easy to collaborate with others.\n\nThink RStudio."
+  },
+  {
+    "objectID": "slides/05-class.html#why-should-i-use-git-and-github",
+    "href": "slides/05-class.html#why-should-i-use-git-and-github",
+    "title": "GVPT Maths Camp",
+    "section": "Why should I use Git and Github? 🤔",
+    "text": "Why should I use Git and Github? 🤔\n\nMore reproducible, transparent research\nBetter version control\nEasy collaboration with others"
+  },
+  {
+    "objectID": "slides/05-class.html#the-basics",
+    "href": "slides/05-class.html#the-basics",
+    "title": "GVPT Maths Camp",
+    "section": "The basics",
+    "text": "The basics\nFour verbs you need to know to use Git for version control:\n\nadd\ncommit\npush\npull"
+  },
+  {
+    "objectID": "slides/05-class.html#using-git-in-rstudio",
+    "href": "slides/05-class.html#using-git-in-rstudio",
+    "title": "GVPT Maths Camp",
+    "section": "Using Git in RStudio",
+    "text": "Using Git in RStudio\nThree different options:\n\nRStudio GUI\nShell/terminal\nGithub desktop1\n\nWe won’t talk about this option, but it’s great!"
+  },
+  {
+    "objectID": "slides/05-class.html#repositories",
+    "href": "slides/05-class.html#repositories",
+    "title": "GVPT Maths Camp",
+    "section": "Repositories",
+    "text": "Repositories\n\nA repository is like a folder for your project, but better!\nOrganises your work\nDisplays useful information, including a general description, navigation, changes\nA great tool for project-oriented workflows"
+  },
+  {
+    "objectID": "slides/05-class.html#starting-a-new-project-create-a-repository",
+    "href": "slides/05-class.html#starting-a-new-project-create-a-repository",
+    "title": "GVPT Maths Camp",
+    "section": "Starting a new project: create a repository",
+    "text": "Starting a new project: create a repository"
+  },
+  {
+    "objectID": "slides/05-class.html#starting-a-new-project-create-a-repository-1",
+    "href": "slides/05-class.html#starting-a-new-project-create-a-repository-1",
+    "title": "GVPT Maths Camp",
+    "section": "Starting a new project: create a repository",
+    "text": "Starting a new project: create a repository"
+  },
+  {
+    "objectID": "slides/05-class.html#starting-a-new-project-create-a-repository-2",
+    "href": "slides/05-class.html#starting-a-new-project-create-a-repository-2",
+    "title": "GVPT Maths Camp",
+    "section": "Starting a new project: create a repository",
+    "text": "Starting a new project: create a repository"
+  },
+  {
+    "objectID": "slides/05-class.html#sync-your-online-repository-with-rstudio-from-scratch",
+    "href": "slides/05-class.html#sync-your-online-repository-with-rstudio-from-scratch",
+    "title": "GVPT Maths Camp",
+    "section": "Sync your online repository with RStudio: from scratch",
+    "text": "Sync your online repository with RStudio: from scratch"
+  },
+  {
+    "objectID": "slides/05-class.html#sync-your-online-repository-with-rstudio-from-scratch-1",
+    "href": "slides/05-class.html#sync-your-online-repository-with-rstudio-from-scratch-1",
+    "title": "GVPT Maths Camp",
+    "section": "Sync your online repository with RStudio: from scratch",
+    "text": "Sync your online repository with RStudio: from scratch"
+  },
+  {
+    "objectID": "slides/05-class.html#sync-your-online-repository-with-rstudio-from-scratch-2",
+    "href": "slides/05-class.html#sync-your-online-repository-with-rstudio-from-scratch-2",
+    "title": "GVPT Maths Camp",
+    "section": "Sync your online repository with RStudio: from scratch",
+    "text": "Sync your online repository with RStudio: from scratch"
+  },
+  {
+    "objectID": "slides/05-class.html#sync-your-online-repository-with-rstudio-existing-r-project",
+    "href": "slides/05-class.html#sync-your-online-repository-with-rstudio-existing-r-project",
+    "title": "GVPT Maths Camp",
+    "section": "Sync your online repository with RStudio: existing R project",
+    "text": "Sync your online repository with RStudio: existing R project\n\nWe already have R projects that we started yesterday.\nWe can sync the existing R project with our new repository.\n\n\n\nFor future reference, head over to the Existing project, GitHub first chapter of Happy Git with R."
+  },
+  {
+    "objectID": "slides/05-class.html#sync-your-online-repository-with-rstudio-existing-r-project-1",
+    "href": "slides/05-class.html#sync-your-online-repository-with-rstudio-existing-r-project-1",
+    "title": "GVPT Maths Camp",
+    "section": "Sync your online repository with RStudio: existing R project",
+    "text": "Sync your online repository with RStudio: existing R project\nThe usethis R package is a brilliant helper package.\n\n\n\n\n\n\n\n\n\nYou can use functions directly (without loading the package in your session) using the following general rule: package::function(). This is useful when you only want to use one function from a package."
+  },
+  {
+    "objectID": "slides/05-class.html#rstudio-gui-workflow",
+    "href": "slides/05-class.html#rstudio-gui-workflow",
+    "title": "GVPT Maths Camp",
+    "section": "RStudio GUI: Workflow",
+    "text": "RStudio GUI: Workflow\n\npulladdcommitpush\n\n\npull any changes made and stored in your Github repository before making your changes\n\n\n\n\n\n\n\nadd those changes to your staging area\n\n\n\n\n\n\n\ncommit your changes with a meaningful message\n\n\n\n\n\n\n\npush those committed changes up to Github"
+  },
+  {
+    "objectID": "slides/05-class.html#shellterminal-workflow",
+    "href": "slides/05-class.html#shellterminal-workflow",
+    "title": "GVPT Maths Camp",
+    "section": "Shell/terminal: Workflow",
+    "text": "Shell/terminal: Workflow\n\npulladdcommitpush\n\n\npull any changes made and stored in your Github repository before making your changes\n\n\n\n\n\n\n\nadd those changes to your staging area\n\n\n\n\n\n\n\ncommit your changes with a meaningful message\n\n\n\n\n\n\n\npush those committed changes up to Github"
+  },
+  {
+    "objectID": "slides/05-class.html#working-with-others",
+    "href": "slides/05-class.html#working-with-others",
+    "title": "GVPT Maths Camp",
+    "section": "Working with others",
+    "text": "Working with others\nGithub is like Google Docs for your code."
+  },
+  {
+    "objectID": "slides/05-class.html#exercise",
+    "href": "slides/05-class.html#exercise",
+    "title": "GVPT Maths Camp",
+    "section": "EXERCISE",
+    "text": "EXERCISE\n\nCreate a new Github repository for this camp.\nSync your existing R project to this new repository.\nadd your scripts from yesterday and today.\nWrite a helpful commit message for your future self.\npush your work up to Github.\nAdd me as a collaborator: @hgoers."
+  },
+  {
+    "objectID": "slides/04-class.html#variation",
+    "href": "slides/04-class.html#variation",
+    "title": "GVPT Maths Camp",
+    "section": "Variation",
+    "text": "Variation\nWhat is the earliest and latest year we cover?\n\nsummarise(gapminder, min(year), max(year))\n\n# A tibble: 1 × 2\n  `min(year)` `max(year)`\n        <int>       <int>\n1        1952        2007\n\n\nWhat about our other numeric variables?\n\nsummarise(gapminder, across(lifeExp:gdpPercap, ~ quantile(.x)))\n\n# A tibble: 5 × 3\n  lifeExp         pop gdpPercap\n    <dbl>       <dbl>     <dbl>\n1    23.6      60011       241.\n2    48.2    2793664      1202.\n3    60.7    7023596.     3532.\n4    70.8   19585222.     9325.\n5    82.6 1318683096    113523."
   }
 ]

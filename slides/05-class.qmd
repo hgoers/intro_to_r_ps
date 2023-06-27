@@ -1,6 +1,6 @@
 ---
 title: "GVPT Maths Camp"
-subtitle: "Data Wrangling"
+subtitle: "Data Wrangling and Github"
 format: 
   revealjs:
     slide-number: true
@@ -17,11 +17,240 @@ format:
 
 3.  Explore relational data
 
+4.  Start to manage your scripts with Github
+
+## A familiar problem
+
+![](img/final.png){fig-align="center"}
+
+## A solution
+
+-   Track changes to your documents, code, or data over time
+
+-   Work from one document
+
+-   Have access to your work from anywhere
+
+-   Create safe points in case something breaks or you want to experiment
+
+![](img/rock_climbing.jpeg){fig-align="center"}
+
+## Git and Github
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+### <img src="https://git-scm.com/images/logos/downloads/Git-Logo-2Color.png" height="50px">
+
+Open source **version control software.**
+
+<br>
+
+Think *R*.
+
+:::
+
+::: {.column width="50%"}
+
+### <img src="https://raw.githubusercontent.com/annakrystalli/rrresearch/master/docs/assets/github_logo.jpg" height="50px">
+
+A [**website**](https://github.com/) that allows you to **store your Git repositories online** and makes it easy to collaborate with others.
+
+<br>
+
+Think *RStudio*.
+
+:::
+
+::::
+
+## Why should I use Git and Github? `r emo::ji("thinking_face")`
+
+-   More reproducible, transparent research
+
+-   Better version control
+
+-   Easy collaboration with others
+
+## The basics
+
+Four verbs you need to know to use Git for version control: 
+
+1.    `add`
+
+2.    `commit`
+
+3.    `push`
+
+4.    `pull`
+
+## Using Git in RStudio
+
+Three different options:
+
+1.    RStudio GUI
+
+2.    Shell/terminal
+
+3.    Github desktop[^2]
+
+[^2]: We won't talk about this option, but it's great!
+
+## Repositories
+
+-   A repository is like a folder for your project, but better!
+
+-   Organises your work
+
+-   Displays useful information, including a general description, navigation, changes
+
+-   A great tool for [project-oriented workflows](https://www.tidyverse.org/blog/2017/12/workflow-vs-script/)
+
+## Starting a new project: create a repository
+
+![](img/repo_new.png){fig-align="center"}
+
+## Starting a new project: create a repository
+
+![](img/repo_info.png){fig-align="center"}
+
+## Starting a new project: create a repository
+
+![](img/repo_local.png){fig-align="center"}
+
+## Sync your online repository with RStudio: from scratch
+
+![](img/repo_wiz_1.png){fig-align="center"}
+
+## Sync your online repository with RStudio: from scratch
+
+![](img/repo_wiz_2.png){fig-align="center"}
+
+## Sync your online repository with RStudio: from scratch
+
+![](img/repo_wiz_3.png){fig-align="center"}
+
+## Sync your online repository with RStudio: existing R project
+
+-   We already have R projects that we started yesterday. 
+
+-   We can sync the existing R project with our new repository. 
+
+::: aside
+For future reference, head over to the [Existing project, GitHub first chapter](https://happygitwithr.com/existing-github-first.html#existing-github-first) of Happy Git with R.
+:::
+
+## Sync your online repository with RStudio: existing R project
+
+The `usethis` R package is a brilliant helper package. 
+
+```{r}
+#| eval: false
+
+install.packages("usethis")
+```
+
+<br>
+
+```{r}
+#| eval: false
+
+usethis::create_from_github(
+  "https://github.com/YOU/YOUR_REPO.git",
+  destdir = "~/path/to/where/you/want/the/local/repo/"
+)
+```
+
+::: aside
+You can use functions directly (without loading the package in your session) using the following general rule: `package::function()`. This is useful when you only want to use one function from a package. 
+:::
+
+## RStudio GUI: Workflow
+
+::: {.panel-tabset}
+
+## `pull`
+
+`pull` any changes made and stored in your Github repository before making your changes
+
+![](img/gui_pull.png){fig-align="center"}
+
+## `add`
+
+`add` those changes to your staging area
+
+![](img/gui_add.png){fig-align="center"}
+
+## `commit`
+
+`commit` your changes with a meaningful message
+
+![](img/gui_commit.png){fig-align="center"}
+
+## `push`
+
+`push` those committed changes up to Github
+
+![](img/gui_push.png){fig-align="center"}
+
+:::
+
+## Shell/terminal: Workflow
+
+::: {.panel-tabset}
+
+## `pull`
+
+`pull` any changes made and stored in your Github repository before making your changes
+
+![](img/shell_pull.png){fig-align="center"}
+
+## `add`
+
+`add` those changes to your staging area
+
+![](img/shell_add.png){fig-align="center"}
+
+## `commit`
+
+`commit` your changes with a meaningful message
+
+![](img/shell_commit.png){fig-align="center"}
+
+## `push`
+
+`push` those committed changes up to Github
+
+![](img/shell_push.png){fig-align="center"}
+
+:::
+
+## Working with others
+
+Github is like Google Docs for your code.
+
+![](img/collaboration.png){fig-align="center"}
+
+## EXERCISE {background-color="#B56576"}
+
+1.    Create a new Github repository for this camp. 
+
+2.    Sync your existing R project to this new repository.
+
+3.    `add` your scripts from yesterday and today. 
+
+4.    Write a helpful `commit` message for your future self. 
+
+5.    `push` your work up to Github. 
+
+6.    Add me as a collaborator: `@hgoers`.
+
 ## Data wrangling
 
 ![Source: [R4DS](https://r4ds.had.co.nz/wrangle-intro.html)](img/data-science-wrangle.png){fig-align="center"}
 
-## World Bank GDP data 
+## World Bank GDP data
 
 *https://data.worldbank.org/indicator/NY.GDP.MKTP.CD*
 
@@ -66,11 +295,11 @@ Package documentation: https://here.r-lib.org/
 
 ## Reading in your csv
 
--   I like to store raw data in a folder called `data-raw` within my project. 
+-   I like to store raw data in a folder called `data-raw` within my project.
 
--   I then store any clean data that is ready for analysis in a `data` folder within my project. 
+-   I then store any clean data that is ready for analysis in a `data` folder within my project.
 
-> You will start to see this structure throughout my scripts. You should come up with something that works for you. It should be intuitive. This will help future you and any other people who want to explore your work navigate your projects. 
+> You will start to see this structure throughout my scripts. You should come up with something that works for you. It should be intuitive. This will help future you and any other people who want to explore your work navigate your projects.
 
 ## Reading in your csv
 

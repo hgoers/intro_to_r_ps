@@ -7,6 +7,8 @@ format:
     preview-links: auto
     theme: solarized
     embed-resources: true
+execute: 
+  echo: true
 ---
 
 ## Learning objectives
@@ -17,39 +19,11 @@ format:
 
 3.  Clean up and transform your data
 
-## R as a calculator
-
-<br>
-
-```{r}
-#| echo: true
-
-1 / 200 * 30
-```
-
-<br>
-
-```{r}
-#| echo: true
-
-(59 + 73 + 2) / 3
-```
-
-<br>
-
-```{r}
-#| echo: true
-
-sin(pi / 2)
-```
-
 ## R objects
 
 Create new objects with `<-`
 
 ```{r}
-#| echo: true
-
 x <- 3 * 4
 
 x
@@ -58,20 +32,20 @@ x
 <br>
 
 ```{r}
-#| echo: true
-
 x <- 3 * 10
 
 x
 ```
+
+::: aside
+Some people use `=` instead of `<-`. I strongly recommend against this. It makes your script difficult to read, and it can lead to syntax errors.
+:::
 
 ## R functions
 
 Many functions come with R straight out of the box:
 
 ```{r}
-#| echo: true
-
 seq(1, 10)
 ```
 
@@ -80,8 +54,6 @@ seq(1, 10)
 You can create objects using functions:
 
 ```{r}
-#| echo: true
-
 x <- seq(1, 10)
 
 x
@@ -91,13 +63,12 @@ x
 
 {{< video https://www.youtube.com/embed/jbkSRLYSojo width="100%" height="85%" >}}
 
-## Accessing gapminder data
+## EXERCISE {background-color="#B56576"}
 
 First, you need to install the `gapminder` package:
 
 ```{r}
 #| eval: false
-#| echo: true
 
 install.packages("gapminder")
 ```
@@ -105,8 +76,7 @@ install.packages("gapminder")
 Then access the `gapminder` data set:
 
 ```{r}
-#| echo: true
-
+library(tidyverse)
 library(gapminder)
 
 head(gapminder)
@@ -153,120 +123,230 @@ Five basic functions:
 ## Filter rows with `filter()`
 
 ```{r}
-#| echo: true
-
-library(dplyr)
-
 filter(gapminder, country == "Australia", year > 2000)
 ```
 
 ## Filter rows with `filter()`
 
 ```{r}
-#| echo: true
-
-library(dplyr)
-
 filter(gapminder, continent %in% c("Asia", "Oceania"))
 ```
 
 ## Filter rows with `filter()`
 
 ```{r}
-#| echo: true
-
-library(dplyr)
-
 filter(gapminder, pop > 500000 & pop < 1000000)
 ```
 
 ## Filter rows with `filter()`
 
 ```{r}
-#| echo: true
-
-library(dplyr)
-
 filter(gapminder, pop > 500000 | pop < 1000000)
 ```
+
+## EXERCISE {background-color="#B56576"}
+
+1.  Find all country-years that have populations greater than 1 billion people.
+
+2.  Find all countries in Oceania.
+
+> HINT: Check out `distinct()`.
+
+3.  Find all countries in both Asia and Europe.
+
+4.  Find all country-years that have a life expectancy greater than 50 years *and* less than 60 years.
+
+5.  Find all country-years that have a life expectancy less than 50 years *or* greater than 60 years.
+
+## CHECK YOUR ANSWERS {background-color="#B56576"}
+
+1.  Find all country-years that have populations greater than 1 billion people.
+
+```{r}
+filter(gapminder, pop > 1e9)
+```
+
+## CHECK YOUR ANSWERS {background-color="#B56576"}
+
+2.  Find all countries in Oceania.
+
+```{r}
+distinct(filter(gapminder, continent == "Oceania"), country)
+```
+
+## CHECK YOUR ANSWERS {background-color="#B56576"}
+
+3.  Find all countries in both Asia and Europe.
+
+```{r}
+distinct(filter(gapminder, continent %in% c("Asia", "Europe")), country)
+```
+
+## CHECK YOUR ANSWERS {background-color="#B56576"}
+
+4.  Find all country-years that have a life expectancy greater than 50 years *and* less than 60 years.
+
+```{r}
+filter(gapminder, lifeExp > 50 & lifeExp < 60)
+```
+
+## CHECK YOUR ANSWERS {background-color="#B56576"}
+
+5.  Find all country-years that have a life expectancy less than 50 years *or* greater than 60 years.
+
+```{r}
+filter(gapminder, lifeExp < 50 | lifeExp > 60)
+```
+
+## Handy operations
+
+`==` is *equal to*
+
+<br>
+
+`=!` is *not equal to*
+
+<br>
+
+`>=` is *greater than or equal to*
+
+<br>
+
+`<=` is *less than or equal to*
+
+## Handy operations
+
+<br>
+
+`|` is *OR*
+
+<br>
+
+`&` is *AND*
+
+<br>
+
+`%in%` is *in*
 
 ## Arrange rows with `arrange()`
 
 ```{r}
-#| echo: true
-
-library(dplyr)
-
 arrange(gapminder, country, year)
 ```
 
 ## Arrange rows with `arrange()`
 
 ```{r}
-#| echo: true
-
-library(dplyr)
-
 arrange(gapminder, country, desc(year))
 ```
+
+## EXERCISE {background-color="#B56576"}
+
+1.  Which country-year has the lowest life expectancy?
+
+2.  Which country-year has the largest population?
+
+## CHECK YOUR ANSWERS {background-color="#B56576"}
+
+1.  Which country-year has the lowest life expectancy?
+
+```{r}
+arrange(gapminder, lifeExp)
+```
+
+::: aside
+Check out `slice_min()` and `slice_max()` for more efficient ways of doing this.
+:::
+
+## CHECK YOUR ANSWERS {background-color="#B56576"}
+
+2.  Which country-year has the largest population?
+
+```{r}
+arrange(gapminder, desc(pop))
+```
+
+::: aside
+Check out `slice_min()` and `slice_max()` for more efficient ways of doing this.
+:::
 
 ## Select columns with `select()`
 
 ```{r}
-#| echo: true
-
-library(dplyr)
-
 select(gapminder, country, year, pop)
 ```
 
 ## Select columns with `select()`
 
 ```{r}
-#| echo: true
-
-library(dplyr)
-
 select(gapminder, country:pop)
 ```
 
 ## Select columns with `select()`
 
 ```{r}
-#| echo: true
-
-library(dplyr)
-
 select(gapminder, -(lifeExp:pop))
+```
+
+## EXERCISE {background-color="#B56576"}
+
+1.  Select only the `country`, `year`, and `lifeExp` variables from `gapminder`.
+
+2.  What does the `any_of()` function do? Why might it be helpful in conjunction with this vector?
+
+```{r}
+vars <- c("country", "year", "lifeExp")
+```
+
+3.  What does the following code produce?
+
+```{r}
+#| eval: false
+
+select(gapminder, starts_with("c"))
+```
+
+## CHECK YOUR ANSWERS {background-color="#B56576"}
+
+1.  Select only the `country`, `year`, and `lifeExp` variables from `gapminder`.
+
+```{r}
+select(gapminder, country, year, lifeExp)
+```
+
+## CHECK YOUR ANSWERS {background-color="#B56576"}
+
+2.  What does the `any_of()` function do? Why might it be helpful in conjunction with this vector?
+
+```{r}
+vars <- c("country", "year", "lifeExp")
+
+select(gapminder, any_of(vars))
+```
+
+## CHECK YOUR ANSWERS {background-color="#B56576"}
+
+3.  What does the following code produce?
+
+```{r}
+select(gapminder, starts_with("c"))
 ```
 
 ## Add new variables with `mutate()`
 
 ```{r}
-#| echo: true
-
-library(dplyr)
-
 mutate(gapminder, gdp = gdpPercap * pop)
 ```
 
 ## Select, transform, and add new variables with `transmute()`
 
 ```{r}
-#| echo: true
-
-library(dplyr)
-
 transmute(gapminder, country, year, gdp = gdpPercap * pop)
 ```
 
 ## Create summaries with `summarise()`
 
 ```{r}
-#| echo: true
-
-library(dplyr)
-
 summarise(
   gapminder, avg_pop = mean(pop), avg_gdp_per_cap = mean(gdpPercap)
 )
@@ -275,10 +355,6 @@ summarise(
 ## Creating grouped summaries with `group_by()` and `summarise()`
 
 ```{r}
-#| echo: true
-
-library(dplyr)
-
 gapminder_continent <- group_by(gapminder, continent)
 
 summarise(
@@ -286,13 +362,71 @@ summarise(
 )
 ```
 
-## Combine multiple operations with the pipe
+## EXERCISE {background-color="#B56576"}
+
+1.  Calculate each country-year's GDP.
+
+2.  Find each country's average GDP across all years in the `gapminder` data set.
+
+3.  Find the country with the smallest average GDP across these years.
+
+4.  Find the country with the largest average GDP across these years.
+
+## CHECK YOUR ANSWERS {background-color="#B56576"}
+
+1.  Calculate each country-year's GDP.
 
 ```{r}
-#| echo: true
+mutate(gapminder, gdp = pop * gdpPercap)
+```
 
-library(dplyr)
+## CHECK YOUR ANSWERS {background-color="#B56576"}
 
+2.  Find each country's average GDP across all years in the `gapminder` data set.
+
+```{r}
+gapminder_country <- group_by(gapminder, country)
+
+gapminder_country_avg <- summarise(
+  mutate(gapminder_country, gdp = pop * gdpPercap), avg_gdp = mean(gdp)
+)
+
+head(gapminder_country_avg)
+```
+
+## CHECK YOUR ANSWERS {background-color="#B56576"}
+
+3.  Find the country with the smallest average GDP across these years.
+
+```{r}
+arrange(gapminder_country_avg, avg_gdp)
+```
+
+## CHECK YOUR ANSWERS {background-color="#B56576"}
+
+4.  Find the country with the largest average GDP across these years.
+
+```{r}
+arrange(gapminder_country_avg, desc(avg_gdp))
+```
+
+## Combine multiple operations with the pipe
+
+That got messy!
+
+-   We had a lot of different objects representing intermediate steps in our calculations.
+
+-   We never need those objects again. Can we avoid creating them?
+
+Let's introduce perhaps the defining feature of the tidyverse: **the pipe**.
+
+## Combine multiple operations with the pipe
+
+Read the pipe as:
+
+Do this \|\> (*and then...*) <br>     do this \|\> (*and then...*) <br>     do this
+
+```{r}
 gapminder |> 
   group_by(continent) |> 
   summarise(avg_pop = mean(pop), avg_gdp_per_cap = mean(gdpPercap)) |> 
@@ -302,12 +436,6 @@ gapminder |>
 ## Combine multiple operations with the pipe
 
 ```{r}
-#| echo: true
-#| fig-align: center
-
-library(dplyr)
-library(ggplot2)
-
 gapminder |> 
   group_by(continent) |> 
   summarise(avg_pop = mean(pop), avg_gdp_per_cap = mean(gdpPercap)) |> 
@@ -325,6 +453,8 @@ Base pipe:
 -   `|>`
 
 -   Can be used without loading any packages
+
+-   Relatively new: introduced in 2021
 :::
 
 ::: {.column width="50%"}
@@ -336,15 +466,69 @@ Tidyverse pipe:
 :::
 :::
 
+## EXERCISE {background-color="#B56576"}
+
+1.    Calculate the average GDP per capita for countries in the Americas in 2007. Display only the country and average GDP per capita variables. 
+
+2.    Plot your results. 
+
+## CHECK YOUR ANSWERS {background-color="#B56576"}
+
+1.    Calculate the average GDP per capita for countries in the Americas in all years including or after 2000. 
+
+```{r}
+gapminder_americas_2000 <- gapminder |> 
+  filter(continent == "Americas", year >= 2000) |> 
+  group_by(country) |> 
+  summarise(avg_gdp_per_cap = mean(gdpPercap))
+
+gapminder_americas_2000
+```
+
+## CHECK YOUR ANSWERS {background-color="#B56576"}
+
+2.    Plot your results. 
+
+```{r}
+#| echo: false
+
+ggplot(gapminder_americas_2000, aes(x = avg_gdp_per_cap, y = reorder(country, avg_gdp_per_cap))) + 
+  geom_col() +
+  theme_minimal() + 
+  labs(title = "Average GDP per capita for countries in the Americas in 2002 and 2007",
+       x = "Average GDP per capita (US$)",
+       y = NULL) + 
+  scale_x_continuous(labels = scales::label_dollar())
+```
+
+## CHECK YOUR ANSWERS {background-color="#B56576"}
+
+2.    Plot your results. 
+
+```{r}
+#| eval: false
+
+ggplot(
+  gapminder_americas_2000, 
+  aes(x = avg_gdp_per_cap, y = reorder(country, avg_gdp_per_cap))
+) + 
+  geom_col() +
+  theme_minimal() + 
+  labs(title = "Average GDP per capita for countries in the Americas in 2002 and 2007",
+       x = "Average GDP per capita (US$)",
+       y = NULL) + 
+  scale_x_continuous(labels = scales::label_dollar())
+```
+
+::: aside
+Check out the `scales` R package for very handy formatting functions: [https://scales.r-lib.org](https://scales.r-lib.org/index.html)
+:::
+
 ## A handy shortcut for counting data with `count()`
 
 ::: columns
 ::: {.column width="50%"}
 ```{r}
-#| echo: true
-
-library(dplyr)
-
 gapminder |> 
   distinct(continent, country) |> 
   group_by(continent) |> 
@@ -354,10 +538,6 @@ gapminder |>
 
 ::: {.column width="50%"}
 ```{r}
-#| echo: true
-
-library(dplyr)
-
 gapminder |> 
   distinct(continent, country) |> 
   count(continent)
@@ -365,10 +545,16 @@ gapminder |>
 :::
 :::
 
+::: aside
+`distinct()` selects only unique rows from a data frame. Check out `?distinct` for more detail. 
+:::
+
 ## Summary
 
-This morning you have:
+This session you have:
 
 1.  Learnt R basic syntax
 
 2.  Learnt how to transform your data
+
+3.  Written concise code that is easy to follow

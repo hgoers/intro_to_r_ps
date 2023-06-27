@@ -9,7 +9,7 @@ format:
     embed-resources: true
 execute: 
   echo: true
-  fig-align: center
+  fig-align: "center"
 ---
 
 ## Learning objectives for today
@@ -91,7 +91,7 @@ library(tidyverse)
 ```
 
 ::: aside
-`tidyverse` is a collection of many different packages housed within this universe. The individual packages are listed when you load the `tidyverse` package. 
+`tidyverse` is a collection of many different packages housed within this universe. The individual packages are listed when you load the `tidyverse` package.
 :::
 
 ## EXERCISE {background-color="#B56576"}
@@ -105,34 +105,13 @@ library(tidyverse)
 install.packages("tidyverse")
 ```
 
-3. Load these packages in your current session
+3.  Load these packages in your current session
 
 ```{r}
 #| eval: false
 
 library(tidyverse)
 ```
-
-## Your first GitHub repository
-
-*Version control and collaboration*
-
--   We will use Github to share and manage our scripts. 
-
--   Your GVPT622 homework assignments will be submitted via Github. 
-
--   A great tool for collaboration and dissemination of research.  
-
-## EXERCISE {background-color="#B56576"}
-
-Follow along as we: 
-
-1.  Create a repository in GitHub for this course
-2.  Link your new repository to a new RStudio project
-
-::: aside
-For later reference, head to Jenny Bryan's [*New project, GitHub first chapter*](https://happygitwithr.com/new-github-first.html) in Happy Git with R.
-:::
 
 ## RStudio Projects
 
@@ -186,7 +165,7 @@ ggplot(data = mpg) +
   )
 ```
 
-## How did we do this? 
+## How did we do this?
 
 ```{r}
 #| eval: false
@@ -211,7 +190,7 @@ ggplot(data = mpg) +
 ```
 
 ::: aside
-We will step through this now. By the end of this session, you will be able to make your own colourful data visualisations using R. 
+We will step through this now. By the end of this session, you will be able to make your own colourful data visualisations using R.
 :::
 
 ## Load relevant packages and data
@@ -325,9 +304,9 @@ ggplot(data = mpg) +
 
 ## Let's look at groups in the data
 
--   We are not restricted to looking at only two interesting elements of our data. 
+-   We are not restricted to looking at only two interesting elements of our data.
 
--   You can use visual elements or aesthetics (`aes`) to communicate many dimensions in your data. 
+-   You can use visual elements or aesthetics (`aes`) to communicate many dimensions in your data.
 
 -   Let's look at a categorical variable: the class of car (SUV, 2 seater, pick up truck, etc.).
 
@@ -362,7 +341,7 @@ ggplot(data = mpg) +
 
 ## Flexible visualization
 
-You can use visual elements to communicate your findings in engaging ways. 
+You can use visual elements to communicate your findings in engaging ways.
 
 ```{r}
 #| code-line-numbers: "2"
@@ -417,7 +396,7 @@ ggplot(data = mpg) +
 
 ## Let's clean this up
 
-Less is more when it comes to data visualization. 
+Less is more when it comes to data visualization.
 
 ```{r}
 #| eval: false
@@ -503,9 +482,9 @@ ggplot(data = mpg) +
 
 ## EXERCISE {background-color="#B56576"}
 
-1.    Create a scatterplot of `hwy` vs `displ` and a categorical variable in the `mpg` data set. 
+1.  Create a scatterplot of `hwy` vs `displ` and a categorical variable in the `mpg` data set.
 
-2.    Customize your plot using the `theme()` argument. 
+2.  Customize your plot using the `theme()` argument.
 
 ## Looking at group-specific trends
 
@@ -529,9 +508,9 @@ ggplot(data = mpg) +
 
 ## EXERCISE {background-color="#B56576"}
 
-1.    What happens if you facet on a continuous variable?
+1.  What happens if you facet on a continuous variable?
 
-2.    What do the empty cells in previous plot with facet_grid(drv ~ cyl) mean? How do they relate to this plot?
+2.  What do the empty cells in previous plot with facet_grid(drv \~ cyl) mean? How do they relate to this plot?
 
 ```{r}
 #| echo: false
@@ -542,7 +521,7 @@ ggplot(data = mpg) +
 
 ## EXERCISE {background-color="#B56576"}
 
-3.    Create the following plots. What does `.` do?
+3.  Create the following plots. What does `.` do?
 
 ```{r}
 #| eval: false
@@ -579,51 +558,9 @@ ggplot(data = mpg, mapping = aes(x = displ, y = hwy, color = drv)) +
   theme_minimal()
 ```
 
-## Saving our work with Git and Github
-
-Let's wrap up! We need to:
-
-1.    Save our work locally, 
-
-2.    Get our files ready to save to Github, 
-
-3.    Add a helpful message for our future selves letting us know what we did,
-
-4.    Save our work to Github. 
-
-## EXERCISE {background-color="#B56576"}
-
-To wrap up, let's push our work to Github: 
-
-1.  Save your new script. 
-
-2.  Head over to the Git tab in the same area as our Environment tab. 
-
-3.  Stage your new file. 
-
-4.  Hit the commit button. 
-
-::: aside
-We will go over this in much more detail tomorrow. 
-:::
-
-## EXERCISE {background-color="#B56576"}
-
-5.  Add a useful message in the message area. 
-
-6.  Hit the commit button. 
-
-7.  Push your work to Github. 
-
-8.  Head over to your class repository on Github. You should see your file. 
-
-::: aside
-We will go over this in much more detail tomorrow. 
-:::
-
 ## Summary
 
-Today you:
+This session you:
 
 1.  Set up your data science tools
 
@@ -632,5 +569,3 @@ Today you:
 3.  Discovered interesting relationships in the data
 
 4.  Connected these relationships or trends to your expectations (or hypotheses about the data)
-
-5.  Created and used your first ever Github repository. 

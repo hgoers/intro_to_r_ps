@@ -47,7 +47,7 @@ format:
 
 ![](img/homebrew.png){fig-align="center"}
 
-1.  Go to [https://brew.sh/](https://brew.sh/)
+1.  Go to <https://brew.sh/>
 
 2.  Follow instructions on the homepage
 
@@ -97,7 +97,7 @@ Instructions on how to download Git and set up GitHub are provided in the [Insta
 
 ## Summary
 
-This morning you:
+This session you:
 
 1.  Learnt about new data science tools to help you conduct replicable and reproducable political science research
 

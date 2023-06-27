@@ -7,6 +7,8 @@ format:
     preview-links: auto
     theme: solarized
     embed-resources: true
+execute: 
+  echo: true
 ---
 
 ## Learning objectives
@@ -17,50 +19,257 @@ format:
 
 3.  Use your new data science tools to better understand your data
 
-## Two basic questions to guide your EDA
+4.  Upload your scripts to Github
 
-1.  What type of variation occurs within my variables?
+## A familiar problem
+
+![](img/final.png){fig-align="center"}
+
+## A solution
+
+-   Track changes to your documents, code, or data over time
+
+-   Work from one document
+
+-   Have access to your work from anywhere
+
+-   Create safe points in case something breaks or you want to experiment
+
+![](img/rock_climbing.jpeg){fig-align="center"}
+
+## Git and Github
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+### <img src="https://git-scm.com/images/logos/downloads/Git-Logo-2Color.png" height="50px">
+
+Open source **version control software.**
 
 <br>
 
+Think *R*.
+
+:::
+
+::: {.column width="50%"}
+
+### <img src="https://raw.githubusercontent.com/annakrystalli/rrresearch/master/docs/assets/github_logo.jpg" height="50px">
+
+A [**website**](https://github.com/) that allows you to **store your Git repositories online** and makes it easy to collaborate with others.
+
+<br>
+
+Think *RStudio*.
+
+:::
+
+::::
+
+## Why should I use Git and Github? `r emo::ji("thinking_face")`
+
+-   More reproducible, transparent research
+
+-   Better version control
+
+-   Easy collaboration with others
+
+## The basics
+
+Four verbs you need to know to use Git for version control: 
+
+1.    `add`
+
+2.    `commit`
+
+3.    `push`
+
+4.    `pull`
+
+## Using Git in RStudio
+
+Three different options:
+
+1.    RStudio GUI
+
+2.    Shell/terminal
+
+3.    Github desktop[^2]
+
+[^2]: We won't talk about this option, but it's great!
+
+## Repositories
+
+-   A repository is like a folder for your project, but better!
+
+-   Organises your work
+
+-   Displays useful information, including a general description, navigation, changes
+
+-   A great tool for [project-oriented workflows](https://www.tidyverse.org/blog/2017/12/workflow-vs-script/)
+
+## Starting a new project: create a repository
+
+![](img/repo_new.png){fig-align="center"}
+
+## Starting a new project: create a repository
+
+![](img/repo_info.png){fig-align="center"}
+
+## Starting a new project: create a repository
+
+![](img/repo_local.png){fig-align="center"}
+
+## Sync your online repository with RStudio: from scratch
+
+![](img/repo_wiz_1.png){fig-align="center"}
+
+## Sync your online repository with RStudio: from scratch
+
+![](img/repo_wiz_2.png){fig-align="center"}
+
+## Sync your online repository with RStudio: from scratch
+
+![](img/repo_wiz_3.png){fig-align="center"}
+
+## Sync your online repository with RStudio: existing R project
+
+-   We already have R projects that we started yesterday. 
+
+-   We can sync the existing R project with our new repository. 
+
+::: aside
+For future reference, head over to the [Existing project, GitHub first chapter](https://happygitwithr.com/existing-github-first.html#existing-github-first) of Happy Git with R.
+:::
+
+## Sync your online repository with RStudio: existing R project
+
+The `usethis` R package is a brilliant helper package. 
+
+```{r}
+#| eval: false
+
+install.packages("usethis")
+```
+
+<br>
+
+```{r}
+#| eval: false
+
+usethis::create_from_github(
+  "https://github.com/YOU/YOUR_REPO.git",
+  destdir = "~/path/to/where/you/want/the/local/repo/"
+)
+```
+
+::: aside
+You can use functions directly (without loading the package in your session) using the following general rule: `package::function()`. This is useful when you only want to use one function from a package. 
+:::
+
+## RStudio GUI: Workflow
+
+::: {.panel-tabset}
+
+## `pull`
+
+`pull` any changes made and stored in your Github repository before making your changes
+
+![](img/gui_pull.png){fig-align="center"}
+
+## `add`
+
+`add` those changes to your staging area
+
+![](img/gui_add.png){fig-align="center"}
+
+## `commit`
+
+`commit` your changes with a meaningful message
+
+![](img/gui_commit.png){fig-align="center"}
+
+## `push`
+
+`push` those committed changes up to Github
+
+![](img/gui_push.png){fig-align="center"}
+
+:::
+
+## Shell/terminal: Workflow
+
+::: {.panel-tabset}
+
+## `pull`
+
+`pull` any changes made and stored in your Github repository before making your changes
+
+![](img/shell_pull.png){fig-align="center"}
+
+## `add`
+
+`add` those changes to your staging area
+
+![](img/shell_add.png){fig-align="center"}
+
+## `commit`
+
+`commit` your changes with a meaningful message
+
+![](img/shell_commit.png){fig-align="center"}
+
+## `push`
+
+`push` those committed changes up to Github
+
+![](img/shell_push.png){fig-align="center"}
+
+:::
+
+## Working with others
+
+Github is like Google Docs for your code.
+
+![](img/collaboration.png){fig-align="center"}
+
+## EXERCISE {background-color="#B56576"}
+
+1.    Create a new Github repository for this camp. 
+
+2.    Sync your existing R project to this new repository.
+
+3.    `add` your scripts from yesterday and today. 
+
+4.    Write a helpful `commit` message for your future self. 
+
+5.    `push` your work up to Github. 
+
+6.    Add me as a collaborator: `@hgoers`.
+
+## Two basic questions to guide your EDA
+
+**Exploratory data analysis** is a critical step in your quantitative research process. 
+
+1.  What type of variation occurs within my variables?
+
 2.  What type of covariation occurs between my variables?
+
+::: aside
+We will talk in detail about EDA during GVPT622. 
+:::
 
 ## Examining `gapminder`
 
 ```{r}
-#| echo: true
-
+library(tidyverse)
 library(gapminder)
-library(dplyr)
 
 head(gapminder)
 ```
 
-## Variation: Factors
-
-How many countries are there in our data set?
-
-```{r}
-#| echo: true
-
-gapminder |> 
-  distinct(country) |> 
-  nrow()
-```
-
-How many continents?
-
-```{r}
-#| echo: true
-
-gapminder |> 
-  distinct(continent) |> 
-  nrow()
-```
-
-*EXERCISE: How many countries in each continent?*
-
-## Variation: Numeric
+## Variation
 
 What is the earliest and latest year we cover?
 
