@@ -546,7 +546,7 @@ ggplot(data = mpg, mapping = aes(x = displ, y = hwy)) +
 ```
 
 ::: notes
-Because both `geom_point()` and `geom_smooth()` take the arguement `mapping = aes(x = displ, y = hwy)`, we can feed it to them both through `ggplot()`. We are previewing a feature heavily used in the tidyverse: the pipe.
+Because both `geom_point()` and `geom_smooth()` take the argument `mapping = aes(x = displ, y = hwy)`, we can feed it to them both through `ggplot()`. We are previewing a feature heavily used in the tidyverse: the pipe.
 :::
 
 ## Group-specific relationships

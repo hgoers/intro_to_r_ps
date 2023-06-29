@@ -1040,7 +1040,7 @@
     "href": "slides/02-class.html#summarising-relationships-in-your-data",
     "title": "GVPT Maths Camp",
     "section": "Summarising relationships in your data",
-    "text": "Summarising relationships in your data\n\nggplot(data = mpg, mapping = aes(x = displ, y = hwy)) + \n  geom_point() + \n  geom_smooth(method = \"lm\", se = F)\n\n\n\nBecause both geom_point() and geom_smooth() take the arguement mapping = aes(x = displ, y = hwy), we can feed it to them both through ggplot(). We are previewing a feature heavily used in the tidyverse: the pipe."
+    "text": "Summarising relationships in your data\n\nggplot(data = mpg, mapping = aes(x = displ, y = hwy)) + \n  geom_point() + \n  geom_smooth(method = \"lm\", se = F)\n\n\n\nBecause both geom_point() and geom_smooth() take the argument mapping = aes(x = displ, y = hwy), we can feed it to them both through ggplot(). We are previewing a feature heavily used in the tidyverse: the pipe."
   },
   {
     "objectID": "slides/02-class.html#saving-our-work-with-git-and-github",
@@ -1397,7 +1397,7 @@
     "href": "slides/04-class.html#sync-your-online-repository-with-rstudio-existing-r-project-1",
     "title": "GVPT Maths Camp",
     "section": "Sync your online repository with RStudio: existing R project",
-    "text": "Sync your online repository with RStudio: existing R project\nThe usethis R package is a brilliant helper package.\n\n\n\n\n\n\n\n\n\nYou can use functions directly (without loading the package in your session) using the following general rule: package::function(). This is useful when you only want to use one function from a package."
+    "text": "Sync your online repository with RStudio: existing R project\nThe usethis R package is a brilliant helper package.\n\ninstall.packages(\"usethis\")\n\n\n\nusethis::create_from_github(\n  \"https://github.com/YOU/YOUR_REPO.git\",\n  destdir = \"~/path/to/where/you/want/the/local/repo/\"\n)\n\n\n\nYou can use functions directly (without loading the package in your session) using the following general rule: package::function(). This is useful when you only want to use one function from a package."
   },
   {
     "objectID": "slides/04-class.html#starting-a-new-project-create-a-repository-2",
@@ -1579,28 +1579,28 @@
     "href": "slides/04-class.html#working-with-external-data",
     "title": "GVPT Maths Camp",
     "section": "Working with external data",
-    "text": "Working with external data\nIntroducing here::here()\n\ninstall.packages(\"here\")\n\n\nPoints to where you are on your computer. Updates for everyone on any computer!\n\nhere::here()\n\n[1] \"/Users/harrietgoers/Documents/intro_to_r_ps\"\n\n\n\nEXERCISE: See where you are!\n\n\nPackage documentation: https://here.r-lib.org/"
+    "text": "Working with external data\nIntroducing here::here()\n\ninstall.packages(\"here\")\n\n\nPoints to where you are on your computer. Updates for everyone on any computer!\n\nhere::here()\n\n[1] \"/Users/harrietgoers/Documents/intro_to_r_ps\"\n\n\n\n\nPackage documentation: https://here.r-lib.org/"
   },
   {
     "objectID": "slides/04-class.html#reading-in-your-csv",
     "href": "slides/04-class.html#reading-in-your-csv",
     "title": "GVPT Maths Camp",
-    "section": "Reading in your csv",
-    "text": "Reading in your csv\n\nI like to store raw data in a folder called data-raw within my project.\nI then store any clean data that is ready for analysis in a data folder within my project.\n\n\nYou will start to see this structure throughout my scripts. You should come up with something that works for you. It should be intuitive. This will help future you and any other people who want to explore your work navigate your projects."
+    "section": "Reading in your CSV",
+    "text": "Reading in your CSV\n\nI like to store raw data in a folder called data-raw within my project.\nI store any clean data that is ready for analysis in a data folder within my project.\n\n\n\nYou will start to see this structure throughout my scripts. You should come up with something that works for you. It should be intuitive. This will help future you and any other people who want to explore your work navigate your projects."
   },
   {
     "objectID": "slides/04-class.html#reading-in-your-csv-1",
     "href": "slides/04-class.html#reading-in-your-csv-1",
     "title": "GVPT Maths Camp",
-    "section": "Reading in your csv",
-    "text": "Reading in your csv\n\nlibrary(tidyverse)\n\ngdp_raw <- read_csv(here::here(\"slides\", \"data-raw\", \"wb_gdp.csv\"))\n\nhead(gdp_raw)\n\n# A tibble: 6 × 3\n  `Data Source`               `World Development Indicators` ...3               \n  <chr>                       <chr>                          <chr>              \n1 Last Updated Date           2023-03-01                      <NA>              \n2 Country Name                Country Code                   \"Indicator Name,In…\n3 Aruba                       ABW                            \"GDP (current US$)…\n4 Africa Eastern and Southern AFE                            \"GDP (current US$)…\n5 Afghanistan                 AFG                            \"GDP (current US$)…\n6 Africa Western and Central  AFW                            \"GDP (current US$)…"
+    "section": "Reading in your CSV",
+    "text": "Reading in your CSV\n\nlibrary(tidyverse)\n\nread_csv(here::here(\"slides\", \"data-raw\", \"wb_gdp.csv\"))\n\n# A tibble: 268 × 3\n   `Data Source`               `World Development Indicators` ...3              \n   <chr>                       <chr>                          <chr>             \n 1 Last Updated Date           2023-03-01                      <NA>             \n 2 Country Name                Country Code                   \"Indicator Name,I…\n 3 Aruba                       ABW                            \"GDP (current US$…\n 4 Africa Eastern and Southern AFE                            \"GDP (current US$…\n 5 Afghanistan                 AFG                            \"GDP (current US$…\n 6 Africa Western and Central  AFW                            \"GDP (current US$…\n 7 Angola                      AGO                            \"GDP (current US$…\n 8 Albania                     ALB                            \"GDP (current US$…\n 9 Andorra                     AND                            \"GDP (current US$…\n10 Arab World                  ARB                            \"GDP (current US$…\n# ℹ 258 more rows"
   },
   {
     "objectID": "slides/04-class.html#exercises",
     "href": "slides/04-class.html#exercises",
     "title": "GVPT Maths Camp",
     "section": "EXERCISES",
-    "text": "EXERCISES\n\nRead the ?read_csv help file. What arguments does this function take?\nHead to the readr package documentation and find what other file types you can read in."
+    "text": "EXERCISES\nTaking a look at this data set:\n\nskimr::skim(gdp_raw)\n\n\nWhat types of data do we have? Are they the right type of data?\n\nAre we missing data points?"
   },
   {
     "objectID": "slides/04-class.html#skipping-non-relevant-rows",
@@ -1614,7 +1614,7 @@
     "href": "slides/04-class.html#skipping-non-relevant-rows-1",
     "title": "GVPT Maths Camp",
     "section": "Skipping non-relevant rows",
-    "text": "Skipping non-relevant rows\n\ngdp_raw <- read_csv(\n  here::here(\"slides\", \"data-raw\", \"wb_gdp.csv\"), skip = 4, col_select = 1:66\n)\n\nhead(gdp_raw)\n\n# A tibble: 6 × 66\n  `Country Name`       `Country Code` `Indicator Name` `Indicator Code`   `1960`\n  <chr>                <chr>          <chr>            <chr>               <dbl>\n1 Aruba                ABW            GDP (current US… NY.GDP.MKTP.CD   NA      \n2 Africa Eastern and … AFE            GDP (current US… NY.GDP.MKTP.CD    2.13e10\n3 Afghanistan          AFG            GDP (current US… NY.GDP.MKTP.CD    5.38e 8\n4 Africa Western and … AFW            GDP (current US… NY.GDP.MKTP.CD    1.04e10\n5 Angola               AGO            GDP (current US… NY.GDP.MKTP.CD   NA      \n6 Albania              ALB            GDP (current US… NY.GDP.MKTP.CD   NA      \n# ℹ 61 more variables: `1961` <dbl>, `1962` <dbl>, `1963` <dbl>, `1964` <dbl>,\n#   `1965` <dbl>, `1966` <dbl>, `1967` <dbl>, `1968` <dbl>, `1969` <dbl>,\n#   `1970` <dbl>, `1971` <dbl>, `1972` <dbl>, `1973` <dbl>, `1974` <dbl>,\n#   `1975` <dbl>, `1976` <dbl>, `1977` <dbl>, `1978` <dbl>, `1979` <dbl>,\n#   `1980` <dbl>, `1981` <dbl>, `1982` <dbl>, `1983` <dbl>, `1984` <dbl>,\n#   `1985` <dbl>, `1986` <dbl>, `1987` <dbl>, `1988` <dbl>, `1989` <dbl>,\n#   `1990` <dbl>, `1991` <dbl>, `1992` <dbl>, `1993` <dbl>, `1994` <dbl>, …"
+    "text": "Skipping non-relevant rows\n\ngdp_raw <- read_csv(\n  here::here(\"slides\", \"data-raw\", \"wb_gdp.csv\"), \n  skip = 4, \n  col_select = 1:66\n)\n\ngdp_raw\n\n# A tibble: 266 × 66\n   `Country Name`      `Country Code` `Indicator Name` `Indicator Code`   `1960`\n   <chr>               <chr>          <chr>            <chr>               <dbl>\n 1 Aruba               ABW            GDP (current US… NY.GDP.MKTP.CD   NA      \n 2 Africa Eastern and… AFE            GDP (current US… NY.GDP.MKTP.CD    2.13e10\n 3 Afghanistan         AFG            GDP (current US… NY.GDP.MKTP.CD    5.38e 8\n 4 Africa Western and… AFW            GDP (current US… NY.GDP.MKTP.CD    1.04e10\n 5 Angola              AGO            GDP (current US… NY.GDP.MKTP.CD   NA      \n 6 Albania             ALB            GDP (current US… NY.GDP.MKTP.CD   NA      \n 7 Andorra             AND            GDP (current US… NY.GDP.MKTP.CD   NA      \n 8 Arab World          ARB            GDP (current US… NY.GDP.MKTP.CD   NA      \n 9 United Arab Emirat… ARE            GDP (current US… NY.GDP.MKTP.CD   NA      \n10 Argentina           ARG            GDP (current US… NY.GDP.MKTP.CD   NA      \n# ℹ 256 more rows\n# ℹ 61 more variables: `1961` <dbl>, `1962` <dbl>, `1963` <dbl>, `1964` <dbl>,\n#   `1965` <dbl>, `1966` <dbl>, `1967` <dbl>, `1968` <dbl>, `1969` <dbl>,\n#   `1970` <dbl>, `1971` <dbl>, `1972` <dbl>, `1973` <dbl>, `1974` <dbl>,\n#   `1975` <dbl>, `1976` <dbl>, `1977` <dbl>, `1978` <dbl>, `1979` <dbl>,\n#   `1980` <dbl>, `1981` <dbl>, `1982` <dbl>, `1983` <dbl>, `1984` <dbl>,\n#   `1985` <dbl>, `1986` <dbl>, `1987` <dbl>, `1988` <dbl>, `1989` <dbl>, …"
   },
   {
     "objectID": "slides/04-class.html#exercises-1",
@@ -1720,5 +1720,40 @@
     "title": "GVPT Maths Camp",
     "section": "Dealing with missing data",
     "text": "Dealing with missing data"
+  },
+  {
+    "objectID": "slides/04-class.html#exercise-1",
+    "href": "slides/04-class.html#exercise-1",
+    "title": "GVPT Maths Camp",
+    "section": "EXERCISE",
+    "text": "EXERCISE\n\nHead over to the World Bank data center and find global GDP (current US$) data.\nDownload it as a .csv.\nStore it somewhere useful in your R project.\n\n\n\nFor most of the data sets with which we commonly work in political science, a .csv is the best format to store and share your data. It is: lightweight; accessible to most people on most computers; and programmatically readable. Excel files are the absolute worst and should be avoided like the plague."
+  },
+  {
+    "objectID": "slides/04-class.html#world-bank-gdp-data-1",
+    "href": "slides/04-class.html#world-bank-gdp-data-1",
+    "title": "GVPT Maths Camp",
+    "section": "World Bank GDP data",
+    "text": "World Bank GDP data\n\nSource: World Bank"
+  },
+  {
+    "objectID": "slides/04-class.html#exercise-2",
+    "href": "slides/04-class.html#exercise-2",
+    "title": "GVPT Maths Camp",
+    "section": "EXERCISE",
+    "text": "EXERCISE\n\nRead the ?read_csv help file. What arguments does this function take?\nHead to the readr package documentation and find what other file types you can read in."
+  },
+  {
+    "objectID": "slides/04-class.html#looking-at-your-data",
+    "href": "slides/04-class.html#looking-at-your-data",
+    "title": "GVPT Maths Camp",
+    "section": "Looking at your data",
+    "text": "Looking at your data\nTaking a look at this data set:\n\nskimr::skim(gdp_raw)\n\n\nData summary\n\n\nName\ngdp_raw\n\n\nNumber of rows\n266\n\n\nNumber of columns\n66\n\n\n_______________________\n\n\n\nColumn type frequency:\n\n\n\ncharacter\n4\n\n\nnumeric\n62\n\n\n________________________\n\n\n\nGroup variables\nNone\n\n\n\nVariable type: character\n\n\n\n\n\n\n\n\n\n\n\n\n\nskim_variable\nn_missing\ncomplete_rate\nmin\nmax\nempty\nn_unique\nwhitespace\n\n\n\n\nCountry Name\n0\n1\n4\n52\n0\n266\n0\n\n\nCountry Code\n0\n1\n3\n3\n0\n266\n0\n\n\nIndicator Name\n0\n1\n17\n17\n0\n1\n0\n\n\nIndicator Code\n0\n1\n14\n14\n0\n1\n0\n\n\n\nVariable type: numeric\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nskim_variable\nn_missing\ncomplete_rate\nmean\nsd\np0\np25\np50\np75\np100\nhist\n\n\n\n\n1960\n132\n0.50\n7.103309e+10\n2.132401e+11\n12012012\n515168342\n2976973938\n29765194091\n1.392273e+12\n▇▁▁▁▁\n\n\n1961\n130\n0.51\n7.186603e+10\n2.208573e+11\n11592012\n521550967\n2966849207\n28225525265\n1.448622e+12\n▇▁▁▁▁\n\n\n1962\n128\n0.52\n7.549842e+10\n2.354226e+11\n9122751\n535469039\n3050699699\n27888587129\n1.550544e+12\n▇▁▁▁▁\n\n\n1963\n128\n0.52\n8.144478e+10\n2.532708e+11\n10840095\n533684539\n3570680614\n32295801618\n1.671610e+12\n▇▁▁▁▁\n\n\n1964\n128\n0.52\n8.941392e+10\n2.769939e+11\n12712471\n552637865\n3432183108\n29743655575\n1.830287e+12\n▇▁▁▁▁\n\n\n1965\n117\n0.56\n9.084572e+10\n2.909741e+11\n13593932\n592981162\n3120870871\n28344705967\n1.993900e+12\n▇▁▁▁▁\n\n\n1966\n114\n0.57\n1.010890e+11\n3.185999e+11\n14469078\n642702550\n3549759472\n29475097852\n2.163894e+12\n▇▁▁▁▁\n\n\n1967\n111\n0.58\n1.048751e+11\n3.369853e+11\n15835178\n626490886\n3384063372\n30763824007\n2.302529e+12\n▇▁▁▁▁\n\n\n1968\n106\n0.60\n1.100032e+11\n3.589008e+11\n14600000\n645403553\n4064738856\n34202774939\n2.485213e+12\n▇▁▁▁▁\n\n\n1969\n106\n0.60\n1.216457e+11\n3.950250e+11\n15850000\n691222919\n4759106307\n37419478538\n2.741172e+12\n▇▁▁▁▁\n\n\n1970\n97\n0.64\n1.316920e+11\n4.223835e+11\n14295280\n578992639\n4395995086\n43149825508\n2.997220e+12\n▇▁▁▁▁\n\n\n1971\n94\n0.65\n1.426569e+11\n4.634816e+11\n15278632\n569894594\n4776612156\n47182022995\n3.310772e+12\n▇▁▁▁▁\n\n\n1972\n94\n0.65\n1.643203e+11\n5.354204e+11\n18936527\n589531886\n5941910117\n53814542180\n3.817137e+12\n▇▁▁▁▁\n\n\n1973\n94\n0.65\n2.027594e+11\n6.505085e+11\n24196018\n721259067\n7241786533\n70163119843\n4.656966e+12\n▇▁▁▁▁\n\n\n1974\n93\n0.65\n2.358722e+11\n7.372823e+11\n31514856\n1034500000\n9388663646\n97274006346\n5.367575e+12\n▇▁▁▁▁\n\n\n1975\n91\n0.66\n2.602840e+11\n8.198843e+11\n32506742\n1132884544\n10048022370\n99635011605\n5.978906e+12\n▇▁▁▁▁\n\n\n1976\n90\n0.66\n2.800887e+11\n8.865080e+11\n30036417\n1151798478\n10229519291\n110909294767\n6.499365e+12\n▇▁▁▁▁\n\n\n1977\n87\n0.67\n3.111674e+11\n9.940817e+11\n34139388\n1090531684\n11248340431\n124252156344\n7.350784e+12\n▇▁▁▁▁\n\n\n1978\n88\n0.67\n3.646655e+11\n1.182408e+12\n41567472\n1403808407\n13964881608\n141665603984\n8.656534e+12\n▇▁▁▁▁\n\n\n1979\n87\n0.67\n4.244625e+11\n1.368610e+12\n42620165\n1561637795\n15912133569\n165636124103\n1.005421e+13\n▇▁▁▁▁\n\n\n1980\n75\n0.72\n4.536754e+11\n1.487740e+12\n42131633\n1394525774\n14436100000\n167601758878\n1.133659e+13\n▇▁▁▁▁\n\n\n1981\n72\n0.73\n4.638188e+11\n1.507155e+12\n31020000\n1439725000\n15423008684\n182441893472\n1.172760e+13\n▇▁▁▁▁\n\n\n1982\n71\n0.73\n4.548925e+11\n1.488897e+12\n34918000\n1370498433\n16517827317\n175941422528\n1.160977e+13\n▇▁▁▁▁\n\n\n1983\n70\n0.74\n4.546587e+11\n1.522740e+12\n37837838\n1394848708\n16407563678\n156210688093\n1.184007e+13\n▇▁▁▁▁\n\n\n1984\n69\n0.74\n4.642984e+11\n1.580346e+12\n42123738\n1459880019\n14824728528\n144656450536\n1.227160e+13\n▇▁▁▁▁\n\n\n1985\n67\n0.75\n4.802080e+11\n1.652799e+12\n32125148\n1444431381\n14094687821\n144581516214\n1.286213e+13\n▇▁▁▁▁\n\n\n1986\n65\n0.76\n5.560586e+11\n1.968186e+12\n31417112\n1776842041\n11857056336\n152525018689\n1.520774e+13\n▇▁▁▁▁\n\n\n1987\n61\n0.77\n6.163105e+11\n2.240390e+12\n35709284\n1987609145\n13049658331\n149394404106\n1.731021e+13\n▇▁▁▁▁\n\n\n1988\n56\n0.79\n6.786842e+11\n2.480996e+12\n44534729\n2229491320\n13712221054\n203009339273\n1.934119e+13\n▇▁▁▁▁\n\n\n1989\n56\n0.79\n7.068788e+11\n2.590851e+12\n44282777\n2202084708\n12683706793\n217848282392\n2.019742e+13\n▇▁▁▁▁\n\n\n1990\n40\n0.85\n7.520841e+11\n2.826869e+12\n8824448\n2656797672\n12763086752\n218802465661\n2.278375e+13\n▇▁▁▁▁\n\n\n1991\n40\n0.85\n7.752074e+11\n2.967320e+12\n9365166\n2724311972\n12457487641\n209700784066\n2.376350e+13\n▇▁▁▁▁\n\n\n1992\n39\n0.85\n8.227462e+11\n3.178068e+12\n9742949\n2538401286\n12452275683\n215894589393\n2.541028e+13\n▇▁▁▁▁\n\n\n1993\n37\n0.86\n8.273301e+11\n3.195566e+12\n9630763\n2682456897\n13180953598\n208580577862\n2.582620e+13\n▇▁▁▁▁\n\n\n1994\n35\n0.87\n8.844758e+11\n3.425352e+12\n10886826\n2340817483\n12983235568\n204754887980\n2.787677e+13\n▇▁▁▁▁\n\n\n1995\n26\n0.90\n9.527387e+11\n3.738255e+12\n11025945\n2703260972\n14314040637\n189288168317\n3.104840e+13\n▇▁▁▁▁\n\n\n1996\n26\n0.90\n9.816932e+11\n3.794052e+12\n12334846\n3127016870\n15476299472\n201239123824\n3.174178e+13\n▇▁▁▁▁\n\n\n1997\n26\n0.90\n9.806258e+11\n3.750371e+12\n12700905\n3326986640\n17918791697\n212289324301\n3.162774e+13\n▇▁▁▁▁\n\n\n1998\n24\n0.91\n9.697204e+11\n3.749072e+12\n12757633\n3201329756\n18321335499\n209779335135\n3.154648e+13\n▇▁▁▁▁\n\n\n1999\n23\n0.91\n9.924950e+11\n3.899103e+12\n13687141\n3422518342\n17078465982\n192574083018\n3.274540e+13\n▇▁▁▁▁\n\n\n2000\n19\n0.93\n1.009131e+12\n3.966468e+12\n15074212\n3058487668\n16577533355\n202013204308\n3.383954e+13\n▇▁▁▁▁\n\n\n2001\n17\n0.94\n9.981705e+11\n3.927119e+12\n13965036\n3081024212\n15749753805\n197508773215\n3.362387e+13\n▇▁▁▁▁\n\n\n2002\n12\n0.95\n1.017707e+12\n4.053224e+12\n16842334\n3145375000\n15844220621\n195626504993\n3.491787e+13\n▇▁▁▁▁\n\n\n2003\n12\n0.95\n1.148382e+12\n4.547898e+12\n19456515\n3511895390\n18304756349\n226167888496\n3.915222e+13\n▇▁▁▁▁\n\n\n2004\n12\n0.95\n1.305610e+12\n5.096225e+12\n22797470\n4206126210\n21741111680\n258265916104\n4.412387e+13\n▇▁▁▁▁\n\n\n2005\n12\n0.95\n1.430352e+12\n5.455501e+12\n22909507\n4876219488\n24221354031\n309791756113\n4.778432e+13\n▇▁▁▁▁\n\n\n2006\n11\n0.96\n1.564642e+12\n5.840963e+12\n24096386\n5396098250\n25825524821\n355075942135\n5.178010e+13\n▇▁▁▁▁\n\n\n2007\n11\n0.96\n1.792817e+12\n6.527530e+12\n28449502\n6070818806\n32350248411\n422496544210\n5.834935e+13\n▇▁▁▁▁\n\n\n2008\n10\n0.96\n1.995251e+12\n7.098048e+12\n31873847\n6899241965\n37199508079\n512003498224\n6.412060e+13\n▇▁▁▁▁\n\n\n2009\n10\n0.96\n1.894014e+12\n6.707801e+12\n28076743\n6638139128\n37257032806\n437337137823\n6.080391e+13\n▇▁▁▁▁\n\n\n2010\n9\n0.97\n2.095327e+12\n7.253006e+12\n32104201\n6974982393\n40676432029\n486807615326\n6.660560e+13\n▇▁▁▁▁\n\n\n2011\n6\n0.98\n2.321140e+12\n7.979970e+12\n39195462\n7523654288\n46872785984\n541145989424\n7.385746e+13\n▇▁▁▁▁\n\n\n2012\n8\n0.97\n2.401034e+12\n8.162806e+12\n39345620\n8323043426\n46904722523\n550858389387\n7.550039e+13\n▇▁▁▁▁\n\n\n2013\n7\n0.97\n2.477220e+12\n8.385432e+12\n38617494\n8488219854\n50949672206\n537393336084\n7.760623e+13\n▇▁▁▁▁\n\n\n2014\n6\n0.98\n2.538873e+12\n8.597524e+12\n38759690\n9029026821\n53399628352\n547861695818\n7.973264e+13\n▇▁▁▁▁\n\n\n2015\n8\n0.97\n2.400201e+12\n8.158733e+12\n36811660\n8589120142\n49667953135\n502084531613\n7.518636e+13\n▇▁▁▁▁\n\n\n2016\n9\n0.97\n2.444669e+12\n8.314435e+12\n41629497\n8595955581\n49840491178\n515654671470\n7.646936e+13\n▇▁▁▁▁\n\n\n2017\n9\n0.97\n2.619922e+12\n8.847933e+12\n45217658\n9252834120\n54726595249\n549267831352\n8.140950e+13\n▇▁▁▁▁\n\n\n2018\n9\n0.97\n2.783541e+12\n9.417930e+12\n47818290\n9880675786\n57003685912\n555455371487\n8.646696e+13\n▇▁▁▁▁\n\n\n2019\n11\n0.96\n2.845284e+12\n9.586893e+12\n54223149\n10880802283\n61136873692\n570067824024\n8.765425e+13\n▇▁▁▁▁\n\n\n2020\n14\n0.95\n2.790295e+12\n9.387492e+12\n55054711\n10163048600\n57159317666\n625428851605\n8.511634e+13\n▇▁▁▁▁\n\n\n2021\n21\n0.92\n3.276616e+12\n1.079655e+13\n63100962\n12269392840\n67404287260\n819035182930\n9.652743e+13\n▇▁▁▁▁\n\n\n\n\n\n\nWhat types of data do we have? Are they the right type of data?\n\nAre we missing data points?"
+  },
+  {
+    "objectID": "slides/04-class.html#exercise-3",
+    "href": "slides/04-class.html#exercise-3",
+    "title": "GVPT Maths Camp",
+    "section": "EXERCISE",
+    "text": "EXERCISE\nTake a look at this data set:\n\nskimr::skim(gdp_raw)\n\n\nWhat types of data do we have? Are they the right type of data?\n\nAre we missing data points?"
   }
 ]

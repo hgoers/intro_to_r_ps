@@ -7,6 +7,10 @@ format:
     preview-links: auto
     theme: solarized
     embed-resources: true
+execute: 
+  echo: true
+  message: false
+  warning: false
 ---
 
 ## Learning objectives
@@ -250,7 +254,7 @@ Github is like Google Docs for your code.
 
 -   Very frustratingly messy!
 
-## Download global GDP data
+## World Bank GDP data
 
 ![Source: [World Bank](https://data.worldbank.org/indicator/NY.GDP.MKTP.CD)](img/wb-gdp.png){fig-align="center"}
 
@@ -260,7 +264,6 @@ Introducing `here::here()`
 
 ```{r}
 #| eval: false
-#| echo: true
 
 install.packages("here")
 ```
@@ -270,44 +273,46 @@ install.packages("here")
 Points to where you are on *your* computer. Updates for everyone on any computer!
 
 ```{r}
-#| echo: true
-
 here::here()
 ```
-
-<br>
-
-EXERCISE: See where you are!
 
 ::: aside
 Package documentation: https://here.r-lib.org/
 :::
 
-## Reading in your csv
+## Reading in your CSV
 
 -   I like to store raw data in a folder called `data-raw` within my project.
 
--   I then store any clean data that is ready for analysis in a `data` folder within my project.
+-   I store any clean data that is ready for analysis in a `data` folder within my project.
 
-> You will start to see this structure throughout my scripts. You should come up with something that works for you. It should be intuitive. This will help future you and any other people who want to explore your work navigate your projects.
+::: aside
+You will start to see this structure throughout my scripts. You should come up with something that works for you. It should be intuitive. This will help future you and any other people who want to explore your work navigate your projects.
+:::
 
-## Reading in your csv
+## EXERCISE {background-color="#B56576"}
+
+1.    Head over to the World Bank data center and find global GDP (current US$) data.
+
+2.    Download it as a .csv.
+
+3.    Store it somewhere useful in your R project. 
+
+::: aside
+For most of the data sets with which we commonly work in political science, a .csv is the best format to store and share your data. It is: lightweight; accessible to most people on most computers; and programmatically readable. *Excel files are the absolute worst and should be avoided like the plague.*  
+:::
+
+## Reading in your CSV
 
 ```{r}
-#| echo: true
-#| message: false
-#| warning: false
-
 library(tidyverse)
 
-gdp_raw <- read_csv(here::here("slides", "data-raw", "wb_gdp.csv"))
-
-head(gdp_raw)
+read_csv(here::here("slides", "data-raw", "wb_gdp.csv"))
 ```
 
 <br>
 
-## EXERCISES
+## EXERCISE {background-color="#B56576"}
 
 1.  Read the `?read_csv` help file. What arguments does this function take?
 
@@ -320,24 +325,21 @@ head(gdp_raw)
 ## Skipping non-relevant rows
 
 ```{r}
-#| echo: true
-#| message: false
-#| warning: false
-
 gdp_raw <- read_csv(
-  here::here("slides", "data-raw", "wb_gdp.csv"), skip = 4, col_select = 1:66
+  here::here("slides", "data-raw", "wb_gdp.csv"), 
+  skip = 4, 
+  col_select = 1:66
 )
 
-head(gdp_raw)
+gdp_raw
 ```
 
-## EXERCISES
+## EXERCISE {background-color="#B56576"}
 
-Taking a look at this data set:
+Take a look at this data set:
 
 ```{r}
 #| eval: false
-#| echo: true
 
 skimr::skim(gdp_raw)
 ```
@@ -379,8 +381,6 @@ To do:
 ## Pivoting your data
 
 ```{r}
-#| echo: true
-
 gdp_df <- pivot_longer(
   data = gdp_raw, 
   cols = `1960`:`2021`,
@@ -394,16 +394,12 @@ gdp_df <- pivot_longer(
 ::: columns
 ::: {.column width="50%"}
 ```{r}
-#| echo: true
-
 colnames(gdp_raw)
 ```
 :::
 
 ::: {.column width="50%"}
 ```{r}
-#| echo: true
-
 colnames(gdp_df)
 ```
 :::
@@ -421,8 +417,6 @@ Introducing [`janitor`](https://www.rdocumentation.org/packages/janitor/versions
 
 ```{r}
 #| eval: false
-#| echo: true
-
 # Install the `janitor` package
 
 install.packages("janitor")
@@ -431,8 +425,6 @@ install.packages("janitor")
 <BR>
 
 ```{r}
-#| echo: true
-
 gdp_df <- janitor::clean_names(gdp_df)
 
 colnames(gdp_df)
@@ -444,7 +436,6 @@ Introducing the `countrycode` package - the indispensable workhorse of country d
 
 ```{r}
 #| eval: false
-#| echo: true
 
 # Install the `countrycode` package
 
@@ -454,8 +445,6 @@ install.packages("countrycode")
 ## Add region data
 
 ```{r}
-#| echo: true
-
 library(countrycode)
 
 # Add each country's World Bank region to the data set
@@ -475,8 +464,6 @@ gdp_df <- gdp_df |>
 ## Add region data
 
 ```{r}
-#| echo: true
-
 gdp_df |> 
   distinct(country_name, region) |> 
   head(10)
@@ -485,16 +472,12 @@ gdp_df |>
 ## Make sure all data are the right type
 
 ```{r}
-#| echo: true
-
 glimpse(gdp_df)
 ```
 
 ## Make sure all data are the right type
 
 ```{r}
-#| echo: true
-
 gdp_df <- transmute(
   gdp_df,
   country_name, 
@@ -509,7 +492,6 @@ glimpse(gdp_df)
 ## How do countries compare over time?
 
 ```{r}
-#| echo: true
 #| fig-align: center
 
 ggplot(gdp_df, aes(
@@ -524,7 +506,6 @@ ggplot(gdp_df, aes(
 By default, R will carry forward `NA`s. This is good!
 
 ```{r}
-#| echo: true
 #| fig-align: center
 
 gdp_df |> 
@@ -538,7 +519,7 @@ gdp_df |>
 ## Dealing with missing data
 
 ```{r}
-#| echo: true
+#| code-line-numbers: "3"
 #| eval: false
 
 gdp_df |> 
@@ -556,6 +537,8 @@ You usually won't want to drop all `NA`s without interrogating why they are ther
 ## Dealing with missing data
 
 ```{r}
+#| echo: false
+
 gdp_df |> 
   group_by(region, year) |> 
   summarise(avg_gdp = mean(gdp, na.rm = T)) |> 
