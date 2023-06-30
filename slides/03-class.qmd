@@ -424,7 +424,7 @@ Let's introduce perhaps the defining feature of the tidyverse: **the pipe**.
 
 Read the pipe as:
 
-Do this \|\> (*and then...*) <br>     do this \|\> (*and then...*) <br>     do this
+Take this \|\> (*and then...*) <br>     do this \|\> (*and then...*) <br>     do this
 
 ```{r}
 gapminder |> 

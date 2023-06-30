@@ -431,7 +431,7 @@
     "href": "slides/03-class.html#combine-multiple-operations-with-the-pipe-1",
     "title": "GVPT Maths Camp",
     "section": "Combine multiple operations with the pipe",
-    "text": "Combine multiple operations with the pipe\nRead the pipe as:\nDo this |> (and then…)      do this |> (and then…)      do this\n\ngapminder |> \n  group_by(continent) |> \n  summarise(avg_pop = mean(pop), avg_gdp_per_cap = mean(gdpPercap)) |> \n  arrange(avg_gdp_per_cap)\n\n# A tibble: 5 × 3\n  continent   avg_pop avg_gdp_per_cap\n  <fct>         <dbl>           <dbl>\n1 Africa     9916003.           2194.\n2 Americas  24504795.           7136.\n3 Asia      77038722.           7902.\n4 Europe    17169765.          14469.\n5 Oceania    8874672.          18622."
+    "text": "Combine multiple operations with the pipe\nRead the pipe as:\nTake this |> (and then…)      do this |> (and then…)      do this\n\ngapminder |> \n  group_by(continent) |> \n  summarise(avg_pop = mean(pop), avg_gdp_per_cap = mean(gdpPercap)) |> \n  arrange(avg_gdp_per_cap)\n\n# A tibble: 5 × 3\n  continent   avg_pop avg_gdp_per_cap\n  <fct>         <dbl>           <dbl>\n1 Africa     9916003.           2194.\n2 Americas  24504795.           7136.\n3 Asia      77038722.           7902.\n4 Europe    17169765.          14469.\n5 Oceania    8874672.          18622."
   },
   {
     "objectID": "slides/03-class.html#combine-multiple-operations-with-the-pipe-2",

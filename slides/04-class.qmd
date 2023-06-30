@@ -9,8 +9,6 @@ format:
     embed-resources: true
 execute: 
   echo: true
-  message: false
-  warning: false
 ---
 
 ## Learning objectives
