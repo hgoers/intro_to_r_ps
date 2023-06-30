@@ -8,7 +8,7 @@ website:
 
   navbar:
     pinned: true
-    background: "#C31832"
+    background: "#3B3C54"
     right:
       - href: index.qmd
         text: Home
