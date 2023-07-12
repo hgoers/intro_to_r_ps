@@ -15,15 +15,15 @@ library(fontawesome)
 schedule <- tibble(
   DATE = c("Monday", "Tuesday", "Wednesday", "Thursday"),
   TITLE = c("Introduction and Set Up", "Data Visualisation", "Data Transformation", "Data Wrangling"),
-  CONTENT = c("index.html"),
+  CONTENT = c("01-content.html", "02-content.html", "03-content.html", "04-content.html"),
   ASSIGNMENT = c("")
 ) |> 
   mutate(
     CONTENT = if_else(CONTENT != "", 
-                      paste0("<a href=\"http://localhost:3933/content/", CONTENT, "\">", as.character(fa("book")), "</a>"),
+                      paste0("<a href=\"https://hgoers.github.io/intro_to_r_ps/content/", CONTENT, "\">", as.character(fa("book")), "</a>"),
                       as.character(fa("book"))),
     ASSIGNMENT = if_else(ASSIGNMENT != "",
-                         paste0("<a href=\"http://localhost:3933/content/", ASSIGNMENT, "\">", as.character(fa("pen-ruler")), "</a>"),
+                         paste0("<a href=\"https://hgoers.github.io/intro_to_r_ps/content/", ASSIGNMENT, "\">", as.character(fa("pen-ruler")), "</a>"),
                          as.character(fa("pen-ruler")))
   )
 ```
