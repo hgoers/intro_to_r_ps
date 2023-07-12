@@ -60,21 +60,21 @@
     "href": "index.html",
     "title": "GVPT Maths Camp",
     "section": "",
-    "text": "Introduction to R for Political Scientists\n        \n        \n            Learn to use data science tools to support your research\n        \n        \n            Summer 2023Department of Government and PoliticsUniversity of Maryland, College Park\n        \n    \n    \n      \n        \n        \n        \n      \n    \n\n\n\n\n\nInstructor\n\n   Harriet Goers\n   Chincoteague Building\n   hgoers@umd.edu\n   hgoers\n\n\n\nCourse details\n\n   January 9–May 2, 2023\n   7:15–9:45 PM\n   Tydings Building\n   Slack\n\n\n\nContacting me\nE-mail and Slack are the best ways to get in contact with me. I will try to respond to all course-related e-mails and Slack messages within 24 hours."
+    "text": "Introduction to R for Political Scientists\n        \n        \n            Learn to use data science tools to support your research\n        \n        \n            Summer 2023Department of Government and PoliticsUniversity of Maryland, College Park\n        \n    \n    \n      \n        \n        \n        \n      \n    \n\n\n\n\n\nInstructor\n\n   Harriet Goers\n   Chincoteague Building\n   hgoers@umd.edu\n   hgoers\n\n\n\nCourse details\n\n   August 21-25, 2023\n   1 - 3 PM\n   Tydings Building\n   Slack\n\n\n\nContacting me\nE-mail and Slack are the best ways to get in contact with me. I will try to respond to all course-related e-mails and Slack messages within 24 hours."
   },
   {
     "objectID": "slides/01-class.html#welcome",
     "href": "slides/01-class.html#welcome",
     "title": "GVPT Maths Camp",
     "section": "Welcome",
-    "text": "Welcome"
+    "text": "Welcome\n\nWelcome to the UMD GVPT PhD program!\nGentle introduction to some of the tools you will use throughout the program and your research\nAsk any and all questions"
   },
   {
     "objectID": "slides/01-class.html#introductions",
     "href": "slides/01-class.html#introductions",
     "title": "GVPT Maths Camp",
     "section": "Introductions",
-    "text": "Introductions\n\nThird year in the GVPT PhD program\nFocus on secessionist conflict and dependence between states and non-state actors.\nBefore starting my PhD:\n\nHelped to develop the Lowy Institute’s Asia Power Index\nAnalyst with the Australian Department of Defence\nWorked on the Institute for Economics and Peace’s Global Peace Index and Global Terrorism Index\n\nFavourite Smithsonian: the zoo!"
+    "text": "Introductions\n\nStarting my third year in the program\nFocus on dependence and conflict\nBefore starting my PhD:\n\nAnalyst with the Australian Department of Defence\nHelped to develop the Lowy Institute’s Asia Power Index\nWorked on the Institute for Economics and Peace’s Global Peace Index and Global Terrorism Index\n\nFavourite Smithsonian: the zoo!"
   },
   {
     "objectID": "slides/01-class.html#learning-objectives-for-today",
@@ -109,7 +109,7 @@
     "href": "slides/01-class.html#r-and-rstudio",
     "title": "GVPT Maths Camp",
     "section": "R and RStudio",
-    "text": "R and RStudio\n\n\nR\nR is a free and open-source programming language and software environment for statistical computing and graphics.\n\nRStudio\nRStudio is an integrated development environment (IDE) for the R programming language.\n\n\n\n\nInstructions on how to download R and RStudio are provided in the Introduction chapter of R4DS."
+    "text": "R and RStudio\n\n\nR\nR is a free and open-source programming language and software environment for statistical computing and graphics.\n\nRStudio\nRStudio is an integrated development environment (IDE) for the R programming language.\n\n\n\n\nInstructions on how to download R and RStudio are provided in the Install or upgrade R and RStudio chapter in Jennifer Bryan’s Happy Git and GitHub for the useR."
   },
   {
     "objectID": "slides/01-class.html#a-tour-of-rstudio",
@@ -123,14 +123,14 @@
     "href": "slides/01-class.html#git-and-github",
     "title": "GVPT Maths Camp",
     "section": "Git and GitHub",
-    "text": "Git and GitHub\n\n\nGit\nGit is a version control system used for tracking changes in software development projects.\n\nGitHub\nGitHub is a web-based platform for version control and collaborative software development using Git.\n\n\n\n\nInstructions on how to download Git and set up GitHub are provided in the Installation chapter of Happy Git with R."
+    "text": "Git and GitHub\n\n\nGit\nGit is a version control system used for tracking changes in software development projects.\n\nGitHub\nGitHub is a web-based platform for version control and collaborative software development using Git.\n\n\n\n\nInstructions on how to download Git and set up GitHub are provided in the Installation chapter of Happy Git and GitHub for the useR."
   },
   {
     "objectID": "slides/01-class.html#summary",
     "href": "slides/01-class.html#summary",
     "title": "GVPT Maths Camp",
     "section": "Summary",
-    "text": "Summary\nThis session you:\n\nLearnt about new data science tools to help you conduct replicable and reproducable political science research\nSet up your data science tools"
+    "text": "Summary\nThis session you:\n\nLearnt about new data science tools to help you conduct replicable and reproducible political science research\nSet up your data science tools"
   },
   {
     "objectID": "slides/03-class.html#learning-objectives",
@@ -1076,5 +1076,12 @@
     "title": "Schedule",
     "section": "",
     "text": "DATE \n    TITLE \n    CONTENT \n    ASSIGNMENT \n  \n \n\n  \n    Monday \n    Introduction and Set Up \n     \n     \n  \n  \n    Tuesday \n    Data Visualisation \n     \n     \n  \n  \n    Wednesday \n    Data Transformation \n     \n     \n  \n  \n    Thursday \n    Data Wrangling"
+  },
+  {
+    "objectID": "slides/01-class.html#why-r",
+    "href": "slides/01-class.html#why-r",
+    "title": "GVPT Maths Camp",
+    "section": "Why R?",
+    "text": "Why R?\n\nA versatile programming language that is particularly good for statistical analysis\nInvolves a huge community of people who passionately contribute\nFree and accessible!"
   }
 ]

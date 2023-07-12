@@ -14,11 +14,11 @@ instructor:
 course:
   number: "GVPT Maths Bootcamp"
   semester: "Summer 2023"
-  time: "7:15–9:45 PM"
+  time: "1 - 3 PM"
   location: "Tydings Building"
-  dates: "January 9–May 2, 2023"
-  github: "https://www.github.com/andrewheiss/evalsp23.classes.andrewheiss.com"
-  url: "https://evalsp23.classes.andrewheiss.com"
+  dates: "August 21-25, 2023"
+  github: "https://github.com/hgoers/intro_to_r_ps"
+  url: "https://hgoers.github.io/intro_to_r_ps/"
   copyright_year: "2023"
   slack: "https://gsuevalsp2023.slack.com"
 

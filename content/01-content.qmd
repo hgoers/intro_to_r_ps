@@ -1,6 +1,5 @@
 ---
 title: "Introduction and Set Up"
-date: "2023-01-12"
 ---
 
 ## Readings
