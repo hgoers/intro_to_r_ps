@@ -84,11 +84,11 @@
     "text": "Learning objectives for today\n\nIntroduction to R and friends\nGetting your computers set up"
   },
   {
-    "objectID": "slides/01-class.html#computational-social-scientists",
-    "href": "slides/01-class.html#computational-social-scientists",
+    "objectID": "slides/01-class.html#why-r",
+    "href": "slides/01-class.html#why-r",
     "title": "GVPT Maths Camp",
-    "section": "Computational social scientists",
-    "text": "Computational social scientists"
+    "section": "Why R?",
+    "text": "Why R?\n\nA versatile programming language that is particularly good for statistical analysis\nInvolves a huge community of people who passionately contribute\nFree and accessible!"
   },
   {
     "objectID": "slides/01-class.html#set-up",
@@ -1076,12 +1076,5 @@
     "title": "Schedule",
     "section": "",
     "text": "DATE \n    TITLE \n    CONTENT \n    ASSIGNMENT \n  \n \n\n  \n    Monday \n    Introduction and Set Up \n     \n     \n  \n  \n    Tuesday \n    Data Visualisation \n     \n     \n  \n  \n    Wednesday \n    Data Transformation \n     \n     \n  \n  \n    Thursday \n    Data Wrangling"
-  },
-  {
-    "objectID": "slides/01-class.html#why-r",
-    "href": "slides/01-class.html#why-r",
-    "title": "GVPT Maths Camp",
-    "section": "Why R?",
-    "text": "Why R?\n\nA versatile programming language that is particularly good for statistical analysis\nInvolves a huge community of people who passionately contribute\nFree and accessible!"
   }
 ]
