@@ -1,0 +1,554 @@
+---
+title: "GVPT Maths Camp"
+subtitle: "Data Wrangling and Github"
+format: 
+  revealjs:
+    slide-number: true
+    preview-links: auto
+    theme: solarized
+    embed-resources: true
+execute: 
+  echo: true
+---
+
+## Learning objectives
+
+1.  Import your data
+
+2.  Clean your data
+
+3.  Explore relational data
+
+4.  Start to manage your scripts with Github
+
+## A familiar problem
+
+![](img/final.png){fig-align="center"}
+
+## A solution
+
+-   Track changes to your documents, code, or data over time
+
+-   Work from one document
+
+-   Have access to your work from anywhere
+
+-   Create safe points in case something breaks or you want to experiment
+
+![](img/rock_climbing.jpeg){fig-align="center"}
+
+## Git and Github
+
+::: columns
+::: {.column width="50%"}
+### <img src="https://git-scm.com/images/logos/downloads/Git-Logo-2Color.png" height="50px"/>
+
+Open source **version control software.**
+
+<br>
+
+Think *R*.
+:::
+
+::: {.column width="50%"}
+### <img src="https://raw.githubusercontent.com/annakrystalli/rrresearch/master/docs/assets/github_logo.jpg" height="50px"/>
+
+A [**website**](https://github.com/) that allows you to **store your Git repositories online** and makes it easy to collaborate with others.
+
+<br>
+
+Think *RStudio*.
+:::
+:::
+
+## Why should I use Git and Github? `r emo::ji("thinking_face")`
+
+-   More reproducible, transparent research
+
+-   Better version control
+
+-   Easy collaboration with others
+
+## The basics
+
+Four verbs you need to know to use Git for version control:
+
+1.  `add`
+
+2.  `commit`
+
+3.  `push`
+
+4.  `pull`
+
+## Using Git in RStudio
+
+Three different options:
+
+1.  RStudio GUI
+
+2.  Shell/terminal
+
+3.  Github desktop[^1]
+
+[^1]: We won't talk about this option, but it's great!
+
+## Repositories
+
+-   A repository is like a folder for your project, but better!
+
+-   Organises your work
+
+-   Displays useful information, including a general description, navigation, changes
+
+-   A great tool for [project-oriented workflows](https://www.tidyverse.org/blog/2017/12/workflow-vs-script/)
+
+## Starting a new project: create a repository
+
+![](img/repo_new.png){fig-align="center"}
+
+## Starting a new project: create a repository
+
+![](img/repo_info.png){fig-align="center"}
+
+## Starting a new project: create a repository
+
+![](img/repo_local.png){fig-align="center"}
+
+## Sync your online repository with RStudio: from scratch
+
+![](img/repo_wiz_1.png){fig-align="center"}
+
+## Sync your online repository with RStudio: from scratch
+
+![](img/repo_wiz_2.png){fig-align="center"}
+
+## Sync your online repository with RStudio: from scratch
+
+![](img/repo_wiz_3.png){fig-align="center"}
+
+## Sync your online repository with RStudio: existing R project
+
+-   We already have R projects that we started yesterday.
+
+-   We can sync the existing R project with our new repository.
+
+::: aside
+For future reference, head over to the [Existing project, GitHub first chapter](https://happygitwithr.com/existing-github-first.html#existing-github-first) of Happy Git with R.
+:::
+
+## Sync your online repository with RStudio: existing R project
+
+The `usethis` R package is a brilliant helper package.
+
+```{r}
+#| eval: false
+
+install.packages("usethis")
+```
+
+<br>
+
+```{r}
+#| eval: false
+
+usethis::create_from_github(
+  "https://github.com/YOU/YOUR_REPO.git",
+  destdir = "~/path/to/where/you/want/the/local/repo/"
+)
+```
+
+::: aside
+You can use functions directly (without loading the package in your session) using the following general rule: `package::function()`. This is useful when you only want to use one function from a package.
+:::
+
+## RStudio GUI: Workflow
+
+::: panel-tabset
+## `pull`
+
+`pull` any changes made and stored in your Github repository before making your changes
+
+![](img/gui_pull.png){fig-align="center"}
+
+## `add`
+
+`add` those changes to your staging area
+
+![](img/gui_add.png){fig-align="center"}
+
+## `commit`
+
+`commit` your changes with a meaningful message
+
+![](img/gui_commit.png){fig-align="center"}
+
+## `push`
+
+`push` those committed changes up to Github
+
+![](img/gui_push.png){fig-align="center"}
+:::
+
+## Shell/terminal: Workflow
+
+::: panel-tabset
+## `pull`
+
+`pull` any changes made and stored in your Github repository before making your changes
+
+![](img/shell_pull.png){fig-align="center"}
+
+## `add`
+
+`add` those changes to your staging area
+
+![](img/shell_add.png){fig-align="center"}
+
+## `commit`
+
+`commit` your changes with a meaningful message
+
+![](img/shell_commit.png){fig-align="center"}
+
+## `push`
+
+`push` those committed changes up to Github
+
+![](img/shell_push.png){fig-align="center"}
+:::
+
+## Working with others
+
+Github is like Google Docs for your code.
+
+![](img/collaboration.png){fig-align="center"}
+
+## EXERCISE {background-color="#B56576"}
+
+1.  Create a new Github repository for this camp.
+
+2.  Sync your existing R project to this new repository.
+
+3.  `add` your scripts from yesterday and today.
+
+4.  Write a helpful `commit` message for your future self.
+
+5.  `push` your work up to Github.
+
+6.  Add me as a collaborator: `@hgoers`.
+
+## Data wrangling
+
+![Source: [R4DS](https://r4ds.had.co.nz/wrangle-intro.html)](img/data-science-wrangle.png){fig-align="center"}
+
+## World Bank GDP data
+
+*https://data.worldbank.org/indicator/NY.GDP.MKTP.CD*
+
+-   Official source of global and historical GDP data
+
+-   A very common control variable for IR and CP analysis
+
+-   Very frustratingly messy!
+
+## World Bank GDP data
+
+![Source: [World Bank](https://data.worldbank.org/indicator/NY.GDP.MKTP.CD)](img/wb-gdp.png){fig-align="center"}
+
+## Working with external data
+
+Introducing `here::here()`
+
+```{r}
+#| eval: false
+
+install.packages("here")
+```
+
+<br>
+
+Points to where you are on *your* computer. Updates for everyone on any computer!
+
+```{r}
+here::here()
+```
+
+::: aside
+Package documentation: https://here.r-lib.org/
+:::
+
+## Reading in your CSV
+
+-   I like to store raw data in a folder called `data-raw` within my project.
+
+-   I store any clean data that is ready for analysis in a `data` folder within my project.
+
+::: aside
+You will start to see this structure throughout my scripts. You should come up with something that works for you. It should be intuitive. This will help future you and any other people who want to explore your work navigate your projects.
+:::
+
+## EXERCISE {background-color="#B56576"}
+
+1.  Head over to the World Bank data center and find global GDP (current US\$) data.
+
+2.  Download it as a .csv.
+
+3.  Store it somewhere useful in your R project.
+
+::: aside
+For most of the data sets with which we commonly work in political science, a .csv is the best format to store and share your data. It is: lightweight; accessible to most people on most computers; and programmatically readable. *Excel files are the absolute worst and should be avoided like the plague.*
+:::
+
+## Reading in your CSV
+
+```{r}
+library(tidyverse)
+
+read_csv(here::here("content", "slides", "data-raw", "wb_gdp.csv"))
+```
+
+<br>
+
+## EXERCISE {background-color="#B56576"}
+
+1.  Read the `?read_csv` help file. What arguments does this function take?
+
+2.  Head to the [`readr` package documentation](https://readr.tidyverse.org/) and find what other file types you can read in.
+
+## Skipping non-relevant rows
+
+![Source: [World Bank](https://data.worldbank.org/indicator/NY.GDP.MKTP.CD)](img/wb-snap.png){fig-align="center"}
+
+## Skipping non-relevant rows
+
+```{r}
+gdp_raw <- read_csv(
+  here::here("content", "slides", "data-raw", "wb_gdp.csv"), 
+  skip = 4, 
+  col_select = 1:66
+)
+
+gdp_raw
+```
+
+## EXERCISE {background-color="#B56576"}
+
+Take a look at this data set:
+
+```{r}
+#| eval: false
+
+skimr::skim(gdp_raw)
+```
+
+<br>
+
+What types of data do we have? Are they the right type of data?
+
+<br>
+
+Are we missing data points?
+
+## Tidy Data Structures
+
+![Source: [R4DS](https://r4ds.had.co.nz/tidy-data.html#tidy-data-1)](img/tidy-1.png){fig-align="center"}
+
+## Tidying World Bank data
+
+What do you want to do with your data?
+
+-   I want to analyse country, regional, and global trends in GDP over time
+
+What I need:
+
+-   Annual data on each country's GDP
+
+-   The region to which each country belongs
+
+## Tidying World Bank data
+
+To do:
+
+-   Move the yearly data from columns to rows
+
+-   Clean up these column names so that they are easier to use in R
+
+-   Add regional data
+
+## Pivoting your data
+
+```{r}
+gdp_df <- pivot_longer(
+  data = gdp_raw, 
+  cols = `1960`:`2021`,
+  names_to = "year",
+  values_to = "gdp"
+)
+```
+
+<br>
+
+::: columns
+::: {.column width="50%"}
+```{r}
+colnames(gdp_raw)
+```
+:::
+
+::: {.column width="50%"}
+```{r}
+colnames(gdp_df)
+```
+:::
+:::
+
+## Clean column names
+
+Column names should not:
+
+-   Have spaces
+
+-   Start with numbers
+
+Introducing [`janitor`](https://www.rdocumentation.org/packages/janitor/versions/2.2.0):
+
+```{r}
+#| eval: false
+# Install the `janitor` package
+
+install.packages("janitor")
+```
+
+<BR>
+
+```{r}
+gdp_df <- janitor::clean_names(gdp_df)
+
+colnames(gdp_df)
+```
+
+## Add region data
+
+Introducing the `countrycode` package - the indispensable workhorse of country data:
+
+```{r}
+#| eval: false
+
+# Install the `countrycode` package
+
+install.packages("countrycode")
+```
+
+## Add region data
+
+```{r}
+library(countrycode)
+
+# Add each country's World Bank region to the data set
+
+gdp_df <- gdp_df |> 
+  mutate(
+    region = countrycode(country_name, 
+                         "country.name", 
+                         "region", 
+                         custom_match = c("Turkiye" = "Europe & Central Asia"))
+  ) |> 
+  # Remove observations that are regions
+  drop_na(region) |> 
+  relocate(region, .after = "country_code")
+```
+
+## Add region data
+
+```{r}
+gdp_df |> 
+  distinct(country_name, region) |> 
+  head(10)
+```
+
+## Make sure all data are the right type
+
+```{r}
+glimpse(gdp_df)
+```
+
+## Make sure all data are the right type
+
+```{r}
+gdp_df <- transmute(
+  gdp_df,
+  country_name, 
+  region, 
+  year = as.integer(year),
+  gdp
+)
+
+glimpse(gdp_df)
+```
+
+## How do countries compare over time?
+
+```{r}
+#| fig-align: center
+
+ggplot(gdp_df, aes(
+  x = year, y = gdp, colour = region, group = country_name
+)) + 
+  geom_line() + 
+  theme_minimal()
+```
+
+## How do regions compare over time?
+
+By default, R will carry forward `NA`s. This is good!
+
+```{r}
+#| fig-align: center
+
+gdp_df |> 
+  group_by(region, year) |> 
+  summarise(avg_gdp = mean(gdp)) |> 
+  ggplot(aes(x = year, y = avg_gdp, colour = region)) + 
+  geom_line() + 
+  theme_minimal()
+```
+
+## Dealing with missing data
+
+```{r}
+#| code-line-numbers: "3"
+#| eval: false
+
+gdp_df |> 
+  group_by(region, year) |> 
+  summarise(avg_gdp = mean(gdp, na.rm = T)) |> 
+  ggplot(aes(x = year, y = avg_gdp, colour = region)) + 
+  geom_line() + 
+  theme_minimal()
+```
+
+::: aside
+You usually won't want to drop all `NA`s without interrogating why they are there. We will discuss how to handle missing data during the semester.
+:::
+
+## Dealing with missing data
+
+```{r}
+#| echo: false
+
+gdp_df |> 
+  group_by(region, year) |> 
+  summarise(avg_gdp = mean(gdp, na.rm = T)) |> 
+  ggplot(aes(x = year, y = avg_gdp, colour = region)) + 
+  geom_line() + 
+  theme_minimal()
+```
+
+## Summary
+
+Today you:
+
+-   Learnt how to read in external data
+
+-   Learnt how to clean up common problems using R

@@ -40,5 +40,17 @@
   },
   "slides/06-class.qmd": {
     "06-class.html": "33da6ace"
+  },
+  "content/slides/01-class.qmd": {
+    "01-class.html": "36b67d55"
+  },
+  "content/slides/03-class.qmd": {
+    "03-class.html": "65ba0bb8"
+  },
+  "content/slides/02-class.qmd": {
+    "02-class.html": "3561a2c2"
+  },
+  "content/slides/04-class.qmd": {
+    "04-class.html": "00ec7705"
   }
 }
