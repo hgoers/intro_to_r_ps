@@ -13,8 +13,6 @@ website:
     right:
       - href: index.qmd
         text: Home
-      - href: schedule.qmd
-        text: Schedule
       - href: content/01-content.qmd
         text: Content
 

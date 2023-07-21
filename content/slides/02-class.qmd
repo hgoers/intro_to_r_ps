@@ -134,23 +134,23 @@ For later reference, head to Hadley Wickham's [*Workflow: projects* chapter](htt
 
 ## EXERCISE {background-color="#B56576"}
 
-1.    In the RStudio console, type in `getwd()` to see where you are on your computer. 
+1.  In the RStudio console, type in `getwd()` to see where you are on your computer.
 
 ## EXERCISE {background-color="#B56576"}
 
-2.    Create a new RStudio project for this Maths Camp: 
+2.  Create a new RStudio project for this Maths Camp:
 
 ![Source: [R4DS](https://r4ds.had.co.nz/workflow-projects.html#rstudio-projects)](img/rstudio-project-1.png){fig-align="center"}
 
 ## EXERCISE {background-color="#B56576"}
 
-2.    Create a new RStudio project for this Maths Camp: 
+2.  Create a new RStudio project for this Maths Camp:
 
 ![Source: [R4DS](https://r4ds.had.co.nz/workflow-projects.html#rstudio-projects)](img/rstudio-project-2.png){fig-align="center"}
 
 ## EXERCISE {background-color="#B56576"}
 
-2.    Create a new RStudio project for this Maths Camp: 
+2.  Create a new RStudio project for this Maths Camp:
 
 ![Source: [R4DS](https://r4ds.had.co.nz/workflow-projects.html#rstudio-projects)](img/rstudio-project-3.png){fig-align="center"}
 
@@ -166,13 +166,13 @@ Let's use our first graph to answer a question: Do cars with big engines use mor
 
 ## R4DS
 
-This session will borrow (read: *steal*) heavily from Hadley Wickham's *R for Data Science* book. 
+This session will borrow (read: *steal*) heavily from Hadley Wickham's *R for Data Science* book.
 
 ::: columns
 ::: {.column width="50%"}
 -   The. Best. Resource.
 
--   Hadley Wickham is one of the lead authors of the tidyverse. He created `ggplot` through his PhD dissertation.  
+-   Hadley Wickham is one of the lead authors of the tidyverse. He created `ggplot` through his PhD dissertation.\
 :::
 
 ::: {.column width="50%"}
@@ -597,3 +597,11 @@ This session you:
 3.  Discovered interesting relationships in the data
 
 4.  Connected these relationships or trends to your expectations (or hypotheses about the data)
+
+## HOMEWORK {background-color="#B56576"}
+
+In the final session, you will apply the skills you will learn over the next few days to a problem that interests you. To prepare for this, you need to find a data set that: 
+
+1.    Is relevant to your research interests, 
+
+2.    Contains continuous and discrete variables.

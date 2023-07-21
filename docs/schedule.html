@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.2.475">
+<meta name="generator" content="quarto-1.3.353">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -17,7 +17,7 @@ div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
   width: 0.8em;
-  margin: 0 0.8em 0.2em -1.6em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
 </style>
@@ -77,25 +77,27 @@ ul.task-list li input[type="checkbox"] {
     <span class="navbar-title">GVPT Maths Camp</span>
     </a>
   </div>
+            <div id="quarto-search" class="" title="Search"></div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html">
+    <a class="nav-link" href="./index.html" rel="" target="">
  <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./schedule.html" aria-current="page">
+    <a class="nav-link active" href="./schedule.html" rel="" target="" aria-current="page">
  <span class="menu-text">Schedule</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./content/01-content.html">
+    <a class="nav-link" href="./content/01-content.html" rel="" target="">
  <span class="menu-text">Content</span></a>
   </li>  
 </ul>
-              <div id="quarto-search" class="" title="Search"></div>
+            <div class="quarto-navbar-tools">
+</div>
           </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
     </nav>
@@ -126,43 +128,45 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 <div class="cell-output-display">
-
-<table class="table table-hover table-responsive" style="margin-left: auto; margin-right: auto;">
- <thead>
-  <tr>
-   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> DATE </th>
-   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> TITLE </th>
-   <th style="text-align:center;position: sticky; top:0; background-color: #FFFFFF;"> CONTENT </th>
-   <th style="text-align:center;position: sticky; top:0; background-color: #FFFFFF;"> ASSIGNMENT </th>
-  </tr>
- </thead>
+<div class="table-responsive">
+<table class="table table-hover" data-quarto-postprocess="true">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th" style="text-align: left; position: sticky; top: 0; background-color: #FFFFFF;">DATE</th>
+<th data-quarto-table-cell-role="th" style="text-align: left; position: sticky; top: 0; background-color: #FFFFFF;">TITLE</th>
+<th data-quarto-table-cell-role="th" style="text-align: center; position: sticky; top: 0; background-color: #FFFFFF;">CONTENT</th>
+<th data-quarto-table-cell-role="th" style="text-align: center; position: sticky; top: 0; background-color: #FFFFFF;">ASSIGNMENT</th>
+</tr>
+</thead>
 <tbody>
-  <tr>
-   <td style="text-align:left;width: 20%; padding-right: 20px;"> Monday </td>
-   <td style="text-align:left;width: 60%; "> Introduction and Set Up </td>
-   <td style="text-align:center;width: 10%; "> <a href="https://hgoers.github.io/intro_to_r_ps/content/01-content.html"><svg aria-hidden="true" role="img" viewbox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M96 0C43 0 0 43 0 96V416c0 53 43 96 96 96H384h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V384c17.7 0 32-14.3 32-32V32c0-17.7-14.3-32-32-32H384 96zm0 384H352v64H96c-17.7 0-32-14.3-32-32s14.3-32 32-32zm32-240c0-8.8 7.2-16 16-16H336c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16zm16 48H336c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16s7.2-16 16-16z"></path></svg></a> </td>
-   <td style="text-align:center;width: 10%; "> <svg aria-hidden="true" role="img" viewbox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M469.3 19.3l23.4 23.4c25 25 25 65.5 0 90.5l-56.4 56.4L322.3 75.7l56.4-56.4c25-25 65.5-25 90.5 0zM44.9 353.2L299.7 98.3 413.7 212.3 158.8 467.1c-6.7 6.7-15.1 11.6-24.2 14.2l-104 29.7c-8.4 2.4-17.4 .1-23.6-6.1s-8.5-15.2-6.1-23.6l29.7-104c2.6-9.2 7.5-17.5 14.2-24.2zM249.4 103.4L103.4 249.4 16 161.9c-18.7-18.7-18.7-49.1 0-67.9L94.1 16c18.7-18.7 49.1-18.7 67.9 0l19.8 19.8c-.3 .3-.7 .6-1 .9l-64 64c-6.2 6.2-6.2 16.4 0 22.6s16.4 6.2 22.6 0l64-64c.3-.3 .6-.7 .9-1l45.1 45.1zM408.6 262.6l45.1 45.1c-.3 .3-.7 .6-1 .9l-64 64c-6.2 6.2-6.2 16.4 0 22.6s16.4 6.2 22.6 0l64-64c.3-.3 .6-.7 .9-1L496 350.1c18.7 18.7 18.7 49.1 0 67.9L417.9 496c-18.7 18.7-49.1 18.7-67.9 0l-87.4-87.4L408.6 262.6z"></path></svg> </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;width: 20%; padding-right: 20px;"> Tuesday </td>
-   <td style="text-align:left;width: 60%; "> Data Visualisation </td>
-   <td style="text-align:center;width: 10%; "> <a href="https://hgoers.github.io/intro_to_r_ps/content/02-content.html"><svg aria-hidden="true" role="img" viewbox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M96 0C43 0 0 43 0 96V416c0 53 43 96 96 96H384h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V384c17.7 0 32-14.3 32-32V32c0-17.7-14.3-32-32-32H384 96zm0 384H352v64H96c-17.7 0-32-14.3-32-32s14.3-32 32-32zm32-240c0-8.8 7.2-16 16-16H336c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16zm16 48H336c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16s7.2-16 16-16z"></path></svg></a> </td>
-   <td style="text-align:center;width: 10%; "> <svg aria-hidden="true" role="img" viewbox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M469.3 19.3l23.4 23.4c25 25 25 65.5 0 90.5l-56.4 56.4L322.3 75.7l56.4-56.4c25-25 65.5-25 90.5 0zM44.9 353.2L299.7 98.3 413.7 212.3 158.8 467.1c-6.7 6.7-15.1 11.6-24.2 14.2l-104 29.7c-8.4 2.4-17.4 .1-23.6-6.1s-8.5-15.2-6.1-23.6l29.7-104c2.6-9.2 7.5-17.5 14.2-24.2zM249.4 103.4L103.4 249.4 16 161.9c-18.7-18.7-18.7-49.1 0-67.9L94.1 16c18.7-18.7 49.1-18.7 67.9 0l19.8 19.8c-.3 .3-.7 .6-1 .9l-64 64c-6.2 6.2-6.2 16.4 0 22.6s16.4 6.2 22.6 0l64-64c.3-.3 .6-.7 .9-1l45.1 45.1zM408.6 262.6l45.1 45.1c-.3 .3-.7 .6-1 .9l-64 64c-6.2 6.2-6.2 16.4 0 22.6s16.4 6.2 22.6 0l64-64c.3-.3 .6-.7 .9-1L496 350.1c18.7 18.7 18.7 49.1 0 67.9L417.9 496c-18.7 18.7-49.1 18.7-67.9 0l-87.4-87.4L408.6 262.6z"></path></svg> </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;width: 20%; padding-right: 20px;"> Wednesday </td>
-   <td style="text-align:left;width: 60%; "> Data Transformation </td>
-   <td style="text-align:center;width: 10%; "> <a href="https://hgoers.github.io/intro_to_r_ps/content/03-content.html"><svg aria-hidden="true" role="img" viewbox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M96 0C43 0 0 43 0 96V416c0 53 43 96 96 96H384h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V384c17.7 0 32-14.3 32-32V32c0-17.7-14.3-32-32-32H384 96zm0 384H352v64H96c-17.7 0-32-14.3-32-32s14.3-32 32-32zm32-240c0-8.8 7.2-16 16-16H336c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16zm16 48H336c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16s7.2-16 16-16z"></path></svg></a> </td>
-   <td style="text-align:center;width: 10%; "> <svg aria-hidden="true" role="img" viewbox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M469.3 19.3l23.4 23.4c25 25 25 65.5 0 90.5l-56.4 56.4L322.3 75.7l56.4-56.4c25-25 65.5-25 90.5 0zM44.9 353.2L299.7 98.3 413.7 212.3 158.8 467.1c-6.7 6.7-15.1 11.6-24.2 14.2l-104 29.7c-8.4 2.4-17.4 .1-23.6-6.1s-8.5-15.2-6.1-23.6l29.7-104c2.6-9.2 7.5-17.5 14.2-24.2zM249.4 103.4L103.4 249.4 16 161.9c-18.7-18.7-18.7-49.1 0-67.9L94.1 16c18.7-18.7 49.1-18.7 67.9 0l19.8 19.8c-.3 .3-.7 .6-1 .9l-64 64c-6.2 6.2-6.2 16.4 0 22.6s16.4 6.2 22.6 0l64-64c.3-.3 .6-.7 .9-1l45.1 45.1zM408.6 262.6l45.1 45.1c-.3 .3-.7 .6-1 .9l-64 64c-6.2 6.2-6.2 16.4 0 22.6s16.4 6.2 22.6 0l64-64c.3-.3 .6-.7 .9-1L496 350.1c18.7 18.7 18.7 49.1 0 67.9L417.9 496c-18.7 18.7-49.1 18.7-67.9 0l-87.4-87.4L408.6 262.6z"></path></svg> </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;width: 20%; padding-right: 20px;"> Thursday </td>
-   <td style="text-align:left;width: 60%; "> Data Wrangling </td>
-   <td style="text-align:center;width: 10%; "> <a href="https://hgoers.github.io/intro_to_r_ps/content/04-content.html"><svg aria-hidden="true" role="img" viewbox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M96 0C43 0 0 43 0 96V416c0 53 43 96 96 96H384h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V384c17.7 0 32-14.3 32-32V32c0-17.7-14.3-32-32-32H384 96zm0 384H352v64H96c-17.7 0-32-14.3-32-32s14.3-32 32-32zm32-240c0-8.8 7.2-16 16-16H336c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16zm16 48H336c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16s7.2-16 16-16z"></path></svg></a> </td>
-   <td style="text-align:center;width: 10%; "> <svg aria-hidden="true" role="img" viewbox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M469.3 19.3l23.4 23.4c25 25 25 65.5 0 90.5l-56.4 56.4L322.3 75.7l56.4-56.4c25-25 65.5-25 90.5 0zM44.9 353.2L299.7 98.3 413.7 212.3 158.8 467.1c-6.7 6.7-15.1 11.6-24.2 14.2l-104 29.7c-8.4 2.4-17.4 .1-23.6-6.1s-8.5-15.2-6.1-23.6l29.7-104c2.6-9.2 7.5-17.5 14.2-24.2zM249.4 103.4L103.4 249.4 16 161.9c-18.7-18.7-18.7-49.1 0-67.9L94.1 16c18.7-18.7 49.1-18.7 67.9 0l19.8 19.8c-.3 .3-.7 .6-1 .9l-64 64c-6.2 6.2-6.2 16.4 0 22.6s16.4 6.2 22.6 0l64-64c.3-.3 .6-.7 .9-1l45.1 45.1zM408.6 262.6l45.1 45.1c-.3 .3-.7 .6-1 .9l-64 64c-6.2 6.2-6.2 16.4 0 22.6s16.4 6.2 22.6 0l64-64c.3-.3 .6-.7 .9-1L496 350.1c18.7 18.7 18.7 49.1 0 67.9L417.9 496c-18.7 18.7-49.1 18.7-67.9 0l-87.4-87.4L408.6 262.6z"></path></svg> </td>
-  </tr>
+<tr class="odd">
+<td style="text-align: left; width: 20%; padding-right: 20px;">Monday</td>
+<td style="text-align: left; width: 60%;">Introduction and Set Up</td>
+<td style="text-align: center; width: 10%;"><a href="https://hgoers.github.io/intro_to_r_ps/content/01-content.html"><img src="data:image/svg+xml;base64,PHN2ZyBhcmlhLWhpZGRlbj0idHJ1ZSIgcm9sZT0iaW1nIiB2aWV3Ym94PSIwIDAgNDQ4IDUxMiIgc3R5bGU9ImhlaWdodDoxZW07d2lkdGg6MC44OGVtO3ZlcnRpY2FsLWFsaWduOi0wLjEyNWVtO21hcmdpbi1sZWZ0OmF1dG87bWFyZ2luLXJpZ2h0OmF1dG87Zm9udC1zaXplOmluaGVyaXQ7ZmlsbDpjdXJyZW50Q29sb3I7b3ZlcmZsb3c6dmlzaWJsZTtwb3NpdGlvbjpyZWxhdGl2ZTsiPjxwYXRoIGQ9Ik05NiAwQzQzIDAgMCA0MyAwIDk2VjQxNmMwIDUzIDQzIDk2IDk2IDk2SDM4NGgzMmMxNy43IDAgMzItMTQuMyAzMi0zMnMtMTQuMy0zMi0zMi0zMlYzODRjMTcuNyAwIDMyLTE0LjMgMzItMzJWMzJjMC0xNy43LTE0LjMtMzItMzItMzJIMzg0IDk2em0wIDM4NEgzNTJ2NjRIOTZjLTE3LjcgMC0zMi0xNC4zLTMyLTMyczE0LjMtMzIgMzItMzJ6bTMyLTI0MGMwLTguOCA3LjItMTYgMTYtMTZIMzM2YzguOCAwIDE2IDcuMiAxNiAxNnMtNy4yIDE2LTE2IDE2SDE0NGMtOC44IDAtMTYtNy4yLTE2LTE2em0xNiA0OEgzMzZjOC44IDAgMTYgNy4yIDE2IDE2cy03LjIgMTYtMTYgMTZIMTQ0Yy04LjggMC0xNi03LjItMTYtMTZzNy4yLTE2IDE2LTE2eiI+PC9wYXRoPjwvc3ZnPg==" class="img-fluid"></a></td>
+<td style="text-align: center; width: 10%;"><img src="data:image/svg+xml;base64,PHN2ZyBhcmlhLWhpZGRlbj0idHJ1ZSIgcm9sZT0iaW1nIiB2aWV3Ym94PSIwIDAgNTEyIDUxMiIgc3R5bGU9ImhlaWdodDoxZW07d2lkdGg6MWVtO3ZlcnRpY2FsLWFsaWduOi0wLjEyNWVtO21hcmdpbi1sZWZ0OmF1dG87bWFyZ2luLXJpZ2h0OmF1dG87Zm9udC1zaXplOmluaGVyaXQ7ZmlsbDpjdXJyZW50Q29sb3I7b3ZlcmZsb3c6dmlzaWJsZTtwb3NpdGlvbjpyZWxhdGl2ZTsiPjxwYXRoIGQ9Ik00NjkuMyAxOS4zbDIzLjQgMjMuNGMyNSAyNSAyNSA2NS41IDAgOTAuNWwtNTYuNCA1Ni40TDMyMi4zIDc1LjdsNTYuNC01Ni40YzI1LTI1IDY1LjUtMjUgOTAuNSAwek00NC45IDM1My4yTDI5OS43IDk4LjMgNDEzLjcgMjEyLjMgMTU4LjggNDY3LjFjLTYuNyA2LjctMTUuMSAxMS42LTI0LjIgMTQuMmwtMTA0IDI5LjdjLTguNCAyLjQtMTcuNCAuMS0yMy42LTYuMXMtOC41LTE1LjItNi4xLTIzLjZsMjkuNy0xMDRjMi42LTkuMiA3LjUtMTcuNSAxNC4yLTI0LjJ6TTI0OS40IDEwMy40TDEwMy40IDI0OS40IDE2IDE2MS45Yy0xOC43LTE4LjctMTguNy00OS4xIDAtNjcuOUw5NC4xIDE2YzE4LjctMTguNyA0OS4xLTE4LjcgNjcuOSAwbDE5LjggMTkuOGMtLjMgLjMtLjcgLjYtMSAuOWwtNjQgNjRjLTYuMiA2LjItNi4yIDE2LjQgMCAyMi42czE2LjQgNi4yIDIyLjYgMGw2NC02NGMuMy0uMyAuNi0uNyAuOS0xbDQ1LjEgNDUuMXpNNDA4LjYgMjYyLjZsNDUuMSA0NS4xYy0uMyAuMy0uNyAuNi0xIC45bC02NCA2NGMtNi4yIDYuMi02LjIgMTYuNCAwIDIyLjZzMTYuNCA2LjIgMjIuNiAwbDY0LTY0Yy4zLS4zIC42LS43IC45LTFMNDk2IDM1MC4xYzE4LjcgMTguNyAxOC43IDQ5LjEgMCA2Ny45TDQxNy45IDQ5NmMtMTguNyAxOC43LTQ5LjEgMTguNy02Ny45IDBsLTg3LjQtODcuNEw0MDguNiAyNjIuNnoiPjwvcGF0aD48L3N2Zz4=" class="img-fluid"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left; width: 20%; padding-right: 20px;">Tuesday</td>
+<td style="text-align: left; width: 60%;">Data Visualisation</td>
+<td style="text-align: center; width: 10%;"><a href="https://hgoers.github.io/intro_to_r_ps/content/02-content.html"><img src="data:image/svg+xml;base64,PHN2ZyBhcmlhLWhpZGRlbj0idHJ1ZSIgcm9sZT0iaW1nIiB2aWV3Ym94PSIwIDAgNDQ4IDUxMiIgc3R5bGU9ImhlaWdodDoxZW07d2lkdGg6MC44OGVtO3ZlcnRpY2FsLWFsaWduOi0wLjEyNWVtO21hcmdpbi1sZWZ0OmF1dG87bWFyZ2luLXJpZ2h0OmF1dG87Zm9udC1zaXplOmluaGVyaXQ7ZmlsbDpjdXJyZW50Q29sb3I7b3ZlcmZsb3c6dmlzaWJsZTtwb3NpdGlvbjpyZWxhdGl2ZTsiPjxwYXRoIGQ9Ik05NiAwQzQzIDAgMCA0MyAwIDk2VjQxNmMwIDUzIDQzIDk2IDk2IDk2SDM4NGgzMmMxNy43IDAgMzItMTQuMyAzMi0zMnMtMTQuMy0zMi0zMi0zMlYzODRjMTcuNyAwIDMyLTE0LjMgMzItMzJWMzJjMC0xNy43LTE0LjMtMzItMzItMzJIMzg0IDk2em0wIDM4NEgzNTJ2NjRIOTZjLTE3LjcgMC0zMi0xNC4zLTMyLTMyczE0LjMtMzIgMzItMzJ6bTMyLTI0MGMwLTguOCA3LjItMTYgMTYtMTZIMzM2YzguOCAwIDE2IDcuMiAxNiAxNnMtNy4yIDE2LTE2IDE2SDE0NGMtOC44IDAtMTYtNy4yLTE2LTE2em0xNiA0OEgzMzZjOC44IDAgMTYgNy4yIDE2IDE2cy03LjIgMTYtMTYgMTZIMTQ0Yy04LjggMC0xNi03LjItMTYtMTZzNy4yLTE2IDE2LTE2eiI+PC9wYXRoPjwvc3ZnPg==" class="img-fluid"></a></td>
+<td style="text-align: center; width: 10%;"><img src="data:image/svg+xml;base64,PHN2ZyBhcmlhLWhpZGRlbj0idHJ1ZSIgcm9sZT0iaW1nIiB2aWV3Ym94PSIwIDAgNTEyIDUxMiIgc3R5bGU9ImhlaWdodDoxZW07d2lkdGg6MWVtO3ZlcnRpY2FsLWFsaWduOi0wLjEyNWVtO21hcmdpbi1sZWZ0OmF1dG87bWFyZ2luLXJpZ2h0OmF1dG87Zm9udC1zaXplOmluaGVyaXQ7ZmlsbDpjdXJyZW50Q29sb3I7b3ZlcmZsb3c6dmlzaWJsZTtwb3NpdGlvbjpyZWxhdGl2ZTsiPjxwYXRoIGQ9Ik00NjkuMyAxOS4zbDIzLjQgMjMuNGMyNSAyNSAyNSA2NS41IDAgOTAuNWwtNTYuNCA1Ni40TDMyMi4zIDc1LjdsNTYuNC01Ni40YzI1LTI1IDY1LjUtMjUgOTAuNSAwek00NC45IDM1My4yTDI5OS43IDk4LjMgNDEzLjcgMjEyLjMgMTU4LjggNDY3LjFjLTYuNyA2LjctMTUuMSAxMS42LTI0LjIgMTQuMmwtMTA0IDI5LjdjLTguNCAyLjQtMTcuNCAuMS0yMy42LTYuMXMtOC41LTE1LjItNi4xLTIzLjZsMjkuNy0xMDRjMi42LTkuMiA3LjUtMTcuNSAxNC4yLTI0LjJ6TTI0OS40IDEwMy40TDEwMy40IDI0OS40IDE2IDE2MS45Yy0xOC43LTE4LjctMTguNy00OS4xIDAtNjcuOUw5NC4xIDE2YzE4LjctMTguNyA0OS4xLTE4LjcgNjcuOSAwbDE5LjggMTkuOGMtLjMgLjMtLjcgLjYtMSAuOWwtNjQgNjRjLTYuMiA2LjItNi4yIDE2LjQgMCAyMi42czE2LjQgNi4yIDIyLjYgMGw2NC02NGMuMy0uMyAuNi0uNyAuOS0xbDQ1LjEgNDUuMXpNNDA4LjYgMjYyLjZsNDUuMSA0NS4xYy0uMyAuMy0uNyAuNi0xIC45bC02NCA2NGMtNi4yIDYuMi02LjIgMTYuNCAwIDIyLjZzMTYuNCA2LjIgMjIuNiAwbDY0LTY0Yy4zLS4zIC42LS43IC45LTFMNDk2IDM1MC4xYzE4LjcgMTguNyAxOC43IDQ5LjEgMCA2Ny45TDQxNy45IDQ5NmMtMTguNyAxOC43LTQ5LjEgMTguNy02Ny45IDBsLTg3LjQtODcuNEw0MDguNiAyNjIuNnoiPjwvcGF0aD48L3N2Zz4=" class="img-fluid"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; width: 20%; padding-right: 20px;">Wednesday</td>
+<td style="text-align: left; width: 60%;">Data Transformation</td>
+<td style="text-align: center; width: 10%;"><a href="https://hgoers.github.io/intro_to_r_ps/content/03-content.html"><img src="data:image/svg+xml;base64,PHN2ZyBhcmlhLWhpZGRlbj0idHJ1ZSIgcm9sZT0iaW1nIiB2aWV3Ym94PSIwIDAgNDQ4IDUxMiIgc3R5bGU9ImhlaWdodDoxZW07d2lkdGg6MC44OGVtO3ZlcnRpY2FsLWFsaWduOi0wLjEyNWVtO21hcmdpbi1sZWZ0OmF1dG87bWFyZ2luLXJpZ2h0OmF1dG87Zm9udC1zaXplOmluaGVyaXQ7ZmlsbDpjdXJyZW50Q29sb3I7b3ZlcmZsb3c6dmlzaWJsZTtwb3NpdGlvbjpyZWxhdGl2ZTsiPjxwYXRoIGQ9Ik05NiAwQzQzIDAgMCA0MyAwIDk2VjQxNmMwIDUzIDQzIDk2IDk2IDk2SDM4NGgzMmMxNy43IDAgMzItMTQuMyAzMi0zMnMtMTQuMy0zMi0zMi0zMlYzODRjMTcuNyAwIDMyLTE0LjMgMzItMzJWMzJjMC0xNy43LTE0LjMtMzItMzItMzJIMzg0IDk2em0wIDM4NEgzNTJ2NjRIOTZjLTE3LjcgMC0zMi0xNC4zLTMyLTMyczE0LjMtMzIgMzItMzJ6bTMyLTI0MGMwLTguOCA3LjItMTYgMTYtMTZIMzM2YzguOCAwIDE2IDcuMiAxNiAxNnMtNy4yIDE2LTE2IDE2SDE0NGMtOC44IDAtMTYtNy4yLTE2LTE2em0xNiA0OEgzMzZjOC44IDAgMTYgNy4yIDE2IDE2cy03LjIgMTYtMTYgMTZIMTQ0Yy04LjggMC0xNi03LjItMTYtMTZzNy4yLTE2IDE2LTE2eiI+PC9wYXRoPjwvc3ZnPg==" class="img-fluid"></a></td>
+<td style="text-align: center; width: 10%;"><img src="data:image/svg+xml;base64,PHN2ZyBhcmlhLWhpZGRlbj0idHJ1ZSIgcm9sZT0iaW1nIiB2aWV3Ym94PSIwIDAgNTEyIDUxMiIgc3R5bGU9ImhlaWdodDoxZW07d2lkdGg6MWVtO3ZlcnRpY2FsLWFsaWduOi0wLjEyNWVtO21hcmdpbi1sZWZ0OmF1dG87bWFyZ2luLXJpZ2h0OmF1dG87Zm9udC1zaXplOmluaGVyaXQ7ZmlsbDpjdXJyZW50Q29sb3I7b3ZlcmZsb3c6dmlzaWJsZTtwb3NpdGlvbjpyZWxhdGl2ZTsiPjxwYXRoIGQ9Ik00NjkuMyAxOS4zbDIzLjQgMjMuNGMyNSAyNSAyNSA2NS41IDAgOTAuNWwtNTYuNCA1Ni40TDMyMi4zIDc1LjdsNTYuNC01Ni40YzI1LTI1IDY1LjUtMjUgOTAuNSAwek00NC45IDM1My4yTDI5OS43IDk4LjMgNDEzLjcgMjEyLjMgMTU4LjggNDY3LjFjLTYuNyA2LjctMTUuMSAxMS42LTI0LjIgMTQuMmwtMTA0IDI5LjdjLTguNCAyLjQtMTcuNCAuMS0yMy42LTYuMXMtOC41LTE1LjItNi4xLTIzLjZsMjkuNy0xMDRjMi42LTkuMiA3LjUtMTcuNSAxNC4yLTI0LjJ6TTI0OS40IDEwMy40TDEwMy40IDI0OS40IDE2IDE2MS45Yy0xOC43LTE4LjctMTguNy00OS4xIDAtNjcuOUw5NC4xIDE2YzE4LjctMTguNyA0OS4xLTE4LjcgNjcuOSAwbDE5LjggMTkuOGMtLjMgLjMtLjcgLjYtMSAuOWwtNjQgNjRjLTYuMiA2LjItNi4yIDE2LjQgMCAyMi42czE2LjQgNi4yIDIyLjYgMGw2NC02NGMuMy0uMyAuNi0uNyAuOS0xbDQ1LjEgNDUuMXpNNDA4LjYgMjYyLjZsNDUuMSA0NS4xYy0uMyAuMy0uNyAuNi0xIC45bC02NCA2NGMtNi4yIDYuMi02LjIgMTYuNCAwIDIyLjZzMTYuNCA2LjIgMjIuNiAwbDY0LTY0Yy4zLS4zIC42LS43IC45LTFMNDk2IDM1MC4xYzE4LjcgMTguNyAxOC43IDQ5LjEgMCA2Ny45TDQxNy45IDQ5NmMtMTguNyAxOC43LTQ5LjEgMTguNy02Ny45IDBsLTg3LjQtODcuNEw0MDguNiAyNjIuNnoiPjwvcGF0aD48L3N2Zz4=" class="img-fluid"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left; width: 20%; padding-right: 20px;">Thursday</td>
+<td style="text-align: left; width: 60%;">Data Wrangling</td>
+<td style="text-align: center; width: 10%;"><a href="https://hgoers.github.io/intro_to_r_ps/content/04-content.html"><img src="data:image/svg+xml;base64,PHN2ZyBhcmlhLWhpZGRlbj0idHJ1ZSIgcm9sZT0iaW1nIiB2aWV3Ym94PSIwIDAgNDQ4IDUxMiIgc3R5bGU9ImhlaWdodDoxZW07d2lkdGg6MC44OGVtO3ZlcnRpY2FsLWFsaWduOi0wLjEyNWVtO21hcmdpbi1sZWZ0OmF1dG87bWFyZ2luLXJpZ2h0OmF1dG87Zm9udC1zaXplOmluaGVyaXQ7ZmlsbDpjdXJyZW50Q29sb3I7b3ZlcmZsb3c6dmlzaWJsZTtwb3NpdGlvbjpyZWxhdGl2ZTsiPjxwYXRoIGQ9Ik05NiAwQzQzIDAgMCA0MyAwIDk2VjQxNmMwIDUzIDQzIDk2IDk2IDk2SDM4NGgzMmMxNy43IDAgMzItMTQuMyAzMi0zMnMtMTQuMy0zMi0zMi0zMlYzODRjMTcuNyAwIDMyLTE0LjMgMzItMzJWMzJjMC0xNy43LTE0LjMtMzItMzItMzJIMzg0IDk2em0wIDM4NEgzNTJ2NjRIOTZjLTE3LjcgMC0zMi0xNC4zLTMyLTMyczE0LjMtMzIgMzItMzJ6bTMyLTI0MGMwLTguOCA3LjItMTYgMTYtMTZIMzM2YzguOCAwIDE2IDcuMiAxNiAxNnMtNy4yIDE2LTE2IDE2SDE0NGMtOC44IDAtMTYtNy4yLTE2LTE2em0xNiA0OEgzMzZjOC44IDAgMTYgNy4yIDE2IDE2cy03LjIgMTYtMTYgMTZIMTQ0Yy04LjggMC0xNi03LjItMTYtMTZzNy4yLTE2IDE2LTE2eiI+PC9wYXRoPjwvc3ZnPg==" class="img-fluid"></a></td>
+<td style="text-align: center; width: 10%;"><img src="data:image/svg+xml;base64,PHN2ZyBhcmlhLWhpZGRlbj0idHJ1ZSIgcm9sZT0iaW1nIiB2aWV3Ym94PSIwIDAgNTEyIDUxMiIgc3R5bGU9ImhlaWdodDoxZW07d2lkdGg6MWVtO3ZlcnRpY2FsLWFsaWduOi0wLjEyNWVtO21hcmdpbi1sZWZ0OmF1dG87bWFyZ2luLXJpZ2h0OmF1dG87Zm9udC1zaXplOmluaGVyaXQ7ZmlsbDpjdXJyZW50Q29sb3I7b3ZlcmZsb3c6dmlzaWJsZTtwb3NpdGlvbjpyZWxhdGl2ZTsiPjxwYXRoIGQ9Ik00NjkuMyAxOS4zbDIzLjQgMjMuNGMyNSAyNSAyNSA2NS41IDAgOTAuNWwtNTYuNCA1Ni40TDMyMi4zIDc1LjdsNTYuNC01Ni40YzI1LTI1IDY1LjUtMjUgOTAuNSAwek00NC45IDM1My4yTDI5OS43IDk4LjMgNDEzLjcgMjEyLjMgMTU4LjggNDY3LjFjLTYuNyA2LjctMTUuMSAxMS42LTI0LjIgMTQuMmwtMTA0IDI5LjdjLTguNCAyLjQtMTcuNCAuMS0yMy42LTYuMXMtOC41LTE1LjItNi4xLTIzLjZsMjkuNy0xMDRjMi42LTkuMiA3LjUtMTcuNSAxNC4yLTI0LjJ6TTI0OS40IDEwMy40TDEwMy40IDI0OS40IDE2IDE2MS45Yy0xOC43LTE4LjctMTguNy00OS4xIDAtNjcuOUw5NC4xIDE2YzE4LjctMTguNyA0OS4xLTE4LjcgNjcuOSAwbDE5LjggMTkuOGMtLjMgLjMtLjcgLjYtMSAuOWwtNjQgNjRjLTYuMiA2LjItNi4yIDE2LjQgMCAyMi42czE2LjQgNi4yIDIyLjYgMGw2NC02NGMuMy0uMyAuNi0uNyAuOS0xbDQ1LjEgNDUuMXpNNDA4LjYgMjYyLjZsNDUuMSA0NS4xYy0uMyAuMy0uNyAuNi0xIC45bC02NCA2NGMtNi4yIDYuMi02LjIgMTYuNCAwIDIyLjZzMTYuNCA2LjIgMjIuNiAwbDY0LTY0Yy4zLS4zIC42LS43IC45LTFMNDk2IDM1MC4xYzE4LjcgMTguNyAxOC43IDQ5LjEgMCA2Ny45TDQxNy45IDQ5NmMtMTguNyAxOC43LTQ5LjEgMTguNy02Ny45IDBsLTg3LjQtODcuNEw0MDguNiAyNjIuNnoiPjwvcGF0aD48L3N2Zz4=" class="img-fluid"></td>
+</tr>
 </tbody>
 </table>
+</div>
+
 
 </div>
 
@@ -196,9 +200,23 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     icon: icon
   };
   anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
   const clipboard = new window.ClipboardJS('.code-copy-button', {
-    target: function(trigger) {
-      return trigger.previousElementSibling;
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
     }
   });
   clipboard.on('success', function(e) {
@@ -263,6 +281,92 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return note.innerHTML;
     });
   }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
   const findCites = (el) => {
     const parentEl = el.parentElement;
     if (parentEl) {

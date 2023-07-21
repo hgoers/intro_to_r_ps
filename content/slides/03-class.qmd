@@ -468,13 +468,13 @@ Tidyverse pipe:
 
 ## EXERCISE {background-color="#B56576"}
 
-1.    Calculate the average GDP per capita for countries in the Americas in 2007. Display only the country and average GDP per capita variables. 
+1.  Calculate the average GDP per capita for countries in the Americas in 2007. Display only the country and average GDP per capita variables.
 
-2.    Plot your results. 
+2.  Plot your results.
 
 ## CHECK YOUR ANSWERS {background-color="#B56576"}
 
-1.    Calculate the average GDP per capita for countries in the Americas in all years including or after 2000. 
+1.  Calculate the average GDP per capita for countries in the Americas in all years including or after 2000.
 
 ```{r}
 gapminder_americas_2000 <- gapminder |> 
@@ -487,7 +487,7 @@ gapminder_americas_2000
 
 ## CHECK YOUR ANSWERS {background-color="#B56576"}
 
-2.    Plot your results. 
+2.  Plot your results.
 
 ```{r}
 #| echo: false
@@ -503,7 +503,7 @@ ggplot(gapminder_americas_2000, aes(x = avg_gdp_per_cap, y = reorder(country, av
 
 ## CHECK YOUR ANSWERS {background-color="#B56576"}
 
-2.    Plot your results. 
+2.  Plot your results.
 
 ```{r}
 #| eval: false
@@ -546,7 +546,7 @@ gapminder |>
 :::
 
 ::: aside
-`distinct()` selects only unique rows from a data frame. Check out `?distinct` for more detail. 
+`distinct()` selects only unique rows from a data frame. Check out `?distinct` for more detail.
 :::
 
 ## Summary
@@ -558,3 +558,14 @@ This session you have:
 2.  Learnt how to transform your data
 
 3.  Written concise code that is easy to follow
+
+## HOMEWORK {background-color="#B56576"}
+
+*Reminder*
+
+In the final session, you will apply the skills you will learn over the next few days to a problem that interests you. To prepare for this, you need to find a data set that: 
+
+1.    Is relevant to your research interests, 
+
+2.    Contains continuous and discrete variables.
+
