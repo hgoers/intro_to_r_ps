@@ -7,6 +7,13 @@
     "text": "Workflow Basics chapter in Hadley Wickham’s R4DS\n Data Transformation chapter in Hadley Wickham’s R4DS"
   },
   {
+    "objectID": "content/03-content.html#readings",
+    "href": "content/03-content.html#readings",
+    "title": "Data Transformation",
+    "section": "",
+    "text": "Workflow Basics chapter in Hadley Wickham’s R4DS\n Data Transformation chapter in Hadley Wickham’s R4DS"
+  },
+  {
     "objectID": "content/03-content.html#slides",
     "href": "content/03-content.html#slides",
     "title": "Data Transformation",
@@ -441,6 +448,20 @@
     "text": "Summary\nThis session you have:\n\nLearnt R basic syntax\nLearnt how to transform your data\nWritten concise code that is easy to follow"
   },
   {
+    "objectID": "content/slides/03-class.html#homework",
+    "href": "content/slides/03-class.html#homework",
+    "title": "GVPT Maths Camp",
+    "section": "HOMEWORK",
+    "text": "HOMEWORK\nReminder\nIn the final session, you will apply the skills you will learn over the next few days to a problem that interests you. To prepare for this, you need to find a data set that:\n\nIs relevant to your research interests,\nContains continuous and discrete variables."
+  },
+  {
+    "objectID": "content/slides/05-class.html#learning-objectives",
+    "href": "content/slides/05-class.html#learning-objectives",
+    "title": "GVPT Maths Camp",
+    "section": "Learning objectives",
+    "text": "Learning objectives\n\nImport your data\nClean your data\nExplore relational data\nStart to manage your scripts with Github"
+  },
+  {
     "objectID": "content/slides/02-class.html#learning-objectives-for-today",
     "href": "content/slides/02-class.html#learning-objectives-for-today",
     "title": "GVPT Maths Camp",
@@ -747,6 +768,13 @@
     "title": "GVPT Maths Camp",
     "section": "Summary",
     "text": "Summary\nThis session you:\n\nSet up your data science tools\nPlotted complex data in an engaging way\nDiscovered interesting relationships in the data\nConnected these relationships or trends to your expectations (or hypotheses about the data)"
+  },
+  {
+    "objectID": "content/slides/02-class.html#homework",
+    "href": "content/slides/02-class.html#homework",
+    "title": "GVPT Maths Camp",
+    "section": "HOMEWORK",
+    "text": "HOMEWORK\nIn the final session, you will apply the skills you will learn over the next few days to a problem that interests you. To prepare for this, you need to find a data set that:\n\nIs relevant to your research interests,\nContains continuous and discrete variables."
   },
   {
     "objectID": "content/slides/04-class.html#learning-objectives",
@@ -1071,8 +1099,29 @@
     "text": "Summary\nToday you:\n\nLearnt how to read in external data\nLearnt how to clean up common problems using R"
   },
   {
+    "objectID": "content/slides/04-class.html#homework",
+    "href": "content/slides/04-class.html#homework",
+    "title": "GVPT Maths Camp",
+    "section": "HOMEWORK",
+    "text": "HOMEWORK\nReminder\nIn the final session, you will apply the skills you will learn over the next few days to a problem that interests you. To prepare for this, you need to find a data set that:\n\nIs relevant to your research interests,\nContains continuous and discrete variables."
+  },
+  {
+    "objectID": "content/slides/04-class.html#homework-1",
+    "href": "content/slides/04-class.html#homework-1",
+    "title": "GVPT Maths Camp",
+    "section": "HOMEWORK",
+    "text": "HOMEWORK\nIn case you are having some trouble:\n\nAmericanists can check out the American National Election Studies surveys.\nComparativists can check out Varieties of Democracy.\nIR theorists can check out UCDP events data sets."
+  },
+  {
     "objectID": "content/04-content.html",
     "href": "content/04-content.html",
+    "title": "Data Wrangling",
+    "section": "",
+    "text": "Wrangle section in Hadley Wickham’s R4DS"
+  },
+  {
+    "objectID": "content/04-content.html#readings",
+    "href": "content/04-content.html#readings",
     "title": "Data Wrangling",
     "section": "",
     "text": "Wrangle section in Hadley Wickham’s R4DS"
@@ -1092,6 +1141,13 @@
     "text": "Sorry for the macOS bias!\n Garrick Aden-Buie’s macOS set up blogpost\n Matti Vuorre’s macOS set up blogpost\n\n\n\n Install or upgrade R and RStudio chapter in Jennifer Bryan’s Happy Git and GitHub for the useR\n\n\n\n Installation and Connect Git, GitHub, RStudio sections in Jennifer Bryan’s Happy Git and GitHub for the useR"
   },
   {
+    "objectID": "content/01-content.html#readings",
+    "href": "content/01-content.html#readings",
+    "title": "Introduction and Set Up",
+    "section": "",
+    "text": "Sorry for the macOS bias!\n Garrick Aden-Buie’s macOS set up blogpost\n Matti Vuorre’s macOS set up blogpost\n\n\n\n Install or upgrade R and RStudio chapter in Jennifer Bryan’s Happy Git and GitHub for the useR\n\n\n\n Installation and Connect Git, GitHub, RStudio sections in Jennifer Bryan’s Happy Git and GitHub for the useR"
+  },
+  {
     "objectID": "content/01-content.html#slides",
     "href": "content/01-content.html#slides",
     "title": "Introduction and Set Up",
@@ -1101,6 +1157,13 @@
   {
     "objectID": "content/02-content.html",
     "href": "content/02-content.html",
+    "title": "Data Visualisation",
+    "section": "",
+    "text": "Data Visualisation chapter in Hadley Wickham’s R4DS\n\n\n\n Kieran Healy’s Data Visualization: A Practical Guide\n Claus O. Wilke’s Fundamentals of Data Visualization"
+  },
+  {
+    "objectID": "content/02-content.html#readings",
+    "href": "content/02-content.html#readings",
     "title": "Data Visualisation",
     "section": "",
     "text": "Data Visualisation chapter in Hadley Wickham’s R4DS\n\n\n\n Kieran Healy’s Data Visualization: A Practical Guide\n Claus O. Wilke’s Fundamentals of Data Visualization"
@@ -1118,68 +1181,5 @@
     "title": "\n            Introduction to R for Political Scientists\n        ",
     "section": "",
     "text": "Introduction to R for Political Scientists\n        \n        \n            Learn to use data science tools to support your research\n        \n        \n            Summer 2023Department of Government and PoliticsUniversity of Maryland, College Park\n        \n    \n    \n      \n        \n        \n        \n      \n    \n\n\n\n\n\nInstructor\n\n   Harriet Goers\n   Chincoteague Building\n   hgoers@umd.edu\n   hgoers\n\n\n\nCourse details\n\n   August 21-25, 2023\n   1 - 3 PM\n   Tydings Building\n   Slack\n\n\n\nContacting me\nE-mail and Slack are the best ways to get in contact with me. I will try to respond to all course-related e-mails and Slack messages within 24 hours."
-  },
-  {
-    "objectID": "schedule.html",
-    "href": "schedule.html",
-    "title": "Schedule",
-    "section": "",
-    "text": "DATE\nTITLE\nCONTENT\nASSIGNMENT\n\n\n\n\nMonday\nIntroduction and Set Up\n\n\n\n\nTuesday\nData Visualisation\n\n\n\n\nWednesday\nData Transformation\n\n\n\n\nThursday\nData Wrangling"
-  },
-  {
-    "objectID": "content/01-content.html#readings",
-    "href": "content/01-content.html#readings",
-    "title": "Introduction and Set Up",
-    "section": "",
-    "text": "Sorry for the macOS bias!\n Garrick Aden-Buie’s macOS set up blogpost\n Matti Vuorre’s macOS set up blogpost\n\n\n\n Install or upgrade R and RStudio chapter in Jennifer Bryan’s Happy Git and GitHub for the useR\n\n\n\n Installation and Connect Git, GitHub, RStudio sections in Jennifer Bryan’s Happy Git and GitHub for the useR"
-  },
-  {
-    "objectID": "content/02-content.html#readings",
-    "href": "content/02-content.html#readings",
-    "title": "Data Visualisation",
-    "section": "",
-    "text": "Data Visualisation chapter in Hadley Wickham’s R4DS\n\n\n\n Kieran Healy’s Data Visualization: A Practical Guide\n Claus O. Wilke’s Fundamentals of Data Visualization"
-  },
-  {
-    "objectID": "content/03-content.html#readings",
-    "href": "content/03-content.html#readings",
-    "title": "Data Transformation",
-    "section": "",
-    "text": "Workflow Basics chapter in Hadley Wickham’s R4DS\n Data Transformation chapter in Hadley Wickham’s R4DS"
-  },
-  {
-    "objectID": "content/04-content.html#readings",
-    "href": "content/04-content.html#readings",
-    "title": "Data Wrangling",
-    "section": "",
-    "text": "Wrangle section in Hadley Wickham’s R4DS"
-  },
-  {
-    "objectID": "content/slides/02-class.html#homework",
-    "href": "content/slides/02-class.html#homework",
-    "title": "GVPT Maths Camp",
-    "section": "HOMEWORK",
-    "text": "HOMEWORK\nIn the final session, you will apply the skills you will learn over the next few days to a problem that interests you. To prepare for this, you need to find a data set that:\n\nIs relevant to your research interests,\nContains continuous and discrete variables."
-  },
-  {
-    "objectID": "content/slides/03-class.html#homework",
-    "href": "content/slides/03-class.html#homework",
-    "title": "GVPT Maths Camp",
-    "section": "HOMEWORK",
-    "text": "HOMEWORK\nReminder\nIn the final session, you will apply the skills you will learn over the next few days to a problem that interests you. To prepare for this, you need to find a data set that:\n\nIs relevant to your research interests,\nContains continuous and discrete variables."
-  },
-  {
-    "objectID": "content/slides/04-class.html#homework",
-    "href": "content/slides/04-class.html#homework",
-    "title": "GVPT Maths Camp",
-    "section": "HOMEWORK",
-    "text": "HOMEWORK\nReminder\nIn the final session, you will apply the skills you will learn over the next few days to a problem that interests you. To prepare for this, you need to find a data set that:\n\nIs relevant to your research interests,\nContains continuous and discrete variables."
-  },
-  {
-    "objectID": "content/slides/04-class.html#homework-1",
-    "href": "content/slides/04-class.html#homework-1",
-    "title": "GVPT Maths Camp",
-    "section": "HOMEWORK",
-    "text": "HOMEWORK\nIn case you are having some trouble:\n\nAmericanists can check out the American National Election Studies surveys.\nComparativists can check out Varieties of Democracy.\nIR theorists can check out UCDP events data sets."
   }
 ]

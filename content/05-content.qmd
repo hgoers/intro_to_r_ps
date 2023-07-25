@@ -1,0 +1,9 @@
+---
+title: "Bringing It All Together"
+---
+
+## Slides
+
+```{=html}
+<iframe class="slide-deck" src="../content/slides/05-class.html" width = "100%" height = 600px></iframe>
+```

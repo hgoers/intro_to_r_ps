@@ -1,0 +1,23 @@
+---
+title: "GVPT Maths Camp"
+subtitle: "Bringing it all together"
+format: 
+  revealjs:
+    slide-number: true
+    preview-links: auto
+    theme: solarized
+    embed-resources: true
+execute: 
+  echo: true
+---
+
+## Learning objectives
+
+1.  Import your data
+
+2.  Clean your data
+
+3.  Explore relational data
+
+4.  Start to manage your scripts with Github
+
