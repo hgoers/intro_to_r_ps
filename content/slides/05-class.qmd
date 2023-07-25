@@ -13,11 +13,13 @@ execute:
 
 ## Learning objectives
 
-1.  Import your data
+1.  Explore an interesting question using the skills you have learnt
 
-2.  Clean your data
+2.  Create a script that you can use to explore new data sets in the future
 
-3.  Explore relational data
+## EXERCISE {background-color="#B56576"}
 
-4.  Start to manage your scripts with Github
-
+1.  Create a plot of a categorical variable in your data set.
+2.  Create a plot of a continuous variable in your data set.
+3.  Create a plot showing the relationship between two continuous variables in your data set.
+4.  Create a plot showing the relationship between a categorical and a continuous variable in your data set.

@@ -459,7 +459,14 @@
     "href": "content/slides/05-class.html#learning-objectives",
     "title": "GVPT Maths Camp",
     "section": "Learning objectives",
-    "text": "Learning objectives\n\nImport your data\nClean your data\nExplore relational data\nStart to manage your scripts with Github"
+    "text": "Learning objectives\n\nExplore an interesting question using the skills you have learnt\nCreate a script that you can use to explore new data sets in the future"
+  },
+  {
+    "objectID": "content/slides/05-class.html#exercise",
+    "href": "content/slides/05-class.html#exercise",
+    "title": "GVPT Maths Camp",
+    "section": "EXERCISE",
+    "text": "EXERCISE\n\nCreate a plot of a categorical variable in your data set.\nCreate a plot of a continuous variable in your data set.\nCreate a plot showing the relationship between two continuous variables in your data set.\nCreate a plot showing the relationship between a categorical and a continuous variable in your data set."
   },
   {
     "objectID": "content/slides/02-class.html#learning-objectives-for-today",
