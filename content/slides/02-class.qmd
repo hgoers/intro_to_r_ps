@@ -12,6 +12,13 @@ execute:
   fig-align: "center"
 ---
 
+```{r}
+#| echo: false
+
+library(tidyverse)
+library(ggthemes)
+```
+
 ## Learning objectives for today
 
 1.  Introduction to R
@@ -109,7 +116,6 @@ install.packages("tidyverse")
 3.  Load these packages in your current session
 
 ```{r}
-#| eval: false
 
 library(tidyverse)
 ```
@@ -117,8 +123,6 @@ library(tidyverse)
 ## RStudio Projects
 
 *For your sanity's sake, for your co-author's sanity's sake*
-
-<br>
 
 Keeps everything:
 
@@ -185,10 +189,9 @@ This session will borrow (read: *steal*) heavily from Hadley Wickham's *R for Da
 ```{r}
 #| echo: false
 
-library(ggplot2)
-
-ggplot(data = mpg) + 
-  geom_point(mapping = aes(x = displ, y = hwy, color = class)) + 
+ggplot(data = mpg, mapping = aes(x = displ, y = hwy)) + 
+  geom_point(mapping = aes(colour = class, shape = class)) + 
+  geom_smooth(method = "lm") + 
   theme(
     legend.position = "bottom",
     panel.grid = element_blank(),
@@ -197,11 +200,12 @@ ggplot(data = mpg) +
     plot.title = element_text(face = "bold")
   ) + 
   labs(
-    title = "Relationship between engine displacement and highway miles per gallon by class",
+    title = "Engine displacement and highway miles per gallon",
+    subtitle = "Values for seven different classes of cars",
     x = "Engine displacement (L)",
-    y = "Highway miles per gallon",
-    color = "Class"
-  )
+    y = "Highway miles per gallon"
+  ) + 
+  scale_color_colorblind()
 ```
 
 ## How did we do this?
@@ -209,10 +213,9 @@ ggplot(data = mpg) +
 ```{r}
 #| eval: false
 
-library(ggplot2)
-
-ggplot(data = mpg) + 
-  geom_point(mapping = aes(x = displ, y = hwy, color = class)) + 
+ggplot(data = mpg, mapping = aes(x = displ, y = hwy)) + 
+  geom_point(mapping = aes(colour = class, shape = class)) + 
+  geom_smooth(method = "lm") + 
   theme(
     legend.position = "bottom",
     panel.grid = element_blank(),
@@ -221,11 +224,12 @@ ggplot(data = mpg) +
     plot.title = element_text(face = "bold")
   ) + 
   labs(
-    title = "Relationship between engine displacement and highway miles per gallon by class",
+    title = "Engine displacement and highway miles per gallon",
+    subtitle = "Values for seven different classes of cars",
     x = "Engine displacement (L)",
-    y = "Highway miles per gallon",
-    color = "Class"
-  )
+    y = "Highway miles per gallon"
+  ) + 
+  scale_color_colorblind()
 ```
 
 ::: aside
@@ -245,12 +249,11 @@ mpg
 ```
 
 ```{r}
-#| eval: true
 #| echo: false
 
-ggplot2::mpg |> 
+mpg |> 
   head() |> 
-  dplyr::select(1:5) |> 
+  select(1:5) |> 
   knitr::kable()
 ```
 
@@ -266,68 +269,40 @@ To get help on any function or data set use: `?function`
 
 ## The `mpg` data set
 
+```{r}
+glimpse(mpg)
+```
+
+## The `mpg` data set
+
 A couple of useful variables:
 
 -   `displ`: engine displacement, in litres
 
 -   `hwy`: highway miles per gallon
 
-## Plot your data
+## Set up your plot
+
+*An empty canvas!*
 
 ```{r}
 library(ggplot2)
-
-ggplot(data = mpg) + 
-  geom_point(mapping = aes(x = displ, y = hwy))
-```
-
-## EXERCISE {background-color="#B56576"}
-
-What do you see when you run the following?
-
-```{r}
-#| eval: false
+library(ggthemes)
 
 ggplot(data = mpg)
 ```
 
-How many rows are in `mpg`? How many columns?
+## Map your aesthetics
 
 ```{r}
-#| eval: false
-
-nrow(mpg)
-ncol(mpg)
+ggplot(data = mpg, mapping = aes(x = displ, y = hwy))
 ```
 
-What does the `drv` variable describe?
+## Add in your cars
 
 ```{r}
-#| eval: false
-
-?mpg
-```
-
-## EXERCISE {background-color="#B56576"}
-
-Make a scatterplot of `hwy` vs `cyl`.
-
-```{r}
-#| eval: false
-
-ggplot(data = mpg) + 
-  geom_point(mapping = aes(x = hwy, y = cyl))
-```
-
-<br>
-
-What happens if you make a scatterplot of `class` vs `drv`? Why is the plot not useful?
-
-```{r}
-#| eval: false
-
-ggplot(data = mpg) + 
-  geom_point(mapping = aes(x = class, y = drv))
+ggplot(data = mpg, mapping = aes(x = displ, y = hwy)) + 
+  geom_point()
 ```
 
 ## Let's look at groups in the data
@@ -343,29 +318,126 @@ ggplot(data = mpg) +
 ## Let's look at groups in the data
 
 ```{r}
-#| code-line-numbers: "2"
+#| code-line-numbers: "1"
 
-ggplot(data = mpg) + 
-  geom_point(mapping = aes(x = displ, y = hwy, color = class))
+ggplot(data = mpg, mapping = aes(x = displ, y = hwy, colour = class)) + 
+  geom_point()
 ```
 
-## Let's look at groups in the data
+## Make your visualizations more accessible
+
+```{r}
+#| code-line-numbers: "1,3"
+
+ggplot(data = mpg, mapping = aes(x = displ, y = hwy, colour = class, shape = class)) + 
+  geom_point() + 
+  scale_color_colorblind()
+```
+
+## Add more information
+
+```{r}
+#| code-line-numbers: "3"
+
+ggplot(data = mpg, mapping = aes(x = displ, y = hwy, colour = class, shape = class)) + 
+  geom_point() + 
+  geom_smooth(method = "lm") + 
+  scale_color_colorblind()
+```
+
+## Look at the relationship across all cars
 
 ```{r}
 #| code-line-numbers: "2"
 
-ggplot(data = mpg) + 
-  geom_point(mapping = aes(x = displ, y = hwy, size = class))
+ggplot(data = mpg, mapping = aes(x = displ, y = hwy)) + 
+  geom_point(mapping = aes(colour = class, shape = class)) + 
+  geom_smooth(method = "lm") + 
+  scale_color_colorblind()
 ```
 
-## Let's look at groups in the data
+## Add useful titles and labels
 
 ```{r}
-#| code-line-numbers: "2"
+#| eval: false
+#| code-line-numbers: "4,5,6,7,8"
+
+ggplot(data = mpg, mapping = aes(x = displ, y = hwy)) + 
+  geom_point(mapping = aes(colour = class, shape = class)) + 
+  geom_smooth(method = "lm") + 
+  labs(
+    title = "Engine displacement and highway miles per gallon",
+    subtitle = "Values for seven different classes of cars",
+    x = "Engine displacement (L)",
+    y = "Highway miles per gallon"
+  ) + 
+  scale_color_colorblind()
+```
+
+## Add useful titles and labels
+
+```{r}
+#| echo: false
+
+ggplot(data = mpg, mapping = aes(x = displ, y = hwy)) + 
+  geom_point(mapping = aes(colour = class, shape = class)) + 
+  geom_smooth(method = "lm") + 
+  labs(
+    title = "Engine displacement and highway miles per gallon",
+    subtitle = "Values for seven different classes of cars",
+    x = "Engine displacement (L)",
+    y = "Highway miles per gallon"
+  ) + 
+  scale_color_colorblind()
+```
+
+## EXERCISE {background-color="#B56576"}
+
+How many rows are in `mpg`? How many columns?
+
+```{r}
+#| eval: false
+
+nrow(mpg)
+ncol(mpg)
+```
+
+<br>
+
+What does the `drv` variable describe?
+
+```{r}
+#| eval: false
+
+?mpg
+```
+
+## EXERCISE {background-color="#B56576"}
+
+Make a scatterplot of `hwy` vs `cyl`.
+
+<br>
+
+What happens if you make a scatterplot of `class` vs `drv`? Why is the plot not useful? 
+
+<br>
+
+Which `geom` might be a better choice? 
+
+## EXERCISE {background-color="#B56576"}
+
+Why does the following give an error and how would you fix it?
+
+```{r}
+#| eval: false
 
 ggplot(data = mpg) + 
-  geom_point(mapping = aes(x = displ, y = hwy, shape = class))
+  geom_point()
 ```
+
+<br>
+
+Add the following caption to the plot you made in the previous exercise: “Data come from the ggplot2 package.” HINT: Look at the documentation for `labs()`.
 
 ## Flexible visualization
 
@@ -408,36 +480,25 @@ Map a continuous variable to `color`, `size`, and `shape.` How do these aestheti
 
 What happens if you map the same variable to multiple aesthetics?
 
-## Let's add useful headings
-
-```{r}
-#| code-line-numbers: "3-7"
-
-ggplot(data = mpg) + 
-  geom_point(mapping = aes(x = displ, y = hwy), color = "red") + 
-  labs(
-    title = "Relationship between engine displacement and highway miles per gallon",
-    x = "Engine displacement (L)",
-    y = "Highway miles per gallon"
-  )
-```
-
-## Let's clean this up
+## Let's clean our graph up
 
 Less is more when it comes to data visualization.
 
 ```{r}
 #| eval: false
-#| code-line-numbers: "3"
+#| code-line-numbers: "4"
 
-ggplot(data = mpg) + 
-  geom_point(mapping = aes(x = displ, y = hwy), color = "blue") + 
+ggplot(data = mpg, mapping = aes(x = displ, y = hwy)) + 
+  geom_point(mapping = aes(colour = class, shape = class)) + 
+  geom_smooth(method = "lm") + 
   theme_minimal() + 
   labs(
-    title = "Relationship between engine displacement and highway miles per gallon",
+    title = "Engine displacement and highway miles per gallon",
+    subtitle = "Values for seven different classes of cars",
     x = "Engine displacement (L)",
     y = "Highway miles per gallon"
-  )
+  ) + 
+  scale_color_colorblind()
 ```
 
 ::: aside
@@ -449,24 +510,28 @@ All pre-set `ggplot` themes can be found in the [`ggplot` documentation](https:/
 ```{r}
 #| echo: false
 
-ggplot(data = mpg) + 
-  geom_point(mapping = aes(x = displ, y = hwy), color = "blue") + 
+ggplot(data = mpg, mapping = aes(x = displ, y = hwy)) + 
+  geom_point(mapping = aes(colour = class, shape = class)) + 
+  geom_smooth(method = "lm") + 
   theme_minimal() + 
   labs(
-    title = "Relationship between engine displacement and highway miles per gallon",
+    title = "Engine displacement and highway miles per gallon",
+    subtitle = "Values for seven different classes of cars",
     x = "Engine displacement (L)",
     y = "Highway miles per gallon"
-  )
+  ) + 
+  scale_color_colorblind()
 ```
 
 ## Creating your own theme
 
 ```{r}
 #| eval: false
-#| code-line-numbers: "3-9"
+#| code-line-numbers: "4-10"
 
-ggplot(data = mpg) + 
-  geom_point(mapping = aes(x = displ, y = hwy, color = class)) + 
+ggplot(data = mpg, mapping = aes(x = displ, y = hwy)) + 
+  geom_point(mapping = aes(colour = class, shape = class)) + 
+  geom_smooth(method = "lm") + 
   theme(
     legend.position = "bottom",
     panel.grid = element_blank(),
@@ -475,11 +540,12 @@ ggplot(data = mpg) +
     plot.title = element_text(face = "bold")
   ) + 
   labs(
-    title = "Relationship between engine displacement and highway miles per gallon by class",
+    title = "Engine displacement and highway miles per gallon",
+    subtitle = "Values for seven different classes of cars",
     x = "Engine displacement (L)",
-    y = "Highway miles per gallon",
-    color = "Class"
-  )
+    y = "Highway miles per gallon"
+  ) + 
+  scale_color_colorblind()
 ```
 
 ::: aside
@@ -491,8 +557,9 @@ All theme elements that you can control can be found in the [`ggplot` documentat
 ```{r}
 #| echo: false
 
-ggplot(data = mpg) + 
-  geom_point(mapping = aes(x = displ, y = hwy, color = class)) + 
+ggplot(data = mpg, mapping = aes(x = displ, y = hwy)) + 
+  geom_point(mapping = aes(colour = class, shape = class)) + 
+  geom_smooth(method = "lm") + 
   theme(
     legend.position = "bottom",
     panel.grid = element_blank(),
@@ -501,89 +568,60 @@ ggplot(data = mpg) +
     plot.title = element_text(face = "bold")
   ) + 
   labs(
-    title = "Relationship between engine displacement and highway miles per gallon by class",
+    title = "Engine displacement and highway miles per gallon",
+    subtitle = "Values for seven different classes of cars",
     x = "Engine displacement (L)",
-    y = "Highway miles per gallon",
-    color = "Class"
-  )
+    y = "Highway miles per gallon"
+  ) + 
+  scale_color_colorblind()
 ```
 
 ## EXERCISE {background-color="#B56576"}
 
-1.  Create a scatterplot of `hwy` vs `displ` and a categorical variable in the `mpg` data set.
+1.  Customize the last plot you made using the `theme()` argument.
 
-2.  Customize your plot using the `theme()` argument.
-
-## Looking at group-specific trends
+## Visualizing distributions
 
 ```{r}
-#| code-line-numbers: "3"
-
-ggplot(data = mpg) + 
-  geom_point(mapping = aes(x = displ, y = hwy)) + 
-  facet_wrap(~ class, nrow = 2)
+ggplot(mpg, aes(x = drv)) + 
+  geom_bar()
 ```
 
-## Looking at group-specific trends
+## Visualizing distributions
+
+*Reorder in relation to frequency*
 
 ```{r}
-#| code-line-numbers: "3"
-
-ggplot(data = mpg) + 
-  geom_point(mapping = aes(x = displ, y = hwy)) + 
-  facet_grid(drv ~ cyl)
+ggplot(mpg, aes(x = fct_infreq(drv))) +
+  geom_bar()
 ```
 
-## EXERCISE {background-color="#B56576"}
-
-1.  What happens if you facet on a continuous variable?
-
-2.  What do the empty cells in previous plot with facet_grid(drv \~ cyl) mean? How do they relate to this plot?
+## Visualizing numeric variables
 
 ```{r}
-#| echo: false
-
-ggplot(data = mpg) + 
-  geom_point(mapping = aes(x = drv, y = cyl))
+ggplot(mpg, aes(x = hwy)) +
+  geom_histogram()
 ```
 
-## EXERCISE {background-color="#B56576"}
-
-3.  Create the following plots. What does `.` do?
+## Visualizing numeric variables
 
 ```{r}
-#| eval: false
-
-ggplot(data = mpg) + 
-  geom_point(mapping = aes(x = displ, y = hwy)) +
-  facet_grid(drv ~ .)
-
-ggplot(data = mpg) + 
-  geom_point(mapping = aes(x = displ, y = hwy)) +
-  facet_grid(. ~ cyl)
+ggplot(mpg, aes(x = hwy)) +
+  geom_density()
 ```
 
-## Summarising relationships in your data
+## Visualizing numeric variables
 
 ```{r}
-#| echo: true
-
-ggplot(data = mpg, mapping = aes(x = displ, y = hwy)) + 
-  geom_point() + 
-  geom_smooth(method = "lm", se = F)
+ggplot(mpg, aes(x = hwy, colour = drv)) +
+  geom_density()
 ```
 
-::: notes
-Because both `geom_point()` and `geom_smooth()` take the argument `mapping = aes(x = displ, y = hwy)`, we can feed it to them both through `ggplot()`. We are previewing a feature heavily used in the tidyverse: the pipe.
-:::
-
-## Group-specific relationships
+## Visualizing numeric variables
 
 ```{r}
-ggplot(data = mpg, mapping = aes(x = displ, y = hwy, color = drv)) + 
-  geom_point() + 
-  geom_smooth(method = "lm", se = F) + 
-  theme_minimal()
+ggplot(mpg, aes(x = hwy, colour = drv, fill = drv)) +
+  geom_density(alpha = 0.5)
 ```
 
 ## Summary
@@ -600,8 +638,8 @@ This session you:
 
 ## HOMEWORK {background-color="#B56576"}
 
-In the final session, you will apply the skills you will learn over the next few days to a problem that interests you. To prepare for this, you need to find a data set that: 
+In the final session, you will apply the skills you will learn over the next few days to a problem that interests you. To prepare for this, you need to find a data set that:
 
-1.    Is relevant to your research interests, 
+1.  Is relevant to your research interests,
 
-2.    Contains continuous and discrete variables.
+2.  Contains continuous and discrete variables.

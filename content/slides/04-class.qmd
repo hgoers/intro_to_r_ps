@@ -557,15 +557,15 @@ Today you:
 
 *Reminder*
 
-In the final session, you will apply the skills you will learn over the next few days to a problem that interests you. To prepare for this, you need to find a data set that: 
+In the final session, you will apply the skills you will learn over the next few days to a problem that interests you. To prepare for this, you need to find a data set that:
 
-1.    Is relevant to your research interests, 
+1.  Is relevant to your research interests,
 
-2.    Contains continuous and discrete variables.
+2.  Contains continuous and discrete variables.
 
 ## HOMEWORK {background-color="#B56576"}
 
-In case you are having some trouble: 
+In case you are having some trouble:
 
 -   Americanists can check out the [American National Election Studies surveys](https://electionstudies.org/data-center/).
 

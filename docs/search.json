@@ -529,7 +529,7 @@
     "href": "content/slides/02-class.html#rstudio-projects",
     "title": "GVPT Maths Camp",
     "section": "RStudio Projects",
-    "text": "RStudio Projects\nFor your sanity’s sake, for your co-author’s sanity’s sake\n\nKeeps everything:\n\nOrganised\nReproducible\nSustainable\n\n\n\nFor later reference, head to Hadley Wickham’s Workflow: projects chapter in R4DS."
+    "text": "RStudio Projects\nFor your sanity’s sake, for your co-author’s sanity’s sake\nKeeps everything:\n\nOrganised\nReproducible\nSustainable\n\n\n\nFor later reference, head to Hadley Wickham’s Workflow: projects chapter in R4DS."
   },
   {
     "objectID": "content/slides/02-class.html#exercise-2",
@@ -585,7 +585,7 @@
     "href": "content/slides/02-class.html#how-did-we-do-this",
     "title": "GVPT Maths Camp",
     "section": "How did we do this?",
-    "text": "How did we do this?\n\nlibrary(ggplot2)\n\nggplot(data = mpg) + \n  geom_point(mapping = aes(x = displ, y = hwy, color = class)) + \n  theme(\n    legend.position = \"bottom\",\n    panel.grid = element_blank(),\n    panel.background = element_blank(),\n    plot.title.position = \"plot\",\n    plot.title = element_text(face = \"bold\")\n  ) + \n  labs(\n    title = \"Relationship between engine displacement and highway miles per gallon by class\",\n    x = \"Engine displacement (L)\",\n    y = \"Highway miles per gallon\",\n    color = \"Class\"\n  )\n\n\n\nWe will step through this now. By the end of this session, you will be able to make your own colourful data visualisations using R."
+    "text": "How did we do this?\n\nggplot(data = mpg, mapping = aes(x = displ, y = hwy)) + \n  geom_point(mapping = aes(colour = class, shape = class)) + \n  geom_smooth(method = \"lm\") + \n  theme(\n    legend.position = \"bottom\",\n    panel.grid = element_blank(),\n    panel.background = element_blank(),\n    plot.title.position = \"plot\",\n    plot.title = element_text(face = \"bold\")\n  ) + \n  labs(\n    title = \"Engine displacement and highway miles per gallon\",\n    subtitle = \"Values for seven different classes of cars\",\n    x = \"Engine displacement (L)\",\n    y = \"Highway miles per gallon\"\n  ) + \n  scale_color_colorblind()\n\n\n\nWe will step through this now. By the end of this session, you will be able to make your own colourful data visualisations using R."
   },
   {
     "objectID": "content/slides/02-class.html#load-relevant-packages-and-data",
@@ -606,28 +606,35 @@
     "href": "content/slides/02-class.html#the-mpg-data-set",
     "title": "GVPT Maths Camp",
     "section": "The mpg data set",
+    "text": "The mpg data set\n\nglimpse(mpg)\n\nRows: 234\nColumns: 11\n$ manufacturer &lt;chr&gt; \"audi\", \"audi\", \"audi\", \"audi\", \"audi\", \"audi\", \"audi\", \"…\n$ model        &lt;chr&gt; \"a4\", \"a4\", \"a4\", \"a4\", \"a4\", \"a4\", \"a4\", \"a4 quattro\", \"…\n$ displ        &lt;dbl&gt; 1.8, 1.8, 2.0, 2.0, 2.8, 2.8, 3.1, 1.8, 1.8, 2.0, 2.0, 2.…\n$ year         &lt;int&gt; 1999, 1999, 2008, 2008, 1999, 1999, 2008, 1999, 1999, 200…\n$ cyl          &lt;int&gt; 4, 4, 4, 4, 6, 6, 6, 4, 4, 4, 4, 6, 6, 6, 6, 6, 6, 8, 8, …\n$ trans        &lt;chr&gt; \"auto(l5)\", \"manual(m5)\", \"manual(m6)\", \"auto(av)\", \"auto…\n$ drv          &lt;chr&gt; \"f\", \"f\", \"f\", \"f\", \"f\", \"f\", \"f\", \"4\", \"4\", \"4\", \"4\", \"4…\n$ cty          &lt;int&gt; 18, 21, 20, 21, 16, 18, 18, 18, 16, 20, 19, 15, 17, 17, 1…\n$ hwy          &lt;int&gt; 29, 29, 31, 30, 26, 26, 27, 26, 25, 28, 27, 25, 25, 25, 2…\n$ fl           &lt;chr&gt; \"p\", \"p\", \"p\", \"p\", \"p\", \"p\", \"p\", \"p\", \"p\", \"p\", \"p\", \"p…\n$ class        &lt;chr&gt; \"compact\", \"compact\", \"compact\", \"compact\", \"compact\", \"c…"
+  },
+  {
+    "objectID": "content/slides/02-class.html#the-mpg-data-set-1",
+    "href": "content/slides/02-class.html#the-mpg-data-set-1",
+    "title": "GVPT Maths Camp",
+    "section": "The mpg data set",
     "text": "The mpg data set\nA couple of useful variables:\n\ndispl: engine displacement, in litres\nhwy: highway miles per gallon"
   },
   {
-    "objectID": "content/slides/02-class.html#plot-your-data",
-    "href": "content/slides/02-class.html#plot-your-data",
+    "objectID": "content/slides/02-class.html#set-up-your-plot",
+    "href": "content/slides/02-class.html#set-up-your-plot",
     "title": "GVPT Maths Camp",
-    "section": "Plot your data",
-    "text": "Plot your data\n\nlibrary(ggplot2)\n\nggplot(data = mpg) + \n  geom_point(mapping = aes(x = displ, y = hwy))"
+    "section": "Set up your plot",
+    "text": "Set up your plot\nAn empty canvas!\n\nlibrary(ggplot2)\nlibrary(ggthemes)\n\nggplot(data = mpg)"
   },
   {
-    "objectID": "content/slides/02-class.html#exercise-7",
-    "href": "content/slides/02-class.html#exercise-7",
+    "objectID": "content/slides/02-class.html#map-your-aesthetics",
+    "href": "content/slides/02-class.html#map-your-aesthetics",
     "title": "GVPT Maths Camp",
-    "section": "EXERCISE",
-    "text": "EXERCISE\nWhat do you see when you run the following?\n\nggplot(data = mpg)\n\nHow many rows are in mpg? How many columns?\n\nnrow(mpg)\nncol(mpg)\n\nWhat does the drv variable describe?\n\n?mpg"
+    "section": "Map your aesthetics",
+    "text": "Map your aesthetics\n\nggplot(data = mpg, mapping = aes(x = displ, y = hwy))"
   },
   {
-    "objectID": "content/slides/02-class.html#exercise-8",
-    "href": "content/slides/02-class.html#exercise-8",
+    "objectID": "content/slides/02-class.html#add-in-your-cars",
+    "href": "content/slides/02-class.html#add-in-your-cars",
     "title": "GVPT Maths Camp",
-    "section": "EXERCISE",
-    "text": "EXERCISE\nMake a scatterplot of hwy vs cyl.\n\nggplot(data = mpg) + \n  geom_point(mapping = aes(x = hwy, y = cyl))\n\n\nWhat happens if you make a scatterplot of class vs drv? Why is the plot not useful?\n\nggplot(data = mpg) + \n  geom_point(mapping = aes(x = class, y = drv))"
+    "section": "Add in your cars",
+    "text": "Add in your cars\n\nggplot(data = mpg, mapping = aes(x = displ, y = hwy)) + \n  geom_point()"
   },
   {
     "objectID": "content/slides/02-class.html#lets-look-at-groups-in-the-data",
@@ -641,21 +648,63 @@
     "href": "content/slides/02-class.html#lets-look-at-groups-in-the-data-1",
     "title": "GVPT Maths Camp",
     "section": "Let’s look at groups in the data",
-    "text": "Let’s look at groups in the data\n\nggplot(data = mpg) + \n  geom_point(mapping = aes(x = displ, y = hwy, color = class))"
+    "text": "Let’s look at groups in the data\n\nggplot(data = mpg, mapping = aes(x = displ, y = hwy, colour = class)) + \n  geom_point()"
   },
   {
-    "objectID": "content/slides/02-class.html#lets-look-at-groups-in-the-data-2",
-    "href": "content/slides/02-class.html#lets-look-at-groups-in-the-data-2",
+    "objectID": "content/slides/02-class.html#make-your-visualizations-more-accessible",
+    "href": "content/slides/02-class.html#make-your-visualizations-more-accessible",
     "title": "GVPT Maths Camp",
-    "section": "Let’s look at groups in the data",
-    "text": "Let’s look at groups in the data\n\nggplot(data = mpg) + \n  geom_point(mapping = aes(x = displ, y = hwy, size = class))"
+    "section": "Make your visualizations more accessible",
+    "text": "Make your visualizations more accessible\n\nggplot(data = mpg, mapping = aes(x = displ, y = hwy, colour = class, shape = class)) + \n  geom_point() + \n  scale_color_colorblind()"
   },
   {
-    "objectID": "content/slides/02-class.html#lets-look-at-groups-in-the-data-3",
-    "href": "content/slides/02-class.html#lets-look-at-groups-in-the-data-3",
+    "objectID": "content/slides/02-class.html#add-more-information",
+    "href": "content/slides/02-class.html#add-more-information",
     "title": "GVPT Maths Camp",
-    "section": "Let’s look at groups in the data",
-    "text": "Let’s look at groups in the data\n\nggplot(data = mpg) + \n  geom_point(mapping = aes(x = displ, y = hwy, shape = class))"
+    "section": "Add more information",
+    "text": "Add more information\n\nggplot(data = mpg, mapping = aes(x = displ, y = hwy, colour = class, shape = class)) + \n  geom_point() + \n  geom_smooth(method = \"lm\") + \n  scale_color_colorblind()"
+  },
+  {
+    "objectID": "content/slides/02-class.html#look-at-the-relationship-across-all-cars",
+    "href": "content/slides/02-class.html#look-at-the-relationship-across-all-cars",
+    "title": "GVPT Maths Camp",
+    "section": "Look at the relationship across all cars",
+    "text": "Look at the relationship across all cars\n\nggplot(data = mpg, mapping = aes(x = displ, y = hwy)) + \n  geom_point(mapping = aes(colour = class, shape = class)) + \n  geom_smooth(method = \"lm\") + \n  scale_color_colorblind()"
+  },
+  {
+    "objectID": "content/slides/02-class.html#add-useful-titles-and-labels",
+    "href": "content/slides/02-class.html#add-useful-titles-and-labels",
+    "title": "GVPT Maths Camp",
+    "section": "Add useful titles and labels",
+    "text": "Add useful titles and labels\n\nggplot(data = mpg, mapping = aes(x = displ, y = hwy)) + \n  geom_point(mapping = aes(colour = class, shape = class)) + \n  geom_smooth(method = \"lm\") + \n  labs(\n    title = \"Engine displacement and highway miles per gallon\",\n    subtitle = \"Values for seven different classes of cars\",\n    x = \"Engine displacement (L)\",\n    y = \"Highway miles per gallon\"\n  ) + \n  scale_color_colorblind()"
+  },
+  {
+    "objectID": "content/slides/02-class.html#add-useful-titles-and-labels-1",
+    "href": "content/slides/02-class.html#add-useful-titles-and-labels-1",
+    "title": "GVPT Maths Camp",
+    "section": "Add useful titles and labels",
+    "text": "Add useful titles and labels"
+  },
+  {
+    "objectID": "content/slides/02-class.html#exercise-7",
+    "href": "content/slides/02-class.html#exercise-7",
+    "title": "GVPT Maths Camp",
+    "section": "EXERCISE",
+    "text": "EXERCISE\nHow many rows are in mpg? How many columns?\n\nnrow(mpg)\nncol(mpg)\n\n\nWhat does the drv variable describe?\n\n?mpg"
+  },
+  {
+    "objectID": "content/slides/02-class.html#exercise-8",
+    "href": "content/slides/02-class.html#exercise-8",
+    "title": "GVPT Maths Camp",
+    "section": "EXERCISE",
+    "text": "EXERCISE\nMake a scatterplot of hwy vs cyl.\n\nWhat happens if you make a scatterplot of class vs drv? Why is the plot not useful?\n\nWhich geom might be a better choice?"
+  },
+  {
+    "objectID": "content/slides/02-class.html#exercise-9",
+    "href": "content/slides/02-class.html#exercise-9",
+    "title": "GVPT Maths Camp",
+    "section": "EXERCISE",
+    "text": "EXERCISE\nWhy does the following give an error and how would you fix it?\n\nggplot(data = mpg) + \n  geom_point()\n\n\nAdd the following caption to the plot you made in the previous exercise: “Data come from the ggplot2 package.” HINT: Look at the documentation for labs()."
   },
   {
     "objectID": "content/slides/02-class.html#flexible-visualization",
@@ -672,36 +721,29 @@
     "text": "Changing the look of your plots\n\nggplot(data = mpg) + \n  geom_point(mapping = aes(x = displ, y = hwy), colour = \"red\")"
   },
   {
-    "objectID": "content/slides/02-class.html#exercise-9",
-    "href": "content/slides/02-class.html#exercise-9",
+    "objectID": "content/slides/02-class.html#exercise-10",
+    "href": "content/slides/02-class.html#exercise-10",
     "title": "GVPT Maths Camp",
     "section": "EXERCISE",
     "text": "EXERCISE\nWhat’s gone wrong with this code? Why are the points not blue?\n\nggplot(data = mpg) + \n  geom_point(mapping = aes(x = displ, y = hwy, color = \"blue\"))"
   },
   {
-    "objectID": "content/slides/02-class.html#exercise-10",
-    "href": "content/slides/02-class.html#exercise-10",
+    "objectID": "content/slides/02-class.html#exercise-11",
+    "href": "content/slides/02-class.html#exercise-11",
     "title": "GVPT Maths Camp",
     "section": "EXERCISE",
     "text": "EXERCISE\nWhich variables in mpg are categorical? Which variables are continuous?\n\nMap a continuous variable to color, size, and shape. How do these aesthetics behave differently for categorical vs. continuous variables?\n\nWhat happens if you map the same variable to multiple aesthetics?"
   },
   {
-    "objectID": "content/slides/02-class.html#lets-add-useful-headings",
-    "href": "content/slides/02-class.html#lets-add-useful-headings",
+    "objectID": "content/slides/02-class.html#lets-clean-our-graph-up",
+    "href": "content/slides/02-class.html#lets-clean-our-graph-up",
     "title": "GVPT Maths Camp",
-    "section": "Let’s add useful headings",
-    "text": "Let’s add useful headings\n\nggplot(data = mpg) + \n  geom_point(mapping = aes(x = displ, y = hwy), color = \"red\") + \n  labs(\n    title = \"Relationship between engine displacement and highway miles per gallon\",\n    x = \"Engine displacement (L)\",\n    y = \"Highway miles per gallon\"\n  )"
+    "section": "Let’s clean our graph up",
+    "text": "Let’s clean our graph up\nLess is more when it comes to data visualization.\n\nggplot(data = mpg, mapping = aes(x = displ, y = hwy)) + \n  geom_point(mapping = aes(colour = class, shape = class)) + \n  geom_smooth(method = \"lm\") + \n  theme_minimal() + \n  labs(\n    title = \"Engine displacement and highway miles per gallon\",\n    subtitle = \"Values for seven different classes of cars\",\n    x = \"Engine displacement (L)\",\n    y = \"Highway miles per gallon\"\n  ) + \n  scale_color_colorblind()\n\n\n\nAll pre-set ggplot themes can be found in the ggplot documentation."
   },
   {
     "objectID": "content/slides/02-class.html#lets-clean-this-up",
     "href": "content/slides/02-class.html#lets-clean-this-up",
-    "title": "GVPT Maths Camp",
-    "section": "Let’s clean this up",
-    "text": "Let’s clean this up\nLess is more when it comes to data visualization.\n\nggplot(data = mpg) + \n  geom_point(mapping = aes(x = displ, y = hwy), color = \"blue\") + \n  theme_minimal() + \n  labs(\n    title = \"Relationship between engine displacement and highway miles per gallon\",\n    x = \"Engine displacement (L)\",\n    y = \"Highway miles per gallon\"\n  )\n\n\n\nAll pre-set ggplot themes can be found in the ggplot documentation."
-  },
-  {
-    "objectID": "content/slides/02-class.html#lets-clean-this-up-1",
-    "href": "content/slides/02-class.html#lets-clean-this-up-1",
     "title": "GVPT Maths Camp",
     "section": "Let’s clean this up",
     "text": "Let’s clean this up"
@@ -711,7 +753,7 @@
     "href": "content/slides/02-class.html#creating-your-own-theme",
     "title": "GVPT Maths Camp",
     "section": "Creating your own theme",
-    "text": "Creating your own theme\n\nggplot(data = mpg) + \n  geom_point(mapping = aes(x = displ, y = hwy, color = class)) + \n  theme(\n    legend.position = \"bottom\",\n    panel.grid = element_blank(),\n    panel.background = element_blank(),\n    plot.title.position = \"plot\",\n    plot.title = element_text(face = \"bold\")\n  ) + \n  labs(\n    title = \"Relationship between engine displacement and highway miles per gallon by class\",\n    x = \"Engine displacement (L)\",\n    y = \"Highway miles per gallon\",\n    color = \"Class\"\n  )\n\n\n\nAll theme elements that you can control can be found in the ggplot documentation. There are a lot!"
+    "text": "Creating your own theme\n\nggplot(data = mpg, mapping = aes(x = displ, y = hwy)) + \n  geom_point(mapping = aes(colour = class, shape = class)) + \n  geom_smooth(method = \"lm\") + \n  theme(\n    legend.position = \"bottom\",\n    panel.grid = element_blank(),\n    panel.background = element_blank(),\n    plot.title.position = \"plot\",\n    plot.title = element_text(face = \"bold\")\n  ) + \n  labs(\n    title = \"Engine displacement and highway miles per gallon\",\n    subtitle = \"Values for seven different classes of cars\",\n    x = \"Engine displacement (L)\",\n    y = \"Highway miles per gallon\"\n  ) + \n  scale_color_colorblind()\n\n\n\nAll theme elements that you can control can be found in the ggplot documentation. There are a lot!"
   },
   {
     "objectID": "content/slides/02-class.html#creating-your-own-theme-1",
@@ -721,53 +763,53 @@
     "text": "Creating your own theme"
   },
   {
-    "objectID": "content/slides/02-class.html#exercise-11",
-    "href": "content/slides/02-class.html#exercise-11",
-    "title": "GVPT Maths Camp",
-    "section": "EXERCISE",
-    "text": "EXERCISE\n\nCreate a scatterplot of hwy vs displ and a categorical variable in the mpg data set.\nCustomize your plot using the theme() argument."
-  },
-  {
-    "objectID": "content/slides/02-class.html#looking-at-group-specific-trends",
-    "href": "content/slides/02-class.html#looking-at-group-specific-trends",
-    "title": "GVPT Maths Camp",
-    "section": "Looking at group-specific trends",
-    "text": "Looking at group-specific trends\n\nggplot(data = mpg) + \n  geom_point(mapping = aes(x = displ, y = hwy)) + \n  facet_wrap(~ class, nrow = 2)"
-  },
-  {
-    "objectID": "content/slides/02-class.html#looking-at-group-specific-trends-1",
-    "href": "content/slides/02-class.html#looking-at-group-specific-trends-1",
-    "title": "GVPT Maths Camp",
-    "section": "Looking at group-specific trends",
-    "text": "Looking at group-specific trends\n\nggplot(data = mpg) + \n  geom_point(mapping = aes(x = displ, y = hwy)) + \n  facet_grid(drv ~ cyl)"
-  },
-  {
     "objectID": "content/slides/02-class.html#exercise-12",
     "href": "content/slides/02-class.html#exercise-12",
     "title": "GVPT Maths Camp",
     "section": "EXERCISE",
-    "text": "EXERCISE\n\nWhat happens if you facet on a continuous variable?\nWhat do the empty cells in previous plot with facet_grid(drv ~ cyl) mean? How do they relate to this plot?"
+    "text": "EXERCISE\n\nCustomize the last plot you made using the theme() argument."
   },
   {
-    "objectID": "content/slides/02-class.html#exercise-13",
-    "href": "content/slides/02-class.html#exercise-13",
+    "objectID": "content/slides/02-class.html#visualizing-distributions",
+    "href": "content/slides/02-class.html#visualizing-distributions",
     "title": "GVPT Maths Camp",
-    "section": "EXERCISE",
-    "text": "EXERCISE\n\nCreate the following plots. What does . do?\n\n\nggplot(data = mpg) + \n  geom_point(mapping = aes(x = displ, y = hwy)) +\n  facet_grid(drv ~ .)\n\nggplot(data = mpg) + \n  geom_point(mapping = aes(x = displ, y = hwy)) +\n  facet_grid(. ~ cyl)"
+    "section": "Visualizing distributions",
+    "text": "Visualizing distributions\n\nggplot(mpg, aes(x = drv)) + \n  geom_bar()"
   },
   {
-    "objectID": "content/slides/02-class.html#summarising-relationships-in-your-data",
-    "href": "content/slides/02-class.html#summarising-relationships-in-your-data",
+    "objectID": "content/slides/02-class.html#visualizing-distributions-1",
+    "href": "content/slides/02-class.html#visualizing-distributions-1",
     "title": "GVPT Maths Camp",
-    "section": "Summarising relationships in your data",
-    "text": "Summarising relationships in your data\n\nggplot(data = mpg, mapping = aes(x = displ, y = hwy)) + \n  geom_point() + \n  geom_smooth(method = \"lm\", se = F)\n\n\n\nBecause both geom_point() and geom_smooth() take the argument mapping = aes(x = displ, y = hwy), we can feed it to them both through ggplot(). We are previewing a feature heavily used in the tidyverse: the pipe."
+    "section": "Visualizing distributions",
+    "text": "Visualizing distributions\nReorder in relation to frequency\n\nggplot(mpg, aes(x = fct_infreq(drv))) +\n  geom_bar()"
   },
   {
-    "objectID": "content/slides/02-class.html#group-specific-relationships",
-    "href": "content/slides/02-class.html#group-specific-relationships",
+    "objectID": "content/slides/02-class.html#visualizing-numeric-variables",
+    "href": "content/slides/02-class.html#visualizing-numeric-variables",
     "title": "GVPT Maths Camp",
-    "section": "Group-specific relationships",
-    "text": "Group-specific relationships\n\nggplot(data = mpg, mapping = aes(x = displ, y = hwy, color = drv)) + \n  geom_point() + \n  geom_smooth(method = \"lm\", se = F) + \n  theme_minimal()"
+    "section": "Visualizing numeric variables",
+    "text": "Visualizing numeric variables\n\nggplot(mpg, aes(x = hwy)) +\n  geom_histogram()"
+  },
+  {
+    "objectID": "content/slides/02-class.html#visualizing-numeric-variables-1",
+    "href": "content/slides/02-class.html#visualizing-numeric-variables-1",
+    "title": "GVPT Maths Camp",
+    "section": "Visualizing numeric variables",
+    "text": "Visualizing numeric variables\n\nggplot(mpg, aes(x = hwy)) +\n  geom_density()"
+  },
+  {
+    "objectID": "content/slides/02-class.html#visualizing-numeric-variables-2",
+    "href": "content/slides/02-class.html#visualizing-numeric-variables-2",
+    "title": "GVPT Maths Camp",
+    "section": "Visualizing numeric variables",
+    "text": "Visualizing numeric variables\n\nggplot(mpg, aes(x = hwy, colour = drv)) +\n  geom_density()"
+  },
+  {
+    "objectID": "content/slides/02-class.html#visualizing-numeric-variables-3",
+    "href": "content/slides/02-class.html#visualizing-numeric-variables-3",
+    "title": "GVPT Maths Camp",
+    "section": "Visualizing numeric variables",
+    "text": "Visualizing numeric variables\n\nggplot(mpg, aes(x = hwy, colour = drv, fill = drv)) +\n  geom_density(alpha = 0.5)"
   },
   {
     "objectID": "content/slides/02-class.html#summary",
