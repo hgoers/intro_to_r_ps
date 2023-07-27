@@ -154,6 +154,13 @@
     "text": "Filter rows with filter()\n\nfilter(gapminder, country == \"Australia\", year &gt; 2000)\n\n# A tibble: 2 × 6\n  country   continent  year lifeExp      pop gdpPercap\n  &lt;fct&gt;     &lt;fct&gt;     &lt;int&gt;   &lt;dbl&gt;    &lt;int&gt;     &lt;dbl&gt;\n1 Australia Oceania    2002    80.4 19546792    30688.\n2 Australia Oceania    2007    81.2 20434176    34435."
   },
   {
+    "objectID": "content/slides/03-class.html#dplyr-basics",
+    "href": "content/slides/03-class.html#dplyr-basics",
+    "title": "GVPT Maths Camp",
+    "section": "dplyr basics",
+    "text": "dplyr basics\n\nFirst argument is always a data frame.\nSubsequent arguments typically describe which columns to operate on, using the variable names (without quotes).\nOutput is always a new data frame."
+  },
+  {
     "objectID": "content/slides/03-class.html#filter-rows-with-filter-1",
     "href": "content/slides/03-class.html#filter-rows-with-filter-1",
     "title": "GVPT Maths Camp",
@@ -179,7 +186,7 @@
     "href": "content/slides/03-class.html#exercise-1",
     "title": "GVPT Maths Camp",
     "section": "EXERCISE",
-    "text": "EXERCISE\n\nFind all country-years that have populations greater than 1 billion people.\nFind all countries in Oceania.\n\n\nHINT: Check out distinct().\n\n\nFind all countries in both Asia and Europe.\nFind all country-years that have a life expectancy greater than 50 years and less than 60 years.\nFind all country-years that have a life expectancy less than 50 years or greater than 60 years."
+    "text": "EXERCISE\n\nFind all country-years that have populations greater than 1 billion people.\nFind all countries in Oceania. HINT: Check out distinct().\nFind all countries in both Asia and Europe.\nFind all country-years that have a life expectancy greater than 50 years and less than 60 years.\nFind all country-years that have a life expectancy less than 50 years or greater than 60 years."
   },
   {
     "objectID": "content/slides/03-class.html#check-your-answers",
@@ -1208,14 +1215,14 @@
     "href": "content/02-content.html",
     "title": "Data Visualisation",
     "section": "",
-    "text": "Data Visualisation chapter in Hadley Wickham’s R4DS\n\n\n\n Kieran Healy’s Data Visualization: A Practical Guide\n Claus O. Wilke’s Fundamentals of Data Visualization"
+    "text": "Data Visualisation chapter in Hadley Wickham’s R4DS\n\n\n\n Kieran Healy’s Data Visualization: A Practical Guide\n Claus O. Wilke’s Fundamentals of Data Visualization\n The Royal Statistical Society’s Best Practices for Data Visualisation, which includes R code"
   },
   {
     "objectID": "content/02-content.html#readings",
     "href": "content/02-content.html#readings",
     "title": "Data Visualisation",
     "section": "",
-    "text": "Data Visualisation chapter in Hadley Wickham’s R4DS\n\n\n\n Kieran Healy’s Data Visualization: A Practical Guide\n Claus O. Wilke’s Fundamentals of Data Visualization"
+    "text": "Data Visualisation chapter in Hadley Wickham’s R4DS\n\n\n\n Kieran Healy’s Data Visualization: A Practical Guide\n Claus O. Wilke’s Fundamentals of Data Visualization\n The Royal Statistical Society’s Best Practices for Data Visualisation, which includes R code"
   },
   {
     "objectID": "content/02-content.html#slides",

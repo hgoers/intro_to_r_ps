@@ -126,6 +126,14 @@ Five basic functions:
 filter(gapminder, country == "Australia", year > 2000)
 ```
 
+## `dplyr` basics
+
+-   First argument is always a data frame.
+
+-   Subsequent arguments typically describe which columns to operate on, using the variable names (without quotes).
+
+-   Output is always a new data frame.
+
 ## Filter rows with `filter()`
 
 ```{r}
@@ -148,9 +156,7 @@ filter(gapminder, pop > 500000 | pop < 1000000)
 
 1.  Find all country-years that have populations greater than 1 billion people.
 
-2.  Find all countries in Oceania.
-
-> HINT: Check out `distinct()`.
+2.  Find all countries in Oceania. HINT: Check out `distinct()`.
 
 3.  Find all countries in both Asia and Europe.
 
@@ -563,9 +569,8 @@ This session you have:
 
 *Reminder*
 
-In the final session, you will apply the skills you will learn over the next few days to a problem that interests you. To prepare for this, you need to find a data set that: 
+In the final session, you will apply the skills you will learn over the next few days to a problem that interests you. To prepare for this, you need to find a data set that:
 
-1.    Is relevant to your research interests, 
+1.  Is relevant to your research interests,
 
-2.    Contains continuous and discrete variables.
-
+2.  Contains continuous and discrete variables.

@@ -4,7 +4,7 @@ title: "Introduction and Set Up"
 
 ## Readings
 
-### Setting up your computer 
+### Setting up your computer
 
 *Sorry for the macOS bias!*
 
