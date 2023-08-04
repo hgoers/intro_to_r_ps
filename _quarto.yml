@@ -26,6 +26,16 @@ website:
         - content/04-content.qmd
         - content/05-content.qmd
 
+  page-footer:
+    left: |
+      Content {{< fa brands creative-commons >}} 2023 by [Harriet Goers](https://harrietgoers.com/) <br>
+      All content licensed under a {{< fa brands creative-commons >}}
+      {{< fa brands creative-commons-by >}} {{< fa brands creative-commons-nc >}}
+      [Creative Commons Attribution-Non Commercial 4.0 International license (CC BY-NC 4.0)](https://creativecommons.org/licenses/by-nc/4.0/)
+    right: |
+      Made with {{< fa brands r-project >}} and [Quarto](https://quarto.org/)<br>
+      [Heavily inspired by course websites built by Dr Andrew Heiss](https://www.andrewheiss.com/teaching/)
+
 format:
   html:
     theme: litera
