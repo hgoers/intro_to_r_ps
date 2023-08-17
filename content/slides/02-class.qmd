@@ -190,7 +190,7 @@ This session will borrow (read: *steal*) heavily from Hadley Wickham's *R for Da
 #| echo: false
 
 ggplot(data = mpg, mapping = aes(x = displ, y = hwy)) + 
-  geom_point(mapping = aes(colour = class, shape = class)) + 
+  geom_point(mapping = aes(colour = class)) + 
   geom_smooth(method = "lm") + 
   theme(
     legend.position = "bottom",
@@ -214,7 +214,7 @@ ggplot(data = mpg, mapping = aes(x = displ, y = hwy)) +
 #| eval: false
 
 ggplot(data = mpg, mapping = aes(x = displ, y = hwy)) + 
-  geom_point(mapping = aes(colour = class, shape = class)) + 
+  geom_point(mapping = aes(colour = class)) + 
   geom_smooth(method = "lm") + 
   theme(
     legend.position = "bottom",
@@ -324,22 +324,12 @@ ggplot(data = mpg, mapping = aes(x = displ, y = hwy, colour = class)) +
   geom_point()
 ```
 
-## Make your visualizations more accessible
-
-```{r}
-#| code-line-numbers: "1,3"
-
-ggplot(data = mpg, mapping = aes(x = displ, y = hwy, colour = class, shape = class)) + 
-  geom_point() + 
-  scale_color_colorblind()
-```
-
 ## Add more information
 
 ```{r}
 #| code-line-numbers: "3"
 
-ggplot(data = mpg, mapping = aes(x = displ, y = hwy, colour = class, shape = class)) + 
+ggplot(data = mpg, mapping = aes(x = displ, y = hwy, colour = class)) + 
   geom_point() + 
   geom_smooth(method = "lm") + 
   scale_color_colorblind()
@@ -351,7 +341,7 @@ ggplot(data = mpg, mapping = aes(x = displ, y = hwy, colour = class, shape = cla
 #| code-line-numbers: "2"
 
 ggplot(data = mpg, mapping = aes(x = displ, y = hwy)) + 
-  geom_point(mapping = aes(colour = class, shape = class)) + 
+  geom_point(mapping = aes(colour = class)) + 
   geom_smooth(method = "lm") + 
   scale_color_colorblind()
 ```
@@ -363,7 +353,7 @@ ggplot(data = mpg, mapping = aes(x = displ, y = hwy)) +
 #| code-line-numbers: "4,5,6,7,8"
 
 ggplot(data = mpg, mapping = aes(x = displ, y = hwy)) + 
-  geom_point(mapping = aes(colour = class, shape = class)) + 
+  geom_point(mapping = aes(colour = class)) + 
   geom_smooth(method = "lm") + 
   labs(
     title = "Engine displacement and highway miles per gallon",
@@ -380,7 +370,7 @@ ggplot(data = mpg, mapping = aes(x = displ, y = hwy)) +
 #| echo: false
 
 ggplot(data = mpg, mapping = aes(x = displ, y = hwy)) + 
-  geom_point(mapping = aes(colour = class, shape = class)) + 
+  geom_point(mapping = aes(colour = class)) + 
   geom_smooth(method = "lm") + 
   labs(
     title = "Engine displacement and highway miles per gallon",
@@ -489,7 +479,7 @@ Less is more when it comes to data visualization.
 #| code-line-numbers: "4"
 
 ggplot(data = mpg, mapping = aes(x = displ, y = hwy)) + 
-  geom_point(mapping = aes(colour = class, shape = class)) + 
+  geom_point(mapping = aes(colour = class)) + 
   geom_smooth(method = "lm") + 
   theme_minimal() + 
   labs(
@@ -511,7 +501,7 @@ All pre-set `ggplot` themes can be found in the [`ggplot` documentation](https:/
 #| echo: false
 
 ggplot(data = mpg, mapping = aes(x = displ, y = hwy)) + 
-  geom_point(mapping = aes(colour = class, shape = class)) + 
+  geom_point(mapping = aes(colour = class)) + 
   geom_smooth(method = "lm") + 
   theme_minimal() + 
   labs(
@@ -530,7 +520,7 @@ ggplot(data = mpg, mapping = aes(x = displ, y = hwy)) +
 #| code-line-numbers: "4-10"
 
 ggplot(data = mpg, mapping = aes(x = displ, y = hwy)) + 
-  geom_point(mapping = aes(colour = class, shape = class)) + 
+  geom_point(mapping = aes(colour = class)) + 
   geom_smooth(method = "lm") + 
   theme(
     legend.position = "bottom",
@@ -558,7 +548,7 @@ All theme elements that you can control can be found in the [`ggplot` documentat
 #| echo: false
 
 ggplot(data = mpg, mapping = aes(x = displ, y = hwy)) + 
-  geom_point(mapping = aes(colour = class, shape = class)) + 
+  geom_point(mapping = aes(colour = class)) + 
   geom_smooth(method = "lm") + 
   theme(
     legend.position = "bottom",

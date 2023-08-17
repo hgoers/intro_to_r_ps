@@ -43,6 +43,8 @@ format:
 
 -   A versatile programming language that is particularly good for statistical analysis
 
+    -   All materials used in this course were produced using R, including the website and fancy slides
+
 -   Involves a huge community of people who passionately contribute
 
 -   Free and accessible!

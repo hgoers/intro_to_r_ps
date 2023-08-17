@@ -46,7 +46,7 @@
     "href": "content/slides/01-class.html#why-r",
     "title": "GVPT Maths Camp",
     "section": "Why R?",
-    "text": "Why R?\n\nA versatile programming language that is particularly good for statistical analysis\nInvolves a huge community of people who passionately contribute\nFree and accessible!"
+    "text": "Why R?\n\nA versatile programming language that is particularly good for statistical analysis\n\nAll materials used in this course were produced using R, including the website and fancy slides\n\nInvolves a huge community of people who passionately contribute\nFree and accessible!"
   },
   {
     "objectID": "content/slides/01-class.html#set-up",
@@ -592,7 +592,7 @@
     "href": "content/slides/02-class.html#how-did-we-do-this",
     "title": "GVPT Maths Camp",
     "section": "How did we do this?",
-    "text": "How did we do this?\n\nggplot(data = mpg, mapping = aes(x = displ, y = hwy)) + \n  geom_point(mapping = aes(colour = class, shape = class)) + \n  geom_smooth(method = \"lm\") + \n  theme(\n    legend.position = \"bottom\",\n    panel.grid = element_blank(),\n    panel.background = element_blank(),\n    plot.title.position = \"plot\",\n    plot.title = element_text(face = \"bold\")\n  ) + \n  labs(\n    title = \"Engine displacement and highway miles per gallon\",\n    subtitle = \"Values for seven different classes of cars\",\n    x = \"Engine displacement (L)\",\n    y = \"Highway miles per gallon\"\n  ) + \n  scale_color_colorblind()\n\n\n\nWe will step through this now. By the end of this session, you will be able to make your own colourful data visualisations using R."
+    "text": "How did we do this?\n\nggplot(data = mpg, mapping = aes(x = displ, y = hwy)) + \n  geom_point(mapping = aes(colour = class)) + \n  geom_smooth(method = \"lm\") + \n  theme(\n    legend.position = \"bottom\",\n    panel.grid = element_blank(),\n    panel.background = element_blank(),\n    plot.title.position = \"plot\",\n    plot.title = element_text(face = \"bold\")\n  ) + \n  labs(\n    title = \"Engine displacement and highway miles per gallon\",\n    subtitle = \"Values for seven different classes of cars\",\n    x = \"Engine displacement (L)\",\n    y = \"Highway miles per gallon\"\n  ) + \n  scale_color_colorblind()\n\n\n\nWe will step through this now. By the end of this session, you will be able to make your own colourful data visualisations using R."
   },
   {
     "objectID": "content/slides/02-class.html#load-relevant-packages-and-data",
@@ -658,32 +658,25 @@
     "text": "Let’s look at groups in the data\n\nggplot(data = mpg, mapping = aes(x = displ, y = hwy, colour = class)) + \n  geom_point()"
   },
   {
-    "objectID": "content/slides/02-class.html#make-your-visualizations-more-accessible",
-    "href": "content/slides/02-class.html#make-your-visualizations-more-accessible",
-    "title": "GVPT Maths Camp",
-    "section": "Make your visualizations more accessible",
-    "text": "Make your visualizations more accessible\n\nggplot(data = mpg, mapping = aes(x = displ, y = hwy, colour = class, shape = class)) + \n  geom_point() + \n  scale_color_colorblind()"
-  },
-  {
     "objectID": "content/slides/02-class.html#add-more-information",
     "href": "content/slides/02-class.html#add-more-information",
     "title": "GVPT Maths Camp",
     "section": "Add more information",
-    "text": "Add more information\n\nggplot(data = mpg, mapping = aes(x = displ, y = hwy, colour = class, shape = class)) + \n  geom_point() + \n  geom_smooth(method = \"lm\") + \n  scale_color_colorblind()"
+    "text": "Add more information\n\nggplot(data = mpg, mapping = aes(x = displ, y = hwy, colour = class)) + \n  geom_point() + \n  geom_smooth(method = \"lm\") + \n  scale_color_colorblind()"
   },
   {
     "objectID": "content/slides/02-class.html#look-at-the-relationship-across-all-cars",
     "href": "content/slides/02-class.html#look-at-the-relationship-across-all-cars",
     "title": "GVPT Maths Camp",
     "section": "Look at the relationship across all cars",
-    "text": "Look at the relationship across all cars\n\nggplot(data = mpg, mapping = aes(x = displ, y = hwy)) + \n  geom_point(mapping = aes(colour = class, shape = class)) + \n  geom_smooth(method = \"lm\") + \n  scale_color_colorblind()"
+    "text": "Look at the relationship across all cars\n\nggplot(data = mpg, mapping = aes(x = displ, y = hwy)) + \n  geom_point(mapping = aes(colour = class)) + \n  geom_smooth(method = \"lm\") + \n  scale_color_colorblind()"
   },
   {
     "objectID": "content/slides/02-class.html#add-useful-titles-and-labels",
     "href": "content/slides/02-class.html#add-useful-titles-and-labels",
     "title": "GVPT Maths Camp",
     "section": "Add useful titles and labels",
-    "text": "Add useful titles and labels\n\nggplot(data = mpg, mapping = aes(x = displ, y = hwy)) + \n  geom_point(mapping = aes(colour = class, shape = class)) + \n  geom_smooth(method = \"lm\") + \n  labs(\n    title = \"Engine displacement and highway miles per gallon\",\n    subtitle = \"Values for seven different classes of cars\",\n    x = \"Engine displacement (L)\",\n    y = \"Highway miles per gallon\"\n  ) + \n  scale_color_colorblind()"
+    "text": "Add useful titles and labels\n\nggplot(data = mpg, mapping = aes(x = displ, y = hwy)) + \n  geom_point(mapping = aes(colour = class)) + \n  geom_smooth(method = \"lm\") + \n  labs(\n    title = \"Engine displacement and highway miles per gallon\",\n    subtitle = \"Values for seven different classes of cars\",\n    x = \"Engine displacement (L)\",\n    y = \"Highway miles per gallon\"\n  ) + \n  scale_color_colorblind()"
   },
   {
     "objectID": "content/slides/02-class.html#add-useful-titles-and-labels-1",
@@ -746,7 +739,7 @@
     "href": "content/slides/02-class.html#lets-clean-our-graph-up",
     "title": "GVPT Maths Camp",
     "section": "Let’s clean our graph up",
-    "text": "Let’s clean our graph up\nLess is more when it comes to data visualization.\n\nggplot(data = mpg, mapping = aes(x = displ, y = hwy)) + \n  geom_point(mapping = aes(colour = class, shape = class)) + \n  geom_smooth(method = \"lm\") + \n  theme_minimal() + \n  labs(\n    title = \"Engine displacement and highway miles per gallon\",\n    subtitle = \"Values for seven different classes of cars\",\n    x = \"Engine displacement (L)\",\n    y = \"Highway miles per gallon\"\n  ) + \n  scale_color_colorblind()\n\n\n\nAll pre-set ggplot themes can be found in the ggplot documentation."
+    "text": "Let’s clean our graph up\nLess is more when it comes to data visualization.\n\nggplot(data = mpg, mapping = aes(x = displ, y = hwy)) + \n  geom_point(mapping = aes(colour = class)) + \n  geom_smooth(method = \"lm\") + \n  theme_minimal() + \n  labs(\n    title = \"Engine displacement and highway miles per gallon\",\n    subtitle = \"Values for seven different classes of cars\",\n    x = \"Engine displacement (L)\",\n    y = \"Highway miles per gallon\"\n  ) + \n  scale_color_colorblind()\n\n\n\nAll pre-set ggplot themes can be found in the ggplot documentation."
   },
   {
     "objectID": "content/slides/02-class.html#lets-clean-this-up",
@@ -760,7 +753,7 @@
     "href": "content/slides/02-class.html#creating-your-own-theme",
     "title": "GVPT Maths Camp",
     "section": "Creating your own theme",
-    "text": "Creating your own theme\n\nggplot(data = mpg, mapping = aes(x = displ, y = hwy)) + \n  geom_point(mapping = aes(colour = class, shape = class)) + \n  geom_smooth(method = \"lm\") + \n  theme(\n    legend.position = \"bottom\",\n    panel.grid = element_blank(),\n    panel.background = element_blank(),\n    plot.title.position = \"plot\",\n    plot.title = element_text(face = \"bold\")\n  ) + \n  labs(\n    title = \"Engine displacement and highway miles per gallon\",\n    subtitle = \"Values for seven different classes of cars\",\n    x = \"Engine displacement (L)\",\n    y = \"Highway miles per gallon\"\n  ) + \n  scale_color_colorblind()\n\n\n\nAll theme elements that you can control can be found in the ggplot documentation. There are a lot!"
+    "text": "Creating your own theme\n\nggplot(data = mpg, mapping = aes(x = displ, y = hwy)) + \n  geom_point(mapping = aes(colour = class)) + \n  geom_smooth(method = \"lm\") + \n  theme(\n    legend.position = \"bottom\",\n    panel.grid = element_blank(),\n    panel.background = element_blank(),\n    plot.title.position = \"plot\",\n    plot.title = element_text(face = \"bold\")\n  ) + \n  labs(\n    title = \"Engine displacement and highway miles per gallon\",\n    subtitle = \"Values for seven different classes of cars\",\n    x = \"Engine displacement (L)\",\n    y = \"Highway miles per gallon\"\n  ) + \n  scale_color_colorblind()\n\n\n\nAll theme elements that you can control can be found in the ggplot documentation. There are a lot!"
   },
   {
     "objectID": "content/slides/02-class.html#creating-your-own-theme-1",
