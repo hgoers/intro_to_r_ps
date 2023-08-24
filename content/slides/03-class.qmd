@@ -210,7 +210,7 @@ filter(gapminder, lifeExp < 50 | lifeExp > 60)
 
 <br>
 
-`=!` is *not equal to*
+`!=` is *not equal to*
 
 <br>
 
