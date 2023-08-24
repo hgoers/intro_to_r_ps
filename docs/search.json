@@ -382,7 +382,7 @@
     "href": "content/slides/03-class.html#exercise-1",
     "title": "GVPT Maths Camp",
     "section": "EXERCISE",
-    "text": "EXERCISE\n\nFind all country-years that have populations greater than 1 billion people.\nFind all countries in Oceania. HINT: Check out distinct().\nFind all countries in both Asia and Europe.\nFind all country-years that have a life expectancy greater than 50 years and less than 60 years.\nFind all country-years that have a life expectancy less than 50 years or greater than 60 years."
+    "text": "EXERCISE\n\nFind all country-years that have populations greater than 1 billion people.\nFind all countries in Oceania.\nFind all countries in both Asia and Europe.\nFind all country-years that have a life expectancy greater than 50 years and less than 60 years.\nFind all country-years that have a life expectancy less than 50 years or greater than 60 years."
   },
   {
     "objectID": "content/slides/03-class.html#check-your-answers",
@@ -396,14 +396,14 @@
     "href": "content/slides/03-class.html#check-your-answers-1",
     "title": "GVPT Maths Camp",
     "section": "CHECK YOUR ANSWERS",
-    "text": "CHECK YOUR ANSWERS\n\nFind all countries in Oceania.\n\n\ndistinct(filter(gapminder, continent == \"Oceania\"), country)\n\n# A tibble: 2 × 1\n  country    \n  &lt;fct&gt;      \n1 Australia  \n2 New Zealand"
+    "text": "CHECK YOUR ANSWERS\n\nFind all countries in Oceania.\n\n\nfilter(gapminder, continent == \"Oceania\")\n\n# A tibble: 24 × 6\n   country   continent  year lifeExp      pop gdpPercap\n   &lt;fct&gt;     &lt;fct&gt;     &lt;int&gt;   &lt;dbl&gt;    &lt;int&gt;     &lt;dbl&gt;\n 1 Australia Oceania    1952    69.1  8691212    10040.\n 2 Australia Oceania    1957    70.3  9712569    10950.\n 3 Australia Oceania    1962    70.9 10794968    12217.\n 4 Australia Oceania    1967    71.1 11872264    14526.\n 5 Australia Oceania    1972    71.9 13177000    16789.\n 6 Australia Oceania    1977    73.5 14074100    18334.\n 7 Australia Oceania    1982    74.7 15184200    19477.\n 8 Australia Oceania    1987    76.3 16257249    21889.\n 9 Australia Oceania    1992    77.6 17481977    23425.\n10 Australia Oceania    1997    78.8 18565243    26998.\n# ℹ 14 more rows"
   },
   {
     "objectID": "content/slides/03-class.html#check-your-answers-2",
     "href": "content/slides/03-class.html#check-your-answers-2",
     "title": "GVPT Maths Camp",
     "section": "CHECK YOUR ANSWERS",
-    "text": "CHECK YOUR ANSWERS\n\nFind all countries in both Asia and Europe.\n\n\ndistinct(filter(gapminder, continent %in% c(\"Asia\", \"Europe\")), country)\n\n# A tibble: 63 × 1\n   country               \n   &lt;fct&gt;                 \n 1 Afghanistan           \n 2 Albania               \n 3 Austria               \n 4 Bahrain               \n 5 Bangladesh            \n 6 Belgium               \n 7 Bosnia and Herzegovina\n 8 Bulgaria              \n 9 Cambodia              \n10 China                 \n# ℹ 53 more rows"
+    "text": "CHECK YOUR ANSWERS\n\nFind all countries in both Asia and Europe.\n\n\nfilter(gapminder, continent %in% c(\"Asia\", \"Europe\"))\n\n# A tibble: 756 × 6\n   country     continent  year lifeExp      pop gdpPercap\n   &lt;fct&gt;       &lt;fct&gt;     &lt;int&gt;   &lt;dbl&gt;    &lt;int&gt;     &lt;dbl&gt;\n 1 Afghanistan Asia       1952    28.8  8425333      779.\n 2 Afghanistan Asia       1957    30.3  9240934      821.\n 3 Afghanistan Asia       1962    32.0 10267083      853.\n 4 Afghanistan Asia       1967    34.0 11537966      836.\n 5 Afghanistan Asia       1972    36.1 13079460      740.\n 6 Afghanistan Asia       1977    38.4 14880372      786.\n 7 Afghanistan Asia       1982    39.9 12881816      978.\n 8 Afghanistan Asia       1987    40.8 13867957      852.\n 9 Afghanistan Asia       1992    41.7 16317921      649.\n10 Afghanistan Asia       1997    41.8 22227415      635.\n# ℹ 746 more rows"
   },
   {
     "objectID": "content/slides/03-class.html#check-your-answers-3",
@@ -613,14 +613,14 @@
     "href": "content/slides/03-class.html#exercise-5",
     "title": "GVPT Maths Camp",
     "section": "EXERCISE",
-    "text": "EXERCISE\n\nCalculate the average GDP per capita for countries in the Americas in 2007. Display only the country and average GDP per capita variables.\nPlot your results."
+    "text": "EXERCISE\n\nCalculate the average GDP per capita for countries in the Americas for all recorded years after 2000. Display only the country and average GDP per capita variables.\nPlot your results."
   },
   {
     "objectID": "content/slides/03-class.html#check-your-answers-14",
     "href": "content/slides/03-class.html#check-your-answers-14",
     "title": "GVPT Maths Camp",
     "section": "CHECK YOUR ANSWERS",
-    "text": "CHECK YOUR ANSWERS\n\nCalculate the average GDP per capita for countries in the Americas in all years including or after 2000.\n\n\ngapminder_americas_2000 &lt;- gapminder |&gt; \n  filter(continent == \"Americas\", year &gt;= 2000) |&gt; \n  group_by(country) |&gt; \n  summarise(avg_gdp_per_cap = mean(gdpPercap))\n\ngapminder_americas_2000\n\n# A tibble: 25 × 2\n   country            avg_gdp_per_cap\n   &lt;fct&gt;                        &lt;dbl&gt;\n 1 Argentina                   10789.\n 2 Bolivia                      3618.\n 3 Brazil                       8599.\n 4 Canada                      34824.\n 5 Chile                       11975.\n 6 Colombia                     6381.\n 7 Costa Rica                   8684.\n 8 Cuba                         7644.\n 9 Dominican Republic           5295.\n10 Ecuador                      6323.\n# ℹ 15 more rows"
+    "text": "CHECK YOUR ANSWERS\n\nCalculate the average GDP per capita for countries in the Americas in all years including or after 2000.\n\n\ngapminder_americas_2000 &lt;- gapminder |&gt; \n  filter(continent == \"Americas\", year &gt; 2000) |&gt; \n  group_by(country) |&gt; \n  summarise(avg_gdp_per_cap = mean(gdpPercap))\n\ngapminder_americas_2000\n\n# A tibble: 25 × 2\n   country            avg_gdp_per_cap\n   &lt;fct&gt;                        &lt;dbl&gt;\n 1 Argentina                   10789.\n 2 Bolivia                      3618.\n 3 Brazil                       8599.\n 4 Canada                      34824.\n 5 Chile                       11975.\n 6 Colombia                     6381.\n 7 Costa Rica                   8684.\n 8 Cuba                         7644.\n 9 Dominican Republic           5295.\n10 Ecuador                      6323.\n# ℹ 15 more rows"
   },
   {
     "objectID": "content/slides/03-class.html#check-your-answers-15",
@@ -635,13 +635,6 @@
     "title": "GVPT Maths Camp",
     "section": "CHECK YOUR ANSWERS",
     "text": "CHECK YOUR ANSWERS\n\nPlot your results.\n\n\nggplot(\n  gapminder_americas_2000, \n  aes(x = avg_gdp_per_cap, y = reorder(country, avg_gdp_per_cap))\n) + \n  geom_col() +\n  theme_minimal() + \n  labs(title = \"Average GDP per capita for countries in the Americas in 2002 and 2007\",\n       x = \"Average GDP per capita (US$)\",\n       y = NULL) + \n  scale_x_continuous(labels = scales::label_dollar())\n\n\n\nCheck out the scales R package for very handy formatting functions: https://scales.r-lib.org"
-  },
-  {
-    "objectID": "content/slides/03-class.html#a-handy-shortcut-for-counting-data-with-count",
-    "href": "content/slides/03-class.html#a-handy-shortcut-for-counting-data-with-count",
-    "title": "GVPT Maths Camp",
-    "section": "A handy shortcut for counting data with count()",
-    "text": "A handy shortcut for counting data with count()\n\n\n\ngapminder |&gt; \n  distinct(continent, country) |&gt; \n  group_by(continent) |&gt; \n  summarise(n_countries = n())\n\n# A tibble: 5 × 2\n  continent n_countries\n  &lt;fct&gt;           &lt;int&gt;\n1 Africa             52\n2 Americas           25\n3 Asia               33\n4 Europe             30\n5 Oceania             2\n\n\n\n\ngapminder |&gt; \n  distinct(continent, country) |&gt; \n  count(continent)\n\n# A tibble: 5 × 2\n  continent     n\n  &lt;fct&gt;     &lt;int&gt;\n1 Africa       52\n2 Americas     25\n3 Asia         33\n4 Europe       30\n5 Oceania       2\n\n\n\n\n\n\ndistinct() selects only unique rows from a data frame. Check out ?distinct for more detail."
   },
   {
     "objectID": "content/slides/03-class.html#summary",

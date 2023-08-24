@@ -156,7 +156,7 @@ filter(gapminder, pop > 500000 | pop < 1000000)
 
 1.  Find all country-years that have populations greater than 1 billion people.
 
-2.  Find all countries in Oceania. HINT: Check out `distinct()`.
+2.  Find all countries in Oceania.
 
 3.  Find all countries in both Asia and Europe.
 
@@ -177,7 +177,7 @@ filter(gapminder, pop > 1e9)
 2.  Find all countries in Oceania.
 
 ```{r}
-distinct(filter(gapminder, continent == "Oceania"), country)
+filter(gapminder, continent == "Oceania")
 ```
 
 ## CHECK YOUR ANSWERS {background-color="#B56576"}
@@ -185,7 +185,7 @@ distinct(filter(gapminder, continent == "Oceania"), country)
 3.  Find all countries in both Asia and Europe.
 
 ```{r}
-distinct(filter(gapminder, continent %in% c("Asia", "Europe")), country)
+filter(gapminder, continent %in% c("Asia", "Europe"))
 ```
 
 ## CHECK YOUR ANSWERS {background-color="#B56576"}
@@ -474,7 +474,7 @@ Tidyverse pipe:
 
 ## EXERCISE {background-color="#B56576"}
 
-1.  Calculate the average GDP per capita for countries in the Americas in 2007. Display only the country and average GDP per capita variables.
+1.  Calculate the average GDP per capita for countries in the Americas for all recorded years after 2000. Display only the country and average GDP per capita variables.
 
 2.  Plot your results.
 
@@ -484,7 +484,7 @@ Tidyverse pipe:
 
 ```{r}
 gapminder_americas_2000 <- gapminder |> 
-  filter(continent == "Americas", year >= 2000) |> 
+  filter(continent == "Americas", year > 2000) |> 
   group_by(country) |> 
   summarise(avg_gdp_per_cap = mean(gdpPercap))
 
@@ -528,31 +528,6 @@ ggplot(
 
 ::: aside
 Check out the `scales` R package for very handy formatting functions: [https://scales.r-lib.org](https://scales.r-lib.org/index.html)
-:::
-
-## A handy shortcut for counting data with `count()`
-
-::: columns
-::: {.column width="50%"}
-```{r}
-gapminder |> 
-  distinct(continent, country) |> 
-  group_by(continent) |> 
-  summarise(n_countries = n())
-```
-:::
-
-::: {.column width="50%"}
-```{r}
-gapminder |> 
-  distinct(continent, country) |> 
-  count(continent)
-```
-:::
-:::
-
-::: aside
-`distinct()` selects only unique rows from a data frame. Check out `?distinct` for more detail.
 :::
 
 ## Summary
