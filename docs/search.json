@@ -938,6 +938,27 @@
     "text": "Using Git in RStudio\nThree different options:\n\nRStudio GUI\nShell/terminal\nGithub desktop1\n\nWe won’t talk about this option, but it’s great!"
   },
   {
+    "objectID": "content/slides/04-class.html#do-you-have-git-installed",
+    "href": "content/slides/04-class.html#do-you-have-git-installed",
+    "title": "GVPT Maths Camp",
+    "section": "Do you have Git installed?",
+    "text": "Do you have Git installed?\nIn your terminal, run:\nwhich git\nIf you get the following, yay!\n/usr/bin/git\nIf you get something like this:\ngit: command not found\nWe need to install Git. Follow these instructions: https://happygitwithr.com/install-git."
+  },
+  {
+    "objectID": "content/slides/04-class.html#have-you-introduced-yourself-to-git",
+    "href": "content/slides/04-class.html#have-you-introduced-yourself-to-git",
+    "title": "GVPT Maths Camp",
+    "section": "Have you introduced yourself to Git?",
+    "text": "Have you introduced yourself to Git?\n\nlibrary(usethis)\n\nuse_git_config(user.name = \"Jane Doe\", user.email = \"jane@example.org\")\n\nCheck your credentials in the terminal:\ngit config --global --list\n\n\nYour username does not need to be your Github username. You can provide your actual first and last name, if you would like. Your user email MUST be the same email as the one you used to register your Github account."
+  },
+  {
+    "objectID": "content/slides/04-class.html#have-you-set-your-personal-access-token-for-https",
+    "href": "content/slides/04-class.html#have-you-set-your-personal-access-token-for-https",
+    "title": "GVPT Maths Camp",
+    "section": "Have you set your Personal Access Token for HTTPS?",
+    "text": "Have you set your Personal Access Token for HTTPS?\nRun the following:\n\nusethis::create_github_token()\n\nIt will open up a browser tab. Follow the instructions provided.\n\ngitcreds::gitcreds_set()\n\n# ? Enter password or token: ghp_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\n# -&gt; Adding new credentials...\n# -&gt; Removing credentials from cache...\n# -&gt; Done."
+  },
+  {
     "objectID": "content/slides/04-class.html#repositories",
     "href": "content/slides/04-class.html#repositories",
     "title": "GVPT Maths Camp",

@@ -93,6 +93,71 @@ Three different options:
 
 [^1]: We won't talk about this option, but it's great!
 
+## Do you have Git installed? 
+
+In your terminal, run: 
+
+```
+which git
+```
+
+If you get the following, yay! 
+
+```
+/usr/bin/git
+```
+
+If you get something like this: 
+
+```
+git: command not found
+```
+
+We need to install Git. Follow these instructions: [https://happygitwithr.com/install-git](https://happygitwithr.com/install-git).
+
+## Have you introduced yourself to Git? 
+
+```{r}
+#| eval: false
+
+library(usethis)
+
+use_git_config(user.name = "Jane Doe", user.email = "jane@example.org")
+```
+
+Check your credentials in the terminal: 
+
+```
+git config --global --list
+```
+
+::: {.aside}
+Your username does not need to be your Github username. You can provide your actual first and last name, if you would like. Your user email MUST be the same email as the one you used to register your Github account. 
+:::
+
+## Have you set your Personal Access Token for HTTPS? 
+
+Run the following: 
+
+```{r}
+#| eval: false
+
+usethis::create_github_token()
+```
+
+It will open up a browser tab. Follow the instructions provided. 
+
+```{r}
+#| eval: false
+
+gitcreds::gitcreds_set()
+
+# ? Enter password or token: ghp_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+# -> Adding new credentials...
+# -> Removing credentials from cache...
+# -> Done.
+```
+
 ## Repositories
 
 -   A repository is like a folder for your project, but better!
