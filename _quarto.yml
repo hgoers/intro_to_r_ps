@@ -4,6 +4,7 @@ project:
 
 website:
   title: "GVPT Maths Camp"
+  google-analytics: "G-1FH099T44Y"
 
   favicon: "/files/img/hex-testudo.png"
 
