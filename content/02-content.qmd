@@ -1,11 +1,8 @@
 ---
-title: "Data Visualisation I"
-author: "Harriet Goers"
+title: "Data Visualisation"
 ---
 
 ## Readings
-
-### For this session
 
 {{< fa book >}} [Data Visualisation chapter](https://r4ds.had.co.nz/data-visualisation.html) in Hadley Wickham's *R4DS*
 

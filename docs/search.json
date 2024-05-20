@@ -4,28 +4,62 @@
     "href": "index.html",
     "title": "\n            Introduction to R for Political Scientists\n        ",
     "section": "",
-    "text": "Introduction to R for Political Scientists\n        \n        \n            Learn to use data science tools to support your research\n        \n        \n            Summer 2023Department of Government and PoliticsUniversity of Maryland, College Park\n        \n    \n    \n      \n        \n        \n        \n      \n    \n\n\n\n\n\nInstructor\n\n   Harriet Goers\n   Chincoteague Building\n   hgoers@umd.edu\n   hgoers\n\n\n\nCourse details\n\n   August 21 - 25, 2023\n   2 - 4 PM\n   TYD 2111\n   Slack\n\n\n\nContacting me\nE-mail and Slack are the best ways to get in contact with me. I will try to respond to all course-related e-mails and Slack messages within 24 hours."
+    "text": "Introduction to R for Political Scientists\n        \n        \n            Learn to use data science tools to support your research\n        \n        \n            Summer 2024Department of Government and PoliticsUniversity of Maryland, College Park\n        \n    \n    \n      \n        \n        \n        \n      \n    \n\n\n\n\n\n\nInstructor\n\n   Harriet Goers\n   Chincoteague Building\n   hgoers@umd.edu\n   hgoers\n\n\n\nCourse details\n\n   August 19 - 23, 2024\n   2 - 4 PM\n   TYD 2111\n   Slack\n\n\n\nContacting me\nE-mail is the best way to get in contact with me. I will try to respond to all course-related e-mails within 24 hours."
   },
   {
     "objectID": "content/01-content.html",
     "href": "content/01-content.html",
-    "title": "Introduction and Set Up",
+    "title": "Welcome",
     "section": "",
-    "text": "Sorry for the macOS bias!\n Garrick Aden-Buie’s macOS set up blogpost\n Matti Vuorre’s macOS set up blogpost\n\n\n\n Install or upgrade R and RStudio chapter in Jennifer Bryan’s Happy Git and GitHub for the useR\n\n\n\n Installation and Connect Git, GitHub, RStudio sections in Jennifer Bryan’s Happy Git and GitHub for the useR"
+    "text": "Welcome to GVPT Maths Camp! Over the next five sessions, I will introduce several important technical skills you will require to successfully complete your PhD.",
+    "crumbs": [
+      "Content",
+      "Welcome"
+    ]
+  },
+  {
+    "objectID": "content/01-content.html#pre-requisites",
+    "href": "content/01-content.html#pre-requisites",
+    "title": "Welcome",
+    "section": "Pre-requisites",
+    "text": "Pre-requisites\nNone! You will be introduced to these technical skills over this week. You will develop them throughout the PhD program (and through your own research outside of the program).",
+    "crumbs": [
+      "Content",
+      "Welcome"
+    ]
   },
   {
     "objectID": "content/01-content.html#readings",
     "href": "content/01-content.html#readings",
-    "title": "Introduction and Set Up",
-    "section": "",
-    "text": "Sorry for the macOS bias!\n Garrick Aden-Buie’s macOS set up blogpost\n Matti Vuorre’s macOS set up blogpost\n\n\n\n Install or upgrade R and RStudio chapter in Jennifer Bryan’s Happy Git and GitHub for the useR\n\n\n\n Installation and Connect Git, GitHub, RStudio sections in Jennifer Bryan’s Happy Git and GitHub for the useR"
+    "title": "Welcome",
+    "section": "Readings",
+    "text": "Readings\n\nR\n R for Data Science by Hadley Wickham, Mine Çetinkaya-Rundel, and Garrett Grolemund.\n\n\nGit and GitHub\n Happy Git and GitHub for the useR by Jennifer Bryan.",
+    "crumbs": [
+      "Content",
+      "Welcome"
+    ]
   },
   {
     "objectID": "content/01-content.html#slides",
     "href": "content/01-content.html#slides",
-    "title": "Introduction and Set Up",
+    "title": "Welcome",
     "section": "Slides",
-    "text": "Slides"
+    "text": "Slides",
+    "crumbs": [
+      "Content",
+      "Welcome"
+    ]
+  },
+  {
+    "objectID": "content/01-content.html#additional-resources",
+    "href": "content/01-content.html#additional-resources",
+    "title": "Welcome",
+    "section": "Additional resources",
+    "text": "Additional resources\n\nInstructions for downloading R\nInstructions for downloading RStudio\nInstructions for installing and setting up Git and Github",
+    "crumbs": [
+      "Content",
+      "Welcome"
+    ]
   },
   {
     "objectID": "content/slides/04-class.html#learning-objectives",
@@ -392,228 +426,67 @@
     "text": "Learning objectives\n\nExplore an interesting question using the skills you have learnt\nCreate a script that you can use to explore new data sets in the future"
   },
   {
+    "objectID": "content/slides/05-class.html#quarto",
+    "href": "content/slides/05-class.html#quarto",
+    "title": "GVPT Maths Camp",
+    "section": "Quarto",
+    "text": "Quarto\nQuarto is a tool that helps you to create fully reproducible research outputs.\n\nAllows combine your code, results, and prose in one document.\n\n\n\nThis website and all of these slides were created using Quarto."
+  },
+  {
+    "objectID": "content/slides/05-class.html#quarto-and-rstudio",
+    "href": "content/slides/05-class.html#quarto-and-rstudio",
+    "title": "GVPT Maths Camp",
+    "section": "Quarto and RStudio",
+    "text": "Quarto and RStudio\n\nSource: Quarto"
+  },
+  {
+    "objectID": "content/slides/05-class.html#create-a-new-quarto-document",
+    "href": "content/slides/05-class.html#create-a-new-quarto-document",
+    "title": "GVPT Maths Camp",
+    "section": "Create a new Quarto document",
+    "text": "Create a new Quarto document"
+  },
+  {
+    "objectID": "content/slides/05-class.html#rendering-your-quarto-document",
+    "href": "content/slides/05-class.html#rendering-your-quarto-document",
+    "title": "GVPT Maths Camp",
+    "section": "Rendering your Quarto document",
+    "text": "Rendering your Quarto document"
+  },
+  {
+    "objectID": "content/slides/05-class.html#writing-prose-in-quarto",
+    "href": "content/slides/05-class.html#writing-prose-in-quarto",
+    "title": "GVPT Maths Camp",
+    "section": "Writing prose in Quarto",
+    "text": "Writing prose in Quarto\n\nSource: Quarto"
+  },
+  {
+    "objectID": "content/slides/05-class.html#code-chunks",
+    "href": "content/slides/05-class.html#code-chunks",
+    "title": "GVPT Maths Camp",
+    "section": "Code chunks",
+    "text": "Code chunks\n```{r}\n#| echo: true\n\nlibrary(tidyverse)\n```"
+  },
+  {
+    "objectID": "content/slides/05-class.html#chunk-options",
+    "href": "content/slides/05-class.html#chunk-options",
+    "title": "GVPT Maths Camp",
+    "section": "Chunk options",
+    "text": "Chunk options\n```{yaml}\nexecute:\n  echo: true\n  message: false\n  warning: false\n```"
+  },
+  {
+    "objectID": "content/slides/05-class.html#in-line-code",
+    "href": "content/slides/05-class.html#in-line-code",
+    "title": "GVPT Maths Camp",
+    "section": "In-line code",
+    "text": "In-line code\nYou include R code directly in your prose using the expression: r. For example:\n\nWill render as: There are 234 observations in our data.\n\nNo need to go and update this reference if that number changes!"
+  },
+  {
     "objectID": "content/slides/05-class.html#exercise",
     "href": "content/slides/05-class.html#exercise",
     "title": "GVPT Maths Camp",
     "section": "EXERCISE",
-    "text": "EXERCISE\n\nCreate a plot of a categorical variable in your data set.\nCreate a plot of a continuous variable in your data set.\nCreate a plot showing the relationship between two continuous variables in your data set.\nCreate a plot showing the relationship between a categorical and a continuous variable in your data set."
-  },
-  {
-    "objectID": "content/slides/06-class.html#learning-objectives-for-today",
-    "href": "content/slides/06-class.html#learning-objectives-for-today",
-    "title": "GVPT Maths Camp",
-    "section": "Learning objectives for today",
-    "text": "Learning objectives for today\n\nIntroduction to R\nImprove your first plot\nTest your hypotheses using informative data visualizations"
-  },
-  {
-    "objectID": "content/slides/06-class.html#skipping-to-the-end",
-    "href": "content/slides/06-class.html#skipping-to-the-end",
-    "title": "GVPT Maths Camp",
-    "section": "Skipping to the end",
-    "text": "Skipping to the end"
-  },
-  {
-    "objectID": "content/slides/06-class.html#how-did-we-do-this",
-    "href": "content/slides/06-class.html#how-did-we-do-this",
-    "title": "GVPT Maths Camp",
-    "section": "How did we do this?",
-    "text": "How did we do this?\n\nggplot(data = mpg, mapping = aes(x = displ, y = hwy)) + \n  geom_point(mapping = aes(colour = class)) + \n  geom_smooth(method = \"lm\") + \n  theme(\n    legend.position = \"bottom\",\n    panel.grid = element_blank(),\n    panel.background = element_blank(),\n    plot.title.position = \"plot\",\n    plot.title = element_text(face = \"bold\")\n  ) + \n  labs(\n    title = \"Engine displacement and highway miles per gallon\",\n    subtitle = \"Values for seven different classes of cars\",\n    x = \"Engine displacement (L)\",\n    y = \"Highway miles per gallon\"\n  ) + \n  scale_color_colorblind()\n\n\n\nWe will step through this now. By the end of this session, you will be able to make your own colourful data visualisations using R."
-  },
-  {
-    "objectID": "content/slides/06-class.html#exercise",
-    "href": "content/slides/06-class.html#exercise",
-    "title": "GVPT Maths Camp",
-    "section": "EXERCISE",
-    "text": "EXERCISE\nHow many rows are in mpg? How many columns?\n\nnrow(mpg)\nncol(mpg)\n\n\nWhat does the drv variable describe?\n\n?mpg"
-  },
-  {
-    "objectID": "content/slides/06-class.html#exercise-1",
-    "href": "content/slides/06-class.html#exercise-1",
-    "title": "GVPT Maths Camp",
-    "section": "EXERCISE",
-    "text": "EXERCISE\nMake a scatterplot of hwy vs cyl.\n\nWhat happens if you make a scatterplot of class vs drv? Why is the plot not useful?\n\nWhich geom might be a better choice?"
-  },
-  {
-    "objectID": "content/slides/06-class.html#exercise-2",
-    "href": "content/slides/06-class.html#exercise-2",
-    "title": "GVPT Maths Camp",
-    "section": "EXERCISE",
-    "text": "EXERCISE\nWhy does the following give an error and how would you fix it?\n\nggplot(data = mpg) + \n  geom_point()\n\n\nAdd the following caption to the plot you made in the previous exercise: “Data come from the ggplot2 package.” HINT: Look at the documentation for labs()."
-  },
-  {
-    "objectID": "content/slides/06-class.html#flexible-visualization",
-    "href": "content/slides/06-class.html#flexible-visualization",
-    "title": "GVPT Maths Camp",
-    "section": "Flexible visualization",
-    "text": "Flexible visualization\nYou can use visual elements to communicate your findings in engaging ways.\n\nggplot(data = mpg) + \n  geom_point(mapping = aes(x = displ, y = hwy, color = class == \"2seater\"))"
-  },
-  {
-    "objectID": "content/slides/06-class.html#changing-the-look-of-your-plots",
-    "href": "content/slides/06-class.html#changing-the-look-of-your-plots",
-    "title": "GVPT Maths Camp",
-    "section": "Changing the look of your plots",
-    "text": "Changing the look of your plots\n\nggplot(data = mpg) + \n  geom_point(mapping = aes(x = displ, y = hwy), colour = \"red\")"
-  },
-  {
-    "objectID": "content/slides/06-class.html#exercise-3",
-    "href": "content/slides/06-class.html#exercise-3",
-    "title": "GVPT Maths Camp",
-    "section": "EXERCISE",
-    "text": "EXERCISE\nWhat’s gone wrong with this code? Why are the points not blue?\n\nggplot(data = mpg) + \n  geom_point(mapping = aes(x = displ, y = hwy, color = \"blue\"))"
-  },
-  {
-    "objectID": "content/slides/06-class.html#exercise-4",
-    "href": "content/slides/06-class.html#exercise-4",
-    "title": "GVPT Maths Camp",
-    "section": "EXERCISE",
-    "text": "EXERCISE\nWhich variables in mpg are categorical? Which variables are continuous?\n\nMap a continuous variable to color, size, and shape. How do these aesthetics behave differently for categorical vs. continuous variables?\n\nWhat happens if you map the same variable to multiple aesthetics?"
-  },
-  {
-    "objectID": "content/slides/06-class.html#lets-clean-our-graph-up",
-    "href": "content/slides/06-class.html#lets-clean-our-graph-up",
-    "title": "GVPT Maths Camp",
-    "section": "Let’s clean our graph up",
-    "text": "Let’s clean our graph up\nLess is more when it comes to data visualization.\n\nggplot(data = mpg, mapping = aes(x = displ, y = hwy)) + \n  geom_point(mapping = aes(colour = class)) + \n  geom_smooth(method = \"lm\") + \n  theme_minimal() + \n  labs(\n    title = \"Engine displacement and highway miles per gallon\",\n    subtitle = \"Values for seven different classes of cars\",\n    x = \"Engine displacement (L)\",\n    y = \"Highway miles per gallon\"\n  ) + \n  scale_color_colorblind()\n\n\n\nAll pre-set ggplot themes can be found in the ggplot documentation."
-  },
-  {
-    "objectID": "content/slides/06-class.html#lets-clean-this-up",
-    "href": "content/slides/06-class.html#lets-clean-this-up",
-    "title": "GVPT Maths Camp",
-    "section": "Let’s clean this up",
-    "text": "Let’s clean this up"
-  },
-  {
-    "objectID": "content/slides/06-class.html#exercise-5",
-    "href": "content/slides/06-class.html#exercise-5",
-    "title": "GVPT Maths Camp",
-    "section": "EXERCISE",
-    "text": "EXERCISE\nHead over to the ggplot documentation and find your favorite preset theme."
-  },
-  {
-    "objectID": "content/slides/06-class.html#creating-your-own-theme",
-    "href": "content/slides/06-class.html#creating-your-own-theme",
-    "title": "GVPT Maths Camp",
-    "section": "Creating your own theme",
-    "text": "Creating your own theme\n\nggplot(data = mpg, mapping = aes(x = displ, y = hwy)) + \n  geom_point(mapping = aes(colour = class)) + \n  geom_smooth(method = \"lm\") + \n  theme(\n    legend.position = \"bottom\",\n    panel.grid = element_blank(),\n    panel.background = element_blank(),\n    plot.title.position = \"plot\",\n    plot.title = element_text(face = \"bold\")\n  ) + \n  labs(\n    title = \"Engine displacement and highway miles per gallon\",\n    subtitle = \"Values for seven different classes of cars\",\n    x = \"Engine displacement (L)\",\n    y = \"Highway miles per gallon\"\n  ) + \n  scale_color_colorblind()\n\n\n\nAll theme elements that you can control can be found in the ggplot documentation. There are a lot!"
-  },
-  {
-    "objectID": "content/slides/06-class.html#creating-your-own-theme-1",
-    "href": "content/slides/06-class.html#creating-your-own-theme-1",
-    "title": "GVPT Maths Camp",
-    "section": "Creating your own theme",
-    "text": "Creating your own theme"
-  },
-  {
-    "objectID": "content/slides/06-class.html#the-before-shot",
-    "href": "content/slides/06-class.html#the-before-shot",
-    "title": "GVPT Maths Camp",
-    "section": "The before shot",
-    "text": "The before shot"
-  },
-  {
-    "objectID": "content/slides/06-class.html#exercise-6",
-    "href": "content/slides/06-class.html#exercise-6",
-    "title": "GVPT Maths Camp",
-    "section": "EXERCISE",
-    "text": "EXERCISE\n\nCustomize the last plot you made using the theme() argument."
-  },
-  {
-    "objectID": "content/slides/06-class.html#visualizing-distributions",
-    "href": "content/slides/06-class.html#visualizing-distributions",
-    "title": "GVPT Maths Camp",
-    "section": "Visualizing distributions",
-    "text": "Visualizing distributions\n\nggplot(mpg, aes(x = drv)) + \n  geom_bar()"
-  },
-  {
-    "objectID": "content/slides/06-class.html#visualizing-distributions-1",
-    "href": "content/slides/06-class.html#visualizing-distributions-1",
-    "title": "GVPT Maths Camp",
-    "section": "Visualizing distributions",
-    "text": "Visualizing distributions\nReorder in relation to frequency\n\nggplot(mpg, aes(x = fct_infreq(drv))) +\n  geom_bar()"
-  },
-  {
-    "objectID": "content/slides/06-class.html#visualizing-numeric-variables",
-    "href": "content/slides/06-class.html#visualizing-numeric-variables",
-    "title": "GVPT Maths Camp",
-    "section": "Visualizing numeric variables",
-    "text": "Visualizing numeric variables\n\nggplot(mpg, aes(x = hwy)) +\n  geom_histogram()"
-  },
-  {
-    "objectID": "content/slides/06-class.html#visualizing-numeric-variables-1",
-    "href": "content/slides/06-class.html#visualizing-numeric-variables-1",
-    "title": "GVPT Maths Camp",
-    "section": "Visualizing numeric variables",
-    "text": "Visualizing numeric variables\n\nggplot(mpg, aes(x = hwy)) +\n  geom_density()"
-  },
-  {
-    "objectID": "content/slides/06-class.html#visualizing-numeric-variables-2",
-    "href": "content/slides/06-class.html#visualizing-numeric-variables-2",
-    "title": "GVPT Maths Camp",
-    "section": "Visualizing numeric variables",
-    "text": "Visualizing numeric variables\n\nggplot(mpg, aes(x = hwy, colour = drv)) +\n  geom_density()"
-  },
-  {
-    "objectID": "content/slides/06-class.html#visualizing-numeric-variables-3",
-    "href": "content/slides/06-class.html#visualizing-numeric-variables-3",
-    "title": "GVPT Maths Camp",
-    "section": "Visualizing numeric variables",
-    "text": "Visualizing numeric variables\n\nggplot(mpg, aes(x = hwy, colour = drv, fill = drv)) +\n  geom_density(alpha = 0.5)"
-  },
-  {
-    "objectID": "content/slides/06-class.html#summary",
-    "href": "content/slides/06-class.html#summary",
-    "title": "GVPT Maths Camp",
-    "section": "Summary",
-    "text": "Summary\nThis session you:\n\nSet up your data science tools\nPlotted complex data in an engaging way\nDiscovered interesting relationships in the data\nConnected these relationships or trends to your expectations (or hypotheses about the data)"
-  },
-  {
-    "objectID": "content/slides/06-class.html#homework",
-    "href": "content/slides/06-class.html#homework",
-    "title": "GVPT Maths Camp",
-    "section": "HOMEWORK",
-    "text": "HOMEWORK\nIn the final session, you will apply the skills you will learn over the next few days to a problem that interests you. To prepare for this, you need to find a data set that:\n\nIs relevant to your research interests,\nContains continuous and discrete variables."
-  },
-  {
-    "objectID": "content/03-content.html",
-    "href": "content/03-content.html",
-    "title": "Data Transformation",
-    "section": "",
-    "text": "Workflow Basics chapter in Hadley Wickham’s R4DS\n Data Transformation chapter in Hadley Wickham’s R4DS"
-  },
-  {
-    "objectID": "content/03-content.html#readings",
-    "href": "content/03-content.html#readings",
-    "title": "Data Transformation",
-    "section": "",
-    "text": "Workflow Basics chapter in Hadley Wickham’s R4DS\n Data Transformation chapter in Hadley Wickham’s R4DS"
-  },
-  {
-    "objectID": "content/03-content.html#slides",
-    "href": "content/03-content.html#slides",
-    "title": "Data Transformation",
-    "section": "Slides",
-    "text": "Slides"
-  },
-  {
-    "objectID": "content/06-content.html",
-    "href": "content/06-content.html",
-    "title": "Data Visualisation II",
-    "section": "",
-    "text": "Data Visualisation chapter in Hadley Wickham’s R4DS\n\n\n\n Kieran Healy’s Data Visualization: A Practical Guide\n Claus O. Wilke’s Fundamentals of Data Visualization\n The Royal Statistical Society’s Best Practices for Data Visualisation, which includes R code"
-  },
-  {
-    "objectID": "content/06-content.html#readings",
-    "href": "content/06-content.html#readings",
-    "title": "Data Visualisation II",
-    "section": "",
-    "text": "Data Visualisation chapter in Hadley Wickham’s R4DS\n\n\n\n Kieran Healy’s Data Visualization: A Practical Guide\n Claus O. Wilke’s Fundamentals of Data Visualization\n The Royal Statistical Society’s Best Practices for Data Visualisation, which includes R code"
-  },
-  {
-    "objectID": "content/06-content.html#slides",
-    "href": "content/06-content.html#slides",
-    "title": "Data Visualisation II",
-    "section": "Slides",
-    "text": "Slides"
+    "text": "EXERCISE\n\nCreate a plot of a categorical variable in your data set.\nCreate a plot of a continuous variable in your data set.\nCreate a plot showing the relationship between two continuous variables in your data set.\nCreate a plot showing the relationship between a categorical and a continuous variable in your data set.\nDescribe the relationship in simple, clear language."
   },
   {
     "objectID": "content/slides/01-class.html#welcome",
@@ -627,35 +500,21 @@
     "href": "content/slides/01-class.html#introductions",
     "title": "GVPT Maths Camp",
     "section": "Introductions",
-    "text": "Introductions\n\nStarting my third year in the program\nFocus on dependence and conflict\nBefore starting my PhD:\n\nAnalyst with the Australian Department of Defence\nHelped to develop the Lowy Institute’s Asia Power Index\nWorked on the Institute for Economics and Peace’s Global Peace Index and Global Terrorism Index\n\nFavourite Smithsonian: the zoo!"
+    "text": "Introductions\n\nStarting my third year in the program\nFocus on dependence and foreign intervention in civil conflict\nBefore starting my PhD:\n\nAnalyst with the Australian Department of Defence\nHelped to develop the Lowy Institute’s Asia Power Index\nWorked on the Institute for Economics and Peace’s Global Peace Index and Global Terrorism Index"
   },
   {
     "objectID": "content/slides/01-class.html#learning-objectives-for-today",
     "href": "content/slides/01-class.html#learning-objectives-for-today",
     "title": "GVPT Maths Camp",
     "section": "Learning objectives for today",
-    "text": "Learning objectives for today\n\nIntroduction to R and friends\nGetting your computers set up"
+    "text": "Learning objectives for today\n\nIntroduction to R and friends"
   },
   {
     "objectID": "content/slides/01-class.html#why-r",
     "href": "content/slides/01-class.html#why-r",
     "title": "GVPT Maths Camp",
     "section": "Why R?",
-    "text": "Why R?\n\nA versatile programming language that is particularly good for statistical analysis\n\nAll materials used in this course were produced using R, including the website and fancy slides\n\nInvolves a huge community of people who passionately contribute\nFree and accessible!"
-  },
-  {
-    "objectID": "content/slides/01-class.html#set-up",
-    "href": "content/slides/01-class.html#set-up",
-    "title": "GVPT Maths Camp",
-    "section": "Set up",
-    "text": "Set up\n\nHomebrew (macOS or Linux only)\nR and RStudio\nGit and GitHub"
-  },
-  {
-    "objectID": "content/slides/01-class.html#homebrew-the-missing-package-manager-for-macos-and-linux",
-    "href": "content/slides/01-class.html#homebrew-the-missing-package-manager-for-macos-and-linux",
-    "title": "GVPT Maths Camp",
-    "section": "Homebrew: The Missing Package Manager for macOS and Linux",
-    "text": "Homebrew: The Missing Package Manager for macOS and Linux\n\n\nGo to https://brew.sh/\nFollow instructions on the homepage"
+    "text": "Why R?\n\nA versatile programming language\n\nAll materials used in this course were produced using R, including the website and fancy slides\n\nFree and accessible!"
   },
   {
     "objectID": "content/slides/01-class.html#r-and-rstudio",
@@ -684,6 +543,72 @@
     "title": "GVPT Maths Camp",
     "section": "Summary",
     "text": "Summary\nThis session you:\n\nLearnt about new data science tools to help you conduct replicable and reproducible political science research\nSet up your data science tools"
+  },
+  {
+    "objectID": "content/05-content.html",
+    "href": "content/05-content.html",
+    "title": "Bringing It All Together",
+    "section": "",
+    "text": "Please complete this markdown tutorial before your first GVPT622 class.",
+    "crumbs": [
+      "Content",
+      "Bringing It All Together"
+    ]
+  },
+  {
+    "objectID": "content/05-content.html#reading",
+    "href": "content/05-content.html#reading",
+    "title": "Bringing It All Together",
+    "section": "",
+    "text": "Please complete this markdown tutorial before your first GVPT622 class.",
+    "crumbs": [
+      "Content",
+      "Bringing It All Together"
+    ]
+  },
+  {
+    "objectID": "content/05-content.html#slides",
+    "href": "content/05-content.html#slides",
+    "title": "Bringing It All Together",
+    "section": "Slides",
+    "text": "Slides",
+    "crumbs": [
+      "Content",
+      "Bringing It All Together"
+    ]
+  },
+  {
+    "objectID": "content/03-content.html",
+    "href": "content/03-content.html",
+    "title": "Data Transformation",
+    "section": "",
+    "text": "Workflow Basics chapter in Hadley Wickham’s R4DS\n Data Transformation chapter in Hadley Wickham’s R4DS",
+    "crumbs": [
+      "Content",
+      "Data Transformation"
+    ]
+  },
+  {
+    "objectID": "content/03-content.html#readings",
+    "href": "content/03-content.html#readings",
+    "title": "Data Transformation",
+    "section": "",
+    "text": "Workflow Basics chapter in Hadley Wickham’s R4DS\n Data Transformation chapter in Hadley Wickham’s R4DS",
+    "crumbs": [
+      "Content",
+      "Data Transformation"
+    ]
+  },
+  {
+    "objectID": "content/03-content.html#slides",
+    "href": "content/03-content.html#slides",
+    "title": "Data Transformation",
+    "section": "Slides",
+    "text": "Slides",
+    "crumbs": [
+      "Content",
+      "Data Transformation"
+    ]
   },
   {
     "objectID": "content/slides/03-class.html#learning-objectives",
@@ -1103,7 +1028,7 @@
     "href": "content/slides/02-class.html#exercise-1",
     "title": "GVPT Maths Camp",
     "section": "EXERCISE",
-    "text": "EXERCISE\n\nOpen up RStudio.\nUsing the consol, install the tidyverse packages.\n\n\ninstall.packages(\"tidyverse\")\n\n\nLoad these packages in your current session\n\n\nlibrary(tidyverse)"
+    "text": "EXERCISE\n\nOpen up RStudio.\nUsing the console, install the tidyverse packages.\n\n\ninstall.packages(\"tidyverse\")\n\n\nLoad these packages in your current session\n\n\nlibrary(tidyverse)"
   },
   {
     "objectID": "content/slides/02-class.html#rstudio-projects",
@@ -1197,6 +1122,13 @@
     "text": "The mpg data set\nA couple of useful variables:\n\ndispl: engine displacement, in litres\nhwy: highway miles per gallon"
   },
   {
+    "objectID": "content/slides/02-class.html#exercise-7",
+    "href": "content/slides/02-class.html#exercise-7",
+    "title": "GVPT Maths Camp",
+    "section": "EXERCISE",
+    "text": "EXERCISE\n\nHow many rows are in mpg? How many columns?\n\n\nnrow(mpg)\nncol(mpg)\n\n\n\nWhat does the drv variable describe?\n\n\n?mpg"
+  },
+  {
     "objectID": "content/slides/02-class.html#set-up-your-plot",
     "href": "content/slides/02-class.html#set-up-your-plot",
     "title": "GVPT Maths Camp",
@@ -1216,6 +1148,20 @@
     "title": "GVPT Maths Camp",
     "section": "Add in your cars",
     "text": "Add in your cars\n\nggplot(data = mpg, mapping = aes(x = displ, y = hwy)) + \n  geom_point()"
+  },
+  {
+    "objectID": "content/slides/02-class.html#exercise-8",
+    "href": "content/slides/02-class.html#exercise-8",
+    "title": "GVPT Maths Camp",
+    "section": "EXERCISE",
+    "text": "EXERCISE\n\nMake a scatter plot of hwy vs cyl.\n\n\n\nWhat happens if you make a scatter plot of class vs drv? Why is the plot not useful?\n\n\n\nWhich geom might be a better choice?"
+  },
+  {
+    "objectID": "content/slides/02-class.html#exercise-9",
+    "href": "content/slides/02-class.html#exercise-9",
+    "title": "GVPT Maths Camp",
+    "section": "EXERCISE",
+    "text": "EXERCISE\nWhy does the following give an error and how would you fix it?\n\nggplot(data = mpg) + \n  geom_point()"
   },
   {
     "objectID": "content/slides/02-class.html#lets-look-at-groups-in-the-data",
@@ -1260,6 +1206,125 @@
     "text": "Add useful titles and labels"
   },
   {
+    "objectID": "content/slides/02-class.html#flexible-visualization",
+    "href": "content/slides/02-class.html#flexible-visualization",
+    "title": "GVPT Maths Camp",
+    "section": "Flexible visualization",
+    "text": "Flexible visualization\nYou can use visual elements to communicate your findings in engaging ways.\n\nggplot(data = mpg) + \n  geom_point(mapping = aes(x = displ, y = hwy, color = class == \"2seater\"))"
+  },
+  {
+    "objectID": "content/slides/02-class.html#changing-the-look-of-your-plots",
+    "href": "content/slides/02-class.html#changing-the-look-of-your-plots",
+    "title": "GVPT Maths Camp",
+    "section": "Changing the look of your plots",
+    "text": "Changing the look of your plots\n\nggplot(data = mpg) + \n  geom_point(mapping = aes(x = displ, y = hwy), colour = \"red\")"
+  },
+  {
+    "objectID": "content/slides/02-class.html#exercise-10",
+    "href": "content/slides/02-class.html#exercise-10",
+    "title": "GVPT Maths Camp",
+    "section": "EXERCISE",
+    "text": "EXERCISE\nWhat’s gone wrong with this code? Why are the points not blue?\n\nggplot(data = mpg) + \n  geom_point(mapping = aes(x = displ, y = hwy, color = \"blue\"))"
+  },
+  {
+    "objectID": "content/slides/02-class.html#exercise-11",
+    "href": "content/slides/02-class.html#exercise-11",
+    "title": "GVPT Maths Camp",
+    "section": "EXERCISE",
+    "text": "EXERCISE\n\nWhich variables in mpg are categorical? Which variables are continuous?\n\n\n\nMap a continuous variable to color, size, and shape. How do these aesthetics behave differently for categorical vs. continuous variables?\n\n\n\nWhat happens if you map the same variable to multiple aesthetics?"
+  },
+  {
+    "objectID": "content/slides/02-class.html#lets-clean-our-graph-up",
+    "href": "content/slides/02-class.html#lets-clean-our-graph-up",
+    "title": "GVPT Maths Camp",
+    "section": "Let’s clean our graph up",
+    "text": "Let’s clean our graph up\nLess is more when it comes to data visualization.\n\nggplot(data = mpg, mapping = aes(x = displ, y = hwy)) + \n  geom_point(mapping = aes(colour = class)) + \n  geom_smooth(method = \"lm\") + \n  theme_minimal() + \n  labs(\n    title = \"Engine displacement and highway miles per gallon\",\n    subtitle = \"Values for seven different classes of cars\",\n    x = \"Engine displacement (L)\",\n    y = \"Highway miles per gallon\"\n  ) + \n  scale_color_colorblind()\n\n\n\nAll pre-set ggplot themes can be found in the ggplot documentation."
+  },
+  {
+    "objectID": "content/slides/02-class.html#lets-clean-this-up",
+    "href": "content/slides/02-class.html#lets-clean-this-up",
+    "title": "GVPT Maths Camp",
+    "section": "Let’s clean this up",
+    "text": "Let’s clean this up"
+  },
+  {
+    "objectID": "content/slides/02-class.html#exercise-12",
+    "href": "content/slides/02-class.html#exercise-12",
+    "title": "GVPT Maths Camp",
+    "section": "EXERCISE",
+    "text": "EXERCISE\nHead over to the ggplot documentation and find your favorite preset theme."
+  },
+  {
+    "objectID": "content/slides/02-class.html#creating-your-own-theme",
+    "href": "content/slides/02-class.html#creating-your-own-theme",
+    "title": "GVPT Maths Camp",
+    "section": "Creating your own theme",
+    "text": "Creating your own theme\n\nggplot(data = mpg, mapping = aes(x = displ, y = hwy)) + \n  geom_point(mapping = aes(colour = class)) + \n  geom_smooth(method = \"lm\") + \n  theme(\n    legend.position = \"bottom\",\n    panel.grid = element_blank(),\n    panel.background = element_blank(),\n    plot.title.position = \"plot\",\n    plot.title = element_text(face = \"bold\")\n  ) + \n  labs(\n    title = \"Engine displacement and highway miles per gallon\",\n    subtitle = \"Values for seven different classes of cars\",\n    x = \"Engine displacement (L)\",\n    y = \"Highway miles per gallon\"\n  ) + \n  scale_color_colorblind()\n\n\n\nAll theme elements that you can control can be found in the ggplot documentation. There are a lot!"
+  },
+  {
+    "objectID": "content/slides/02-class.html#creating-your-own-theme-1",
+    "href": "content/slides/02-class.html#creating-your-own-theme-1",
+    "title": "GVPT Maths Camp",
+    "section": "Creating your own theme",
+    "text": "Creating your own theme"
+  },
+  {
+    "objectID": "content/slides/02-class.html#the-before-shot",
+    "href": "content/slides/02-class.html#the-before-shot",
+    "title": "GVPT Maths Camp",
+    "section": "The before shot",
+    "text": "The before shot"
+  },
+  {
+    "objectID": "content/slides/02-class.html#exercise-13",
+    "href": "content/slides/02-class.html#exercise-13",
+    "title": "GVPT Maths Camp",
+    "section": "EXERCISE",
+    "text": "EXERCISE\nCustomize the last plot you made using the theme() argument."
+  },
+  {
+    "objectID": "content/slides/02-class.html#visualizing-distributions",
+    "href": "content/slides/02-class.html#visualizing-distributions",
+    "title": "GVPT Maths Camp",
+    "section": "Visualizing distributions",
+    "text": "Visualizing distributions\n\nggplot(mpg, aes(x = drv)) + \n  geom_bar()"
+  },
+  {
+    "objectID": "content/slides/02-class.html#visualizing-distributions-1",
+    "href": "content/slides/02-class.html#visualizing-distributions-1",
+    "title": "GVPT Maths Camp",
+    "section": "Visualizing distributions",
+    "text": "Visualizing distributions\nReorder in relation to frequency\n\nggplot(mpg, aes(x = fct_infreq(drv))) +\n  geom_bar()"
+  },
+  {
+    "objectID": "content/slides/02-class.html#visualizing-numeric-variables",
+    "href": "content/slides/02-class.html#visualizing-numeric-variables",
+    "title": "GVPT Maths Camp",
+    "section": "Visualizing numeric variables",
+    "text": "Visualizing numeric variables\n\nggplot(mpg, aes(x = hwy)) +\n  geom_histogram()"
+  },
+  {
+    "objectID": "content/slides/02-class.html#visualizing-numeric-variables-1",
+    "href": "content/slides/02-class.html#visualizing-numeric-variables-1",
+    "title": "GVPT Maths Camp",
+    "section": "Visualizing numeric variables",
+    "text": "Visualizing numeric variables\n\nggplot(mpg, aes(x = hwy)) +\n  geom_density()"
+  },
+  {
+    "objectID": "content/slides/02-class.html#visualizing-numeric-variables-2",
+    "href": "content/slides/02-class.html#visualizing-numeric-variables-2",
+    "title": "GVPT Maths Camp",
+    "section": "Visualizing numeric variables",
+    "text": "Visualizing numeric variables\n\nggplot(mpg, aes(x = hwy, colour = drv)) +\n  geom_density()"
+  },
+  {
+    "objectID": "content/slides/02-class.html#visualizing-numeric-variables-3",
+    "href": "content/slides/02-class.html#visualizing-numeric-variables-3",
+    "title": "GVPT Maths Camp",
+    "section": "Visualizing numeric variables",
+    "text": "Visualizing numeric variables\n\nggplot(mpg, aes(x = hwy, colour = drv, fill = drv)) +\n  geom_density(alpha = 0.5)"
+  },
+  {
     "objectID": "content/slides/02-class.html#summary",
     "href": "content/slides/02-class.html#summary",
     "title": "GVPT Maths Camp",
@@ -1278,41 +1343,65 @@
     "href": "content/04-content.html",
     "title": "Data Wrangling",
     "section": "",
-    "text": "Wrangle section in Hadley Wickham’s R4DS"
+    "text": "Wrangle section in Hadley Wickham’s R4DS",
+    "crumbs": [
+      "Content",
+      "Data Wrangling"
+    ]
   },
   {
     "objectID": "content/04-content.html#readings",
     "href": "content/04-content.html#readings",
     "title": "Data Wrangling",
     "section": "",
-    "text": "Wrangle section in Hadley Wickham’s R4DS"
+    "text": "Wrangle section in Hadley Wickham’s R4DS",
+    "crumbs": [
+      "Content",
+      "Data Wrangling"
+    ]
   },
   {
     "objectID": "content/04-content.html#slides",
     "href": "content/04-content.html#slides",
     "title": "Data Wrangling",
     "section": "Slides",
-    "text": "Slides"
+    "text": "Slides",
+    "crumbs": [
+      "Content",
+      "Data Wrangling"
+    ]
   },
   {
     "objectID": "content/02-content.html",
     "href": "content/02-content.html",
-    "title": "Data Visualisation I",
+    "title": "Data Visualisation",
     "section": "",
-    "text": "Data Visualisation chapter in Hadley Wickham’s R4DS\n\n\n\n Kieran Healy’s Data Visualization: A Practical Guide\n Claus O. Wilke’s Fundamentals of Data Visualization\n The Royal Statistical Society’s Best Practices for Data Visualisation, which includes R code"
+    "text": "Data Visualisation chapter in Hadley Wickham’s R4DS\n\n\n Kieran Healy’s Data Visualization: A Practical Guide\n Claus O. Wilke’s Fundamentals of Data Visualization\n The Royal Statistical Society’s Best Practices for Data Visualisation, which includes R code",
+    "crumbs": [
+      "Content",
+      "Data Visualisation"
+    ]
   },
   {
     "objectID": "content/02-content.html#readings",
     "href": "content/02-content.html#readings",
-    "title": "Data Visualisation I",
+    "title": "Data Visualisation",
     "section": "",
-    "text": "Data Visualisation chapter in Hadley Wickham’s R4DS\n\n\n\n Kieran Healy’s Data Visualization: A Practical Guide\n Claus O. Wilke’s Fundamentals of Data Visualization\n The Royal Statistical Society’s Best Practices for Data Visualisation, which includes R code"
+    "text": "Data Visualisation chapter in Hadley Wickham’s R4DS\n\n\n Kieran Healy’s Data Visualization: A Practical Guide\n Claus O. Wilke’s Fundamentals of Data Visualization\n The Royal Statistical Society’s Best Practices for Data Visualisation, which includes R code",
+    "crumbs": [
+      "Content",
+      "Data Visualisation"
+    ]
   },
   {
     "objectID": "content/02-content.html#slides",
     "href": "content/02-content.html#slides",
-    "title": "Data Visualisation I",
+    "title": "Data Visualisation",
     "section": "Slides",
-    "text": "Slides"
+    "text": "Slides",
+    "crumbs": [
+      "Content",
+      "Data Visualisation"
+    ]
   }
 ]

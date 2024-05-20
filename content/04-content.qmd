@@ -4,8 +4,6 @@ title: "Data Wrangling"
 
 ## Readings
 
-### For this session
-
 {{< fa book >}} [Wrangle section](https://r4ds.had.co.nz/wrangle-intro.html) in Hadley Wickham's *R4DS*
 
 ## Slides

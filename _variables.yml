@@ -9,14 +9,14 @@ instructor:
   github: hgoers
   office: "Chincoteague Building"
   contact_policy: >-
-    E-mail and Slack are the best ways to get in contact with me. I will try to respond to all course-related e-mails and Slack messages within 24 hours.
+    E-mail is the best way to get in contact with me. I will try to respond to all course-related e-mails within 24 hours.
 
 course:
   number: "GVPT Maths Bootcamp"
   semester: "Summer 2023"
   time: "2 - 4 PM"
   location: "TYD 2111"
-  dates: "August 21 - 25, 2023"
+  dates: "August 19 - 23, 2024"
   github: "https://github.com/hgoers/intro_to_r_ps"
   url: "https://hgoers.github.io/intro_to_r_ps/"
   copyright_year: "2023"

@@ -21,7 +21,7 @@ format:
 
 -   Starting my third year in the program
 
--   Focus on dependence and conflict
+-   Focus on dependence and foreign intervention in civil conflict
 
 -   Before starting my PhD:
 
@@ -31,39 +31,17 @@ format:
 
     -   Worked on the Institute for Economics and Peace's [Global Peace Index](https://www.visionofhumanity.org/maps/#/) and [Global Terrorism Index](https://www.visionofhumanity.org/maps/global-terrorism-index/#/)
 
--   Favourite Smithsonian: the zoo!
-
 ## Learning objectives for today
 
 1.  Introduction to R and friends
 
-2.  Getting your computers set up
-
 ## Why R?
 
--   A versatile programming language that is particularly good for statistical analysis
+-   A versatile programming language
 
     -   All materials used in this course were produced using R, including the website and fancy slides
 
--   Involves a huge community of people who passionately contribute
-
 -   Free and accessible!
-
-## Set up
-
--   Homebrew (macOS or Linux only)
-
--   R and RStudio
-
--   Git and GitHub
-
-## Homebrew: The Missing Package Manager for macOS and Linux
-
-![](img/homebrew.png){fig-align="center"}
-
-1.  Go to <https://brew.sh/>
-
-2.  Follow instructions on the homepage
 
 ## R and RStudio
 
