@@ -30,7 +30,6 @@ course-logo: /files/img/hex-testudo.png
 -   {{< fa calendar-alt >}}   {{< var course.dates >}}
 -   {{< fa clock >}}   {{< var course.time >}}
 -   {{< fa location-dot >}}   {{< var course.location >}}
--   {{< fa brands slack >}}   [Slack]({{< var course.slack >}})
 :::
 
 ::: {.g-col-12 .g-col-md-4 .contact-policy}

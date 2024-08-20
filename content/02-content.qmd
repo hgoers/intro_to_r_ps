@@ -2,6 +2,8 @@
 title: "Data Visualisation"
 ---
 
+We will start with one of the more exciting parts of data analysis and communication: visualizations. By the end of this session, you will be able to create your own engaging plots that can be used to communicate relationships between a huge range of variables.
+
 ## Readings
 
 {{< fa book >}} [Data Visualisation chapter](https://r4ds.had.co.nz/data-visualisation.html) in Hadley Wickham's *R4DS*
@@ -10,9 +12,9 @@ title: "Data Visualisation"
 
 {{< fa book >}} Kieran Healy's [*Data Visualization: A Practical Guide*](https://socviz.co/)
 
-{{< fa book >}} Claus O. Wilke's [Fundamentals of Data Visualization](https://clauswilke.com/dataviz/)
+{{< fa book >}} Claus O. Wilke's [*Fundamentals of Data Visualization*](https://clauswilke.com/dataviz/)
 
-{{< fa arrow-up-right-from-square >}} The Royal Statistical Society's [Best Practices for Data Visualisation](https://royal-statistical-society.github.io/datavisguide/), which includes R code
+{{< fa arrow-up-right-from-square >}} The Royal Statistical Society's [*Best Practices for Data Visualisation*](https://royal-statistical-society.github.io/datavisguide/), which includes R code
 
 ## Slides
 

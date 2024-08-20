@@ -4,62 +4,42 @@
     "href": "index.html",
     "title": "\n            Introduction to R for Political Scientists\n        ",
     "section": "",
-    "text": "Introduction to R for Political Scientists\n        \n        \n            Learn to use data science tools to support your research\n        \n        \n            Summer 2024Department of Government and PoliticsUniversity of Maryland, College Park\n        \n    \n    \n      \n        \n        \n        \n      \n    \n\n\n\n\n\n\nInstructor\n\n   Harriet Goers\n   Chincoteague Building\n   hgoers@umd.edu\n   hgoers\n\n\n\nCourse details\n\n   August 19 - 23, 2024\n   2 - 4 PM\n   TYD 2111\n   Slack\n\n\n\nContacting me\nE-mail is the best way to get in contact with me. I will try to respond to all course-related e-mails within 24 hours."
+    "text": "Introduction to R for Political Scientists\n        \n        \n            Learn to use data science tools to support your research\n        \n        \n            Summer 2024Department of Government and PoliticsUniversity of Maryland, College Park\n        \n    \n    \n      \n        \n        \n        \n      \n    \n\n\n\n\n\nInstructor\n\n   Harriet Goers\n   Chincoteague Building\n   hgoers@umd.edu\n   hgoers\n\n\n\nCourse details\n\n   August 19 - 23, 2024\n   2 - 4 PM\n   TYD 2111\n\n\n\nContacting me\nE-mail is the best way to get in contact with me. I will try to respond to all course-related e-mails within 24 hours."
   },
   {
     "objectID": "content/01-content.html",
     "href": "content/01-content.html",
     "title": "Welcome",
     "section": "",
-    "text": "Welcome to GVPT Maths Camp! Over the next five sessions, I will introduce several important technical skills you will require to successfully complete your PhD.",
-    "crumbs": [
-      "Content",
-      "Welcome"
-    ]
+    "text": "Welcome to GVPT Maths Camp! Over the next five sessions, I will introduce several important technical skills you will require to successfully complete your PhD."
   },
   {
     "objectID": "content/01-content.html#pre-requisites",
     "href": "content/01-content.html#pre-requisites",
     "title": "Welcome",
     "section": "Pre-requisites",
-    "text": "Pre-requisites\nNone! You will be introduced to these technical skills over this week. You will develop them throughout the PhD program (and through your own research outside of the program).",
-    "crumbs": [
-      "Content",
-      "Welcome"
-    ]
+    "text": "Pre-requisites\nNone! You will be introduced to these technical skills over this week. You will develop them throughout the PhD program (and through your own research outside of the program)."
   },
   {
     "objectID": "content/01-content.html#readings",
     "href": "content/01-content.html#readings",
     "title": "Welcome",
     "section": "Readings",
-    "text": "Readings\n\nR\n R for Data Science by Hadley Wickham, Mine Çetinkaya-Rundel, and Garrett Grolemund.\n\n\nGit and GitHub\n Happy Git and GitHub for the useR by Jennifer Bryan.",
-    "crumbs": [
-      "Content",
-      "Welcome"
-    ]
+    "text": "Readings\n\nR\n R for Data Science by Hadley Wickham, Mine Çetinkaya-Rundel, and Garrett Grolemund.\n\n\nGit and GitHub\n Happy Git and GitHub for the useR by Jennifer Bryan."
   },
   {
     "objectID": "content/01-content.html#slides",
     "href": "content/01-content.html#slides",
     "title": "Welcome",
     "section": "Slides",
-    "text": "Slides",
-    "crumbs": [
-      "Content",
-      "Welcome"
-    ]
+    "text": "Slides"
   },
   {
     "objectID": "content/01-content.html#additional-resources",
     "href": "content/01-content.html#additional-resources",
     "title": "Welcome",
     "section": "Additional resources",
-    "text": "Additional resources\n\nInstructions for downloading R\nInstructions for downloading RStudio\nInstructions for installing and setting up Git and Github",
-    "crumbs": [
-      "Content",
-      "Welcome"
-    ]
+    "text": "Additional resources\n\nInstructions for downloading R\nInstructions for downloading RStudio\nInstructions for installing and setting up Git and Github"
   },
   {
     "objectID": "content/slides/04-class.html#learning-objectives",
@@ -465,14 +445,14 @@
     "href": "content/slides/05-class.html#code-chunks",
     "title": "GVPT Maths Camp",
     "section": "Code chunks",
-    "text": "Code chunks\n```{r}\n#| echo: true\n\nlibrary(tidyverse)\n```"
+    "text": "Code chunks\n#| echo: true\n\nlibrary(tidyverse)"
   },
   {
     "objectID": "content/slides/05-class.html#chunk-options",
     "href": "content/slides/05-class.html#chunk-options",
     "title": "GVPT Maths Camp",
     "section": "Chunk options",
-    "text": "Chunk options\n```{yaml}\nexecute:\n  echo: true\n  message: false\n  warning: false\n```"
+    "text": "Chunk options\nexecute:\n  echo: true\n  message: false\n  warning: false"
   },
   {
     "objectID": "content/slides/05-class.html#in-line-code",
@@ -500,14 +480,14 @@
     "href": "content/slides/01-class.html#introductions",
     "title": "GVPT Maths Camp",
     "section": "Introductions",
-    "text": "Introductions\n\nStarting my third year in the program\nFocus on dependence and foreign intervention in civil conflict\nBefore starting my PhD:\n\nAnalyst with the Australian Department of Defence\nHelped to develop the Lowy Institute’s Asia Power Index\nWorked on the Institute for Economics and Peace’s Global Peace Index and Global Terrorism Index"
+    "text": "Introductions\n\nStarting my fourth year in the program\nFocus on dependence and foreign intervention in civil conflict\nCurrently an Adjunct with RAND\nBefore starting my PhD:\n\nAnalyst with the Australian Department of Defence\nHelped to develop the Lowy Institute’s Asia Power Index\nWorked on the Institute for Economics and Peace’s Global Peace Index and Global Terrorism Index"
   },
   {
     "objectID": "content/slides/01-class.html#learning-objectives-for-today",
     "href": "content/slides/01-class.html#learning-objectives-for-today",
     "title": "GVPT Maths Camp",
     "section": "Learning objectives for today",
-    "text": "Learning objectives for today\n\nIntroduction to R and friends"
+    "text": "Learning objectives for today\n\nMeeting your cohort\nIntroduction to R and friends"
   },
   {
     "objectID": "content/slides/01-class.html#why-r",
@@ -549,66 +529,42 @@
     "href": "content/05-content.html",
     "title": "Bringing It All Together",
     "section": "",
-    "text": "Please complete this markdown tutorial before your first GVPT622 class.",
-    "crumbs": [
-      "Content",
-      "Bringing It All Together"
-    ]
+    "text": "Please complete this markdown tutorial before your first GVPT622 class."
   },
   {
     "objectID": "content/05-content.html#reading",
     "href": "content/05-content.html#reading",
     "title": "Bringing It All Together",
     "section": "",
-    "text": "Please complete this markdown tutorial before your first GVPT622 class.",
-    "crumbs": [
-      "Content",
-      "Bringing It All Together"
-    ]
+    "text": "Please complete this markdown tutorial before your first GVPT622 class."
   },
   {
     "objectID": "content/05-content.html#slides",
     "href": "content/05-content.html#slides",
     "title": "Bringing It All Together",
     "section": "Slides",
-    "text": "Slides",
-    "crumbs": [
-      "Content",
-      "Bringing It All Together"
-    ]
+    "text": "Slides"
   },
   {
     "objectID": "content/03-content.html",
     "href": "content/03-content.html",
     "title": "Data Transformation",
     "section": "",
-    "text": "Workflow Basics chapter in Hadley Wickham’s R4DS\n Data Transformation chapter in Hadley Wickham’s R4DS",
-    "crumbs": [
-      "Content",
-      "Data Transformation"
-    ]
+    "text": "Workflow Basics chapter in Hadley Wickham’s R4DS\n Data Transformation chapter in Hadley Wickham’s R4DS"
   },
   {
     "objectID": "content/03-content.html#readings",
     "href": "content/03-content.html#readings",
     "title": "Data Transformation",
     "section": "",
-    "text": "Workflow Basics chapter in Hadley Wickham’s R4DS\n Data Transformation chapter in Hadley Wickham’s R4DS",
-    "crumbs": [
-      "Content",
-      "Data Transformation"
-    ]
+    "text": "Workflow Basics chapter in Hadley Wickham’s R4DS\n Data Transformation chapter in Hadley Wickham’s R4DS"
   },
   {
     "objectID": "content/03-content.html#slides",
     "href": "content/03-content.html#slides",
     "title": "Data Transformation",
     "section": "Slides",
-    "text": "Slides",
-    "crumbs": [
-      "Content",
-      "Data Transformation"
-    ]
+    "text": "Slides"
   },
   {
     "objectID": "content/slides/03-class.html#learning-objectives",
@@ -982,20 +938,6 @@
     "text": "Learning objectives for today\n\nIntroduction to R\nCreate your first plot in R\nTest your hypotheses using informative data visualizations"
   },
   {
-    "objectID": "content/slides/02-class.html#the-research-process",
-    "href": "content/slides/02-class.html#the-research-process",
-    "title": "GVPT Maths Camp",
-    "section": "The Research Process",
-    "text": "The Research Process\n\nSource: R4DS"
-  },
-  {
-    "objectID": "content/slides/02-class.html#data-visualization",
-    "href": "content/slides/02-class.html#data-visualization",
-    "title": "GVPT Maths Camp",
-    "section": "Data visualization",
-    "text": "Data visualization\n\nA great way to get to know your data\nCritical to communicate your findings"
-  },
-  {
     "objectID": "content/slides/02-class.html#r-basics",
     "href": "content/slides/02-class.html#r-basics",
     "title": "GVPT Maths Camp",
@@ -1007,7 +949,7 @@
     "href": "content/slides/02-class.html#exercise",
     "title": "GVPT Maths Camp",
     "section": "EXERCISE",
-    "text": "EXERCISE\n\nOpen up RStudio.\nUsing the console, find the summation of 45, 978, and 121.\nWhat is 67 divided by 6?\nWhat is the square root of 894? HINT: use sqrt()."
+    "text": "EXERCISE\n\nOpen up RStudio.\nUsing the console, find the summation of 45, 978, and 121.\nWhat is 67 divided by 6?\nWhat is the square root of 894? HINT: use the sqrt() function."
   },
   {
     "objectID": "content/slides/02-class.html#check-your-answers",
@@ -1017,11 +959,18 @@
     "text": "CHECK YOUR ANSWERS\nUsing the consol, find the summation of 45, 978, and 121.\n\nsum(45, 978, 121)\n\n[1] 1144\n\n\nOr:\n\n45 + 978 + 121\n\n[1] 1144\n\n\nWhat is 67 divided by 6?\n\n67 / 6\n\n[1] 11.16667\n\n\nWhat is the square root of 894?\n\nsqrt(894)\n\n[1] 29.89983"
   },
   {
+    "objectID": "content/slides/02-class.html#functions",
+    "href": "content/slides/02-class.html#functions",
+    "title": "GVPT Maths Camp",
+    "section": "Functions",
+    "text": "Functions"
+  },
+  {
     "objectID": "content/slides/02-class.html#r-packages",
     "href": "content/slides/02-class.html#r-packages",
     "title": "GVPT Maths Camp",
     "section": "R packages",
-    "text": "R packages\nPackages are collections of R functions, data, and compiled code in a well-defined format.\n\n# Install the relevant package(s)\ninstall.packages(\"tidyverse\")\n\n# Load the packages in current session\nlibrary(tidyverse)\n\n\n\ntidyverse is a collection of many different packages housed within this universe. The individual packages are listed when you load the tidyverse package."
+    "text": "R packages\nPackages are collections of R functions and data.\n\n# Install the relevant package(s)\ninstall.packages(\"tidyverse\")\n\n# Load the packages in current session\nlibrary(tidyverse)\n\n\n\ntidyverse is a collection of many different packages The individual packages are listed when you load the tidyverse package."
   },
   {
     "objectID": "content/slides/02-class.html#exercise-1",
@@ -1343,65 +1292,41 @@
     "href": "content/04-content.html",
     "title": "Data Wrangling",
     "section": "",
-    "text": "Wrangle section in Hadley Wickham’s R4DS",
-    "crumbs": [
-      "Content",
-      "Data Wrangling"
-    ]
+    "text": "Wrangle section in Hadley Wickham’s R4DS"
   },
   {
     "objectID": "content/04-content.html#readings",
     "href": "content/04-content.html#readings",
     "title": "Data Wrangling",
     "section": "",
-    "text": "Wrangle section in Hadley Wickham’s R4DS",
-    "crumbs": [
-      "Content",
-      "Data Wrangling"
-    ]
+    "text": "Wrangle section in Hadley Wickham’s R4DS"
   },
   {
     "objectID": "content/04-content.html#slides",
     "href": "content/04-content.html#slides",
     "title": "Data Wrangling",
     "section": "Slides",
-    "text": "Slides",
-    "crumbs": [
-      "Content",
-      "Data Wrangling"
-    ]
+    "text": "Slides"
   },
   {
     "objectID": "content/02-content.html",
     "href": "content/02-content.html",
     "title": "Data Visualisation",
     "section": "",
-    "text": "Data Visualisation chapter in Hadley Wickham’s R4DS\n\n\n Kieran Healy’s Data Visualization: A Practical Guide\n Claus O. Wilke’s Fundamentals of Data Visualization\n The Royal Statistical Society’s Best Practices for Data Visualisation, which includes R code",
-    "crumbs": [
-      "Content",
-      "Data Visualisation"
-    ]
+    "text": "We will start with one of the more exciting parts of data analysis and communication: visualizations. By the end of this session, you will be able to create your own engaging plots that can be used to communicate relationships between a huge range of variables."
   },
   {
     "objectID": "content/02-content.html#readings",
     "href": "content/02-content.html#readings",
     "title": "Data Visualisation",
-    "section": "",
-    "text": "Data Visualisation chapter in Hadley Wickham’s R4DS\n\n\n Kieran Healy’s Data Visualization: A Practical Guide\n Claus O. Wilke’s Fundamentals of Data Visualization\n The Royal Statistical Society’s Best Practices for Data Visualisation, which includes R code",
-    "crumbs": [
-      "Content",
-      "Data Visualisation"
-    ]
+    "section": "Readings",
+    "text": "Readings\n Data Visualisation chapter in Hadley Wickham’s R4DS\n\nAdditional readings\n Kieran Healy’s Data Visualization: A Practical Guide\n Claus O. Wilke’s Fundamentals of Data Visualization\n The Royal Statistical Society’s Best Practices for Data Visualisation, which includes R code"
   },
   {
     "objectID": "content/02-content.html#slides",
     "href": "content/02-content.html#slides",
     "title": "Data Visualisation",
     "section": "Slides",
-    "text": "Slides",
-    "crumbs": [
-      "Content",
-      "Data Visualisation"
-    ]
+    "text": "Slides"
   }
 ]

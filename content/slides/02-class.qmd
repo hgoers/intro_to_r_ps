@@ -27,16 +27,6 @@ library(ggthemes)
 
 3.  Test your hypotheses using informative data visualizations
 
-## The Research Process
-
-![Source: [R4DS](https://r4ds.had.co.nz/explore-intro.html)](img/r4ds_process.png){fig-align="center"}
-
-## Data visualization
-
--   A great way to get to know your data
-
--   Critical to communicate your findings
-
 ## R basics
 
 R code:
@@ -56,7 +46,7 @@ sum(1, 2)
 1.  Open up RStudio.
 2.  Using the console, find the summation of `45`, `978`, and `121`.
 3.  What is `67` divided by `6`?
-4.  What is the square root of `894`? HINT: use `sqrt()`.
+4.  What is the square root of `894`? HINT: use the `sqrt()` function.
 
 ## CHECK YOUR ANSWERS {background-color="#B56576"}
 
@@ -84,9 +74,13 @@ What is the square root of `894`?
 sqrt(894)
 ```
 
+## Functions
+
+![](img/machine.png){fig-align="center"}
+
 ## R packages
 
-Packages are collections of R functions, data, and compiled code in a well-defined format.
+Packages are collections of R functions and data.
 
 ```{r}
 #| eval: false
@@ -99,7 +93,7 @@ library(tidyverse)
 ```
 
 ::: aside
-`tidyverse` is a collection of many different packages housed within this universe. The individual packages are listed when you load the `tidyverse` package.
+`tidyverse` is a collection of many different packages The individual packages are listed when you load the `tidyverse` package.
 :::
 
 ## EXERCISE {background-color="#B56576"}
@@ -283,7 +277,7 @@ A couple of useful variables:
 
 ## EXERCISE {background-color="#B56576"}
 
-1.    How many rows are in `mpg`? How many columns?
+1.  How many rows are in `mpg`? How many columns?
 
 ```{r}
 #| eval: false
@@ -294,7 +288,7 @@ ncol(mpg)
 
 <br>
 
-2.    What does the `drv` variable describe?
+2.  What does the `drv` variable describe?
 
 ```{r}
 #| eval: false
@@ -328,15 +322,15 @@ ggplot(data = mpg, mapping = aes(x = displ, y = hwy)) +
 
 ## EXERCISE {background-color="#B56576"}
 
-1.    Make a scatter plot of `hwy` vs `cyl`.
+1.  Make a scatter plot of `hwy` vs `cyl`.
 
 <br>
 
-2.    What happens if you make a scatter plot of `class` vs `drv`? Why is the plot not useful?
+2.  What happens if you make a scatter plot of `class` vs `drv`? Why is the plot not useful?
 
 <br>
 
-3.    Which `geom` might be a better choice?
+3.  Which `geom` might be a better choice?
 
 ## EXERCISE {background-color="#B56576"}
 
@@ -456,15 +450,15 @@ ggplot(data = mpg) +
 
 ## EXERCISE {background-color="#B56576"}
 
-1.    Which variables in `mpg` are categorical? Which variables are continuous?
+1.  Which variables in `mpg` are categorical? Which variables are continuous?
 
 <br>
 
-2.    Map a continuous variable to `color`, `size`, and `shape.` How do these aesthetics behave differently for categorical vs. continuous variables?
+2.  Map a continuous variable to `color`, `size`, and `shape.` How do these aesthetics behave differently for categorical vs. continuous variables?
 
 <br>
 
-3.    What happens if you map the same variable to multiple aesthetics?
+3.  What happens if you map the same variable to multiple aesthetics?
 
 ## Let's clean our graph up
 
@@ -650,4 +644,3 @@ In the final session, you will apply the skills you will learn over the next few
 1.  Is relevant to your research interests,
 
 2.  Contains continuous and discrete variables.
-

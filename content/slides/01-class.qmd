@@ -19,9 +19,11 @@ format:
 
 ## Introductions
 
--   Starting my third year in the program
+-   Starting my fourth year in the program
 
 -   Focus on dependence and foreign intervention in civil conflict
+
+-   Currently an Adjunct with RAND
 
 -   Before starting my PhD:
 
@@ -33,7 +35,8 @@ format:
 
 ## Learning objectives for today
 
-1.  Introduction to R and friends
+1.  Meeting your cohort
+2.  Introduction to R and friends
 
 ## Why R?
 
