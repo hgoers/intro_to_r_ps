@@ -11,7 +11,7 @@
     "href": "content/01-content.html",
     "title": "Welcome",
     "section": "",
-    "text": "Welcome to GVPT Maths Camp! Over the next five sessions, I will introduce several important technical skills you will require to successfully complete your PhD."
+    "text": "Welcome to GVPT Maths Camp! Over the next five sessions, I will introduce you to important technical skills you will require to successfully complete your PhD."
   },
   {
     "objectID": "content/01-content.html#pre-requisites",
@@ -1103,14 +1103,7 @@
     "href": "content/slides/02-class.html#exercise-8",
     "title": "GVPT Maths Camp",
     "section": "EXERCISE",
-    "text": "EXERCISE\n\nMake a scatter plot of hwy vs cyl.\n\n\n\nWhat happens if you make a scatter plot of class vs drv? Why is the plot not useful?\n\n\n\nWhich geom might be a better choice?"
-  },
-  {
-    "objectID": "content/slides/02-class.html#exercise-9",
-    "href": "content/slides/02-class.html#exercise-9",
-    "title": "GVPT Maths Camp",
-    "section": "EXERCISE",
-    "text": "EXERCISE\nWhy does the following give an error and how would you fix it?\n\nggplot(data = mpg) + \n  geom_point()"
+    "text": "EXERCISE\n\nMake a scatter plot of hwy vs cyl.\n\n\n\nWhat happens if you make a scatter plot of class vs drv? Why is the plot not useful?\n\n\n\nWhy does the following give an error and how would you fix it?\n\n\nggplot(data = mpg) + \n  geom_point()"
   },
   {
     "objectID": "content/slides/02-class.html#lets-look-at-groups-in-the-data",
@@ -1169,18 +1162,18 @@
     "text": "Changing the look of your plots\n\nggplot(data = mpg) + \n  geom_point(mapping = aes(x = displ, y = hwy), colour = \"red\")"
   },
   {
-    "objectID": "content/slides/02-class.html#exercise-10",
-    "href": "content/slides/02-class.html#exercise-10",
+    "objectID": "content/slides/02-class.html#exercise-9",
+    "href": "content/slides/02-class.html#exercise-9",
     "title": "GVPT Maths Camp",
     "section": "EXERCISE",
     "text": "EXERCISE\nWhat’s gone wrong with this code? Why are the points not blue?\n\nggplot(data = mpg) + \n  geom_point(mapping = aes(x = displ, y = hwy, color = \"blue\"))"
   },
   {
-    "objectID": "content/slides/02-class.html#exercise-11",
-    "href": "content/slides/02-class.html#exercise-11",
+    "objectID": "content/slides/02-class.html#exercise-10",
+    "href": "content/slides/02-class.html#exercise-10",
     "title": "GVPT Maths Camp",
     "section": "EXERCISE",
-    "text": "EXERCISE\n\nWhich variables in mpg are categorical? Which variables are continuous?\n\n\n\nMap a continuous variable to color, size, and shape. How do these aesthetics behave differently for categorical vs. continuous variables?\n\n\n\nWhat happens if you map the same variable to multiple aesthetics?"
+    "text": "EXERCISE\n\nName a categorical variable in mpg. Name a continuous one.\n\n\n\nMap a continuous variable to color. How does this aesthetics behave differently for categorical vs. continuous variables?\n\n\n\nMap class to the shape aesthetic. What does the warning tell you?"
   },
   {
     "objectID": "content/slides/02-class.html#lets-clean-our-graph-up",
@@ -1197,8 +1190,8 @@
     "text": "Let’s clean this up"
   },
   {
-    "objectID": "content/slides/02-class.html#exercise-12",
-    "href": "content/slides/02-class.html#exercise-12",
+    "objectID": "content/slides/02-class.html#exercise-11",
+    "href": "content/slides/02-class.html#exercise-11",
     "title": "GVPT Maths Camp",
     "section": "EXERCISE",
     "text": "EXERCISE\nHead over to the ggplot documentation and find your favorite preset theme."
@@ -1225,11 +1218,18 @@
     "text": "The before shot"
   },
   {
-    "objectID": "content/slides/02-class.html#exercise-13",
-    "href": "content/slides/02-class.html#exercise-13",
+    "objectID": "content/slides/02-class.html#exercise-12",
+    "href": "content/slides/02-class.html#exercise-12",
     "title": "GVPT Maths Camp",
     "section": "EXERCISE",
     "text": "EXERCISE\nCustomize the last plot you made using the theme() argument."
+  },
+  {
+    "objectID": "content/slides/02-class.html#working-with-categorical-data",
+    "href": "content/slides/02-class.html#working-with-categorical-data",
+    "title": "GVPT Maths Camp",
+    "section": "Working with categorical data",
+    "text": "Working with categorical data\nWe often want to explore patterns in categorical (or discrete) data. We need new tools to do this.\n\n\nselect(mpg, manufacturer, model, drv)\n\n# A tibble: 234 × 3\n   manufacturer model      drv  \n   &lt;chr&gt;        &lt;chr&gt;      &lt;chr&gt;\n 1 audi         a4         f    \n 2 audi         a4         f    \n 3 audi         a4         f    \n 4 audi         a4         f    \n 5 audi         a4         f    \n 6 audi         a4         f    \n 7 audi         a4         f    \n 8 audi         a4 quattro 4    \n 9 audi         a4 quattro 4    \n10 audi         a4 quattro 4    \n# ℹ 224 more rows"
   },
   {
     "objectID": "content/slides/02-class.html#visualizing-distributions",

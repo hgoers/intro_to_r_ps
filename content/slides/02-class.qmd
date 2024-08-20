@@ -330,11 +330,7 @@ ggplot(data = mpg, mapping = aes(x = displ, y = hwy)) +
 
 <br>
 
-3.  Which `geom` might be a better choice?
-
-## EXERCISE {background-color="#B56576"}
-
-Why does the following give an error and how would you fix it?
+3.  Why does the following give an error and how would you fix it?
 
 ```{r}
 #| eval: false
@@ -450,15 +446,15 @@ ggplot(data = mpg) +
 
 ## EXERCISE {background-color="#B56576"}
 
-1.  Which variables in `mpg` are categorical? Which variables are continuous?
+1.  Name a categorical variable in `mpg`. Name a continuous one.
 
 <br>
 
-2.  Map a continuous variable to `color`, `size`, and `shape.` How do these aesthetics behave differently for categorical vs. continuous variables?
+2.  Map a continuous variable to `color`. How does this aesthetics behave differently for categorical vs. continuous variables?
 
 <br>
 
-3.  What happens if you map the same variable to multiple aesthetics?
+2.  Map `class` to the `shape` aesthetic. What does the warning tell you? 
 
 ## Let's clean our graph up
 
@@ -580,6 +576,16 @@ ggplot(data = mpg, mapping = aes(x = displ, y = hwy)) +
 ## EXERCISE {background-color="#B56576"}
 
 Customize the last plot you made using the `theme()` argument.
+
+## Working with categorical data
+
+We often want to explore patterns in categorical (or discrete) data. We need new tools to do this.
+
+<br>
+
+```{r}
+select(mpg, manufacturer, model, drv)
+```
 
 ## Visualizing distributions
 

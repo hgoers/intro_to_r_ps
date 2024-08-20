@@ -2,7 +2,7 @@
 title: "Welcome"
 ---
 
-Welcome to GVPT Maths Camp! Over the next five sessions, I will introduce several important technical skills you will require to successfully complete your PhD.
+Welcome to GVPT Maths Camp! Over the next five sessions, I will introduce you to important technical skills you will require to successfully complete your PhD.
 
 ## Pre-requisites
 
