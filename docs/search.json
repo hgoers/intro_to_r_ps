@@ -469,6 +469,174 @@
     "text": "EXERCISE\n\nCreate a plot of a categorical variable in your data set.\nCreate a plot of a continuous variable in your data set.\nCreate a plot showing the relationship between two continuous variables in your data set.\nCreate a plot showing the relationship between a categorical and a continuous variable in your data set.\nDescribe the relationship in simple, clear language."
   },
   {
+    "objectID": "content/slides/06-class.html#learning-objectives",
+    "href": "content/slides/06-class.html#learning-objectives",
+    "title": "GVPT Maths Camp",
+    "section": "Learning objectives",
+    "text": "Learning objectives\n\nLearn how to combine your code, results, and prose in one document\nBe introduced to markdown"
+  },
+  {
+    "objectID": "content/slides/06-class.html#quarto",
+    "href": "content/slides/06-class.html#quarto",
+    "title": "GVPT Maths Camp",
+    "section": "Quarto",
+    "text": "Quarto\n\nSource: Quarto"
+  },
+  {
+    "objectID": "content/slides/06-class.html#markdown",
+    "href": "content/slides/06-class.html#markdown",
+    "title": "GVPT Maths Camp",
+    "section": "Markdown",
+    "text": "Markdown\nA simple and easy-to-use markup language you can use to format your document\n\n## Markdown\n\n*A simple and easy-to-use markup language you can use to format your document*"
+  },
+  {
+    "objectID": "content/slides/06-class.html#create-your-first-quarto-document",
+    "href": "content/slides/06-class.html#create-your-first-quarto-document",
+    "title": "GVPT Maths Camp",
+    "section": "Create your first Quarto document",
+    "text": "Create your first Quarto document"
+  },
+  {
+    "objectID": "content/slides/06-class.html#create-your-first-quarto-document-1",
+    "href": "content/slides/06-class.html#create-your-first-quarto-document-1",
+    "title": "GVPT Maths Camp",
+    "section": "Create your first Quarto document",
+    "text": "Create your first Quarto document"
+  },
+  {
+    "objectID": "content/slides/06-class.html#yaml",
+    "href": "content/slides/06-class.html#yaml",
+    "title": "GVPT Maths Camp",
+    "section": "YAML",
+    "text": "YAML"
+  },
+  {
+    "objectID": "content/slides/06-class.html#rendering-your-document",
+    "href": "content/slides/06-class.html#rendering-your-document",
+    "title": "GVPT Maths Camp",
+    "section": "Rendering your document",
+    "text": "Rendering your document"
+  },
+  {
+    "objectID": "content/slides/06-class.html#writing-prose-in-quarto",
+    "href": "content/slides/06-class.html#writing-prose-in-quarto",
+    "title": "GVPT Maths Camp",
+    "section": "Writing prose in Quarto",
+    "text": "Writing prose in Quarto\nYou will need to know some markdown!\n\n\nhttps://www.markdowntutorial.com/"
+  },
+  {
+    "objectID": "content/slides/06-class.html#running-code-in-quarto",
+    "href": "content/slides/06-class.html#running-code-in-quarto",
+    "title": "GVPT Maths Camp",
+    "section": "Running code in Quarto",
+    "text": "Running code in Quarto\nCode chunks start with ```{r} and ends with ```:\n#| echo: true\n\nlibrary(tidyverse)"
+  },
+  {
+    "objectID": "content/slides/06-class.html#code-chunks",
+    "href": "content/slides/06-class.html#code-chunks",
+    "title": "GVPT Maths Camp",
+    "section": "Code chunks",
+    "text": "Code chunks\nYou can control how these code chunks render and are displayed using code chunks:\n#| echo: true\n#| warning: false\n\nlibrary(tidyverse)\n\n\nA full list of chunk options can be found here: https://quarto.org/docs/computations/execution-options.html"
+  },
+  {
+    "objectID": "content/slides/06-class.html#code-chunks-1",
+    "href": "content/slides/06-class.html#code-chunks-1",
+    "title": "GVPT Maths Camp",
+    "section": "Code chunks",
+    "text": "Code chunks\n\nSource: Quarto"
+  },
+  {
+    "objectID": "content/slides/06-class.html#code-chunks-2",
+    "href": "content/slides/06-class.html#code-chunks-2",
+    "title": "GVPT Maths Camp",
+    "section": "Code chunks",
+    "text": "Code chunks\nYou can set default chunk options in the YAML:\nexecute:\n  echo: true\n  message: false\n  warning: false"
+  },
+  {
+    "objectID": "content/slides/06-class.html#in-line-code",
+    "href": "content/slides/06-class.html#in-line-code",
+    "title": "GVPT Maths Camp",
+    "section": "In-line code",
+    "text": "In-line code\nYou will often want to reference numbers or results in your prose:\n\nYou include R code directly in your prose using the expression: `r`. For example:\n\nRenders:\nThere are 234 observations in our data."
+  },
+  {
+    "objectID": "content/slides/06-class.html#homework",
+    "href": "content/slides/06-class.html#homework",
+    "title": "GVPT Maths Camp",
+    "section": "HOMEWORK",
+    "text": "HOMEWORK\nReminder\nIn the final session, you will apply the skills you will learn over the next few days to a problem that interests you. To prepare for this, you need to find a data set that:\n\nIs relevant to your research interests,\nContains continuous and discrete variables."
+  },
+  {
+    "objectID": "content/slides/06-class.html#homework-1",
+    "href": "content/slides/06-class.html#homework-1",
+    "title": "GVPT Maths Camp",
+    "section": "HOMEWORK",
+    "text": "HOMEWORK\nIn case you are having some trouble:\n\nAmericanists can check out the American National Election Studies surveys.\nComparativists can check out Varieties of Democracy.\nIR theorists can check out UCDP events data sets."
+  },
+  {
+    "objectID": "content/03-content.html",
+    "href": "content/03-content.html",
+    "title": "Data Transformation",
+    "section": "",
+    "text": "Workflow Basics chapter in Hadley Wickham’s R4DS\n Data Transformation chapter in Hadley Wickham’s R4DS"
+  },
+  {
+    "objectID": "content/03-content.html#readings",
+    "href": "content/03-content.html#readings",
+    "title": "Data Transformation",
+    "section": "",
+    "text": "Workflow Basics chapter in Hadley Wickham’s R4DS\n Data Transformation chapter in Hadley Wickham’s R4DS"
+  },
+  {
+    "objectID": "content/03-content.html#slides",
+    "href": "content/03-content.html#slides",
+    "title": "Data Transformation",
+    "section": "Slides",
+    "text": "Slides"
+  },
+  {
+    "objectID": "content/05-content.html",
+    "href": "content/05-content.html",
+    "title": "Bringing It All Together",
+    "section": "",
+    "text": "Please complete this markdown tutorial before your first GVPT622 class."
+  },
+  {
+    "objectID": "content/05-content.html#reading",
+    "href": "content/05-content.html#reading",
+    "title": "Bringing It All Together",
+    "section": "",
+    "text": "Please complete this markdown tutorial before your first GVPT622 class."
+  },
+  {
+    "objectID": "content/05-content.html#slides",
+    "href": "content/05-content.html#slides",
+    "title": "Bringing It All Together",
+    "section": "Slides",
+    "text": "Slides"
+  },
+  {
+    "objectID": "content/06-content.html",
+    "href": "content/06-content.html",
+    "title": "Data Communication",
+    "section": "",
+    "text": "Quarto tutorial\n Quarto in Hadley Wickham’s R4DS"
+  },
+  {
+    "objectID": "content/06-content.html#readings",
+    "href": "content/06-content.html#readings",
+    "title": "Data Communication",
+    "section": "",
+    "text": "Quarto tutorial\n Quarto in Hadley Wickham’s R4DS"
+  },
+  {
+    "objectID": "content/06-content.html#slides",
+    "href": "content/06-content.html#slides",
+    "title": "Data Communication",
+    "section": "Slides",
+    "text": "Slides"
+  },
+  {
     "objectID": "content/slides/01-class.html#welcome",
     "href": "content/slides/01-class.html#welcome",
     "title": "GVPT Maths Camp",
@@ -523,48 +691,6 @@
     "title": "GVPT Maths Camp",
     "section": "Summary",
     "text": "Summary\nThis session you:\n\nLearnt about new data science tools to help you conduct replicable and reproducible political science research\nSet up your data science tools"
-  },
-  {
-    "objectID": "content/05-content.html",
-    "href": "content/05-content.html",
-    "title": "Bringing It All Together",
-    "section": "",
-    "text": "Please complete this markdown tutorial before your first GVPT622 class."
-  },
-  {
-    "objectID": "content/05-content.html#reading",
-    "href": "content/05-content.html#reading",
-    "title": "Bringing It All Together",
-    "section": "",
-    "text": "Please complete this markdown tutorial before your first GVPT622 class."
-  },
-  {
-    "objectID": "content/05-content.html#slides",
-    "href": "content/05-content.html#slides",
-    "title": "Bringing It All Together",
-    "section": "Slides",
-    "text": "Slides"
-  },
-  {
-    "objectID": "content/03-content.html",
-    "href": "content/03-content.html",
-    "title": "Data Transformation",
-    "section": "",
-    "text": "Workflow Basics chapter in Hadley Wickham’s R4DS\n Data Transformation chapter in Hadley Wickham’s R4DS"
-  },
-  {
-    "objectID": "content/03-content.html#readings",
-    "href": "content/03-content.html#readings",
-    "title": "Data Transformation",
-    "section": "",
-    "text": "Workflow Basics chapter in Hadley Wickham’s R4DS\n Data Transformation chapter in Hadley Wickham’s R4DS"
-  },
-  {
-    "objectID": "content/03-content.html#slides",
-    "href": "content/03-content.html#slides",
-    "title": "Data Transformation",
-    "section": "Slides",
-    "text": "Slides"
   },
   {
     "objectID": "content/slides/03-class.html#learning-objectives",

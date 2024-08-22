@@ -1,0 +1,133 @@
+---
+title: "GVPT Maths Camp"
+subtitle: "Data Communication"
+format: 
+  revealjs:
+    slide-number: true
+    preview-links: auto
+    theme: solarized
+    embed-resources: true
+execute: 
+  echo: true
+---
+
+## Learning objectives
+
+1.    Learn how to combine your code, results, and prose in one document
+
+2.    Be introduced to markdown
+
+## Quarto
+
+![Source: [Quarto](https://quarto.org/docs/get-started/hello/rstudio.html)](img/rstudio-hello.png)
+
+## Markdown
+
+*A simple and easy-to-use markup language you can use to format your document*
+
+<br>
+
+```
+## Markdown
+
+*A simple and easy-to-use markup language you can use to format your document*
+```
+
+## Create your first Quarto document
+
+![](img/new_quarto.png)
+
+## Create your first Quarto document
+
+![](img/new_quarto_2.png)
+
+## YAML
+
+![](img/yaml.png)
+
+## Rendering your document
+
+![](img/preview_2.png)
+
+## Writing prose in Quarto
+
+You will need to know some markdown!
+
+<br>
+
+<H2 style="text-align:center;">https://www.markdowntutorial.com/</H2>
+
+## Running code in Quarto
+
+Code chunks start with ```` ```{r} ```` and ends with ```` ``` ````:
+
+```{{r}}
+#| echo: true
+
+library(tidyverse)
+```
+
+## Code chunks
+
+You can control how these code chunks render and are displayed using code chunks:
+
+```{{r}}
+#| echo: true
+#| warning: false
+
+library(tidyverse)
+```
+
+:::{.aside}
+A full list of chunk options can be found here: https://quarto.org/docs/computations/execution-options.html
+:::
+
+## Code chunks
+
+![Source: [Quarto](https://quarto.org/docs/get-started/hello/rstudio.html#code-chunks)](img/rstudio-inline-output.png)
+
+## Code chunks
+
+You can set default chunk options in the YAML: 
+
+```{{yaml}}
+execute:
+  echo: true
+  message: false
+  warning: false
+```
+
+## In-line code
+
+You will often want to reference numbers or results in your prose:
+
+<br>
+
+You include R code directly in your prose using the expression: \`r\`. For example:
+
+![](img/in_line.png)
+
+Renders:
+
+*There are 234 observations in our data.*
+
+## HOMEWORK {background-color="#B56576"}
+
+*Reminder*
+
+In the final session, you will apply the skills you will learn over the next few days to a problem that interests you. To prepare for this, you need to find a data set that:
+
+1.  Is relevant to your research interests,
+
+2.  Contains continuous and discrete variables.
+
+## HOMEWORK {background-color="#B56576"}
+
+In case you are having some trouble:
+
+-   Americanists can check out the [American National Election Studies surveys](https://electionstudies.org/data-center/).
+
+-   Comparativists can check out [Varieties of Democracy](https://v-dem.net/data/).
+
+-   IR theorists can check out [UCDP events data sets](https://ucdp.uu.se/downloads/).
+
