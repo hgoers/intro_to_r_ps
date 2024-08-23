@@ -406,67 +406,18 @@
     "text": "Learning objectives\n\nExplore an interesting question using the skills you have learnt\nCreate a script that you can use to explore new data sets in the future"
   },
   {
-    "objectID": "content/slides/05-class.html#quarto",
-    "href": "content/slides/05-class.html#quarto",
-    "title": "GVPT Maths Camp",
-    "section": "Quarto",
-    "text": "Quarto\nQuarto is a tool that helps you to create fully reproducible research outputs.\n\nAllows combine your code, results, and prose in one document.\n\n\n\nThis website and all of these slides were created using Quarto."
-  },
-  {
-    "objectID": "content/slides/05-class.html#quarto-and-rstudio",
-    "href": "content/slides/05-class.html#quarto-and-rstudio",
-    "title": "GVPT Maths Camp",
-    "section": "Quarto and RStudio",
-    "text": "Quarto and RStudio\n\nSource: Quarto"
-  },
-  {
-    "objectID": "content/slides/05-class.html#create-a-new-quarto-document",
-    "href": "content/slides/05-class.html#create-a-new-quarto-document",
-    "title": "GVPT Maths Camp",
-    "section": "Create a new Quarto document",
-    "text": "Create a new Quarto document"
-  },
-  {
-    "objectID": "content/slides/05-class.html#rendering-your-quarto-document",
-    "href": "content/slides/05-class.html#rendering-your-quarto-document",
-    "title": "GVPT Maths Camp",
-    "section": "Rendering your Quarto document",
-    "text": "Rendering your Quarto document"
-  },
-  {
-    "objectID": "content/slides/05-class.html#writing-prose-in-quarto",
-    "href": "content/slides/05-class.html#writing-prose-in-quarto",
-    "title": "GVPT Maths Camp",
-    "section": "Writing prose in Quarto",
-    "text": "Writing prose in Quarto\n\nSource: Quarto"
-  },
-  {
-    "objectID": "content/slides/05-class.html#code-chunks",
-    "href": "content/slides/05-class.html#code-chunks",
-    "title": "GVPT Maths Camp",
-    "section": "Code chunks",
-    "text": "Code chunks\n#| echo: true\n\nlibrary(tidyverse)"
-  },
-  {
-    "objectID": "content/slides/05-class.html#chunk-options",
-    "href": "content/slides/05-class.html#chunk-options",
-    "title": "GVPT Maths Camp",
-    "section": "Chunk options",
-    "text": "Chunk options\nexecute:\n  echo: true\n  message: false\n  warning: false"
-  },
-  {
-    "objectID": "content/slides/05-class.html#in-line-code",
-    "href": "content/slides/05-class.html#in-line-code",
-    "title": "GVPT Maths Camp",
-    "section": "In-line code",
-    "text": "In-line code\nYou include R code directly in your prose using the expression: r. For example:\n\nWill render as: There are 234 observations in our data.\n\nNo need to go and update this reference if that number changes!"
-  },
-  {
     "objectID": "content/slides/05-class.html#exercise",
     "href": "content/slides/05-class.html#exercise",
     "title": "GVPT Maths Camp",
     "section": "EXERCISE",
-    "text": "EXERCISE\n\nCreate a plot of a categorical variable in your data set.\nCreate a plot of a continuous variable in your data set.\nCreate a plot showing the relationship between two continuous variables in your data set.\nCreate a plot showing the relationship between a categorical and a continuous variable in your data set.\nDescribe the relationship in simple, clear language."
+    "text": "EXERCISE\nYou are going to present for 5 minutes on a topic of your choice. You will create a set of slides or a 1-2 page document to support this presentation."
+  },
+  {
+    "objectID": "content/slides/05-class.html#exercise-1",
+    "href": "content/slides/05-class.html#exercise-1",
+    "title": "GVPT Maths Camp",
+    "section": "EXERCISE",
+    "text": "EXERCISE\nIn this presentation, you will need to include the following:\n\nA plot of a categorical variable in your data set.\nA plot of a continuous variable in your data set.\nA plot showing the relationship between two continuous variables in your data set.\nA plot showing the relationship between a categorical and a continuous variable in your data set.\nA description of these relationships in simple, clear language."
   },
   {
     "objectID": "content/slides/06-class.html#learning-objectives",
@@ -599,14 +550,14 @@
     "href": "content/05-content.html",
     "title": "Bringing It All Together",
     "section": "",
-    "text": "Please complete this markdown tutorial before your first GVPT622 class."
+    "text": "Please complete this markdown tutorial before your first GVPT622 class:\nhttps://www.markdowntutorial.com/"
   },
   {
-    "objectID": "content/05-content.html#reading",
-    "href": "content/05-content.html#reading",
+    "objectID": "content/05-content.html#to-do",
+    "href": "content/05-content.html#to-do",
     "title": "Bringing It All Together",
     "section": "",
-    "text": "Please complete this markdown tutorial before your first GVPT622 class."
+    "text": "Please complete this markdown tutorial before your first GVPT622 class:\nhttps://www.markdowntutorial.com/"
   },
   {
     "objectID": "content/05-content.html#slides",

@@ -17,65 +17,17 @@ execute:
 
 2.  Create a script that you can use to explore new data sets in the future
 
-## Quarto
+## EXERCISE {background-color="#B56576"}
 
-Quarto is a tool that helps you to create fully reproducible research outputs.
-
--   Allows combine your code, results, and prose in one document.
-
-::: aside
-This website and all of these slides were created using Quarto.
-:::
-
-## Quarto and RStudio
-
-![Source: [Quarto](https://quarto.org/docs/get-started/hello/rstudio.html)](img/rstudio-hello.png)
-
-## Create a new Quarto document
-
-![](img/yaml.png)
-
-## Rendering your Quarto document
-
-![](img/preview_2.png)
-
-## Writing prose in Quarto
-
-![Source: [Quarto](https://quarto.org/docs/get-started/hello/rstudio.html)](img/rstudio-hello.png)
-
-## Code chunks
-
-```{{r}}
-#| echo: true
-
-library(tidyverse)
-```
-
-## Chunk options
-
-```{{yaml}}
-execute:
-  echo: true
-  message: false
-  warning: false
-```
-
-## In-line code
-
-You include R code directly in your prose using the expression: `r`. For example:
-
-![](img/in_line.png)
-
-Will render as: There are 234 observations in our data.
-
-<br>
-
-No need to go and update this reference if that number changes!
+You are going to present for 5 minutes on a topic of your choice. You will create a set of slides or a 1-2 page document to support this presentation.
 
 ## EXERCISE {background-color="#B56576"}
 
-1.  Create a plot of a categorical variable in your data set.
-2.  Create a plot of a continuous variable in your data set.
-3.  Create a plot showing the relationship between two continuous variables in your data set.
-4.  Create a plot showing the relationship between a categorical and a continuous variable in your data set.
-5.  Describe the relationship in simple, clear language.
+In this presentation, you will need to include the following: 
+
+1.  A plot of a categorical variable in your data set.
+2.  A plot of a continuous variable in your data set.
+3.  A plot showing the relationship between two continuous variables in your data set.
+4.  A plot showing the relationship between a categorical and a continuous variable in your data set.
+5.  A description of these relationships in simple, clear language.
+

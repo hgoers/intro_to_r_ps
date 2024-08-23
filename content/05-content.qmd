@@ -2,9 +2,11 @@
 title: "Bringing It All Together"
 ---
 
-## Reading
+## To do
 
-Please complete this [markdown tutorial](https://www.markdowntutorial.com/) before your first GVPT622 class.
+Please complete this [markdown tutorial](https://www.markdowntutorial.com/) before your first GVPT622 class:
+
+**https://www.markdowntutorial.com/**
 
 ## Slides
 
