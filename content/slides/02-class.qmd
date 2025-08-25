@@ -43,10 +43,9 @@ sum(1, 2)
 
 ## EXERCISE {background-color="#B56576"}
 
-1.  Open up RStudio.
-2.  Using the console, find the summation of `45`, `978`, and `121`.
-3.  What is `67` divided by `6`?
-4.  What is the square root of `894`? HINT: use the `sqrt()` function.
+1.  Using the RStudio console, find the summation of `45`, `978`, and `121`.
+2.  What is `67` divided by `6`?
+3.  What is the square root of `894`? HINT: use the `sqrt()` function.
 
 ## CHECK YOUR ANSWERS {background-color="#B56576"}
 
@@ -76,7 +75,19 @@ sqrt(894)
 
 ## Functions
 
-![](img/machine.png){fig-align="center"}
+**R has a large number of in-built functions that allow you to manipulate your data.**
+
+For example, here's a function that provides all numbers in a specified sequence:
+
+```{r}
+seq(from = 1, to = 10, by = 2)
+```
+
+Arguments are positional:
+
+```{r}
+seq(1, 10, 2)
+```
 
 ## R packages
 
@@ -98,8 +109,7 @@ library(tidyverse)
 
 ## EXERCISE {background-color="#B56576"}
 
-1.  Open up RStudio.
-2.  Using the console, install the `tidyverse` packages.
+1.  Using the RStudio console, install the `tidyverse` packages.
 
 ```{r}
 #| eval: false
@@ -107,7 +117,7 @@ library(tidyverse)
 install.packages("tidyverse")
 ```
 
-3.  Load these packages in your current session
+2.  Load these packages in your current session
 
 ```{r}
 
@@ -152,6 +162,10 @@ For later reference, head to Hadley Wickham's [*Workflow: projects* chapter](htt
 
 ![Source: [R4DS](https://r4ds.had.co.nz/workflow-projects.html#rstudio-projects)](img/rstudio-project-3.png){fig-align="center"}
 
+## EXERCISE {background-color="#B56576"}
+
+3.  Re-run `getwd()` to see where you now are on your computer.
+
 ## Data visualisation
 
 From [R4DS - Data Visualization](https://r4ds.had.co.nz/data-visualisation.html):
@@ -166,7 +180,7 @@ Let's use our first graph to answer a question: Do cars with big engines use mor
 
 This session will borrow (read: *steal*) heavily from Hadley Wickham's *R for Data Science* book.
 
-::: columns
+::::: columns
 ::: {.column width="50%"}
 -   The. Best. Resource.
 
@@ -176,7 +190,7 @@ This session will borrow (read: *steal*) heavily from Hadley Wickham's *R for Da
 ::: {.column width="50%"}
 ![Source: [R4DS](https://r4ds.had.co.nz/index.html)](img/cover.png){fig-align="center"}
 :::
-:::
+:::::
 
 ## Skipping to the end
 
@@ -198,8 +212,7 @@ ggplot(data = mpg, mapping = aes(x = displ, y = hwy)) +
     subtitle = "Values for seven different classes of cars",
     x = "Engine displacement (L)",
     y = "Highway miles per gallon"
-  ) + 
-  scale_color_colorblind()
+  )
 ```
 
 ## How did we do this?
@@ -222,8 +235,7 @@ ggplot(data = mpg, mapping = aes(x = displ, y = hwy)) +
     subtitle = "Values for seven different classes of cars",
     x = "Engine displacement (L)",
     y = "Highway miles per gallon"
-  ) + 
-  scale_color_colorblind()
+  )
 ```
 
 ::: aside
@@ -301,9 +313,6 @@ ncol(mpg)
 *An empty canvas!*
 
 ```{r}
-library(ggplot2)
-library(ggthemes)
-
 ggplot(data = mpg)
 ```
 
@@ -322,15 +331,19 @@ ggplot(data = mpg, mapping = aes(x = displ, y = hwy)) +
 
 ## EXERCISE {background-color="#B56576"}
 
-1.  Make a scatter plot of `hwy` vs `cyl`.
+1.  Take a closer look at the `hwy` and `cyl` variables. Describe them to me.
 
-<br>
+2.  Make a scatter plot of them.
 
-2.  What happens if you make a scatter plot of `class` vs `drv`? Why is the plot not useful?
+## EXERCISE {background-color="#B56576"}
 
-<br>
+3.  Take a closer look at the `class` and `drv` variables. Describe them to me.
 
-3.  Why does the following give an error and how would you fix it?
+4.  Make a scatter plot of them. Why doesn't this work as a data visualization?
+
+## EXERCISE {background-color="#B56576"}
+
+1.  Why does the following give an error, and how would you fix it?
 
 ```{r}
 #| eval: false
@@ -340,8 +353,6 @@ ggplot(data = mpg) +
 ```
 
 ## Let's look at groups in the data
-
--   We are not restricted to looking at only two interesting elements of our data.
 
 -   You can use visual elements or aesthetics (`aes`) to communicate many dimensions in your data.
 
@@ -365,8 +376,7 @@ ggplot(data = mpg, mapping = aes(x = displ, y = hwy, colour = class)) +
 
 ggplot(data = mpg, mapping = aes(x = displ, y = hwy, colour = class)) + 
   geom_point() + 
-  geom_smooth(method = "lm") + 
-  scale_color_colorblind()
+  geom_smooth(method = "lm", se = FALSE)
 ```
 
 ## Look at the relationship across all cars
@@ -376,8 +386,7 @@ ggplot(data = mpg, mapping = aes(x = displ, y = hwy, colour = class)) +
 
 ggplot(data = mpg, mapping = aes(x = displ, y = hwy)) + 
   geom_point(mapping = aes(colour = class)) + 
-  geom_smooth(method = "lm") + 
-  scale_color_colorblind()
+  geom_smooth(method = "lm", se = FALSE)
 ```
 
 ## Add useful titles and labels
@@ -388,14 +397,13 @@ ggplot(data = mpg, mapping = aes(x = displ, y = hwy)) +
 
 ggplot(data = mpg, mapping = aes(x = displ, y = hwy)) + 
   geom_point(mapping = aes(colour = class)) + 
-  geom_smooth(method = "lm") + 
+  geom_smooth(method = "lm", se = FALSE) + 
   labs(
     title = "Engine displacement and highway miles per gallon",
     subtitle = "Values for seven different classes of cars",
     x = "Engine displacement (L)",
     y = "Highway miles per gallon"
-  ) + 
-  scale_color_colorblind()
+  )
 ```
 
 ## Add useful titles and labels
@@ -405,14 +413,13 @@ ggplot(data = mpg, mapping = aes(x = displ, y = hwy)) +
 
 ggplot(data = mpg, mapping = aes(x = displ, y = hwy)) + 
   geom_point(mapping = aes(colour = class)) + 
-  geom_smooth(method = "lm") + 
+  geom_smooth(method = "lm", se = FALSE) + 
   labs(
     title = "Engine displacement and highway miles per gallon",
     subtitle = "Values for seven different classes of cars",
     x = "Engine displacement (L)",
     y = "Highway miles per gallon"
-  ) + 
-  scale_color_colorblind()
+  )
 ```
 
 ## Flexible visualization
@@ -420,10 +427,11 @@ ggplot(data = mpg, mapping = aes(x = displ, y = hwy)) +
 You can use visual elements to communicate your findings in engaging ways.
 
 ```{r}
-#| code-line-numbers: "2"
+#| code-line-numbers: "2,3"
 
 ggplot(data = mpg) + 
-  geom_point(mapping = aes(x = displ, y = hwy, color = class == "2seater"))
+  geom_point(mapping = aes(x = displ, y = hwy, 
+                           color = class == "2seater"))
 ```
 
 ## Changing the look of your plots
@@ -448,13 +456,9 @@ ggplot(data = mpg) +
 
 1.  Name a categorical variable in `mpg`. Name a continuous one.
 
-<br>
-
 2.  Map a continuous variable to `color`. How does this aesthetics behave differently for categorical vs. continuous variables?
 
-<br>
-
-2.  Map `class` to the `shape` aesthetic. What does the warning tell you? 
+2.  Map `class` to the `shape` aesthetic. What does the warning tell you?
 
 ## Let's clean our graph up
 
@@ -466,15 +470,14 @@ Less is more when it comes to data visualization.
 
 ggplot(data = mpg, mapping = aes(x = displ, y = hwy)) + 
   geom_point(mapping = aes(colour = class)) + 
-  geom_smooth(method = "lm") + 
+  geom_smooth(method = "lm", se = FALSE) + 
   theme_minimal() + 
   labs(
     title = "Engine displacement and highway miles per gallon",
     subtitle = "Values for seven different classes of cars",
     x = "Engine displacement (L)",
     y = "Highway miles per gallon"
-  ) + 
-  scale_color_colorblind()
+  )
 ```
 
 ::: aside
@@ -495,13 +498,8 @@ ggplot(data = mpg, mapping = aes(x = displ, y = hwy)) +
     subtitle = "Values for seven different classes of cars",
     x = "Engine displacement (L)",
     y = "Highway miles per gallon"
-  ) + 
-  scale_color_colorblind()
+  )
 ```
-
-## EXERCISE {background-color="#B56576"}
-
-Head over to the [`ggplot` documentation](https://ggplot2.tidyverse.org/reference/ggtheme.html) and find your favorite preset theme.
 
 ## Creating your own theme
 
@@ -524,8 +522,7 @@ ggplot(data = mpg, mapping = aes(x = displ, y = hwy)) +
     subtitle = "Values for seven different classes of cars",
     x = "Engine displacement (L)",
     y = "Highway miles per gallon"
-  ) + 
-  scale_color_colorblind()
+  )
 ```
 
 ::: aside
@@ -552,8 +549,7 @@ ggplot(data = mpg, mapping = aes(x = displ, y = hwy)) +
     subtitle = "Values for seven different classes of cars",
     x = "Engine displacement (L)",
     y = "Highway miles per gallon"
-  ) + 
-  scale_color_colorblind()
+  )
 ```
 
 ## The before shot
@@ -569,8 +565,7 @@ ggplot(data = mpg, mapping = aes(x = displ, y = hwy)) +
     subtitle = "Values for seven different classes of cars",
     x = "Engine displacement (L)",
     y = "Highway miles per gallon"
-  ) + 
-  scale_color_colorblind()
+  )
 ```
 
 ## EXERCISE {background-color="#B56576"}

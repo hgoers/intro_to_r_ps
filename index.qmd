@@ -13,8 +13,8 @@ format:
 course-logo: /files/img/hex-testudo.png
 ---
 
-::: home
-::: {.grid .course-details}
+::::::: home
+:::::: {.grid .course-details}
 ::: {.g-col-12 .g-col-sm-6 .g-col-md-4}
 ### Instructor
 
@@ -30,6 +30,7 @@ course-logo: /files/img/hex-testudo.png
 -   {{< fa calendar-alt >}}   {{< var course.dates >}}
 -   {{< fa clock >}}   {{< var course.time >}}
 -   {{< fa location-dot >}}   {{< var course.location >}}
+-   {{< fa video >}}   [Zoom link](<https://umd.zoom.us/j/99727911380?pwd=W6PsLW4Q0DO4YOgh7aUbsbVGlZSjRe.1>)
 :::
 
 ::: {.g-col-12 .g-col-md-4 .contact-policy}
@@ -37,5 +38,5 @@ course-logo: /files/img/hex-testudo.png
 
 {{< var instructor.contact_policy >}}
 :::
-:::
-:::
+::::::
+:::::::

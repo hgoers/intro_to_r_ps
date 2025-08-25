@@ -16,11 +16,10 @@ course:
   semester: "Summer 2023"
   time: "2 - 4 PM"
   location: "TYD 2111"
-  dates: "August 19 - 23, 2024"
+  dates: "August 25-29, 2025"
   github: "https://github.com/hgoers/intro_to_r_ps"
   url: "https://hgoers.github.io/intro_to_r_ps/"
-  copyright_year: "2023"
-  slack: "https://askyourdgs.slack.com"
+  copyright_year: "2025"
 
 university:
   name: University of Maryland, College Park

@@ -13,9 +13,9 @@ execute:
 
 ## Learning objectives
 
-1.    Learn how to combine your code, results, and prose in one document
+1.  Learn how to combine your code, results, and prose in one document
 
-2.    Be introduced to markdown
+2.  Be introduced to markdown
 
 ## Quarto
 
@@ -27,7 +27,7 @@ execute:
 
 <br>
 
-```
+```         
 ## Markdown
 
 *A simple and easy-to-use markup language you can use to format your document*
@@ -55,7 +55,11 @@ You will need to know some markdown!
 
 <br>
 
-<H2 style="text-align:center;">https://www.markdowntutorial.com/</H2>
+<H2 style="text-align:center;">
+
+https://www.markdowntutorial.com/
+
+</H2>
 
 ## Running code in Quarto
 
@@ -78,7 +82,7 @@ You can control how these code chunks render and are displayed using code chunks
 library(tidyverse)
 ```
 
-:::{.aside}
+::: aside
 A full list of chunk options can be found here: https://quarto.org/docs/computations/execution-options.html
 :::
 
@@ -88,7 +92,7 @@ A full list of chunk options can be found here: https://quarto.org/docs/computat
 
 ## Code chunks
 
-You can set default chunk options in the YAML: 
+You can set default chunk options in the YAML:
 
 ```{{yaml}}
 execute:
@@ -130,4 +134,3 @@ In case you are having some trouble:
 -   Comparativists can check out [Varieties of Democracy](https://v-dem.net/data/).
 
 -   IR theorists can check out [UCDP events data sets](https://ucdp.uu.se/downloads/).
-

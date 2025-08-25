@@ -11,27 +11,19 @@ format:
 
 ## Welcome
 
--   Welcome to the UMD GVPT PhD program!
+-   Welcome to the UMD GVPT PhD program
 
--   Gentle introduction to some of the tools you will use throughout the program and your research
+-   Gentle introduction to some of the tools you will use to conduct your research
 
 -   Ask any and all questions
 
 ## Introductions
 
--   Starting my fourth year in the program
+-   Starting my fifth year in the program
 
--   Focus on dependence and foreign intervention in civil conflict
+-   Focus on trade dependence and foreign intervention in civil conflict
 
--   Currently an Adjunct with RAND
-
--   Before starting my PhD:
-
-    -   Analyst with the Australian Department of Defence
-
-    -   Helped to develop the Lowy Institute's [Asia Power Index](https://power.lowyinstitute.org/)
-
-    -   Worked on the Institute for Economics and Peace's [Global Peace Index](https://www.visionofhumanity.org/maps/#/) and [Global Terrorism Index](https://www.visionofhumanity.org/maps/global-terrorism-index/#/)
+-   Favorite Smithsonian: the zoo
 
 ## Learning objectives for today
 
@@ -40,15 +32,15 @@ format:
 
 ## Why R?
 
--   A versatile programming language
+-   Popular in academia, government, and private industry
 
-    -   All materials used in this course were produced using R, including the website and fancy slides
+-   Versatile
 
--   Free and accessible!
+-   Free and accessible
 
 ## R and RStudio
 
-::: columns
+::::: columns
 ::: {.column width="50%"}
 ### R
 
@@ -60,7 +52,7 @@ R is a free and open-source programming language and software environment for st
 
 RStudio is an integrated development environment (IDE) for the R programming language.
 :::
-:::
+:::::
 
 ::: aside
 Instructions on how to download R and RStudio are provided in the [*Install or upgrade R and RStudio chapter*](https://happygitwithr.com/install-r-rstudio.html) in Jennifer Bryan's **Happy Git and GitHub for the useR**.
@@ -72,7 +64,7 @@ Instructions on how to download R and RStudio are provided in the [*Install or u
 
 ## Git and GitHub
 
-::: columns
+::::: columns
 ::: {.column width="50%"}
 ### Git
 
@@ -84,7 +76,7 @@ Git is a version control system used for tracking changes in software developmen
 
 GitHub is a web-based platform for version control and collaborative software development using Git.
 :::
-:::
+:::::
 
 ::: aside
 Instructions on how to download Git and set up GitHub are provided in the [*Installation chapter*](https://happygitwithr.com/install-intro.html) of **Happy Git and GitHub for the useR**.
